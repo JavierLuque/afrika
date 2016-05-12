@@ -1,0 +1,69 @@
+.error {
+    color: @red !important;
+    border-color: @red !important;
+}
+.success {
+    color: @green !important;
+    border-color: @green !important;
+}
+.disabled {
+    color: @gray !important;
+    border-color: @gray !important;
+    cursor: default !important;
+}
+.input-text {
+    width: 100%;
+    float: left;
+    .sizing;
+}
+.textarea {
+    &:extend(.input-text);
+    font-family: @fontFamily;
+}
+.button {
+    .sizing;
+}
+.ui-helper-hidden-accessible {
+    display: none;
+}
+.ui-autocomplete {
+    background: @w;
+    position: absolute;
+    z-index: 900;
+    display: none;
+    .border-radius(2px);
+    .box-shadow(0 20px 30px rgba(62, 63, 62, 0.5));
+    li {
+        font-size: 13px;
+        line-height: 1.15;
+        color: #7c8082;
+        cursor: pointer;
+        display: block;
+        padding: 13px 50px 13px 20px;
+        border-top: 1px solid #ebe7e1;
+        position: relative;
+        &:hover {
+            background: #ffce52;
+            color: #3a3c3d;
+            &:before {
+                font-size: 20px;
+                content: "➞";
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                color: #3a3c3d;
+                margin-top: -10px;
+            }
+            .ui-state-highlight {
+                background: none;
+            }
+        }
+    }
+    a {
+        color: #3a3c3d;    
+    }
+}
+.ui-state-highlight {
+    background: #ffe6a8;
+    color: #3a3c3d;
+}
