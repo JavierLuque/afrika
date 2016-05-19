@@ -207,7 +207,7 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 a {
-  color: #0000ff;
+  color: #73ae3a;
   cursor: pointer;
   background: transparent;
   text-decoration: none;
@@ -2600,6 +2600,9 @@ footer .separator {
 .country-tab .tabs li {
   width: 25%;
 }
+.country-tab .tabs li a {
+  color: #7c8082;
+}
 .country-tab .tabs li span {
   font-size: 14px;
   margin-right: 10px;
@@ -2617,7 +2620,8 @@ footer .separator {
 .short-decr .row {
   padding: 10px 0 0;
 }
-.short-decr .row p {
+.short-decr .row p,
+.short-decr .row a {
   font-size: 14px;
   color: #3d3a3a;
   font-weight: 600;
@@ -2656,7 +2660,8 @@ footer .separator {
 .vaccinations-box table {
   width: 100%;
 }
-.vaccinations-box td {
+.vaccinations-box td,
+.vaccinations-box a {
   font-size: 14px;
   font-weight: 600;
   color: #7c8082;
@@ -3337,6 +3342,9 @@ footer .separator {
   color: #3a3c3d;
   width: 60%;
   float: right;
+}
+.si-sidebar em a {
+  color: #3a3c3d;
 }
 .slider-range {
   clear: both;
