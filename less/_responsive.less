@@ -38,7 +38,7 @@
         margin-right: 20px;
     }
     .main {
-        padding: 0;
+        // padding: 0;
     }
     footer {
         height: auto;
@@ -46,7 +46,7 @@
         padding-bottom: 30px;
     }
     .talking-subscribe {
-        background: url(../images/ts.png) repeat;
+        background: url(../images/v2/ts.png) repeat;
         padding: 0;
         &:before,&:after {
             display: none;
@@ -451,6 +451,8 @@
     }
 }
 @media (max-width: 600px){
+
+
     .review-description {
         margin-right: 0;
     }
@@ -571,7 +573,7 @@
         }
     }
     .home-page .slogan-video {
-        background: url(../images/header.jpg) no-repeat center;
+        background: url(../images/v2/header.jpg) no-repeat center;
         .bgsize();
     }
     .home-page video {
@@ -579,8 +581,145 @@
     }
 }
 @media (max-width: 479px){
+    .spanning{
+        display: flex;
+        flex-direction: column;
+        .page-image{
+            order: -1;
+            .breadcrumbs{
+                background-color: rgba(58, 60, 61, 0.5);
+                span{
+                    display: inline-block;
+                    margin: 0 7px;
+                }
+            }
+        }
+        .search-box{
+            .sb-item{
+                display: table;
+                .sbi-input{
+                    display: table-header-group;
+                    input{
+                        border: 1px solid #bdbfc0;
+                    }
+                }
+                .search-button{
+                    float: none;
+                    display: block;
+                    text-transform: uppercase;
+                    width: 100%;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .park-title{
+            h1{
+                font-size: 18px;
+            }
+            .pt-height{
+                text-align: center;
+                border-bottom: 1px solid #e3e2e1;
+                .ob-rating, .ob-rating p{
+                    float: none;
+                    color: #7c8082;
+                    font-size: 12px;
+                }
+            }
+            .copy-link{
+                & > a{
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+    .country-tab{
+        ul.tabs{
+            overflow-x: auto;
+            overflow-y: hidden;
+            width: 100%;
+            white-space: nowrap;
+            position: relative;
+            display: flex;
+            border-width: 0;
+            margin-bottom: 10px;
+            li{
+                display: inline-block;
+                width:initial;
+                border-width:0px;
+                background-color: transparent;
+                padding: 13px 10px;
+                &.active{
+                    background-color: transparent;
+                    box-shadow: none;
+                }
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+    .safari-info{
+        .row{
+            display: flex;
+            flex-direction:column;
+            .col-30{
+                order:-1;
+                text-align: center;
+                
+            }
+        }
+        .column{
+            width: 100%;
+        }
+    }
+    .sll-box{
+        display: flex;
+        flex-direction: column;
+        h2{
+            padding-right: 0;
+            margin: 15px 0 0;
+            border-bottom: none;
+        }
+        .ob-rating{
+            margin: 0 0 10px;
+            .stars{}
+        }
+        img.ssl-image{
+            order:-1;
+            width: 100%;
+            max-width:initial;
+            float: none;
+            
+        }
+        .short-decr{
+            margin-left: 0;
+            .sd-text{}
+            .row{
+                .column{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .safari-sidebar{
+        .tours{
+            max-width:100%;
+            img.tours-image{
+                width: 100%;
+            }
+        }
+        .filter{
+            .ror-title{
+                color: #3a3c3d;
+                font-size: 18px;
+            }
+        }
+    }
+    .main{
+        padding-bottom: 0;
+    }
     .home-page .slogan-video {
-        background: url(../images/header.jpg) no-repeat center;
+        background: url(../images/v2/header.jpg) no-repeat center;
         .bgsize();
     }
     .home-page video {
@@ -607,7 +746,7 @@
         }
     }
     .pi-sidebar-box .col-3 {
-        width: 100%;
+        // width: 100%;
     }
     .pi-sidebar-box .stars {
         width: 100%;
@@ -619,7 +758,7 @@
         margin-left: 0;
     }
     .request-quote {
-        width: 100%;
+        // width: 100%;
     }
     .photos-list .col-5,.activities-list .col-3, .animal-list .col-3,.st-experiens .tabs li,.safari-tab .tabs li {
         width: 100%;
