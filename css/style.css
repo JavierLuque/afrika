@@ -2477,6 +2477,49 @@ footer .separator {
 .country-tab .tabs li.active {
   color: #3a3c3d;
 }
+.tour-tab .tabs {
+  width: 100%;
+  border-left: 1px solid #e9e3e1;
+  float: left;
+  margin: 0 0 30px;
+}
+.tour-tab .tabs li {
+  background: #ffffff;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #7c8082;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  width: 33.33333333%;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #e9e3e1;
+  border-left: 0;
+  float: left;
+}
+.tour-tab .tabs li span {
+  color: #73ae3a;
+}
+.tour-tab .tabs .active {
+  background-color: rgba(244, 242, 239, 0.7);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.tour-tab .tabs li {
+  width: 20%;
+}
+.tour-tab .tabs li a {
+  color: #7c8082;
+}
+.tour-tab .tabs li span {
+  font-size: 14px;
+  margin-right: 10px;
+  color: #7c8082;
+}
+.tour-tab .tabs li.active {
+  color: #3a3c3d;
+}
 .recent-not-last {
   margin-bottom: 30px;
 }
