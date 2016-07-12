@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     //window trigger
     $(window).trigger('scroll');
 
