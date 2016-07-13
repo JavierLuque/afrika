@@ -249,7 +249,42 @@ $(document).ready(function(){
 
     //copy-link
     $('.copy-link > a').on('click',function(){
+      if ( $(this).hasClass('select_p') ) {
+        $(this).removeClass('select_p');
+      } else {
+        $('.copy-link > a').removeClass('select_p');
+        $(this).addClass('select_p');    
+      }
       $('.share-box').fadeToggle();
     })
 
+    //------------------------------------------------------------------------//
+
+    //Popup country
+    function deselect(e) {
+      $('.popup-country').slideFadeToggle(function() {
+        e.removeClass('select_p');
+      });    
+    }
+
+    $(function() {
+      $('.co').on('click', function() {
+        if($(this).hasClass('select_p')) {
+          deselect($(this));               
+        } else {
+          $(this).addClass('select_p');
+          $('.popup-country').slideFadeToggle();
+        }
+      return false;
+    });
+
+    $('.close').on('click', function() {
+        deselect($('.co'));
+         $('.popup-country').fadeOut();
+        return false;
+      });
+    });
+    $.fn.slideFadeToggle = function(easing, callback) {
+        return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
+    };
 });//document ready

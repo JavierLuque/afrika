@@ -432,6 +432,8 @@
         }
     }
     .review-link{
+        //
+        padding: 0 25px;
         margin-top: 15px !important;
     }
 }
@@ -488,7 +490,8 @@
     .box-shadow(0 3px 30px rgba(0, 0, 0, 0.2));
     position: absolute;
     top: 40px;
-    right: -10px;
+    right: 0;
+    //right: -10px;
     z-index: 600;
     display: none;
     img {
@@ -497,12 +500,19 @@
     }
     &:before {
         position: absolute;
+        top: -7px;
+        right: 0px;
+        border-bottom: 8px solid @w;
+        border-left: 8px solid @tr;
+        border-right: 8px solid @tr;
+        content: '';
+        /*
         top: -5px;
         right: 10px;
         border-bottom: 5px solid @w;
         border-left: 5px solid @tr;
         border-right: 5px solid @tr;
-        content: '';
+        content: '';*/
     }
 }
 .park-description {
@@ -792,7 +802,7 @@
         font-weight: 600;
         margin: 0 0 30px;
         padding: 0 0 10px;
-        /*border-bottom: 1px solid #e0dfdb;*/
+        border-bottom: 1px solid #e0dfdb;
         a {
             color: #3a3c3d;
             img {
@@ -1470,6 +1480,7 @@
     display: inline-block;
 }
 .vaccinations-box {
+    position: relative;
     padding-top: 20px;
     h3 {
         margin: 0 0 7px;
@@ -1482,16 +1493,21 @@
         font-weight: 600;
         color: #7c8082;
     }
+    a {
+        &:hover{
+            color: #73ae3a;
+        }
+    }
 }
 .tours-oper{
     position: absolute;
     bottom: 0;
     padding: 20px;
     width: calc(100% - 12px);
-    color: @white;
+    color: @w;
     .gradient-vertical(transparent, rgba(0,0,0, 0.75));
     h2 a {
-        color: @white;   
+        color: @w;   
     }
     a:hover{
             color: #73ae3a;  
@@ -1504,7 +1520,7 @@
         line-height: 18/12;
         padding-left: 10px;
         position: relative;
-        color: @white !important;
+        color: @w !important;
         &:before {
             content: "•";
             position: absolute;
@@ -1512,19 +1528,14 @@
             left: 0;
         }
         em{
-            color: #73ae3a;
+            color: @l;
             font-style: normal;
         }
     }
     
     .ob-rating p{
-        color: @white;
+        color: @w;
     }
-}
-.recent-operator-reviews>.ror-title {
-    font-size: 18px;
-    text-transform: none;
-    color: #3a3c3d;  
 }
 .ror-op {
     font-size: 12px !important;
@@ -1536,6 +1547,139 @@
     border-bottom:none !important;
 }
 
+
+.s-contry {
+    .ob-rating {
+        margin-top: -55px;
+    }
+    img {         
+        border: 4px solid @w;
+        .sizing();
+    }
+}
+.art-country {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    .tours {
+        margin-left: 0 !important;
+        .fp-badge {
+            top: 5px;
+        }
+    }
+}
+.park-country {
+    .pt-left {
+        h2 {
+            font-size: 24px;
+            color:  @t;
+        }
+    }
+    .ob-rating{
+        .stars {
+            span {
+                background-position: -89px -38px;
+            }
+        .bg-star {
+            background-position: -74px -38px;
+            }
+        }
+    }
+    .review-link {
+        padding: 0 29px;
+    }
+    .copy-link {
+        width: 30/320*100%;
+        border-left: 1px solid #e3e2e1;
+        a {
+            &:active{
+                color: green;
+            }
+        }
+    }
+    .request-quote{
+        margin-left: -25px;
+    }
+    .copy-link {
+        margin: 9px 0 0;
+    }
+    padding-bottom: 20px;
+}
+.select_p {
+    color: @l !important;
+}
+.popup-country {
+    .co-title {
+        height: 42px;
+        padding: 14px 20px 0 20px;
+        border-radius: 2px;
+        background-color: #ffce52;
+        .box-shadow(inset 0px -1px 0px 0px rgba(0, 0, 0, 0.15));
+        h2 {
+            font-weight: 600;
+            line-height: 16px;
+            color-: @t;
+        }
+        .close {
+            position: absolute;
+            right: 20px;
+            font-size: 10px;
+            top: 12px;
+            &:hover{
+                color: #d20e42;
+            }
+        }
+        .sizing();
+    }
+    .popup-description {
+        padding: 20px;
+        h2 {
+            font-size: 13px;
+            font-weight: 600;
+        }
+        p { 
+            display: inline;
+            font-size: 13px;
+            color: @p;
+            font-weight: 600;
+        }
+        ul, li{
+            display: inline;
+        }
+        li{
+            position: relative;
+            width: 0; 
+            margin-bottom: 0px;
+            margin-right: 3px; 
+            float: none;
+            font-size: 13px;
+            line-height: 20/13; 
+            color: @l;
+            font-weight: 600;
+            &:before{
+                position: absolute;
+                content: ",";
+                right: -4px;
+                bottom: -4px;
+            }
+        }
+        li:last-child{
+            &:before{
+                content:none;
+            }
+        }
+    }
+    width: 490px;
+    min-height: 233px;
+    position: absolute;
+    top: 157px;
+    right: -10px;
+    z-index: 600;
+    display: none; 
+    background: @w;
+    border-radius: 2px;
+    .box-shadow( 0px 3px 30px 0px rgba(62, 63, 62, 0.5));
+    .sizing();    
+}
 // Selectric Select
 
 .selectric-wrapper {
@@ -1546,7 +1690,7 @@
   width: 100%;
 }
 .selectric {
-    background-color: @white;
+    background-color: @w;
     margin-top: -1px;
     border: 1px solid #e9e3e1;
     display: inline-block;
@@ -1588,10 +1732,10 @@
             right: 15px;
         }
     }
-    .selectric-focus{
+    .selectric-focus {
       border-color: #AAA;
     }
-    .selectric-hover{
+    .selectric-hover {
       border-color: #C4C4C4;
     }
 }
@@ -1635,7 +1779,7 @@
     width: 260px !important;
     top: 100%;
     right: -1px;
-    background: @white;
+    background: @w;
     border: none;
     z-index: -1;
     .border-radius(2px);
