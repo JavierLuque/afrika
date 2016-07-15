@@ -253,122 +253,128 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-close:before {
+.icon-tour-auto:before {
   content: "\e900";
 }
-.icon-form:before {
+.icon-tato:before {
   content: "\e901";
 }
-.icon-Star:before {
+.icon-close:before {
   content: "\e902";
 }
-.icon-here:before {
+.icon-form:before {
   content: "\e903";
 }
-.icon-twitter:before {
+.icon-star:before {
   content: "\e904";
 }
-.icon-google-plus:before {
+.icon-here:before {
   content: "\e905";
 }
-.icon-country:before {
+.icon-twitter:before {
   content: "\e906";
 }
-.icon-photo:before {
+.icon-google-plus:before {
   content: "\e907";
 }
-.icon-shortlist:before {
+.icon-country:before {
   content: "\e908";
 }
-.icon-books:before {
+.icon-photo:before {
   content: "\e909";
 }
-.icon-tour-packages:before {
+.icon-shortlist:before {
   content: "\e90a";
 }
-.icon-tailored:before {
+.icon-books:before {
   content: "\e90b";
 }
-.icon-flights:before {
+.icon-tour-packages:before {
   content: "\e90c";
 }
-.icon-packages:before {
+.icon-tailored:before {
   content: "\e90d";
 }
-.icon-group:before {
+.icon-flights:before {
   content: "\e90e";
 }
-.icon-facebook:before {
+.icon-packages:before {
   content: "\e90f";
 }
-.icon-youtube:before {
+.icon-group:before {
   content: "\e910";
 }
-.icon-in:before {
+.icon-facebook:before {
   content: "\e911";
 }
-.icon-operators:before {
+.icon-youtube:before {
   content: "\e912";
 }
-.icon-park-reviews:before {
+.icon-in:before {
   content: "\e913";
 }
-.icon-operators-reviews:before {
+.icon-operators:before {
   content: "\e914";
 }
-.icon-tree:before {
+.icon-park-reviews:before {
   content: "\e915";
 }
-.icon-currency:before {
+.icon-operators-reviews:before {
   content: "\e916";
 }
-.icon-leon:before {
+.icon-tree:before {
   content: "\e917";
 }
-.icon-earth:before {
+.icon-currency:before {
   content: "\e918";
 }
-.icon-pie:before {
+.icon-leon:before {
   content: "\e919";
 }
-.icon-flag:before {
+.icon-earth:before {
   content: "\e91a";
 }
-.icon-plane:before {
+.icon-pie:before {
   content: "\e91b";
 }
-.icon-copy:before {
+.icon-flag:before {
   content: "\e91c";
 }
-.icon-untitled:before {
+.icon-plane:before {
   content: "\e91d";
 }
-.icon-boating:before {
+.icon-copy:before {
   content: "\e91e";
 }
-.icon-camping:before {
+.icon-untitled:before {
   content: "\e91f";
 }
-.icon-birding:before {
+.icon-boating:before {
   content: "\e920";
 }
-.icon-romantic:before {
+.icon-camping:before {
   content: "\e921";
 }
-.icon-cultural:before {
+.icon-birding:before {
   content: "\e922";
 }
-.icon-auto:before {
+.icon-romantic:before {
   content: "\e923";
 }
-.icon-night-auto:before {
+.icon-cultural:before {
   content: "\e924";
 }
-.icon-email:before {
+.icon-auto:before {
   content: "\e925";
 }
-.icon-article:before {
+.icon-night-auto:before {
   content: "\e926";
+}
+.icon-email:before {
+  content: "\e927";
+}
+.icon-article:before {
+  content: "\e928";
 }
 html {
   height: 100%;
@@ -2798,6 +2804,147 @@ footer .separator {
 }
 .popup-country .popup-description li:last-child:before {
   content: none;
+}
+.reviews-park .box {
+  display: block;
+}
+.reviews-park .content-revies-parks {
+  margin-bottom: 40px;
+}
+.reviews-park .content-revies-parks h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.reviews-park .sll-box h2 span {
+  font-size: 13px;
+  color: #7f7f7f;
+  font-weight: 600;
+}
+.reviews-park .special-review .sd-text p {
+  font-weight: normal;
+}
+.reviews-park .special-review .sd-text span {
+  color: #7c8082;
+  font-size: 14px;
+  font-weight: normal;
+}
+.reviews-park .special-review .sd-text span strong {
+  font-weight: 600;
+}
+.reviews-park .special-review .category-saf li {
+  color: #7c8082;
+  font-size: 14px;
+  font-weight: 600;
+}
+.reviews-park .special-review .category-saf li span {
+  margin-right: 5px;
+  width: 10px;
+}
+.reviews-park .special-review .category-saf li .icon-star {
+  color: #ffce52;
+}
+.reviews-park .special-review .category-saf li .icon-t {
+  position: relative;
+  width: 21px;
+  height: 24px;
+  margin-right: 24px;
+}
+.reviews-park .special-review .category-saf li .icon-t:before {
+  background: url(../upload/sprite-tour.png) no-repeat 0 0;
+  content: "";
+  width: 21px;
+  height: 24px;
+  position: absolute;
+  top: 1px;
+}
+.reviews-park .ob-rating .stars {
+  border: none;
+  margin: -55px 0 0;
+}
+.reviews-park .s-left {
+  float: left;
+  padding: 0;
+}
+.reviews-park .s-left .category-saf {
+  margin-top: 145px;
+  width: 200px;
+}
+.reviews-park .s-left .category-saf h2 {
+  color: #3a3c3d;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.reviews-park .s-left .category-saf ul span,
+.reviews-park .s-left .category-saf li span {
+  font-weight: normal;
+  font-size: 13px;
+}
+.reviews-park .s-left .category-saf ul span strong,
+.reviews-park .s-left .category-saf li span strong {
+  color: #3a3c3d;
+  font-weight: 600;
+}
+.reviews-park .sd-text p {
+  font-size: 13px;
+}
+.reviews-park .tato {
+  margin-top: 35px;
+  float: right;
+}
+.reviews-park .tato span {
+  color: #3c3b3b;
+  font-weight: bold;
+  font-size: 14px;
+}
+.reviews-park .tato h1 {
+  padding-top: 20px;
+  font-size: 37px;
+  font-weight: 600;
+  color: #827e7d;
+}
+.reviews-park .tato p {
+  font-size: 13px;
+  color: #7c8082;
+  font-weight: normal;
+}
+.reviews-park .safari-info h2 {
+  color: #3c3b3b;
+}
+.reviews-park .safari-info p {
+  padding-bottom: 15px;
+}
+.reviews-park .safari-info p:last-child {
+  padding-bottom: 0;
+}
+.reviews-park .pi-box {
+  padding: 0;
+}
+.reviews-park .pi-box h2 {
+  margin: 0 0px 30px;
+}
+.reviews-park .pi-box .result-see-more {
+  margin-top: 20px;
+}
+.list-result-review {
+  margin-bottom: 55px;
+}
+.list-result-review h1 {
+  font-size: 24px;
+  color: #3a3c3d;
+  padding: 0 0 10px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e0dfdb;
+}
+.list-result-review h2 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #3a3c3d;
+  margin-bottom: 20px;
 }
 .selectric-wrapper {
   position: relative;
