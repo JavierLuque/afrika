@@ -1494,24 +1494,26 @@
         color: #7c8082;
     }
     a {
-        &:hover{
+        &:hover {
             color: #73ae3a;
         }
     }
 }
-.tours-oper{
+.tours-oper {
     position: absolute;
     bottom: 0;
     padding: 20px;
     width: calc(100% - 12px);
     color: @w;
     .gradient-vertical(transparent, rgba(0,0,0, 0.75));
-    h2 a {
-        color: @w;   
+    h2 {
+        a {
+            color: @w;
+            &:hover{
+                color: @l;  
+            }    
+        }       
     }
-    a:hover{
-            color: #73ae3a;  
-        }
     ul {
         margin: 0 0 7px;
     }
@@ -1527,13 +1529,12 @@
             top: 0;
             left: 0;
         }
-        em{
+        em {
             color: @l;
             font-style: normal;
         }
     }
-    
-    .ob-rating p{
+    .ob-rating p {
         color: @w;
     }
 }
@@ -1543,11 +1544,9 @@
 .padding {
     padding-top: 20px;
 }
-.border-none{
+.border-none {
     border-bottom:none !important;
 }
-
-
 .s-contry {
     .ob-rating {
         margin-top: -55px;
@@ -1591,12 +1590,12 @@
         width: 30/320*100%;
         border-left: 1px solid #e3e2e1;
         a {
-            &:active{
+            &:active {
                 color: green;
             }
         }
     }
-    .request-quote{
+    .request-quote {
         margin-left: -25px;
     }
     .copy-link {
@@ -1624,7 +1623,7 @@
             right: 20px;
             font-size: 10px;
             top: 12px;
-            &:hover{
+            &:hover {
                 color: #d20e42;
             }
         }
@@ -1642,10 +1641,10 @@
             color: @p;
             font-weight: 600;
         }
-        ul, li{
+        ul, li {
             display: inline;
         }
-        li{
+        li {
             position: relative;
             width: 0; 
             margin-bottom: 0px;
@@ -1655,15 +1654,15 @@
             line-height: 20/13; 
             color: @l;
             font-weight: 600;
-            &:before{
+            &:before {
                 position: absolute;
                 content: ",";
                 right: -4px;
                 bottom: -4px;
             }
         }
-        li:last-child{
-            &:before{
+        li:last-child {
+            &:before {
                 content:none;
             }
         }
@@ -1680,13 +1679,12 @@
     .box-shadow( 0px 3px 30px 0px rgba(62, 63, 62, 0.5));
     .sizing();    
 }
-
-.reviews-park{
-    .box{
+.reviews-park {
+    .box {
         display: block;
     }
-    .content-revies-parks{
-        h1{
+    .content-revies-parks {
+        h1 {
             font-size: 24px;
             font-weight: 600;
             margin-bottom: 25px;
@@ -1704,21 +1702,17 @@
     }
     .special-review {
         .sd-text {
-             p {
+            p {
                 font-weight: normal;
             }
             span {
-                color: #7c8082;
+                color: @p;
                 font-size: 14px;
                 font-weight: normal;
                 strong {
-                    font-weight: 600;
-                    
+                    font-weight: 600;           
                 }
             }
-            
-            
-
         }
         .category-saf {
             li {
@@ -1726,25 +1720,24 @@
                     margin-right: 5px;
                     width: 10px;
                 }
-                color: #7c8082;
+                color: @p;
                 font-size: 14px;
                 font-weight: 600;
                 .icon-star{
                     color:#ffce52;
                 }
                 .icon-t {
-                        position: relative;
-                        width: 21px;
-                        height: 24px;
-                        margin-right: 24px;
-                &:before {
+                    position: relative;
+                    width: 21px;
+                    height: 24px;
+                    margin-right: 24px;
+                    &:before {
                         background: url(../upload/sprite-tour.png) no-repeat 0 0;
                         content: "";
                         width: 21px;
                         height: 24px;
                         position: absolute;
-                        top: 1px;
-                        
+                        top: 1px;   
                     }
                 }
             }
@@ -1756,14 +1749,14 @@
             margin: -55px 0 0;
         }
     }
-    .s-left{
+    .s-left {
         float: left;
         padding: 0;
         .category-saf {
-                margin-top: 145px;
+                margin-top: 155px;
                 width: 200px;
                 h2 {
-                color: #3a3c3d;
+                color: @t;
                 font-weight: 600;
                 font-size: 16px;
                 border: none;
@@ -1771,11 +1764,16 @@
                 padding: 0;
             }
             ul, li {
+                a {
+                    font-size: 14px;
+                    color: @p;
+                }
                 span {
+                    color: #827e7d;
                     font-weight: normal;
                     font-size: 13px;  
                     strong {
-                        color: #3a3c3d;
+                        color: @t;
                         font-weight: 600; 
                     }
                 }
@@ -1787,30 +1785,29 @@
             font-size: 13px;
         }
     }
-    .tato{
-        margin-top: 35px;
+    .tato {
         float: right;
-        span{
-            color: #3c3b3b;
+        margin-top: 35px;
+        span { 
+            color: @t;
             font-weight: bold;
             font-size: 14px;
         }
-        h1{
+        h1 {
             padding-top: 20px;
             font-size: 37px;
             font-weight: 600;
             color: #827e7d;
         }
-        p{
-            font-size: 13px;
-            color: #7c8082;
-             font-weight: normal;
-        }       
-        
+        p {
+            color: @p;
+            font-weight: normal;
+            font-size: 13px;          
+        }           
     }
     .safari-info {
-        h2{
-           color:  #3c3b3b; 
+        h2 {
+           color:  @t; 
         }
         p {
             padding-bottom: 15px;
@@ -1820,16 +1817,20 @@
         }
     }
     .pi-box {
+        padding: 0;
         h2 {
             margin: 0 0px 30px;
         }
-        padding: 0;
         .result-see-more {
             margin-top: 20px;
         }
+        table {
+            border-collapse: initial; 
+            border: 1px solid #e9e3e1;
+        }
     }   
 }
-.list-result-review{
+.list-result-review {
     margin-bottom: 55px;
     h1 {
         font-size: 24px;
@@ -1842,12 +1843,40 @@
     h2 {
         font-weight: 600;
         font-size:16px;
-        color: #3a3c3d;
+        color: @t;
         margin-bottom: 20px;
     }
-
 }
-
+.sidebar-reviews {
+    .tours {
+        margin-left: 0 !important;
+    }
+    .ror-description {
+        p {
+            line-height: 13px;
+        }
+        .rating {
+            .stars{
+                margin-right: 10px;
+            }
+        } 
+    }
+    .tp-dates {
+        span {
+            color: @w;
+            strong {
+                color: @w;
+            }
+        }      
+    }
+}
+ .ss-sidebar {
+    border-bottom: 1px solid #e6e5e5;
+    margin-bottom: 20px;
+    .recent-see-more {
+        margin-bottom: 20px;
+    } 
+}          
 
 // Selectric Select
 

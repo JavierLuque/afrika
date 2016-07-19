@@ -2649,7 +2649,7 @@ footer .separator {
 .tours-oper h2 a {
   color: #ffffff;
 }
-.tours-oper a:hover {
+.tours-oper h2 a:hover {
   color: #73ae3a;
 }
 .tours-oper ul {
@@ -2867,7 +2867,7 @@ footer .separator {
   padding: 0;
 }
 .reviews-park .s-left .category-saf {
-  margin-top: 145px;
+  margin-top: 155px;
   width: 200px;
 }
 .reviews-park .s-left .category-saf h2 {
@@ -2878,8 +2878,14 @@ footer .separator {
   margin: 0;
   padding: 0;
 }
+.reviews-park .s-left .category-saf ul a,
+.reviews-park .s-left .category-saf li a {
+  font-size: 14px;
+  color: #7c8082;
+}
 .reviews-park .s-left .category-saf ul span,
 .reviews-park .s-left .category-saf li span {
+  color: #827e7d;
   font-weight: normal;
   font-size: 13px;
 }
@@ -2892,11 +2898,11 @@ footer .separator {
   font-size: 13px;
 }
 .reviews-park .tato {
-  margin-top: 35px;
   float: right;
+  margin-top: 35px;
 }
 .reviews-park .tato span {
-  color: #3c3b3b;
+  color: #3a3c3d;
   font-weight: bold;
   font-size: 14px;
 }
@@ -2907,12 +2913,12 @@ footer .separator {
   color: #827e7d;
 }
 .reviews-park .tato p {
-  font-size: 13px;
   color: #7c8082;
   font-weight: normal;
+  font-size: 13px;
 }
 .reviews-park .safari-info h2 {
-  color: #3c3b3b;
+  color: #3a3c3d;
 }
 .reviews-park .safari-info p {
   padding-bottom: 15px;
@@ -2929,6 +2935,10 @@ footer .separator {
 .reviews-park .pi-box .result-see-more {
   margin-top: 20px;
 }
+.reviews-park .pi-box table {
+  border-collapse: initial;
+  border: 1px solid #e9e3e1;
+}
 .list-result-review {
   margin-bottom: 55px;
 }
@@ -2944,6 +2954,28 @@ footer .separator {
   font-weight: 600;
   font-size: 16px;
   color: #3a3c3d;
+  margin-bottom: 20px;
+}
+.sidebar-reviews .tours {
+  margin-left: 0 !important;
+}
+.sidebar-reviews .ror-description p {
+  line-height: 13px;
+}
+.sidebar-reviews .ror-description .rating .stars {
+  margin-right: 10px;
+}
+.sidebar-reviews .tp-dates span {
+  color: #ffffff;
+}
+.sidebar-reviews .tp-dates span strong {
+  color: #ffffff;
+}
+.ss-sidebar {
+  border-bottom: 1px solid #e6e5e5;
+  margin-bottom: 20px;
+}
+.ss-sidebar .recent-see-more {
   margin-bottom: 20px;
 }
 .selectric-wrapper {
@@ -5847,6 +5879,12 @@ footer .separator {
   }
   .park-country .pt-height {
     height: 50px;
+  }
+  .reviews-park .s-left .category-saf {
+    margin-top: 10px !important;
+  }
+  .reviews-park .ob-rating .stars {
+    margin: 0;
   }
 }
 @media (max-width: 400px) {
