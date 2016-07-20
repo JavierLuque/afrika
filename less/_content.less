@@ -73,7 +73,7 @@
             color: #3a3c3d;
             padding-left: 25px;
             position: relative;
-            float: left;
+            /*float: left;*/
             &:hover,&:hover span {
                 color: #73ae3a;
             }
@@ -134,6 +134,10 @@
         margin-bottom: 20px;
         font-weight: 600;
     }
+}
+.ss-select{
+    position: relative;
+    display: inline-block;
 }
 .sb-select {
     .size(150px, 36px);
@@ -244,12 +248,18 @@
     }
 
 }
+.four-star {
+    width: 77px !important;
+}
 .ob-rating p {
     font-size: 13px;
     line-height: 14px;
     color: #7c8082;
     margin: 1px 0 0;
     float: left;
+    span {
+        font-weight: 600;
+    }
 
 }
  .sort-b{
@@ -1534,10 +1544,18 @@
             font-style: normal;
         }
     }
-    .ob-rating p {
-        color: @w;
+    .ob-rating  {
+        span {
+            background-position: -85px -50px;
+        }
+        p {
+            line-height: 13px;
+            margin:0;
+            color: @w;
+        }
     }
 }
+
 .ror-op {
     font-size: 12px !important;
 }
@@ -1566,6 +1584,13 @@
         }
     }
 }
+.star-white {
+    .stars {
+        span {
+            background-position: -85px -50px;
+        }
+    }
+}
 .park-country {
     .pt-left {
         h2 {
@@ -1576,7 +1601,7 @@
     .ob-rating{
         .stars {
             span {
-                background-position: -89px -38px;
+                background-position: -88px -50px;
             }
         .bg-star {
             background-position: -74px -38px;
@@ -1870,14 +1895,18 @@
         }      
     }
 }
- .ss-sidebar {
+.ss-sidebar {
     border-bottom: 1px solid #e6e5e5;
     margin-bottom: 20px;
     .recent-see-more {
         margin-bottom: 20px;
     } 
+}
+.nav-saf-op{
+    li{
+        margin-left: 30px;
+    }
 }          
-
 // Selectric Select
 
 .selectric-wrapper {
@@ -1902,9 +1931,11 @@
         text-overflow: ellipsis;
         font-size: 14px;
         font-weight: 600;
+        line-height: 38px;
         color: @p;
         text-transform: uppercase;
-        padding: 6px 45px 0 10px;
+        padding-left: 10px;
+        /*padding: 6px 45px 0 10px;*/
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
@@ -1976,7 +2007,7 @@
     position: absolute;
     width: 260px !important;
     top: 100%;
-    right: -1px;
+    right: 0px;
     background: @w;
     border: none;
     z-index: -1;

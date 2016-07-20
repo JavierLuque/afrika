@@ -207,18 +207,33 @@
                 .box-shadow(0 0 1px rgba(0, 0, 0, 0.1));
             }
             &.active {
+                width: 100%;
                 font-weight: 600;
                 color: #73ae3a;
                 &:before {
                     content: "";
                     position: absolute;
-                    top: 6px;
+                    /*top: 6px;*/
+                    top:12px;
                     left: 0;
                     .size(3px);
                     .border-radius(50%);
                     background: #73ae3a;
                 }
+                &:after {
+                    font-size: 10px;
+                    content: "\e902";
+                    font-family: 'icomoon';
+                    position: absolute;
+                    top: 1px;
+                    right: 10px;
+                    color: #a8a8a9;
+                }
+                &:hover:after {
+                color: #73ae3a;
+                }
             }
+            
         }
     }
 }

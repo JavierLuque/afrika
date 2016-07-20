@@ -376,6 +376,9 @@ a {
 .icon-article:before {
   content: "\e928";
 }
+.icon-next:before {
+  content: "\e929";
+}
 html {
   height: 100%;
   background: #ffffff;
@@ -1097,7 +1100,7 @@ footer .separator {
   color: #3a3c3d;
   padding-left: 25px;
   position: relative;
-  float: left;
+  /*float: left;*/
 }
 .operators-category li a:hover,
 .operators-category li a:hover span {
@@ -1159,6 +1162,10 @@ footer .separator {
   color: #3a3c3d;
   margin-bottom: 20px;
   font-weight: 600;
+}
+.ss-select {
+  position: relative;
+  display: inline-block;
 }
 .sb-select {
   width: 150px;
@@ -1273,12 +1280,18 @@ footer .separator {
 .ob-rating .stars .bg-star {
   background-position: -74px -38px;
 }
+.four-star {
+  width: 77px !important;
+}
 .ob-rating p {
   font-size: 13px;
   line-height: 14px;
   color: #7c8082;
   margin: 1px 0 0;
   float: left;
+}
+.ob-rating p span {
+  font-weight: 600;
 }
 .sort-b {
   margin-right: 10px !important;
@@ -2672,7 +2685,12 @@ footer .separator {
   color: #73ae3a;
   font-style: normal;
 }
+.tours-oper .ob-rating span {
+  background-position: -85px -50px;
+}
 .tours-oper .ob-rating p {
+  line-height: 13px;
+  margin: 0;
   color: #ffffff;
 }
 .ror-op {
@@ -2701,6 +2719,9 @@ footer .separator {
 .art-country .tours .fp-badge {
   top: 5px;
 }
+.star-white .stars span {
+  background-position: -85px -50px;
+}
 .park-country {
   padding-bottom: 20px;
 }
@@ -2709,7 +2730,7 @@ footer .separator {
   color: #3a3c3d;
 }
 .park-country .ob-rating .stars span {
-  background-position: -89px -38px;
+  background-position: -88px -50px;
 }
 .park-country .ob-rating .stars .bg-star {
   background-position: -74px -38px;
@@ -2978,6 +2999,9 @@ footer .separator {
 .ss-sidebar .recent-see-more {
   margin-bottom: 20px;
 }
+.nav-saf-op li {
+  margin-left: 30px;
+}
 .selectric-wrapper {
   position: relative;
   cursor: pointer;
@@ -3002,9 +3026,11 @@ footer .separator {
   text-overflow: ellipsis;
   font-size: 14px;
   font-weight: 600;
+  line-height: 38px;
   color: #7c8082;
   text-transform: uppercase;
-  padding: 6px 45px 0 10px;
+  padding-left: 10px;
+  /*padding: 6px 45px 0 10px;*/
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -3074,7 +3100,7 @@ footer .separator {
   position: absolute;
   width: 260px !important;
   top: 100%;
-  right: -1px;
+  right: 0px;
   background: #ffffff;
   border: none;
   z-index: -1;
@@ -3365,19 +3391,33 @@ footer .separator {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
 }
 .filter-item ul a.active {
+  width: 100%;
   font-weight: 600;
   color: #73ae3a;
 }
 .filter-item ul a.active:before {
   content: "";
   position: absolute;
-  top: 6px;
+  /*top: 6px;*/
+  top: 12px;
   left: 0;
   height: auto;
   width: 3px;
   height: 3px;
   border-radius: 50%;
   background: #73ae3a;
+}
+.filter-item ul a.active:after {
+  font-size: 10px;
+  content: "\e902";
+  font-family: 'icomoon';
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  color: #a8a8a9;
+}
+.filter-item ul a.active:hover:after {
+  color: #73ae3a;
 }
 .fi-icons ul a {
   padding-left: 40px;
@@ -4023,7 +4063,7 @@ footer .separator {
 }
 .tp-box {
   background-color: white;
-  border: 5px solid white;
+  border: 9px solid white;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
   position: relative;
 }
@@ -4036,7 +4076,8 @@ footer .separator {
   height: 10px;
 }
 .tp-box .slick-dots li {
-  display: inline-block;
+  display: none;
+  /*display: inline-block;*/
   vertical-align: top;
 }
 .tp-box .slick-dots button {
@@ -4141,7 +4182,7 @@ footer .separator {
   display: block;
 }
 .slider {
-  background: url(../images/v2/slider.jpg) no-repeat top center;
+  background: url(../images/v2/slider1.jpg) no-repeat top center;
   height: 720px;
   border-top: 1px solid #ebe7e1;
   border-bottom: 1px solid #f1f0ef;
@@ -4486,12 +4527,12 @@ footer .separator {
   border-color: #6fa838;
 }
 .slider-image {
-  width: 90.78212291%;
+  width: 76.53631285%;
   height: 600px;
   background-color: #7c8082;
   border: 15px solid white;
   box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
-  margin: 60px 0 0 30px;
+  margin: 60px 0 0 50px;
   position: relative;
   box-sizing: border-box;
   float: left;
@@ -4505,11 +4546,17 @@ footer .separator {
   max-width: 407px;
   position: absolute;
   bottom: 10px;
-  right: 10px;
+  right: -110px;
   margin: 0;
-  padding: 20px 80px 20px 20px;
+  padding: 30px;
   box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
+}
+.slider-image .ror-box p {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #7c8082;
 }
 .go-to-item {
   position: absolute;
@@ -4576,6 +4623,7 @@ footer .separator {
   margin: 0 0 5px;
 }
 .page-title p {
+  text-transform: uppercase;
   font-size: 13px;
   line-height: 1.2;
   color: #7c8082;
@@ -5024,6 +5072,9 @@ footer .separator {
   .request-quote {
     font-size: 12px;
     width: 150px;
+  }
+  .nav-saf-op li {
+    margin-left: 20px;
   }
 }
 @media (max-width: 1100px) {
@@ -5494,6 +5545,9 @@ footer .separator {
   }
   .park-country .sidebar {
     width: 100%;
+  }
+  .selectric-items {
+    max-width: 152px !important;
   }
 }
 @media (max-width: 600px) {

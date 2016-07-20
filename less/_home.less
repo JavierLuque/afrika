@@ -59,7 +59,7 @@
         .border-radius(2px);
         .box-shadow(inset 0 2px 1px rgba(0, 0, 0, 0.15));
         border: 0;
-        padding: 0 20px;
+        padding: 0 20px;    
     }
     #count {
         font-size: 13px;
@@ -129,7 +129,7 @@
 }
 .tp-box {
     background-color: white;
-    border: 5px solid white;
+    border: 9px solid white;
     .box-shadow(0 3px 10px rgba(0, 0, 0, 0.15));
     position: relative;
     .slick-dots {
@@ -140,7 +140,8 @@
         text-align: center;
         height: 10px;
         li {
-            display: inline-block;
+            display: none;
+            /*display: inline-block;*/
             vertical-align: top;
         }
         button {
@@ -244,7 +245,7 @@
     }
 }
 .slider {
-    background: url(../images/v2/slider.jpg) no-repeat top center;
+    background: url(../images/v2/slider1.jpg) no-repeat top center;
     height: 720px;
     border-top: 1px solid #ebe7e1;
     border-bottom: 1px solid #f1f0ef;
@@ -558,12 +559,12 @@
     }
 }
 .slider-image {
-    width: 650/716*100%;
+    width: 548/716*100%;
     height: 600px;
     background-color: #7c8082;
     border: 15px solid white;
     .box-shadow(0 3px 30px rgba(0, 0, 0, 0.2));
-    margin: 60px 0 0 30px;
+    margin: 60px 0 0 50px;
     position: relative;
     .sizing();
     float: left;
@@ -571,14 +572,20 @@
         display: block;
     }
     .ror-box {
+        p {
+            font-size: 13px;
+            line-height: 18px;
+            font-weight: 600;
+            color: #7c8082;
+        }
         background: @w;
         border: 0;
         max-width: 407px;
         position: absolute;
         bottom: 10px;
-        right: 10px;
+        right: -110px;
         margin: 0;
-        padding: 20px 80px 20px 20px;
+        padding: 30px;
         .box-shadow(0 3px 30px rgba(0, 0, 0, 0.2));
         .sizing();
     }
@@ -643,6 +650,7 @@
         margin: 0 0 5px;
     }
     p {
+        text-transform: uppercase;
         font-size: 13px;
         line-height: 1.2;
         color: @p;

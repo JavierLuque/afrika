@@ -59,41 +59,42 @@ $(document).ready(function(){
                 cls = this.options.highlightClass,
                 template = "<span class='" + cls + "'>$1</span>",
                 label = item.label.replace( re, template ),
+                icon = item.icon.replace( re, template ),
                 $li = $( "<li/>" ).appendTo( ul );
             
             // Create and return the custom menu item content.
             $( "<a/>" ).attr( "href", "#" )
+                       .addClass( icon )
                        .html( label )
                        .appendTo( $li );
-            
+
             return $li;
             
         }
         
     });
     var availableTags = [
-      "Aventour Madagascar",
-      "Madagascar Tour Guide",
-      "Cactus Tours Madagascar",
-      "Madagascar Tourism Expeditions",
-      "Cactus Tours Madagascar",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
+      {
+        label: " Madagascar tour packages",
+        icon: "icon-packages",
+      },
+      {
+        label: " Madagascar photo",
+        icon: "icon-photo"
+      },
+      {
+        label: " Madagascar group safaris",
+        icon: "icon-group"
+      },
+      {
+        label: " Madagascar Tourism Expeditions  ",
+        icon: ""
+      },
+      {
+        label: " Cactus Tours Madagascar  ",
+        icon: ""
+      }
+      
     ];
     $('.autocomplite').autocomplete({
         source: availableTags,
@@ -257,7 +258,10 @@ $(document).ready(function(){
       }
       $('.share-box').fadeToggle();
     })
-
+    //------------------------------------------------------------------------//
+    
+    //Select selectric
+    $('select').selectric();
     //------------------------------------------------------------------------//
 
     //Popup country
