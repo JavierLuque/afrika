@@ -253,131 +253,137 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-tour-auto:before {
+.icon-previews:before {
   content: "\e900";
 }
-.icon-tato:before {
+.icon-messages:before {
   content: "\e901";
 }
-.icon-close:before {
+.icon-tour-auto:before {
   content: "\e902";
 }
-.icon-form:before {
+.icon-tato:before {
   content: "\e903";
 }
-.icon-star:before {
+.icon-close:before {
   content: "\e904";
 }
-.icon-here:before {
+.icon-form:before {
   content: "\e905";
 }
-.icon-twitter:before {
+.icon-star:before {
   content: "\e906";
 }
-.icon-google-plus:before {
+.icon-here:before {
   content: "\e907";
 }
-.icon-country:before {
+.icon-twitter:before {
   content: "\e908";
 }
-.icon-photo:before {
+.icon-google-plus:before {
   content: "\e909";
 }
-.icon-shortlist:before {
+.icon-country:before {
   content: "\e90a";
 }
-.icon-books:before {
+.icon-photo:before {
   content: "\e90b";
 }
-.icon-tour-packages:before {
+.icon-shortlist:before {
   content: "\e90c";
 }
-.icon-tailored:before {
+.icon-books:before {
   content: "\e90d";
 }
-.icon-flights:before {
+.icon-tour-packages:before {
   content: "\e90e";
 }
-.icon-packages:before {
+.icon-tailored:before {
   content: "\e90f";
 }
-.icon-group:before {
+.icon-flights:before {
   content: "\e910";
 }
-.icon-facebook:before {
+.icon-packages:before {
   content: "\e911";
 }
-.icon-youtube:before {
+.icon-group:before {
   content: "\e912";
 }
-.icon-in:before {
+.icon-facebook:before {
   content: "\e913";
 }
-.icon-operators:before {
+.icon-youtube:before {
   content: "\e914";
 }
-.icon-park-reviews:before {
+.icon-in:before {
   content: "\e915";
 }
-.icon-operators-reviews:before {
+.icon-operators:before {
   content: "\e916";
 }
-.icon-tree:before {
+.icon-park-reviews:before {
   content: "\e917";
 }
-.icon-currency:before {
+.icon-operators-reviews:before {
   content: "\e918";
 }
-.icon-leon:before {
+.icon-tree:before {
   content: "\e919";
 }
-.icon-earth:before {
+.icon-currency:before {
   content: "\e91a";
 }
-.icon-pie:before {
+.icon-leon:before {
   content: "\e91b";
 }
-.icon-flag:before {
+.icon-earth:before {
   content: "\e91c";
 }
-.icon-plane:before {
+.icon-pie:before {
   content: "\e91d";
 }
-.icon-copy:before {
+.icon-flag:before {
   content: "\e91e";
 }
-.icon-untitled:before {
+.icon-plane:before {
   content: "\e91f";
 }
-.icon-boating:before {
+.icon-copy:before {
   content: "\e920";
 }
-.icon-camping:before {
+.icon-untitled:before {
   content: "\e921";
 }
-.icon-birding:before {
+.icon-boating:before {
   content: "\e922";
 }
-.icon-romantic:before {
+.icon-camping:before {
   content: "\e923";
 }
-.icon-cultural:before {
+.icon-birding:before {
   content: "\e924";
 }
-.icon-auto:before {
+.icon-romantic:before {
   content: "\e925";
 }
-.icon-night-auto:before {
+.icon-cultural:before {
   content: "\e926";
 }
-.icon-email:before {
+.icon-auto:before {
   content: "\e927";
 }
-.icon-article:before {
+.icon-night-auto:before {
   content: "\e928";
 }
-.icon-next:before {
+.icon-email:before {
   content: "\e929";
+}
+.icon-article:before {
+  content: "\e92a";
+}
+.icon-next:before {
+  content: "\e92b";
 }
 html {
   height: 100%;
@@ -1087,7 +1093,7 @@ footer .separator {
 }
 .operators-category li {
   width: 100%;
-  margin-top: 8px;
+  /*margin-top: 8px;*/
   float: left;
 }
 .operators-category li:first-child {
@@ -1408,6 +1414,9 @@ footer .separator {
 }
 .breadcrumbs a {
   color: #ffffff;
+}
+.breadcrumbs span {
+  margin: 0 15px;
 }
 .park-title {
   background: #fdfcfb;
@@ -3002,6 +3011,129 @@ footer .separator {
 .nav-saf-op li {
   margin-left: 30px;
 }
+.nav-saf-op .logo {
+  margin-right: 20px;
+}
+.article-t .pi-title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  float: none;
+}
+.article-t .top-post {
+  padding: 30px 0 80px 0;
+}
+.article-t .top-post .tp-box .slick-dots {
+  bottom: -30px;
+}
+.article-t .top-post .tp-box .slick-dots li {
+  display: inline-block;
+}
+.lastest-post-article {
+  padding: 60px 0 40px 0;
+  background: url(../images/v2/bg-article.png) repeat;
+  border-top: 1px solid #ebe7e1;
+}
+.lastest-post-article .tours-visible {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzc0MyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBzdG9wLWNvbG9yPSJ0cmFuc3BhcmVudCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0icmdiYSgwLCAwLCAwLCAwLjM1KSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c3NDMpIi8+PC9zdmc+);
+  background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
+  background-repeat: repeat-x;
+}
+.lastest-post-article .tours-visible h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.lastest-post-article .tours-visible span {
+  font-size: 12px;
+}
+.lastest-post-article .tours-visible .left-inc {
+  float: right;
+  font-size: 12px;
+  font-family: "GothamPro";
+}
+.lastest-post-article .tours-visible .left-inc a {
+  color: #ffffff;
+  margin-left: 15px;
+}
+.lastest-post-article .tours-visible .left-inc a span {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  margin-right: 4px;
+}
+.lastest-post-article .tours-visible .left-inc a:first-child {
+  margin-left: 0px;
+}
+.lastest-post-article .tours-visible .left-inc a:hover {
+  color: #73ae3a;
+}
+.lastest-post-article .tours {
+  width: auto;
+  height: auto;
+}
+.lastest-post-article .tours:hover .tours-visible {
+  bottom: 0;
+}
+.sc-content {
+  background: url(../images/v2/ts.png) repeat;
+  padding: 20px 0 40px 0;
+}
+.search-result-list .operators-box {
+  margin-bottom: 10px;
+}
+.search-result-list .sll-box {
+  margin-bottom: 20px;
+}
+.search-result-list .sll-first .ssl-description p {
+  font-family: "GothamPro";
+  font-weight: normal;
+}
+.search-result-list .ob-rating p {
+  margin-top: 0;
+}
+.search-result-list .ob-rating p span {
+  font-weight: 700;
+}
+.search-c ul li {
+  float: none;
+  width: 100%;
+}
+.search-c ul li a {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #3a3c3d;
+}
+.search-c ul li a:hover {
+  color: #73ae3a;
+}
+.search-c ul li a em {
+  float: none;
+  color: #73ae3a;
+}
+.search-c .active {
+  color: #73ae3a;
+}
+.search-c .column:last-child {
+  padding-left: 0;
+}
+.search-sb .tours {
+  position: relative;
+}
+.search-sb .tours .tours-hover {
+  color: #ffffff;
+  position: absolute;
+  background: transparent;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzc0MyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBzdG9wLWNvbG9yPSJ0cmFuc3BhcmVudCIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0icmdiYSgwLCAwLCAwLCAwLjU1KSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c3NDMpIi8+PC9zdmc+);
+  background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
+  background-repeat: repeat-x;
+}
+.search-sb .tours .tours-hover h2 a {
+  color: #ffffff;
+}
+.search-sb .tours .tours-hover {
+  top: initial !important;
+}
 .selectric-wrapper {
   position: relative;
   cursor: pointer;
@@ -3409,7 +3541,7 @@ footer .separator {
 }
 .filter-item ul a.active:after {
   font-size: 10px;
-  content: "\e902";
+  content: "\e904";
   font-family: 'icomoon';
   position: absolute;
   top: 1px;
@@ -5142,6 +5274,15 @@ footer .separator {
   .shaman-box a {
     font-size: 14px;
   }
+  .article-t {
+    padding-bottom: 0;
+  }
+  .rs-join {
+    margin-right: 25px;
+  }
+  .rs-join a {
+    margin-left: 25px;
+  }
 }
 @media (max-width: 1000px) {
   header nav {
@@ -5506,6 +5647,19 @@ footer .separator {
   }
   .popup-country {
     max-width: 100%;
+  }
+  .lastest-post-article .col-3 {
+    width: 50%;
+  }
+  .lastest-post-article .tours-visible {
+    display: block;
+  }
+  .search-sb .tours-hover p {
+    color: #ffffff;
+  }
+  .search-sb .tours-hover ul,
+  .search-sb .tours-hover h3 {
+    display: block;
   }
 }
 @media (max-width: 700px) {
@@ -5939,6 +6093,9 @@ footer .separator {
   }
   .reviews-park .ob-rating .stars {
     margin: 0;
+  }
+  .lastest-post-article .col-3 {
+    width: 100%;
   }
 }
 @media (max-width: 400px) {

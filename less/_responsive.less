@@ -109,6 +109,15 @@
             font-size: 14px;
         }
     }
+    .article-t {
+        padding-bottom: 0;
+    }
+    .rs-join {
+        margin-right: 25px;
+        a {
+            margin-left: 25px;
+        }      
+    }
 }
 @media (max-width: 1000px){
     header {
@@ -484,6 +493,24 @@
     }
     .popup-country {
         max-width: 100%;
+    }
+    .lastest-post-article {
+        .col-3 {
+            width: 50%;
+        }
+        .tours-visible {
+            display: block;
+        }
+    }
+    .search-sb {
+        .tours-hover {
+            p {
+                color: @w;
+            }    
+            ul, h3 {
+               display: block;
+            }
+        }     
     }
 }
 @media (max-width: 700px){
@@ -916,6 +943,11 @@
             .stars {
                 margin: 0; 
             }
+        }
+    }
+     .lastest-post-article {
+        .col-3 {
+            width: 100%;
         }
     }
 }
