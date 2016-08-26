@@ -45,12 +45,12 @@ $(document).ready(function(){
 
     //autocomplite
     $.widget( "app.autocomplete", $.ui.autocomplete, {
-        
+
         // Which class get's applied to matched text in the menu items.
         options: {
             highlightClass: "ui-state-highlight"
         },
-        
+
         _renderItem: function( ul, item ) {
 
             // Replace the matched text with a custom span. This
@@ -61,7 +61,7 @@ $(document).ready(function(){
                 label = item.label.replace( re, template ),
                 icon = item.icon.replace( re, template ),
                 $li = $( "<li/>" ).appendTo( ul );
-            
+
             // Create and return the custom menu item content.
             $( "<a/>" ).attr( "href", "#" )
                        .addClass( icon )
@@ -69,9 +69,9 @@ $(document).ready(function(){
                        .appendTo( $li );
 
             return $li;
-            
+
         }
-        
+
     });
     var availableTags = [
       {
@@ -94,7 +94,7 @@ $(document).ready(function(){
         label: " Cactus Tours Madagascar  ",
         icon: ""
       }
-      
+
     ];
     $('.autocomplite').autocomplete({
         source: availableTags,
@@ -109,7 +109,7 @@ $(document).ready(function(){
 
     //------------------------------------------------------------------------//
 
-    //filter 
+    //filter
     $('.filter-item ul a').on('click',function(){
       $(this).toggleClass('active');
     })
@@ -163,7 +163,7 @@ $(document).ready(function(){
     })
     //------------------------------------------------------------------------//
 
-    //table 
+    //table
     $('table').each(function(){
       $(this).wrap('<div class="table-wrapper"></div>')
     });
@@ -191,21 +191,20 @@ $(document).ready(function(){
     //fixed header
     $(window).scroll(function(){
       if ($(this).scrollTop() > 1) {
-        $('header').addClass('fixed-header');  
+        $('header').addClass('fixed-header');
       }else{
         $('header').removeClass('fixed-header');
       };
     })
     $(window).scroll(function(){
       if ($(this).scrollTop() > 80) {
-        $('header').addClass('fixed-header-transparent');  
+        $('header').addClass('fixed-header-transparent');
       }else{
         $('header').removeClass('fixed-header-transparent');
       };
     })
 
     //------------------------------------------------------------------------//
-
     //popup
     $(window).bind("touchstart click", function(e){
         if (('.popup-box').length) {
@@ -214,6 +213,9 @@ $(document).ready(function(){
         }
     });
     $('.popup').bind("click touchstart", function(event){
+        event.stopPropagation();
+    });
+    $('.popup-share').bind("click touchstart", function(event){
         event.stopPropagation();
     });
     $(document).keydown(function(e){
@@ -235,7 +237,11 @@ $(document).ready(function(){
             $('body').removeClass('body-hidden');
         return false;
     });
-
+    $('.clos').on('click', function() {
+        $('.popup-box').fadeOut();
+            $('body').removeClass('body-hidden');
+        return false;
+    });
     $('.forgotten-link').on('click',function(){
       $('#login').fadeOut();
     });
@@ -254,12 +260,12 @@ $(document).ready(function(){
         $(this).removeClass('select_p');
       } else {
         $('.copy-link > a').removeClass('select_p');
-        $(this).addClass('select_p');    
+        $(this).addClass('select_p');
       }
       $('.share-box').fadeToggle();
     })
     //------------------------------------------------------------------------//
-    
+
     //Select selectric
     $('select').selectric();
     //------------------------------------------------------------------------//
@@ -268,13 +274,14 @@ $(document).ready(function(){
     function deselect(e) {
       $('.popup-country').slideFadeToggle(function() {
         e.removeClass('select_p');
-      });    
+
+      });
     }
 
     $(function() {
       $('.co').on('click', function() {
         if($(this).hasClass('select_p')) {
-          deselect($(this));               
+          deselect($(this));
         } else {
           $(this).addClass('select_p');
           $('.popup-country').slideFadeToggle();
@@ -284,11 +291,14 @@ $(document).ready(function(){
 
     $('.close').on('click', function() {
         deselect($('.co'));
-         $('.popup-country').fadeOut();
+        $('.popup-country').fadeOut();
         return false;
       });
     });
     $.fn.slideFadeToggle = function(easing, callback) {
-        return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
+      return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
     };
+    $('.icon-like').on('click',function(){
+      $(this).addClass('active');
+    })
 });//document ready

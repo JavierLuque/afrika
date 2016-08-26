@@ -291,6 +291,11 @@
     .filter-item h2 {
         font-size: 11px;
     }
+    .gallery-photo  {
+        .col-3 {
+            width: 50%;
+        }
+    }
 }
 @media (max-width: 900px){
     .home-page .slogan-video {
@@ -375,6 +380,7 @@
            width:  40%;
         }
     }
+
 }
 @media (max-width: 800px){
     .lastest-post {
@@ -408,6 +414,13 @@
     }
     .operators-category li em {
         font-size: 10px;
+    }
+    .content {
+        .tours {
+            .tours-oper {
+                display: none;
+            }
+        }
     }
 }
 @media (max-width: 768px){
@@ -512,6 +525,23 @@
             }
         }     
     }
+    .tp-spanning {
+        float: none;
+        .sb-item {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+    .search-box .sidebar {
+        width: 100%;
+        margin-top: 10px;
+        span {
+            display: none;
+        }
+        .review-link {
+            margin: 0;
+        }
+    }
 }
 @media (max-width: 700px){
     .slider-slide {
@@ -556,11 +586,13 @@
     .selectric-items {
         max-width: 152px !important;
     }
-    
+    .packages-content {
+        .tp-description {
+            padding: 15px 20px 0 20px;
+        }
+    }    
 }
 @media (max-width: 600px){
-
-
     .review-description {
         margin-right: 0;
     }
@@ -636,6 +668,38 @@
             margin: 0;
         }
     }
+    .tp-spanning {
+        float: none;
+        .sb-item {
+            min-width: 0;
+            width: 100%; 
+            margin-right: 0;
+        }
+    }
+    .result-tab {
+        .ss-select {
+            margin-bottom: 30px;
+           .selectric {
+                margin-bottom: 0;
+            } 
+        }
+        
+    }
+    .selectric {
+        width: 100%;
+    }
+    .ss-select {
+        width: 100%;
+        .label  {
+            padding-left: 0 !important;
+            text-align: center;
+        }    
+        .selectric-items {
+            top: 100% !important;
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+    }
 }
 @media (min-width: 479px) and (max-width: 768px){
     .operators-category li a {
@@ -687,7 +751,12 @@
     .home-page video {
         display: none !important;
     }
-
+    .content {
+        .tours {
+            width: 100%;
+            max-width:100%;
+        }
+    }
 }
 @media (max-width: 479px){
     .spanning{
@@ -950,6 +1019,14 @@
             width: 100%;
         }
     }
+    .content {
+        .tours {
+            max-width: 100%;
+            .fp-badge {
+                display: none;
+            }    
+        }
+    }
 }
 @media (max-width: 400px){
     .price {
@@ -1042,6 +1119,6 @@
 }
 @media (max-width: 320px){
     .login-link {
-        width: 55px;
+      width: 55px;
     }
 }

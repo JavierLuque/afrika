@@ -29,18 +29,20 @@
 <body class="no-js">
     <div class="main">
         <header>
-            <div class="wrap">
+            <div class="wrap nav-saf-op">
                 <div class="logo"><a href="index.html"></a></div>
                 <nav>
                     <ul>
-                        <li class="current"><a href="operators.html">Operators</a></li>
-                        <li><a href="#">Places</a></li>
-                        <li><a href="tour-packages.html">Tour Packages</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="operators.html">Safari Tour Operators</a></li>
+                        <li><a href="#">Countries</a></li>
+                        <li class="current"><a href="tour-packages.html">Tour Packages</a></li>
+                        <li><a href="#">Articles</a></li>
                         <li><a href="#">Photos</a></li>
                     </ul>
                 </nav>
                 <div class="header-rights-links">
-                    <div class="help-join">
+                    <div class="help-join rs-join">
                         <a href="#" class="help-link"><span></span>Help</a>
                         <a href="#">Join us!</a>
                     </div><!-- /.help-join -->
@@ -49,36 +51,34 @@
                 </div><!-- /.header-rights-links -->
             </div><!-- /.wrap -->
         </header>
-        <div class="spanning">
+        <div class="spanning ">
             <div class="search-box">
                 <div class="wrap">
-                    <form action="search.html" class="sb-item">
-                        <input type="submit" class="search-button" value="Search">
-                        <div class="sbi-input">
-                            <input type="text" class="input-text autocomplite" placeholder="Let’s go! Search by country, game park/reserve or tour operator">
-                            <span id="count"></span>
-                        </div><!-- /.sbi-input -->
-                    </form><!-- /.sb-item -->
-                    <aside class="sidebar">
-                        <span></span>
-                        <a href="#" class="review-link">REVIEW A PARK OR TOUR OPERATOR</a>
-                    </aside><!-- /.sidebar -->
+                    <div class="breadcrumbs">
+                        <a href="index.html" class="active">Home</a> 
+                        <span>></span> 
+                        Tour Packages
+                    </div><!-- /.breadcrumbs -->
+                    <div class="tp-spanning">
+                        <form action="search.html" class="sb-item">
+                            <input type="submit" class="search-button" value="Search">
+                            <div class="sbi-input">
+                                <input type="text" class="input-text autocomplite" value="Type Your Search">
+                                <span id="count"></span>
+                            </div><!-- /.sbi-input -->
+                        </form><!-- /.sb-item -->
+                        <aside class="sidebar">
+                            <span></span>
+                            <a href="#" class="review-link">Write a review</a>
+                        </aside><!-- /.sidebar -->
+                    </div>
                 </div><!-- /.wrap -->
             </div><!-- /.search-box -->
-            <div class="page-image" style="background-image: url(upload/safari.jpg);">
-                <div class="breadcrumbs">
-                    <div class="wrap">
-                        <a href="index.html">Home</a> 
-                        <span>></span> 
-                        <a href="#">Countries, park</a>
-                        <span>></span> 
-                        Botswana
-                    </div><!-- /.wrap -->
-                </div><!-- /.breadcrumbs -->
+            <div class="page-image" style="background-image: url(upload/safari.jpg);">    
             </div><!-- /.page-image -->
-           <div class="park-title park-country">
+            <div class="park-title park-country">
                 <div class="wrap">
-                    <div class="pt-left">
+                    <div class="pt-left pt-restyling">
                         <div class="pt-height">
                             <h1>Mozambique</h1>
                             <div class="ob-rating">
@@ -96,9 +96,7 @@
                         <p>Lorem ipsum dolor sit amet</p>
                     </div><!-- /.pt-left -->
                     <aside class="sidebar">
-                        <div class="pt-left right">
-                            <a href="#" class="review-link">See More Pictures</a>
-                        </div>
+                        
                         <a href="#" class="request-quote">Get Witget</a>
                         <div class="ob-icons">
                             <a href="#"> <span class="icon-email"></span> Email a Friend</a>
@@ -281,10 +279,7 @@
                                 </div><!-- /.safari-info -->
                                 <div class="result-number">
                                     <h2>Mozambique parks and game reserves</h2>
-                                </div>
-                            </div><!-- /.box -->
-                        </div><!-- /.safari-tab -->
-                        <div class="sll-box s-contry clearfix">
+                                    <div class="sll-box s-contry clearfix">
                             <h2><a href="#">Gorongosa National Park </a> <span></h2>
                             <div class="ob-rating">
                                 <div class="stars">
@@ -314,194 +309,522 @@
                                     </div><!-- /.column -->
                                 </div><!-- /.row -->
                             </div><!-- /.short-decr -->
-                        </div><!-- /.sll-box -->
-                        <div class="sll-box s-contry clearfix">
-                            <h2><a href="#">Great Limpopo Transfrontier Park </a><span></h2>
-                            <div class="ob-rating">
-                                <div class="stars">
-                                    <span class="bg-star"></span>
-                                    <span class="bg-star"></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div><!-- /.stars -->
-                                <p><span>346</span> Reviews</p>
-                            </div><!-- /.rating -->
-                            <div class="clear"></div>
-                            <img src="upload/p15.png"  class="ssl-image" alt="">
-                            <div class="short-decr">
-                                <div class="sd-text">
-                                    <p>Located in the heart of central Mozambique, covering over 4,000 km<sup>2</sup> (1544 m<sup>2</sup>), Gorongosa National park lies at the southern end of the Great African Rift Valley. The valley is made up of a variety of different soil types, and frequent fl... </p>
-                                    <a href="#" class="sd-more">Read More</a>
+                            </div><!-- /.sll-box -->
+                            <div class="sll-box s-contry clearfix">
+                                <h2><a href="#">Great Limpopo Transfrontier Park </a><span></h2>
+                                <div class="ob-rating">
+                                    <div class="stars">
+                                        <span class="bg-star"></span>
+                                        <span class="bg-star"></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div><!-- /.stars -->
+                                    <p><span>346</span> Reviews</p>
+                                </div><!-- /.rating -->
+                                <div class="clear"></div>
+                                <img src="upload/p15.png"  class="ssl-image" alt="">
+                                <div class="short-decr">
+                                    <div class="sd-text">
+                                        <p>Located in the heart of central Mozambique, covering over 4,000 km<sup>2</sup> (1544 m<sup>2</sup>), Gorongosa National park lies at the southern end of the Great African Rift Valley. The valley is made up of a variety of different soil types, and frequent fl... </p>
+                                        <a href="#" class="sd-more">Read More</a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-4">
+                                            <p><i class="icon-packages"></i>Tour packages <span>(53)</span></p>
+                                            <p><i class="icon-operators"></i>Tour operators <span>(40)</span></p>
+                                        </div><!-- /.column -->
+                                        <div class="column col-6">
+                                            <p><i class="icon-tree"></i>Park reviews <span>(53)</span></p>
+                                            <p><i class="icon-here"></i>Getting to Gorongosa National Park <span>(40)</span></p>
+                                        </div><!-- /.column -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.short-decr -->
+                            </div><!-- /.sll-box -->
+                            <div class="sll-box s-contry clearfix">
+                                <h2><a href="#">Great Limpopo Transfrontier Park </a> <span></h2>
+                                <div class="ob-rating">
+                                    <div class="stars">
+                                        <span class="bg-star"></span>
+                                        <span class="bg-star"></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div><!-- /.stars -->
+                                    <p><span>346</span> Reviews</p>
+                                </div><!-- /.rating -->
+                                <div class="clear"></div>
+                                <img src="upload/p16.png"  class="ssl-image" alt="">
+                                <div class="short-decr">
+                                    <div class="sd-text">
+                                        <p>Located in the heart of central Mozambique, covering over 4,000 km<sup>2</sup> (1544 m<sup>2</sup>), Gorongosa National park lies at the southern end of the Great African Rift Valley. The valley is made up of a variety of different soil types, and frequent fl... </p>
+                                        <a href="#" class="sd-more">Read More</a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-4">
+                                            <p><i class="icon-packages"></i>Tour packages <span>(53)</span></p>
+                                            <p><i class="icon-operators"></i>Tour operators <span>(40)</span></p>
+                                        </div><!-- /.column -->
+                                        <div class="column col-6">
+                                            <p><i class="icon-tree"></i>Park reviews <span>(53)</span></p>
+                                            <p><i class="icon-here"></i>Getting to Gorongosa National Park <span>(40)</span></p>
+                                        </div><!-- /.column -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.short-decr -->
+                            </div><!-- /.sll-box -->
+                            <div class="sll-box s-contry clearfix">
+                                <h2><a href="#">Quirimbas National Park</a> <span></h2>
+                                <div class="ob-rating">
+                                    <div class="stars">
+                                        <span class="bg-star"></span>
+                                        <span class="bg-star"></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div><!-- /.stars -->
+                                    <p><span>346</span> Reviews</p>
+                                </div><!-- /.rating -->
+                                <div class="clear"></div>
+                                <img src="upload/p17.png"  class="ssl-image" alt="">
+                                <div class="short-decr">
+                                    <div class="sd-text">
+                                        <p>Located in the heart of central Mozambique, covering over 4,000 km<sup>2</sup> (1544 m<sup>2</sup>), Gorongosa National park lies at the southern end of the Great African Rift Valley. The valley is made up of a variety of different soil types, and frequent fl... </p>
+                                        <a href="#" class="sd-more">Read More</a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-4">
+                                            <p><i class="icon-packages"></i>Tour packages <span>(53)</span></p>
+                                            <p><i class="icon-operators"></i>Tour operators <span>(40)</span></p>
+                                        </div><!-- /.column -->
+                                        <div class="column col-6">
+                                            <p><i class="icon-tree"></i>Park reviews <span>(53)</span></p>
+                                            <p><i class="icon-here"></i>Getting to Gorongosa National Park <span>(40)</span></p>
+                                        </div><!-- /.column -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.short-decr -->
+                            </div><!-- /.sll-box -->
+                            <div class="sll-box s-contry clearfix">
+                                <h2><a href="#">Gorongosa National Park </a> <span></h2>
+                                <div class="ob-rating">
+                                    <div class="stars">
+                                        <span class="bg-star"></span>
+                                        <span class="bg-star"></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div><!-- /.stars -->
+                                    <p><span>346</span> Reviews</p>
+                                </div><!-- /.rating -->
+                                <div class="clear"></div>
+                                <img src="upload/p15.png"  class="ssl-image" alt="">
+                                <div class="short-decr">
+                                    <div class="sd-text">
+                                        <p>Located in the heart of central Mozambique, covering over 4,000 km<sup>2</sup> (1544 m<sup>2</sup>), Gorongosa National park lies at the southern end of the Great African Rift Valley. The valley is made up of a variety of different soil types, and frequent fl... </p>
+                                        <a href="#" class="sd-more">Read More</a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-4">
+                                            <p><i class="icon-packages"></i>Tour packages <span>(53)</span></p>
+                                            <p><i class="icon-operators"></i>Tour operators <span>(40)</span></p>
+                                        </div><!-- /.column -->
+                                        <div class="column col-6">
+                                            <p><i class="icon-tree"></i>Park reviews <span>(53)</span></p>
+                                            <p><i class="icon-country"></i>Getting to Gorongosa National Park <span>(40)</span></p>
+                                        </div><!-- /.column -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.short-decr -->
+                            </div><!-- /.sll-box -->
+                            <div class="sll-box s-contry clearfix">
+                                <h2><a href="#">Gorongosa National Park </a> <span></h2>
+                                <div class="ob-rating">
+                                    <div class="stars">
+                                        <span class="bg-star"></span>
+                                        <span class="bg-star"></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div><!-- /.stars -->
+                                    <p><span>346</span> Reviews</p>
+                                </div><!-- /.rating -->
+                                <div class="clear"></div>
+                                <img src="upload/search/1.jpg"  class="ssl-image" alt="">
+                                <div class="short-decr">
+                                    <div class="sd-text">
+                                        <p>Located in the heart of central Mozambique, covering over 4,000 km<sup>2</sup> (1544 m<sup>2</sup>), Gorongosa National park lies at the southern end of the Great African Rift Valley. The valley is made up of a variety of different soil types, and frequent fl... </p>
+                                        <a href="#" class="sd-more">Read More</a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-4">
+                                            <p><i class="icon-packages"></i>Tour packages <span>(53)</span></p>
+                                            <p><i class="icon-operators"></i>Tour operators <span>(40)</span></p>
+                                        </div><!-- /.column -->
+                                        <div class="column col-6">
+                                            <p><i class="icon-tree"></i>Park reviews <span>(53)</span></p>
+                                            <p><i class="icon-here"></i>Getting to Gorongosa National Park <span>(40)</span></p>
+                                        </div><!-- /.column -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.short-decr -->
+                            </div><!-- /.sll-box -->
+                            <div class="sll-box  s-contry clearfix">
+                                <h2><a href="#">Gorongosa National Park </a> <span></h2>
+                                <div class="ob-rating">
+                                    <div class="stars">
+                                        <span class="bg-star"></span>
+                                        <span class="bg-star"></span>
+                                        <span class="bg-star"></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div><!-- /.stars -->
+                                    <p><span>346</span> Reviews</p>
+                                </div><!-- /.rating -->
+                                <div class="clear"></div>
+                                <img src="upload/search/1.jpg"  class="ssl-image" alt="">
+                                <div class="short-decr">
+                                    <div class="sd-text">
+                                        <p>Located in the heart of central Mozambique, covering over 4,000 km<sup>2</sup> (1544 m<sup>2</sup>), Gorongosa National park lies at the southern end of the Great African Rift Valley. The valley is made up of a variety of different soil types, and frequent fl... </p>
+                                        <a href="#" class="sd-more">Read More</a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="column col-4">
+                                            <p><i class="icon-packages"></i>Tour packages <span>(53)</span></p>
+                                            <p><i class="icon-operators"></i>Tour operators <span>(40)</span></p>
+                                        </div><!-- /.column -->
+                                        <div class="column col-6">
+                                            <p><i class="icon-tree"></i>Park reviews <span>(53)</span></p>
+                                            <p><i class="icon-here"></i>Getting to Gorongosa National Park <span>(40)</span></p>
+                                        </div><!-- /.column -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.short-decr -->
+                            </div><!-- /.sll-box -->
+                            <a href="" class="recent-see-more recent-not-last"><span>See more</span> (Displaying 1 - 15 of 2351)</a>
                                 </div>
-                                <div class="row">
-                                    <div class="column col-4">
-                                        <p><i class="icon-packages"></i>Tour packages <span>(53)</span></p>
-                                        <p><i class="icon-operators"></i>Tour operators <span>(40)</span></p>
-                                    </div><!-- /.column -->
-                                    <div class="column col-6">
-                                        <p><i class="icon-tree"></i>Park reviews <span>(53)</span></p>
-                                        <p><i class="icon-here"></i>Getting to Gorongosa National Park <span>(40)</span></p>
-                                    </div><!-- /.column -->
-                                </div><!-- /.row -->
-                            </div><!-- /.short-decr -->
-                        </div><!-- /.sll-box -->
-                        <div class="sll-box s-contry clearfix">
-                            <h2><a href="#">Great Limpopo Transfrontier Park </a> <span></h2>
-                            <div class="ob-rating">
-                                <div class="stars">
-                                    <span class="bg-star"></span>
-                                    <span class="bg-star"></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div><!-- /.stars -->
-                                <p><span>346</span> Reviews</p>
-                            </div><!-- /.rating -->
-                            <div class="clear"></div>
-                            <img src="upload/p16.png"  class="ssl-image" alt="">
-                            <div class="short-decr">
-                                <div class="sd-text">
-                                    <p>Located in the heart of central Mozambique, covering over 4,000 km<sup>2</sup> (1544 m<sup>2</sup>), Gorongosa National park lies at the southern end of the Great African Rift Valley. The valley is made up of a variety of different soil types, and frequent fl... </p>
-                                    <a href="#" class="sd-more">Read More</a>
-                                </div>
-                                <div class="row">
-                                    <div class="column col-4">
-                                        <p><i class="icon-packages"></i>Tour packages <span>(53)</span></p>
-                                        <p><i class="icon-operators"></i>Tour operators <span>(40)</span></p>
-                                    </div><!-- /.column -->
-                                    <div class="column col-6">
-                                        <p><i class="icon-tree"></i>Park reviews <span>(53)</span></p>
-                                        <p><i class="icon-here"></i>Getting to Gorongosa National Park <span>(40)</span></p>
-                                    </div><!-- /.column -->
-                                </div><!-- /.row -->
-                            </div><!-- /.short-decr -->
-                        </div><!-- /.sll-box -->
-                        <div class="sll-box s-contry clearfix">
-                            <h2><a href="#">Quirimbas National Park</a> <span></h2>
-                            <div class="ob-rating">
-                                <div class="stars">
-                                    <span class="bg-star"></span>
-                                    <span class="bg-star"></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div><!-- /.stars -->
-                                <p><span>346</span> Reviews</p>
-                            </div><!-- /.rating -->
-                            <div class="clear"></div>
-                            <img src="upload/p17.png"  class="ssl-image" alt="">
-                            <div class="short-decr">
-                                <div class="sd-text">
-                                    <p>Located in the heart of central Mozambique, covering over 4,000 km<sup>2</sup> (1544 m<sup>2</sup>), Gorongosa National park lies at the southern end of the Great African Rift Valley. The valley is made up of a variety of different soil types, and frequent fl... </p>
-                                    <a href="#" class="sd-more">Read More</a>
-                                </div>
-                                <div class="row">
-                                    <div class="column col-4">
-                                        <p><i class="icon-packages"></i>Tour packages <span>(53)</span></p>
-                                        <p><i class="icon-operators"></i>Tour operators <span>(40)</span></p>
-                                    </div><!-- /.column -->
-                                    <div class="column col-6">
-                                        <p><i class="icon-tree"></i>Park reviews <span>(53)</span></p>
-                                        <p><i class="icon-here"></i>Getting to Gorongosa National Park <span>(40)</span></p>
-                                    </div><!-- /.column -->
-                                </div><!-- /.row -->
-                            </div><!-- /.short-decr -->
-                        </div><!-- /.sll-box -->
-                        <div class="sll-box s-contry clearfix">
-                            <h2><a href="#">Gorongosa National Park </a> <span></h2>
-                            <div class="ob-rating">
-                                <div class="stars">
-                                    <span class="bg-star"></span>
-                                    <span class="bg-star"></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div><!-- /.stars -->
-                                <p><span>346</span> Reviews</p>
-                            </div><!-- /.rating -->
-                            <div class="clear"></div>
-                            <img src="upload/p15.png"  class="ssl-image" alt="">
-                            <div class="short-decr">
-                                <div class="sd-text">
-                                    <p>Located in the heart of central Mozambique, covering over 4,000 km<sup>2</sup> (1544 m<sup>2</sup>), Gorongosa National park lies at the southern end of the Great African Rift Valley. The valley is made up of a variety of different soil types, and frequent fl... </p>
-                                    <a href="#" class="sd-more">Read More</a>
-                                </div>
-                                <div class="row">
-                                    <div class="column col-4">
-                                        <p><i class="icon-packages"></i>Tour packages <span>(53)</span></p>
-                                        <p><i class="icon-operators"></i>Tour operators <span>(40)</span></p>
-                                    </div><!-- /.column -->
-                                    <div class="column col-6">
-                                        <p><i class="icon-tree"></i>Park reviews <span>(53)</span></p>
-                                        <p><i class="icon-country"></i>Getting to Gorongosa National Park <span>(40)</span></p>
-                                    </div><!-- /.column -->
-                                </div><!-- /.row -->
-                            </div><!-- /.short-decr -->
-                        </div><!-- /.sll-box -->
-                        <div class="sll-box s-contry clearfix">
-                            <h2><a href="#">Gorongosa National Park </a> <span></h2>
-                            <div class="ob-rating">
-                                <div class="stars">
-                                    <span class="bg-star"></span>
-                                    <span class="bg-star"></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div><!-- /.stars -->
-                                <p><span>346</span> Reviews</p>
-                            </div><!-- /.rating -->
-                            <div class="clear"></div>
-                            <img src="upload/search/1.jpg"  class="ssl-image" alt="">
-                            <div class="short-decr">
-                                <div class="sd-text">
-                                    <p>Located in the heart of central Mozambique, covering over 4,000 km<sup>2</sup> (1544 m<sup>2</sup>), Gorongosa National park lies at the southern end of the Great African Rift Valley. The valley is made up of a variety of different soil types, and frequent fl... </p>
-                                    <a href="#" class="sd-more">Read More</a>
-                                </div>
-                                <div class="row">
-                                    <div class="column col-4">
-                                        <p><i class="icon-packages"></i>Tour packages <span>(53)</span></p>
-                                        <p><i class="icon-operators"></i>Tour operators <span>(40)</span></p>
-                                    </div><!-- /.column -->
-                                    <div class="column col-6">
-                                        <p><i class="icon-tree"></i>Park reviews <span>(53)</span></p>
-                                        <p><i class="icon-here"></i>Getting to Gorongosa National Park <span>(40)</span></p>
-                                    </div><!-- /.column -->
-                                </div><!-- /.row -->
-                            </div><!-- /.short-decr -->
-                        </div><!-- /.sll-box -->
-                        <div class="sll-box  s-contry clearfix">
-                            <h2><a href="#">Gorongosa National Park </a> <span></h2>
-                            <div class="ob-rating">
-                                <div class="stars">
-                                    <span class="bg-star"></span>
-                                    <span class="bg-star"></span>
-                                    <span class="bg-star"></span>
-                                    <span></span>
-                                    <span></span>
-                                </div><!-- /.stars -->
-                                <p><span>346</span> Reviews</p>
-                            </div><!-- /.rating -->
-                            <div class="clear"></div>
-                            <img src="upload/search/1.jpg"  class="ssl-image" alt="">
-                            <div class="short-decr">
-                                <div class="sd-text">
-                                    <p>Located in the heart of central Mozambique, covering over 4,000 km<sup>2</sup> (1544 m<sup>2</sup>), Gorongosa National park lies at the southern end of the Great African Rift Valley. The valley is made up of a variety of different soil types, and frequent fl... </p>
-                                    <a href="#" class="sd-more">Read More</a>
-                                </div>
-                                <div class="row">
-                                    <div class="column col-4">
-                                        <p><i class="icon-packages"></i>Tour packages <span>(53)</span></p>
-                                        <p><i class="icon-operators"></i>Tour operators <span>(40)</span></p>
-                                    </div><!-- /.column -->
-                                    <div class="column col-6">
-                                        <p><i class="icon-tree"></i>Park reviews <span>(53)</span></p>
-                                        <p><i class="icon-here"></i>Getting to Gorongosa National Park <span>(40)</span></p>
-                                    </div><!-- /.column -->
-                                </div><!-- /.row -->
-                            </div><!-- /.short-decr -->
-                        </div><!-- /.sll-box -->
-                        <a href="" class="recent-see-more recent-not-last"><span>See more</span> (Displaying 1 - 15 of 2351)</a>
+                            </div><!-- /.box -->
+                            <div class="box">
+                           <div class="tp-result clearfix">
+                              <div class="tp-image" style="background-image: url(upload/so8.png)">
+                                 <a href="#"></a>
+                              </div>
+                              <!-- /.tp-image -->
+                              <div class="tp-description">
+                                 <h2><a href="#">Big Five Safari And Beach Holiday</a></h2>
+                                 <p>A custom, tailor-made, private safari</p>
+                                 <div class="tp-dates">
+                                    <span><img src="images/v2/lang-12.jpg" alt="">South Africa - <strong>2 days</strong> , <img src="images/v2/lang-11.jpg" alt="">Madagascar - <strong>2 days</strong><a href="#" class="tp-open-dropdown">...</a></strong></span>
+                                    <div class="tp-dropdown">
+                                       <ul>
+                                          <li>Zimbabwe - <strong>1 day</strong></li>
+                                          <li>Tanzania - <strong>2 days</strong></li>
+                                          <li>Zambia - <strong>1 day</strong></li>
+                                       </ul>
+                                    </div>
+                                    <!-- /.tp-dropdown -->
+                                 </div>
+                                 <!-- /.tp-dates -->
+                                 <div class="tp-list">
+                                    <ul>
+                                       <li>Lake Manyara National Park</li>
+                                       <li>Ngorongoro Crater Conversation Areea...</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <!-- /.tp-description -->
+                              <div class="tp-price">
+                                 <div class="price">
+                                    <h4>€666<em>Person</em></h4>
+                                 </div>
+                                 <!-- /.price -->
+                                 <a href="#" class="link-tour"><img src="upload/logo-2.png" alt=""></a>
+                                 <div class="clear"></div>
+                                 <a href="#" class="get-quote">Get Quote</a>
+                                 <div class="ob-icons">
+                                    <a href="#"><span class="icon-shortlist"></span>Shortlist</a>
+                                 </div>
+                                 <!-- /.ob-icons -->
+                              </div>
+                              <!-- /.tp-price -->
+                           </div>
+                           <!-- /.tp-result -->
+                           <div class="tp-result clearfix">
+                              <div class="tp-image" style="background-image: url(upload/so9.png)">
+                                 <a href="#"></a>
+                              </div>
+                              <!-- /.tp-image -->
+                              <div class="tp-description">
+                                 <h2><a href="#">Cape Town, Safari (Self drive)</a></h2>
+                                 <p>A custom, tailor-made, private safari</p>
+                                 <div class="tp-dates">
+                                    <span><img src="images/v2/lang-12.jpg" alt="">South Africa - <strong>2 days</strong> , <img src="images/v2/lang-11.jpg" alt="">Madagascar - <strong>2 days</strong><a href="#" class="tp-open-dropdown">...</a></strong></span>
+                                    <div class="tp-dropdown">
+                                       <ul>
+                                          <li>Zimbabwe - <strong>1 day</strong></li>
+                                          <li>Tanzania - <strong>2 days</strong></li>
+                                          <li>Zambia - <strong>1 day</strong></li>
+                                       </ul>
+                                    </div>
+                                    <!-- /.tp-dropdown -->
+                                 </div>
+                                 <!-- /.tp-dates -->
+                                 <div class="tp-list">
+                                    <ul>
+                                       <li>Lake Manyara National Park</li>
+                                       <li>Ngorongoro Crater Conversation Areea...</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <!-- /.tp-description -->
+                              <div class="tp-price">
+                                 <div class="price">
+                                    <h4>€666<em>/ Person</em></h4>
+                                 </div>
+                                 <!-- /.price -->
+                                 <a href="#" class="link-tour"><img src="upload/logo-3.png" alt=""></a>
+                                 <div class="clear"></div>
+                                 <a href="#" class="get-quote">Get Quote</a>
+                                 <div class="ob-icons">
+                                    <a href="#"><span class="icon-shortlist"></span>Shortlist</a>
+                                 </div>
+                                 <!-- /.ob-icons -->
+                              </div>
+                              <!-- /.tp-price -->
+                           </div>
+                           <!-- /.tp-result -->
+                           <div class="tp-result clearfix">
+                              <div class="tp-image" style="background-image: url(upload/s9.png)">
+                                 <a href="#"></a>
+                              </div>
+                              <!-- /.tp-image -->
+                              <div class="tp-description">
+                                 <h2><a href="#">6 Day Northern</a></h2>
+                                 <p>A custom, tailor-made, private safari</p>
+                                 <div class="tp-dates">
+                                    <span><img src="images/v2/lang-12.jpg" alt="">South Africa - <strong>2 days</strong></span>
+                                 </div>
+                                 <!-- /.tp-dates -->
+                                 <div class="tp-list">
+                                    <ul>
+                                       <li>Lake Manyara National Park</li>
+                                       <li>Ngorongoro Crater Conversation Areea ...</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <!-- /.tp-description -->
+                              <div class="tp-price">
+                                 <div class="price">
+                                    <h4>€666<em>/ Person</em></h4>
+                                 </div>
+                                 <!-- /.price -->
+                                 <a href="#" class="link-tour"><img src="upload/logo-4.png" alt=""></a>
+                                 <div class="clear"></div>
+                                 <div class="ob-ic">
+                                    <a href="#country" class="btn-popup icon-like open-popup"></a>
+                                   
+                                 </div>
+                                 <!-- /.ob-icons -->
+                                 <a href="#" class="get-quote align-right">Get Quote</a>
+                              </div>
+                              <!-- /.tp-price -->
+                           </div>
+                           <!-- /.tp-result -->
+                           <div class="tp-result clearfix">
+                              <div class="tp-image" style="background-image: url(upload/s10.png)">
+                                 <a href="#"></a>
+                              </div>
+                              <!-- /.tp-image -->
+                              <div class="tp-description">
+                                 <h2><a href="#">4 Day Adventure</a></h2>
+                                 <p>A custom, tailor-made, private safari</p>
+                                 <div class="tp-dates">
+                                    <span><img src="images/v2/lang-12.jpg" alt="">South Africa - <strong>2 days</strong></span>
+                                 </div>
+                                 <!-- /.tp-dates -->
+                                 <div class="tp-list">
+                                    <ul>
+                                       <li>Lake Manyara National Park</li>
+                                       <li>Ngorongoro Crater Conversation Areea ...</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <!-- /.tp-description -->
+                              <div class="tp-price">
+                                 <div class="price">
+                                    <h4>€666<em>/ Person</em></h4>
+                                 </div>
+                                 <!-- /.price -->
+                                 <a href="#" class="link-tour"><img src="upload/logo-5.png" alt=""></a>
+                                 <div class="clear"></div>
+                                 <div class="ob-ic">
+                                    <a href="#country" class="btn-popup icon-like open-popup"></a>
+                                 </div>
+                                 <!-- /.ob-icons -->
+                                 <a href="#" class="get-quote align-right">Get Quote</a>
+                              </div>
+                              <!-- /.tp-price -->
+                           </div>
+                           <!-- /.tp-result -->
+                           <div class="tp-result clearfix">
+                              <div class="tp-image" style="background-image: url(upload/so8.png)">
+                                 <a href="#"></a>
+                              </div>
+                              <!-- /.tp-image -->
+                              <div class="tp-description">
+                                 <h2><a href="#">Big Five Safari And Beach Holiday</a></h2>
+                                 <p>A custom, tailor-made, private safari</p>
+                                 <div class="tp-dates">
+                                    <span><img src="images/v2/lang-12.jpg" alt="">South Africa - <strong>2 days</strong> , <img src="images/v2/lang-11.jpg" alt="">Madagascar - <strong>2 days</strong><a href="#" class="tp-open-dropdown">...</a></strong></span>
+                                    <div class="tp-dropdown">
+                                       <ul>
+                                          <li>Zimbabwe - <strong>1 day</strong></li>
+                                          <li>Tanzania - <strong>2 days</strong></li>
+                                          <li>Zambia - <strong>1 day</strong></li>
+                                       </ul>
+                                    </div>
+                                    <!-- /.tp-dropdown -->
+                                 </div>
+                                 <!-- /.tp-dates -->
+                                 <div class="tp-list">
+                                    <ul>
+                                       <li>Lake Manyara National Park</li>
+                                       <li>Ngorongoro Crater Conversation Areea...</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <!-- /.tp-description -->
+                              <div class="tp-price">
+                                 <div class="price">
+                                    <h4>€666<em>/ Person</em></h4>
+                                 </div>
+                                 <!-- /.price -->
+                                 <a href="#" class="link-tour"><img src="upload/logo-2.png" alt=""></a>
+                                 <div class="clear"></div>
+                                 <a href="#" class="get-quote">Get Quote</a>
+                                 <div class="ob-icons">
+                                    <a href="#"><span class="icon-shortlist"></span>Shortlist</a>
+                                 </div>
+                                 <!-- /.ob-icons -->
+                              </div>
+                              <!-- /.tp-price -->
+                           </div>
+                           <!-- /.tp-result -->
+                           <div class="tp-result clearfix">
+                              <div class="tp-image" style="background-image: url(upload/so9.png)">
+                                 <a href="#"></a>
+                              </div>
+                              <!-- /.tp-image -->
+                              <div class="tp-description">
+                                 <h2><a href="#">Cape Town, Safari (Self drive)</a></h2>
+                                 <p>A custom, tailor-made, private safari</p>
+                                 <div class="tp-dates">
+                                    <span><img src="images/v2/lang-12.jpg" alt="">South Africa - <strong>2 days</strong> , <img src="images/v2/lang-11.jpg" alt="">Madagascar - <strong>2 days</strong><a href="#" class="tp-open-dropdown">...</a></strong></span>
+                                    <div class="tp-dropdown">
+                                       <ul>
+                                          <li>Zimbabwe - <strong>1 day</strong></li>
+                                          <li>Tanzania - <strong>2 days</strong></li>
+                                          <li>Zambia - <strong>1 day</strong></li>
+                                       </ul>
+                                    </div>
+                                    <!-- /.tp-dropdown -->
+                                 </div>
+                                 <!-- /.tp-dates -->
+                                 <div class="tp-list">
+                                    <ul>
+                                       <li>Lake Manyara National Park</li>
+                                       <li>Ngorongoro Crater Conversation Areea...</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <!-- /.tp-description -->
+                              <div class="tp-price">
+                                 <div class="price">
+                                    <h4>€666<em>/ Person</em></h4>
+                                 </div>
+                                 <!-- /.price -->
+                                 <a href="#" class="link-tour"><img src="upload/logo-3.png" alt=""></a>
+                                 <div class="clear"></div>
+                                 <a href="#" class="get-quote">Get Quote</a>
+                                 <div class="ob-icons">
+                                    <a href="#"><span class="icon-shortlist"></span>Shortlist</a>
+                                 </div>
+                                 <!-- /.ob-icons -->
+                              </div>
+                              <!-- /.tp-price -->
+                           </div>
+                           <!-- /.tp-result -->
+                           <div class="tp-result clearfix">
+                              <div class="tp-image" style="background-image: url(upload/s9.png)">
+                                 <a href="#"></a>
+                              </div>
+                              <!-- /.tp-image -->
+                              <div class="tp-description">
+                                 <h2><a href="#">6 Day Northern</a></h2>
+                                 <p>A custom, tailor-made, private safari</p>
+                                 <div class="tp-dates">
+                                    <span><img src="images/v2/lang-12.jpg" alt="">South Africa - <strong>2 days</strong></span>
+                                 </div>
+                                 <!-- /.tp-dates -->
+                                 <div class="tp-list">
+                                    <ul>
+                                       <li>Lake Manyara National Park</li>
+                                       <li>Ngorongoro Crater Conversation Areea ...</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <!-- /.tp-description -->
+                              <div class="tp-price">
+                                 <div class="price">
+                                    <h4>€666<em>/ Person</em></h4>
+                                 </div>
+                                 <!-- /.price -->
+                                 <a href="#" class="link-tour"><img src="upload/logo-4.png" alt=""></a>
+                                 <div class="clear"></div>
+                                 <div class="ob-ic">
+                                    <a href="#country" class="btn-popup icon-like open-popup"></a>
+                                 </div>
+                                 <!-- /.ob-icons -->
+                                 <a href="#" class="get-quote align-right">Get Quote</a>
+                              </div>
+                              <!-- /.tp-price -->
+                           </div>
+                           <!-- /.tp-result -->
+                           <div class="tp-result clearfix">
+                              <div class="tp-image" style="background-image: url(upload/s10.png)">
+                                 <a href="#"></a>
+                              </div>
+                              <!-- /.tp-image -->
+                              <div class="tp-description">
+                                 <h2><a href="#">4 Day Adventure</a></h2>
+                                 <p>A custom, tailor-made, private safari</p>
+                                 <div class="tp-dates">
+                                    <span><img src="images/v2/lang-12.jpg" alt="">South Africa - <strong>2 days</strong></span>
+                                 </div>
+                                 <!-- /.tp-dates -->
+                                 <div class="tp-list">
+                                    <ul>
+                                       <li>Lake Manyara National Park</li>
+                                       <li>Ngorongoro Crater Conversation Areea ...</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <!-- /.tp-description -->
+                              <div class="tp-price">
+                                 <div class="price">
+                                    <h4>€666<em>/ Person</em></h4>
+                                 </div>
+                                 <!-- /.price -->
+                                 <a href="#" class="link-tour"><img src="upload/logo-5.png" alt=""></a>
+                                 <div class="clear"></div>
+                                 <div class="ob-ic">
+                                    <a href="#country" class="btn-popup icon-like open-popup"></a>
+                                 </div>
+                                 <!-- /.ob-icons -->
+                                 <a href="#" class="get-quote align-right">Get Quote</a>
+                              </div>
+                              <!-- /.tp-price -->
+                           </div>
+                           <!-- /.tp-result -->
+                           <a href="#" class="result-see-more top-butt"><span>See more</span> (Displaying 1 - 15 of 2351)</a>
+                        </div>
+                        <!-- /.box -->
+                        </div><!-- /.safari-tab -->
                     </div><!-- /.content -->
                     <aside class="sidebar safari-sidebar">
                         <div class="tours featured-package">
@@ -530,18 +853,6 @@
                                 <a href="#" class="add-to-fav"><em></em><span>Add to favorite</span></a>
                             </div><!-- /.tours-hover -->
                         </div><!-- /.tours -->
-                        <div class="art-country">
-                            <div class="pi-title">Articles on Serengeti</div>
-                            <div class="tours">
-                                <span class="fp-badge">Big 5 photo gear tips</span>
-                                <img src="upload/gir.png" class="tours-image" alt="">
-                            </div><!-- /.tours -->
-                            <div class="tours">
-                                <span class="fp-badge">Hunting with the Bushmen</span>
-                                <img src="upload/arc.png" class="tours-image" alt="">
-                            </div><!-- /.tours -->
-                            <a href="" class="recent-see-more"><span>See more</span> (Displaying 1 - 15 of 2351)</a>
-                        </div>
                         <div class="filter clearfix">
                             <div class="recent-operator-reviews clearfix">
                                 <div class="pi-title">Popular tours in Mozambique</div>        
@@ -647,7 +958,12 @@
                                         <span>Game drives</span>
                                     </div><!-- /.column -->
                                 </div><!-- /.row -->
-                                <a href="" class="recent-see-more recent-not-last"><span>See more</span> (Displaying 1 - 15 of 2351)</a>
+                                <a href="" class="recent-see-more"><span>See more</span> (Displaying 1 - 15 of 2351)</a>
+                            </div><!-- /.pi-sidebar-box -->
+                            <div class="pi-popular border-none clearfix">
+                                <div class="pi-title">Popular photos of Mozambique</div>
+                                    <img src="upload/pop.png"  alt="">
+                                <a href="" class="recent-see-more recent-not-last"><span class="icon-p"></span><span>See more</span> (Displaying 1 - 15 of 2351) <span class="icon-n"></a>
                             </div><!-- /.pi-sidebar-box -->
                         </div><!-- /.filter -->
                     </aside><!-- /.sidebar -->
@@ -823,6 +1139,48 @@
             </div><!-- /.popup-table-cell -->
         </div><!-- /.popup-table -->
     </div><!-- /.popup-box -->
+    <div class="popup-box bg-none" id="country">
+         <div class="popup-share popup-country">
+            <div class="co-title">
+               <h2>Shortlisted tour operators
+                  <span> You can shortlist up to 5 tour operators</span>
+               </h2>
+               <a href="#" class="clos"><span class="icon-close"></span> </a>
+            </div>
+            <div class="popup-description">
+               <ul>
+                  <li>
+                     <img src="upload/t1.png" alt=""></img>
+                     <h2>RA Safaris</h2>
+                  </li>
+                  <li>
+                     <img src="upload/t2.png" alt=""></img>
+                     <h2>HM Safaris</h2>
+                  </li>
+                  <li>
+                     <img src="upload/t3.png" alt=""></img>
+                     <h2>SafariHub</h2>
+                  </li>
+                  <li>
+                     <img src="upload/t4.png" alt=""></img>
+                     <h2>Busanga Safaris</h2>
+                  </li>
+                  <li>
+                     <img src="upload/t5.png" alt=""></img>
+                     <h2>Afric'Aventure</h2>
+                  </li>
+               </ul>
+            </div>
+            <div class="text-c">
+               <ul>
+                  <li><a href="#"><span class="icon-r"></span>Compare</a></li>
+                  <li><a href="#" class="active"><span class="icon-file-user"></span>Request a quote</a></li>
+                  <li><a href="#"><span class="icon-clear"></span>Clear all</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- /.popup-box -->
     <script src="js/jquery.js"></script>
     <script src="js/library.js"></script>
     <script src="js/script.js"></script>

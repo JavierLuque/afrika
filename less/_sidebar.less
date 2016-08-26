@@ -213,8 +213,8 @@
                 &:before {
                     content: "";
                     position: absolute;
-                    /*top: 6px;*/
-                    top:12px;
+                    top: 6px;
+                    /*top:12px;*/
                     left: 0;
                     .size(3px);
                     .border-radius(50%);
@@ -222,7 +222,7 @@
                 }
                 &:after {
                     font-size: 10px;
-                    content: "\e904";
+                    content: "\e90b";
                     font-family: 'icomoon';
                     position: absolute;
                     top: 1px;
@@ -240,6 +240,7 @@
 .fi-icons {
     ul {
         a {
+            .sizing();
             padding-left: 40px;
             &.active i {
                 color: #73ae3a;
@@ -570,6 +571,9 @@
     .pi-sidebar-box {
         border-color: #e6e4e0;
     }
+    .pi-title {
+        font-size: 18px;
+    }
 }
 .si-sidebar {
     margin: 0 0 20px 20px;
@@ -704,4 +708,27 @@
     top: 26px;
     left: 0;
     padding: 0 20px;
+}
+.pi-popular {
+    img {
+        width: 100%;
+        margin-bottom: 15px;
+        border: 1px solid #e9e3e1;
+    }
+}
+.popular-photos {
+    .ror-description {
+        span {
+            font-size: 13px;
+            font-weight: 600;
+            color: @p;
+            em {
+                font-style:initial;
+                margin-left: 10px;
+            }
+        }
+    }
+    .recent-see-more {
+        margin-bottom: 30px !important;
+    }
 }
