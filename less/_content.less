@@ -1206,8 +1206,7 @@
         margin-right: 10px;
     }
 }
-
-.new-baner {
+.new-banner {
     .tp-price {
         width: 210/820*100%;
         .price {
@@ -1256,7 +1255,6 @@
             }
             .icon-like {
                 color: @p;
-                opacity: 0.2;
             }
             .icon-like.active {
                 color: #ffce52;
@@ -1269,25 +1267,6 @@
         .sizing();
         padding: 15px 0px 0 20px;
         float: left;
-        h2 {
-            font-size: 16px;
-            line-height: 1.2;
-            font-weight: 600;
-            color: #3a3c3d;
-            margin: 0 0 5px;
-            a {
-                color: #3a3c3d;
-                &:hover {
-                    color: #73ae3a;
-                }
-            }
-        }
-        p {
-            font-size: 12px;
-            color: #7c8082;
-            line-height: 1.2;
-            margin: 0 0 5px;
-        }
         h3 {
             font-size: 13px;
             font-weight: 600;
@@ -1303,6 +1282,114 @@
             li {
                 color: @l;
             }
+        }
+    }
+}
+.tp-banner {
+    border: none;
+    .box-shadow(0 3px 10px rgba(0, 0, 0, 0.15));
+    .tp-image {
+         border: 1px solid @w;
+        a {
+            position: relative;
+            img {
+                height: 100%;
+                width: 100%;
+            }   
+        }
+        &:hover {
+            .transition(2s);
+            border: none;
+            .hover-image {
+                display: block;
+            }
+        }    
+    }
+    .tp-description {
+        width: 490/820*100%;
+        p {
+            max-width: 410px;
+        }
+        .tp-dates {
+            ul {
+                display: inline ;
+                li {
+                    display: inline;
+                    position: relative;
+                    margin-bottom: 0px;
+                    margin-right: 5px;
+                    float: none;
+                    font-size: 13px;
+                    line-height: 1.53846154;
+                    color: @p;
+                    font-weight: normal;
+                    &:after {
+                        position: absolute;
+                        content: ',';
+                        bottom: -3px;
+                    }
+                    img {
+                        margin-right: 5px;
+                        margin-top: 1px;
+                        border: 1px solid #dbdbdb;
+                    }
+                }
+                li:last-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .tp-price {
+        width: 160/820*100%;
+        .price {
+            width: 100%;
+            text-align: center;
+        }
+        .get-quote {
+            float: none;
+            margin: 0 auto;
+        }
+        .add-to-fav {
+            float: none;
+            margin: 0 auto;
+            padding-top: 15px;
+            max-width: 122px;
+            width: 100%;
+            text-align: center;
+            span {
+                color: @l;
+            }
+        }
+    }  
+    .hover-image {
+        background-color: @w;
+        display: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top:0;
+        right: 0;
+        border: 7px solid #827e7d;
+        .ob-img {
+            height: 80%;
+        }
+        .ob-rating  {        
+            margin-top: 10px;
+            background-color: @w;
+            .stars {
+                float: none;
+                margin: 0 auto;
+                border:none;
+            }
+        }
+    }
+    .tp-list {
+        margin-top: 16px;
+        ul {
+            margin-bottom: 15px;
         }
     }
 }
@@ -2586,6 +2673,9 @@
             }
         }
     }
+    .pi-title {
+        font-size: 24px;
+    }
     .fp-badge {
         top: 5px;
         line-height: 22px;
@@ -2636,6 +2726,7 @@
             margin-right: 0;
         }
     }
+    .recent-see-more {
+        margin: 20px 0;
+    }
 }
-
-
