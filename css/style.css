@@ -2399,6 +2399,12 @@ footer .separator {
 .tp-banner .tp-description p {
   max-width: 410px;
 }
+.tp-banner .tp-description h2 a {
+  color: #7c8082;
+}
+.tp-banner .tp-description h2 a:hover {
+  color: #73ae3a;
+}
 .tp-banner .tp-description .tp-dates ul {
   display: inline ;
 }
@@ -2446,6 +2452,9 @@ footer .separator {
   text-align: center;
 }
 .tp-banner .tp-price .add-to-fav span {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
   color: #73ae3a;
 }
 .tp-banner .hover-image {
