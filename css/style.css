@@ -1192,6 +1192,9 @@ footer .separator {
   color: #3a3c3d;
   font-weight: 600;
 }
+.result-number h2 {
+  margin-bottom: 20px;
+}
 .result-number h3 {
   margin-bottom: 20px;
 }
@@ -5779,6 +5782,9 @@ footer .separator {
   .logo-copy {
     margin-right: 20px;
   }
+  .main {
+    padding: 92px 0 0px;
+  }
   footer {
     height: auto;
     margin: 0;
@@ -5866,6 +5872,8 @@ footer .separator {
   .logo-copy {
     text-align: center;
     margin: 0 auto 40px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #666665;
     width: auto;
     float: none;
   }
@@ -5880,7 +5888,9 @@ footer .separator {
     float: none;
   }
   .footer-box ul {
-    margin: 0;
+    padding-bottom: 60px;
+    margin-bottom: 55px;
+    border-bottom: 1px solid #666665;
     float: none;
   }
   .footer-box ul li {
@@ -5891,6 +5901,9 @@ footer .separator {
     text-align: center;
     width: auto;
     float: none;
+    margin-bottom: 25px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #666665;
   }
   .join-us a {
     display: inline-block;
@@ -6194,15 +6207,22 @@ footer .separator {
     margin-left: 0;
   }
   .park-country .pt-height {
-    height: 70px;
-    margin: -5px 0 21px;
+    height: auto;
+    margin: 0;
   }
   .park-country .pt-left {
     width: 100%;
-    margin: -90px 0 0 0px;
+    text-align: center;
+    border-bottom: 1px solid #e3e2e1;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    padding-bottom: 25px;
   }
   .park-country .pt-left h1 {
-    color: #ffffff;
+    margin-top: 10px;
+    font-size: 36px;
+    color: #3a3c3d;
+    margin-bottom: 15px;
   }
   .park-country .pt-left .review-link {
     margin-top: -24px !important;
@@ -6210,6 +6230,9 @@ footer .separator {
     padding: 0 20px;
     width: 30%;
     float: right;
+  }
+  .park-country .pt-left .ob-rating {
+    display: none;
   }
   .park-country .pt-left .ob-rating p {
     color: #ffffff;
@@ -6249,6 +6272,35 @@ footer .separator {
   }
   .search-box .sidebar .review-link {
     margin: 0;
+  }
+  .s-contry .ob-rating {
+    margin-top: 0;
+  }
+  .sll-box {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e1e0dd;
+  }
+  .sll-box h2 {
+    font-size: 28px;
+    margin: 25px 0 20px 0;
+    border-bottom: none;
+    padding: 0;
+  }
+  .sll-box img {
+    max-width: 100%;
+    width: 100%;
+    -webkit-order: -1;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .short-decr {
+    margin-left: 0;
   }
 }
 @media (max-width: 700px) {
@@ -6301,7 +6353,10 @@ footer .separator {
     margin-right: 0;
   }
   .tour-by {
-    display: none;
+    position: relative;
+    float: right;
+    top: 0;
+    right: 0;
   }
   .ob-icons,
   .languages {
@@ -6404,8 +6459,34 @@ footer .separator {
     width: 100% !important;
     max-width: 100% !important;
   }
+  .short-decr {
+    margin-left: 0;
+  }
+  .short-decr .row .column {
+    width: 100%;
+  }
 }
 @media (min-width: 479px) and (max-width: 768px) {
+  .spanning {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .spanning .page-image {
+    -webkit-order: -1;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .spanning .page-image .breadcrumbs {
+    background-color: rgba(58, 60, 61, 0.5);
+  }
+  .spanning .page-image .breadcrumbs span {
+    display: inline-block;
+    margin: 0 7px;
+  }
   .operators-category li a {
     font-size: 12px;
   }
@@ -6433,26 +6514,21 @@ footer .separator {
     height: auto;
   }
   .tours-hover {
-    background: #ffffff;
-    bottom: 0;
-    height: auto;
-    top: auto !important;
-    position: relative;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    float: left;
-  }
-  .tours-hover ul,
-  .tours-hover h3 {
-    display: none;
-  }
-  .tours-hover h2 a,
-  .tours-hover p,
-  .tours-hover .price em,
-  .tours-hover .price span,
-  .tours-hover h4 {
-    color: #3a3c3d;
+    /*background: @w;
+        bottom: 0;
+        height: auto;
+        top: auto !important;
+        position: relative;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        float: left;*/
+    /*ul,h3 {
+            display: none;
+        }*/
+    /*h2 a,p,.price em, .price span,h4 {
+            color: #3a3c3d;
+        }*/
   }
   .home-page .slogan-video {
     background: url(../images/v2/header.jpg) no-repeat center;
@@ -6503,12 +6579,13 @@ footer .separator {
     width: 100%;
     margin-top: 10px;
   }
-  .spanning .park-title h1 {
-    font-size: 18px;
+  .spanning .park-title {
+    /* h1{
+                font-size: 18px;
+            }*/
   }
   .spanning .park-title .pt-height {
     text-align: center;
-    border-bottom: 1px solid #e3e2e1;
   }
   .spanning .park-title .pt-height .ob-rating,
   .spanning .park-title .pt-height .ob-rating p {
@@ -6662,26 +6739,21 @@ footer .separator {
     height: auto;
   }
   .tours-hover {
-    background: #ffffff;
-    bottom: 0;
-    height: auto;
-    top: auto !important;
-    position: relative;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    float: left;
-  }
-  .tours-hover ul,
-  .tours-hover h3 {
-    display: none;
-  }
-  .tours-hover h2 a,
-  .tours-hover p,
-  .tours-hover .price em,
-  .tours-hover .price span,
-  .tours-hover h4 {
-    color: #3a3c3d;
+    /*background: @w;
+        bottom: 0;
+        height: auto;
+        top: auto !important;
+        position: relative;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        float: left;
+        ul,h3 {
+            display: none;
+        }*/
+    /*h2 a,p,.price em, .price span,h4 {
+            color: #3a3c3d;
+        }*/
   }
   .page-image {
     height: 250px;
@@ -6692,13 +6764,10 @@ footer .separator {
     float: left;
   }
   .map-place {
-    background: none;
+    background: url(../images/v2/map-place-2.png) no-repeat 0 0;
   }
   .map-interactive {
     margin-left: 0;
-  }
-  .park-country .pt-left {
-    margin: 0px;
   }
   .park-country .pt-left h1 {
     color: #3a3c3d;
