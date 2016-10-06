@@ -42,7 +42,17 @@ $(document).ready(function(){
     $('.tab .tabs').delegate('li:not(.active)','click',function(){$(this).addClass('active').siblings().removeClass('active').parents('.tab').find('.box').hide().eq($(this).index()).fadeIn(250);});
 
     //------------------------------------------------------------------------//
+    //mobile tab
+    $('ul.tabs-mobile li').click(function(){
+      var tab_id = $(this).attr('data-tab');
 
+      $('ul.tabs-mobile li').removeClass('current');
+      $('.tab-content').removeClass('current');
+
+      $(this).addClass('current');
+      $("#"+tab_id).addClass('current');
+    });
+    
     //autocomplite
     $.widget( "app.autocomplete", $.ui.autocomplete, {
 
@@ -116,6 +126,7 @@ $(document).ready(function(){
     $('.filter-item h2 a').on('click',function(){
       $(this).toggleClass('active');
       $(this).parents('.filter-item').find('ul').slideToggle();
+      $(this).parents('.filter-item').find('.slider-range').slideToggle();  
     })
     $('.clear-filter').on('click',function(){
       $(this).parents('.filter-item').find('ul a').removeClass('active');
@@ -156,7 +167,7 @@ $(document).ready(function(){
     $( "#price-to" ).val( + $( "#slider-price" ).slider( "values", 1 ) +
       " Euro" );
     //------------------------------------------------------------------------//
-
+    
     //open dropdown
     $('.tp-open-dropdown').on('click',function(){
       $(this).parents('.tp-dates').find('.tp-dropdown').fadeToggle();
@@ -267,7 +278,9 @@ $(document).ready(function(){
     //------------------------------------------------------------------------//
 
     //Select selectric
-    $('select').selectric();
+    $('select').selectric({
+      disableOnMobile: false
+    });
     //------------------------------------------------------------------------//
 
     //Popup country
@@ -300,5 +313,26 @@ $(document).ready(function(){
     };
     $('.icon-like').on('click',function(){
       $(this).addClass('active');
-    })
+    });
+    //Clone sidebar mobile
+    var col = {
+      md: "screen and (max-width: 1200px)",
+      sm: "screen and (max-width: 970px)",
+      xs: "screen and (max-width: 768px)",
+      mb: "screen and (max-width: 640px)"
+    }
+    var x;  
+    enquire.register(col.mb, {
+      setup : function() {
+          x  = $( ".mobile-sidebar" );
+      },
+      match : function() {
+          $( ".app-sidebar" ).find('.mobile-sidebar').detach();
+      $( ".clone-sidebar" ).append(x);
+      },  
+      unmatch : function() {
+      $( ".clone-sidebar" ).find('.mobile-sidebar').detach();
+      $( ".app-sidebar" ).prepend(x);
+      }
+  });      
 });//document ready

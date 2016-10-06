@@ -153,6 +153,10 @@
             padding-right: 15px;
             float: left;
             position: relative;
+            span {
+                text-transform: none;
+                color: @l;
+            }
             &:hover {
                 color: #3a3c3d;
             }
@@ -161,7 +165,8 @@
                 position: absolute;
                 top: 6px;
                 right: 0;
-                .size(6px, 4px);
+                //.size(6px, 4px);
+                .size(10px,7px);
                 .rotate(-180deg);
                 background: url(../images/v2/sprite.png) no-repeat -394px -11px;   
             }
@@ -232,8 +237,7 @@
                 &:hover:after {
                 color: #73ae3a;
                 }
-            }
-            
+            }   
         }
     }
 }

@@ -331,6 +331,9 @@
         font-weight: 600;
         margin-right: 30px;
         float: left;
+        em {
+            font-style: normal;
+        }
         span {
             font-size: 16px;
             color: #7c8082;
@@ -2712,6 +2715,11 @@
             color: @w;
         }
     }
+    .tours-visible {
+        
+        .gradient-vertical(transparent,rgba(58,60,61,0.6));
+        
+    }
     .join-hover {
         width: 100% ;
         position: absolute;
@@ -2743,4 +2751,10 @@
     .recent-see-more {
         margin: 20px 0;
     }
+}
+.tabs-mobile {
+    display: none;
+}
+.clone-sidebar {
+    display: none;
 }

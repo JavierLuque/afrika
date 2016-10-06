@@ -86,6 +86,7 @@
 				</div>
 				<!-- /.search-box -->
 				<div class="tour-packages-content">
+					<div class="clone-sidebar"></div>
 					<div class="wrap">
 						<div class="content packages-content">
 							<div class="tours featured-package">
@@ -165,8 +166,10 @@
 											</div>
 											<!-- /.price -->
 											<div class="clear"></div>
-											<a href="#" class="get-quote overflow-hidden">Get Quote</a>
-											<a href="#country" class="add-to-fav overflow-hidden open-popup"><span>Shurtlist</span></a>
+											<div class="tp-quote">
+												<a href="#" class="get-quote overflow-hidden">Get Quote</a>
+												<a href="#country" class="add-to-fav overflow-hidden open-popup"><span>Shurtlist</span></a>
+											</div>
 											<!-- /.ob-icons -->
 										</div>
 										<!-- /.tp-price -->
@@ -222,8 +225,10 @@
 											</div>
 											<!-- /.price -->
 											<div class="clear"></div>
-											<a href="#" class="get-quote overflow-hidden">Get Quote</a>
-											<a href="#country" class="add-to-fav overflow-hidden open-popup"><span>Shurtlist</span></a>
+											<div class="tp-quote">
+												<a href="#" class="get-quote overflow-hidden">Get Quote</a>
+												<a href="#country" class="add-to-fav overflow-hidden open-popup"><span>Shurtlist</span></a>
+											</div>
 											<!-- /.ob-icons -->
 										</div>
 										<!-- /.tp-price -->
@@ -279,8 +284,10 @@
 											</div>
 											<!-- /.price -->
 											<div class="clear"></div>
-											<a href="#" class="get-quote overflow-hidden">Get Quote</a>
-											<a href="#country" class="add-to-fav overflow-hidden open-popup"><span>Shurtlist</span></a>
+											<div class="tp-quote">
+												<a href="#" class="get-quote overflow-hidden">Get Quote</a>
+												<a href="#country" class="add-to-fav overflow-hidden open-popup"><span>Shurtlist</span></a>
+											</div>
 											<!-- /.ob-icons -->
 										</div>
 										<!-- /.tp-price -->
@@ -1101,106 +1108,124 @@
 							<!-- /.result-tab -->
 						</div>
 						<!-- /.content -->
-						<aside class="sidebar">
-							<div class="filter clearfix">
-								<div class="filter-item clearfix">
-									<h2><a href="#">package type </span></a></h2>
-									<a href="#" class="clear-filter">Clear</a>
-									<ul>
-										<li><a href="#">Private Safari Tour Package</a></li>
-										<li><a href="#">Group Safari Tour Package</a></li>
-									</ul>
-								</div>
-								<!-- /.filter-item -->
-								<div class="filter-item clearfix">
-									<h2><a href="#">Tours that visit these countries</a></h2>
-									<a href="#" class="clear-filter">Clear</a>
-									<ul>
-										<li><a href="#"><img src="images/v2/lang-1.jpg" height="11" width="15" alt="">Botswana (213)</a></li>
-										<li><a href="#" class="active"><img src="images/v2/lang-2.jpg" height="11" width="15" alt="">Gabon (2)</a></li>
-										<li><a href="#"><img src="images/v2/lang-3.jpg" height="11" width="15" alt="">Madagascar (41)</a></li>
-										<li><a href="#"><img src="images/v2/lang-4.jpg" height="11" width="15" alt="">Mozambique (71)</a></li>
-										<li><a href="#"><img src="images/v2/lang-5.jpg" height="11" width="15" alt="">Rwanda (31)</a></li>
-										<li><a href="#" class="active"><img src="images/v2/lang-6.jpg" height="11" width="15" alt="">Tanzania (34)</a></li>
-										<li><a href="#"><img src="images/v2/lang-7.jpg" height="11" width="15" alt="">Zambia (114)</a></li>
-									</ul>
-								</div>
-								<!-- /.filter-item -->
-								<div class="filter-item ic-none clearfix">
-									<h2><a href="#">Length of safari tour</a></h2>
-									<div class="slider-range" id="slider-date">
-										<span class="ui-slider-handle"><input type="text" id="date-from"></span>
-										<span class="ui-slider-handle"><input type="text" id="date-to"></span>
+						<aside class="sidebar app-sidebar">
+							<div class="mobile-sidebar">
+	                            <ul class="tabs-mobile">
+	                                <li class="tab-link current" data-tab="tab-1">Package type</li>
+	                                <li class="tab-link" data-tab="tab-2">Tours that visit these  countries</li>
+	                                <li class="tab-link" data-tab="tab-3">Length of safari tour</li>
+	                                <li class="tab-link" data-tab="tab-4">Tour package Type</li>
+	                                <li class="tab-link" data-tab="tab-5">Tour operators that speak</li>
+	                                <li class="tab-link" data-tab="tab-6">Price per person</li>
+	                                <li class="tab-link" data-tab="tab-7">Activities you can do</li>
+	                                <li class="tab-link" data-tab="tab-8">Animals you can find</li>
+	                            </ul>
+	                            <!--/.tabs-mobile-->
+								<div class="filter clearfix">
+									<div class="filter-item clearfix">
+										<h2><a href="#">package type </span></a></h2>
+										<a href="#" class="clear-filter">Clear</a>
+										<ul id="tab-1" class="tab-content current">
+											<li><a href="#">Private Safari Tour Package</a></li>
+											<li><a href="#">Group Safari Tour Package</a></li>
+										</ul>
 									</div>
-									<!-- /.slider-range -->
-								</div>
-								<!-- /.filter-item -->
-								<div class="filter-item fi-icons clearfix">
-									<h2><a href="#">Type of safari tour packege</a></h2>
-									<a href="#" class="clear-filter">Clear</a>
-									<ul>
-										<li><a href="#" class="active"><i class="icon-5"></i>See the big 5</a></li>
-										<li><a href="#"><i class="icon-birding"></i>Birding</a></li>
-										<li><a href="#"><i class="icon-camping"></i>Camping</a></li>
-										<li><a href="#"><i class="icon-boating"></i>Boating</a></li>
-										<li><a href="#"><i class="icon-romantic"></i>Romantic</a></li>
-										<li><a href="#"><i class="icon-cultural"></i>Cultural</a></li>
-										<li><a href="#"><i class="icon-night-auto"></i>Night Drive</a></li>
-										<li><a href="#"><i class="icon-auto"></i>Self-drive</a></li>
-									</ul>
-								</div>
-								<!-- /.filter-item -->
-								<div class="filter-item clearfix">
-									<h2><a href="#">Tour operators that speak</a></h2>
-									<a href="#" class="clear-filter">Clear</a>
-									<ul>
-										<li><a href="#" class="active"><img src="images/v2/lang-8.jpg" height="11" width="15" alt="">English</a></li>
-										<li><a href="#"><img src="images/v2/lang-9.jpg" height="11" width="15" alt="">German</a></li>
-										<li><a href="#"><img src="images/v2/lang-10.jpg" height="11" width="15" alt="">Japonesse</a></li>
-									</ul>
-								</div>
-								<!-- /.filter-item -->
-								<div class="filter-item ic-none clearfix">
-									<h2><a href="#">Length of safari tour</a></h2>
-									<div class="slider-range" id="slider-price">
-										<span class="ui-slider-handle"><input type="text" id="price-from"></span>
-										<span class="ui-slider-handle"><input type="text" id="price-to"></span>
+									<!-- /.filter-item -->
+									<div class="filter-item clearfix">
+										<h2><a href="#">Tours that visit these countries</a></h2>
+										<a href="#" class="clear-filter">Clear</a>
+										<ul id="tab-2" class="tab-content filter-after-none">
+											<li><a href="#"><img src="images/v2/lang-1.jpg" height="11" width="15" alt="">Botswana (213)</a></li>
+											<li><a href="#" class="active"><img src="images/v2/lang-2.jpg" height="11" width="15" alt="">Gabon (2)</a></li>
+											<li><a href="#"><img src="images/v2/lang-3.jpg" height="11" width="15" alt="">Madagascar (41)</a></li>
+											<li><a href="#"><img src="images/v2/lang-4.jpg" height="11" width="15" alt="">Mozambique (71)</a></li>
+											<li><a href="#"><img src="images/v2/lang-5.jpg" height="11" width="15" alt="">Rwanda (31)</a></li>
+											<li><a href="#" class="active"><img src="images/v2/lang-6.jpg" height="11" width="15" alt="">Tanzania (34)</a></li>
+											<li><a href="#"><img src="images/v2/lang-7.jpg" height="11" width="15" alt="">Zambia (114)</a></li>
+										</ul>
 									</div>
-									<!-- /.slider-range -->
-								</div>
-								<!-- /.filter-item -->
+									<!-- /.filter-item -->
+									<div class="filter-item  clearfix">
+										<h2><a href="#">Length of safari tour</a></h2>
+										<div id="tab-3" class="tab-content">
+											<div class="slider-range" id="slider-date">
+												<span class="ui-slider-handle"><input type="text" id="date-from"></span>
+												<span class="ui-slider-handle"><input type="text" id="date-to"></span>
+											</div>
+											<!-- /.slider-range -->
+										</div>
+									</div>
+									<!-- /.filter-item -->
+									<div class="filter-item fi-icons clearfix">
+										<h2><a href="#">Type of safari tour packege</a></h2>
+										<a href="#" class="clear-filter ">Clear</a>
+										<ul id="tab-4" class="tab-content icon-style">
+											<li><a href="#" class="active"><i class="icon-untitled"></i>See the big 5</a></li>
+											<li><a href="#"><i class="icon-birding"></i>Birding</a></li>
+											<li><a href="#"><i class="icon-camping"></i>Camping</a></li>
+											<li><a href="#"><i class="icon-boating"></i>Boating</a></li>
+											<li><a href="#"><i class="icon-romantic"></i>Romantic</a></li>
+											<li><a href="#"><i class="icon-cultural"></i>Cultural</a></li>
+											<li><a href="#"><i class="icon-night-auto"></i>Night Drive</a></li>
+											<li><a href="#"><i class="icon-auto"></i>Self-drive</a></li>
+										</ul>
+									</div>
+									<!-- /.filter-item -->
+									<div class="filter-item clearfix">
+										<h2><a href="#">Tour operators that speak</a></h2>
+										<a href="#" class="clear-filter">Clear</a>
+										<ul id="tab-5" class="tab-content filter-after-none">
+											<li><a href="#" class="active"><img src="images/v2/lang-8.jpg" height="11" width="15" alt="">English</a></li>
+											<li><a href="#"><img src="images/v2/lang-9.jpg" height="11" width="15" alt="">German</a></li>
+											<li><a href="#"><img src="images/v2/lang-10.jpg" height="11" width="15" alt="">Japonesse</a></li>
+										</ul>
+									</div>
+									<!-- /.filter-item -->
 								<div class="filter-item clearfix">
-									<h2><a href="#">Activities you can do</a></h2>
-									<a href="#" class="clear-filter">Clear</a>
-									<ul>
-										<li><a href="#">Beaches (28)</a></li>
-										<li><a href="#">Boating (1622)</a></li>
-										<li><a href="#">Cultural visits (2024)</a></li>
-										<li><a href="#">Fishing (688)</a></li>
-										<li><a href="#">Golf (163)</a></li>
-										<li><a href="#">Horse riding (1010)</a></li>
-										<li><a href="#">Night drives (1757)</a></li>
-										<li><a href="#">Rock climbing (294)</a></li>
-										<li><a href="#">Shopping (1800)</a></li>
-										<li><a href="#">Trekking (1537)</a></li>
-										<li><a href="#">Water rafting (147)</a></li>
-									</ul>
+									<h2><a href="#">Price per person <span>Euro</span></a></h2>
+									<div id="tab-6" class="tab-content">
+										<div class="slider-range" id="slider-price">
+											<span class="ui-slider-handle"><input type="text" id="price-from"></span>
+											<span class="ui-slider-handle"><input type="text" id="price-to"></span>
+										</div>
+										<!-- /.slider-range -->
+									</div>
 								</div>
-								<!-- /.filter-item -->
-								<div class="filter-item clearfix">
-									<h2><a href="#">Animals you can find</a></h2>
-									<a href="#" class="clear-filter">Clear</a>
-									<ul>
-										<li><a href="#" class="active">African caracal</a></li>
-										<li><a href="#" class="active">Hartebeest</a></li>
-										<li><a href="#" class="active">Leopard</a></li>
-										<li><a href="#" class="active">Mountain gorilla</a></li>
-										<li><a href="#" class="active">Vervet monkey</a></li>
-									</ul>
+									<!-- /.filter-item -->
+									<div class="filter-item clearfix">
+										<h2><a href="#">Activities you can do</a></h2>
+										<a href="#" class="clear-filter">Clear</a>
+										<ul id="tab-7" class="tab-content">
+											<li><a href="#">Beaches (28)</a></li>
+											<li><a href="#">Boating (1622)</a></li>
+											<li><a href="#">Cultural visits (2024)</a></li>
+											<li><a href="#">Fishing (688)</a></li>
+											<li><a href="#">Golf (163)</a></li>
+											<li><a href="#">Horse riding (1010)</a></li>
+											<li><a href="#">Night drives (1757)</a></li>
+											<li><a href="#">Rock climbing (294)</a></li>
+											<li><a href="#">Shopping (1800)</a></li>
+											<li><a href="#">Trekking (1537)</a></li>
+											<li><a href="#">Water rafting (147)</a></li>
+										</ul>
+									</div>
+									<!-- /.filter-item -->
+									<div class="filter-item clearfix">
+										<h2><a href="#">Animals you can find</a></h2>
+										<a href="#" class="clear-filter">Clear</a>
+										<ul id="tab-8" class="tab-content">
+											<li><a href="#" class="active">African caracal</a></li>
+											<li><a href="#" class="active">Hartebeest</a></li>
+											<li><a href="#" class="active">Leopard</a></li>
+											<li><a href="#" class="active">Mountain gorilla</a></li>
+											<li><a href="#" class="active">Vervet monkey</a></li>
+										</ul>
+									</div>
+									<!-- /.filter-item -->
 								</div>
-								<!-- /.filter-item -->
+								<!-- /.filter -->
 							</div>
-							<!-- /.filter -->
+							<!--/.mobile-sidebar-->
 							<div class="filter-description">
 								<h2>Popular tour packages</h2>
 							</div>
@@ -1505,6 +1530,7 @@
 		<!-- /.popup-box -->
 		<script src="js/jquery.js"></script>
 		<script src="js/library.js"></script>
+		<script src="js/enquire.js"></script>
 		<script src="js/script.js"></script>
 		<script src="js/jquery.selectric.js"></script>
 	</body>
