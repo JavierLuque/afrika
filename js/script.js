@@ -143,6 +143,14 @@ $(document).ready(function(){
       slide: function( event, ui ) {
         $( "#date-from" ).val( + ui.values[ 0 ] + " day" );
         $( "#date-to" ).val( + ui.values[ 1 ] + " day" );
+
+        if ( $('#filter_ml').val() != ui.values[0] ) {
+            $( "#filter_ml" ).val(ui.values[ 0 ]).trigger('change');
+        }
+
+        if ( $('#filter_xl').val() != ui.values[1] ) {
+            $( "#filter_xl" ).val(ui.values[ 1 ]).trigger('change');
+        }
       }
     });
     $( "#date-from" ).val(  + $( "#slider-date" ).slider( "values", 0 ) +
@@ -158,14 +166,23 @@ $(document).ready(function(){
       max: 1000,
       values: [ 100, 500 ],
       slide: function( event, ui ) {
-        $( "#price-from" ).val( + ui.values[ 0 ] + " Euro" );
-        $( "#price-to" ).val( + ui.values[ 1 ] + " Euro" );
+
+        $( "#price-from" ).val( + ui.values[ 0 ]);
+        $( "#price-to" ).val( + ui.values[ 1 ]);
+
+        if ( $('#filter_mp').val() != ui.values[0] ) {
+            $( "#filter_mp" ).val(ui.values[ 0 ]).trigger('change');
+        }
+
+        if ( $('#filter_xp').val() != ui.values[1] ) {
+            $( "#filter_xp" ).val(ui.values[ 1 ]).trigger('change');
+        }
       }
     });
-    $( "#price-from" ).val(  + $( "#slider-price" ).slider( "values", 0 ) +
-      " Euro" );
-    $( "#price-to" ).val( + $( "#slider-price" ).slider( "values", 1 ) +
-      " Euro" );
+    $( "#price-from" ).val(  + $( "#slider-price" ).slider( "values", 0 ));
+    $( "#price-to" ).val( + $( "#slider-price" ).slider( "values", 1 ));
+
+
     //------------------------------------------------------------------------//
     
     //open dropdown
@@ -278,9 +295,9 @@ $(document).ready(function(){
     //------------------------------------------------------------------------//
 
     //Select selectric
-    $('select').selectric({
-      disableOnMobile: false
-    });
+    //$('select').selectric({
+    //  disableOnMobile: false
+    //});
     //------------------------------------------------------------------------//
 
     //Popup country
@@ -322,6 +339,8 @@ $(document).ready(function(){
       mb: "screen and (max-width: 640px)"
     }
     var x;  
+
+    /*
     enquire.register(col.mb, {
       setup : function() {
           x  = $( ".mobile-sidebar" );
@@ -335,4 +354,6 @@ $(document).ready(function(){
       $( ".app-sidebar" ).prepend(x);
       }
   });      
+      */
+
 });//document ready
