@@ -295,9 +295,9 @@ $(document).ready(function(){
     //------------------------------------------------------------------------//
 
     //Select selectric
-    //$('select').selectric({
-    //  disableOnMobile: false
-    //});
+    $('.ss-select select').selectric({
+     disableOnMobile: false
+    });
     //------------------------------------------------------------------------//
 
     //Popup country
