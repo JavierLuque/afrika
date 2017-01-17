@@ -1745,12 +1745,12 @@ footer .separator {
   border-right: 8px solid transparent;
   content: '';
   /*
-        top: -5px;
-        right: 10px;
-        border-bottom: 5px solid @w;
-        border-left: 5px solid @tr;
-        border-right: 5px solid @tr;
-        content: '';*/
+                top: -5px;
+                right: 10px;
+                border-bottom: 5px solid @w;
+                border-left: 5px solid @tr;
+                border-right: 5px solid @tr;
+                content: '';*/
 }
 .park-description {
   background: #fefcf8;
@@ -4118,6 +4118,26 @@ footer .separator {
     margin-top: 2px;
   }
 }
+.list-green-points li {
+  font-weight: 400;
+  padding-bottom: 10px;
+  line-height: 1.4;
+  width: 100%;
+  font-size: 14px;
+  padding: 0;
+}
+.list-green-points li:before {
+  content: "";
+  position: relative;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #73ae3a;
+  color: #73ae3a;
+  margin-right: 7px;
+  float: left;
+  top: 6px;
+}
 .add-new-styles {
   font-family: "GothamPro";
 }
@@ -4132,8 +4152,78 @@ footer .separator {
   padding-left: 20px;
   box-sizing: border-box;
 }
+.add-new-styles .safari-info .view-model-1 {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.add-new-styles .safari-info .view-model-1 h3 {
+  margin: 0 0 5px 0;
+}
+.add-new-styles .safari-info .view-model-1 p {
+  margin-bottom: 10px;
+}
+.add-new-styles .safari-info .view-model-1 .td {
+  width: 50%;
+  border-right: 1px solid #eae8e5;
+  padding: 0 15px;
+}
+.add-new-styles .safari-info .view-model-1 .td:first-of-type {
+  padding-left: 0;
+}
+.add-new-styles .safari-info .view-model-1 .td:last-of-type {
+  padding-right: 0;
+  border-right: none;
+}
+.add-new-styles .safari-info .view-model-1 table {
+  font-size: 13px;
+  width: 100%;
+}
+.add-new-styles .safari-info .view-model-1 table td {
+  border-bottom: 1px solid #eae8e5;
+  padding: 5px 0;
+}
+.add-new-styles .safari-info .view-model-1 table td:nth-of-type(2) {
+  font-weight: 700;
+}
+.add-new-styles .safari-info .view-model-1 table tr:last-of-type td {
+  border-bottom: none;
+}
+.add-new-styles .safari-info .view-model-1 table .ob-rating {
+  display: inline-block;
+  margin-left: 5px;
+}
+.add-new-styles .safari-info .view-model-1 table .ob-rating .stars {
+  border: none;
+}
+@media (max-width: 767px) {
+  .add-new-styles .safari-info .view-model-1 {
+    display: block;
+  }
+  .add-new-styles .safari-info .view-model-1 .td {
+    width: 100%;
+    border: none;
+    padding: 0 0 15px;
+  }
+  .add-new-styles .safari-info .view-model-1 .td:first-of-type {
+    padding-top: 0;
+  }
+  .add-new-styles .safari-info .view-model-1 .td:last-of-type {
+    padding-bottomt: 0;
+    border: none;
+  }
+}
 .add-new-styles .safari-info h3 {
   margin-top: 15px;
+}
+.add-new-styles .safari-info .list-green-points {
+  margin-top: 10px;
+}
+.add-new-styles .mt-20 {
+  margin-top: 20px !important;
 }
 .add-new-styles h3.title {
   font-size: 16px;
@@ -4402,7 +4492,7 @@ footer .separator {
 }
 .add-new-styles .tp-result.new-banner .wrap-input label {
   display: inline-block;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 .add-new-styles .tp-result.new-banner .wrap-img {
   width: 200px;
@@ -5100,7 +5190,7 @@ footer .separator {
   width: 50%;
   float: left;
   text-align: center;
-  line-height: 36px;
+  line-height: 35px;
 }
 .banner.model-2 .wrap-shortlist label {
   display: inline-block;
