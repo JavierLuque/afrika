@@ -1745,12 +1745,12 @@ footer .separator {
   border-right: 8px solid transparent;
   content: '';
   /*
-                top: -5px;
-                right: 10px;
-                border-bottom: 5px solid @w;
-                border-left: 5px solid @tr;
-                border-right: 5px solid @tr;
-                content: '';*/
+            top: -5px;
+            right: 10px;
+            border-bottom: 5px solid @w;
+            border-left: 5px solid @tr;
+            border-right: 5px solid @tr;
+            content: '';*/
 }
 .park-description {
   background: #fefcf8;
@@ -5337,6 +5337,421 @@ footer .separator {
   .operators-category .col-3 {
     width: 100%;
     margin-bottom: 0 !important;
+  }
+}
+@media (max-width: 990px) {
+  .mobile-styles .wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .mobile-styles .content {
+    width: 100%;
+  }
+  .mobile-styles .sidebar {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .mobile-styles .search-box .sidebar {
+    padding-top: 0;
+  }
+  .mobile-styles .width {
+    width: 100%;
+  }
+  .mobile-styles .sll-first ul li {
+    width: 100%;
+  }
+  .mobile-styles .search-result-list .sll-box {
+    display: block;
+  }
+  .mobile-styles .search-result-list .sll-box .ssl-image {
+    max-width: 200px;
+  }
+  .mobile-styles .operators-category h2 {
+    position: relative;
+    line-height: 1.3;
+  }
+}
+@media (min-width: 581px) and (max-width: 900px) {
+  .mobile-styles .tp-result .tp-price,
+  .mobile-styles .tp-banner .tp-price,
+  .mobile-styles .new-banner .tp-price {
+    width: 100%;
+  }
+  .mobile-styles .tp-result .tp-price .clear,
+  .mobile-styles .tp-banner .tp-price .clear,
+  .mobile-styles .new-banner .tp-price .clear {
+    display: none;
+  }
+  .mobile-styles .tp-result .tp-price .price,
+  .mobile-styles .tp-banner .tp-price .price,
+  .mobile-styles .new-banner .tp-price .price {
+    text-align: left;
+    float: left;
+    width: auto;
+    margin-right: 10px;
+    height: auto;
+  }
+  .mobile-styles .tp-result .tp-price .price > *,
+  .mobile-styles .tp-banner .tp-price .price > *,
+  .mobile-styles .new-banner .tp-price .price > * {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .mobile-styles .tp-result .tp-price .link-tour,
+  .mobile-styles .tp-banner .tp-price .link-tour,
+  .mobile-styles .new-banner .tp-price .link-tour {
+    float: left;
+    margin-right: 10px;
+  }
+  .mobile-styles .tp-result .tp-price .ob-ic,
+  .mobile-styles .tp-banner .tp-price .ob-ic,
+  .mobile-styles .new-banner .tp-price .ob-ic {
+    width: auto;
+    margin-right: 10px;
+  }
+  .mobile-styles .tp-result .tp-price .get-quote,
+  .mobile-styles .tp-banner .tp-price .get-quote,
+  .mobile-styles .new-banner .tp-price .get-quote {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+  }
+  .mobile-styles .tp-result .tp-price .ob-icons,
+  .mobile-styles .tp-banner .tp-price .ob-icons,
+  .mobile-styles .new-banner .tp-price .ob-icons {
+    width: auto;
+    margin-right: 20px;
+  }
+  .mobile-styles .tp-result .tp-price .ob-icons a,
+  .mobile-styles .tp-banner .tp-price .ob-icons a,
+  .mobile-styles .new-banner .tp-price .ob-icons a {
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+  .mobile-styles .new-banner .tp-price {
+    width: 100%;
+  }
+  .mobile-styles .tp-quote {
+    text-align: left;
+    display: inline-block;
+    width: 50%;
+    float: right;
+    margin-left: 8px;
+  }
+  .mobile-styles .tp-quote .get-quote {
+    float: left;
+    width: auto;
+    margin: 0 10px 0 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .mobile-styles .tp-quote .add-to-fav {
+    float: left;
+    width: auto;
+  }
+  .mobile-styles .pi-sidebar-box .row span {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .mobile-styles .wrap {
+    max-width: 720px;
+  }
+  .mobile-styles .sidebar .tours {
+    width: 48%;
+    max-width: initial;
+    float: left;
+  }
+  .mobile-styles .sidebar .tours:nth-of-type(2n) {
+    float: right;
+  }
+  .mobile-styles .sidebar .tours .tours-image {
+    width: 100%;
+  }
+  .mobile-styles .search-box .sidebar {
+    width: 40%;
+    padding-top: 0;
+  }
+  .mobile-styles .search-box .sb-item {
+    width: 57.5%;
+  }
+}
+@media (max-width: 767px) {
+  .mobile-styles .park-title .ob-icons {
+    margin-left: 0;
+  }
+  .mobile-styles .wrap > .pt-left {
+    margin: 0 !important;
+    width: 100%;
+  }
+  .mobile-styles .pt-left h1 {
+    text-align: left;
+    color: #3c3b3b;
+  }
+  .mobile-styles .park-title .sidebar {
+    width: 100%;
+  }
+  .mobile-styles .park-title .sidebar .pt-left {
+    margin: 0 0 10px 0 !important;
+    float: left !important;
+  }
+  .mobile-styles .park-title .sidebar .pt-left .review-link {
+    margin-top: 0 !important;
+    height: 36px;
+    margin-right: 10px;
+  }
+  .mobile-styles .park-title.pt-national-park .sidebar {
+    margin: 0;
+  }
+  .mobile-styles .spanning .park-title .pt-height {
+    text-align: left;
+  }
+  .mobile-styles .pt-left .review-link {
+    margin-bottom: 0;
+  }
+  .mobile-styles .request-quote {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .mobile-styles .tour-tab .tabs li {
+    text-align: center;
+    font-size: 0;
+  }
+  .mobile-styles .tour-tab .tabs li span {
+    font-size: 12px;
+  }
+  .mobile-styles .search-box .wrap {
+    padding-right: 0;
+  }
+  .mobile-styles .sb-item {
+    width: 100%;
+  }
+  .mobile-styles .result-list .sll-box {
+    display: block;
+  }
+  .mobile-styles .result-list .sll-box .ob-rating,
+  .mobile-styles .result-list .sll-box h2 {
+    float: none;
+    width: 100%;
+    display: block;
+  }
+}
+@media (min-width: 581px) and (max-width: 767px) {
+  .mobile-styles .pd-text {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .mobile-styles .wrap {
+    max-width: 550px;
+  }
+  .mobile-styles .sidebar .tours {
+    width: 48%;
+    max-width: initial;
+    float: left;
+  }
+  .mobile-styles .sidebar .tours:nth-of-type(2n) {
+    float: right;
+  }
+  .mobile-styles .sidebar .tours .tours-image {
+    width: 100%;
+  }
+  .mobile-styles .operators-category {
+    margin-left: 0;
+  }
+  .mobile-styles .operators-category:before {
+    display: none;
+  }
+  .mobile-styles .search-result-list .sll-box .ssl-image {
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+  .mobile-styles .search-result-list .sll-box .ssl-description {
+    margin: 0;
+  }
+  .mobile-styles .safari-info .column {
+    width: 100%;
+  }
+  .mobile-styles .sll-countries .row a,
+  .mobile-styles .sll-countries .row li {
+    line-height: 1.2;
+    padding-bottom: 8px;
+  }
+  .mobile-styles .sll-countries .row .ob-rating {
+    padding-top: 0;
+  }
+  .mobile-styles .sll-countries .row .ob-rating .stars {
+    border-right: none;
+    margin-bottom: 4px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 640px) {
+  .mobile-styles .new-banner .tp-price .price {
+    float: left;
+  }
+  .mobile-styles .new-banner .tp-price .price h4,
+  .mobile-styles .new-banner .tp-price .price span {
+    text-align: left;
+  }
+  .mobile-styles .tp-quote {
+    float: left;
+  }
+}
+@media (max-width: 600px) {
+  .mobile-styles .search-box .sidebar {
+    margin-top: 0;
+  }
+  .mobile-styles .sll-box h2 {
+    float: left;
+    margin: 0 0 10px 0;
+  }
+}
+@media (max-width: 580px) {
+  .mobile-styles .sidebar .tours {
+    width: 100%;
+    float: left;
+    max-width: 320px;
+  }
+  .mobile-styles .sidebar .tours .tours-image {
+    width: 100%;
+  }
+  .mobile-styles .operators-category {
+    margin-left: 0;
+  }
+  .mobile-styles .operators-category:before {
+    display: none;
+  }
+  .mobile-styles .search-result-list .sll-box {
+    padding-bottom: 0;
+  }
+  .mobile-styles .search-result-list .sll-box .ssl-image {
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+  .mobile-styles .search-result-list .sll-box .ssl-description {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .mobile-styles .search-result-list .sll-box .ssl-description .search-c .column {
+    width: 100%;
+  }
+  .mobile-styles .search-result-list .sll-box .ssl-description .search-c .column:last-child {
+    padding-left: 15px;
+  }
+  .mobile-styles .sll-box h2 {
+    display: block;
+    width: 100%;
+  }
+  .mobile-styles .sll-box h2 span {
+    float: none;
+    margin-top: 5px;
+    display: block;
+    margin-left: 0;
+  }
+  .mobile-styles .ob-image {
+    text-align: left;
+  }
+  .mobile-styles .ob-score {
+    margin: 0;
+    padding: 10px 10px 0;
+  }
+  .mobile-styles .ob-description {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .mobile-styles .ob-bottom {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .mobile-styles .sc-content {
+    padding-bottom: 0px;
+  }
+  .mobile-styles .mobile-styles .pi-sidebar-box .row span {
+    text-align: left;
+  }
+  .mobile-styles .safari-info {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .mobile-styles .operators-category {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .mobile-styles .result-number h2,
+  .mobile-styles .result-number h3 {
+    font-size: 20px;
+  }
+  .mobile-styles .sll-box h2 {
+    font-size: 24px;
+  }
+  .mobile-styles .sll-countries .row a,
+  .mobile-styles .sll-countries .row li {
+    line-height: 1.2;
+    padding-bottom: 2px;
+  }
+  .mobile-styles .sll-countries .row .ob-rating {
+    float: left;
+    margin-bottom: 6px;
+  }
+  .mobile-styles .sll-countries .row .column {
+    width: 100%;
+  }
+  .mobile-styles .sll-countries .row .column:nth-of-type(1) li {
+    font-weight: 700;
+  }
+  .mobile-styles .sll-countries .row .column:nth-of-type(3) {
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 421px) and (max-width: 580px) {
+  .mobile-styles table.best-loactions td {
+    padding: 8px 15px;
+    line-height: 1.3;
+  }
+}
+@media (max-width: 480px) {
+  .mobile-styles .si-sidebar li {
+    margin-bottom: 12px;
+  }
+  .mobile-styles .si-sidebar li > * {
+    width: 100%;
+  }
+  .mobile-styles .si-sidebar li em {
+    float: left;
+    padding-left: 26px;
+  }
+  .mobile-styles .vaccinations-box td,
+  .mobile-styles .vaccinations-box a {
+    display: block;
+  }
+}
+@media (max-width: 420px) {
+  .mobile-styles table.best-loactions tr {
+    display: block;
+  }
+  .mobile-styles table.best-loactions tr:first-of-type td:first-of-type {
+    display: none;
+  }
+  .mobile-styles table.best-loactions td {
+    display: block;
+    width: auto;
+    padding: 8px 15px;
+    line-height: 1.3;
+    font-weight: 400;
+  }
+  .mobile-styles table.best-loactions td:first-of-type {
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 0;
+  }
+  .mobile-styles table.best-loactions td:nth-of-type(2) {
+    border-top: none;
+  }
+  .mobile-styles .park-tab .tabs li {
+    width: 100%;
   }
 }
 .sidebar {
