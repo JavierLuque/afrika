@@ -4063,7 +4063,10 @@ footer .separator {
 }
 .new-banner.with-head-info {
   position: relative;
-  margin-top: 48px;
+  margin-top: 60px;
+}
+.new-banner.with-head-info:nth-of-type(2) {
+  margin-top: 40px;
 }
 .new-banner.with-head-info .head {
   position: absolute;
@@ -4149,7 +4152,6 @@ footer .separator {
 }
 .add-new-styles .sidebar {
   width: 29.8245614%;
-  padding-left: 20px;
   box-sizing: border-box;
 }
 .add-new-styles .safari-info .view-model-1 {
@@ -5337,6 +5339,141 @@ footer .separator {
   .operators-category .col-3 {
     width: 100%;
     margin-bottom: 0 !important;
+  }
+}
+.ob-reviews .c-green {
+  color: #73ae3a;
+}
+.country-content.bg-stone {
+  background: url(../images/v2/ts.png) repeat;
+}
+.tour-tab .tabs li {
+  width: 20%;
+}
+.tour-tab .safari-info .main-img.float-right {
+  margin-right: 0;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.park-title .pt-left {
+  width: 60%;
+}
+.park-title .sidebar {
+  width: 352px;
+}
+.popup-country {
+  top: auto;
+  bottom: 100%;
+}
+.mt-5 {
+  margin-top: 5px !important;
+}
+.float-right {
+  float: right !important;
+}
+.operators-category li span.fz-14 {
+  font-size: 14px;
+}
+.request-quote {
+  font-weight: 700;
+}
+.list-of-photos {
+  margin-left: -15px;
+  margin-right: -15px;
+  font-size: 0;
+}
+.list-of-photos .wrap-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px 15px;
+}
+.list-of-photos .wrap-item .item {
+  width: 100%;
+}
+.list-of-photos .wrap-item .wrap-img {
+  display: block;
+  width: 100%;
+  border: 7px solid white;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+.list-of-photos .wrap-item .wrap-img img {
+  min-width: 100%;
+  height: auto;
+  display: block;
+}
+.list-of-photos .wrap-item .taken-by {
+  font-size: 13px;
+  padding: 5px 0 0 20px;
+}
+.list-of-photos .wrap-item .taken-by a {
+  font-family: "GothamPro_medium";
+  color: #73ae3a;
+  font-weight: 600;
+}
+.add-new-styles .tp-spanning .sidebar {
+  width: 180px;
+}
+@media (min-width: 990px) {
+  .add-new-styles .sidebar {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .col-t-12 {
+    width: 100% !important;
+  }
+  .list-of-photos .wrap-item {
+    width: 100%;
+  }
+  .add-new-styles .tp-spanning .sidebar {
+    width: 100%;
+    padding-left: 0;
+  }
+  .park-title {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .add-new-styles .wrap-main-title {
+    max-width: 480px;
+    background: #fdfcfb;
+  }
+  body {
+    background: url(../images/v2/ts.png) repeat;
+  }
+}
+@media (max-width: 480px) {
+  .vaccinations-box {
+    padding-top: 0;
+    line-height: 1.1;
+  }
+  .vaccinations-box table tr:first-of-type td {
+    color: #222;
+  }
+  .vaccinations-box table td {
+    line-height: 1;
+    font-size: 12px;
+  }
+  .vaccinations-box table td a {
+    font-size: 12px;
+  }
+  .safari-info {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .safari-info h2 {
+    clear: both;
+  }
+  .tour-tab .safari-info .main-img.float-right {
+    float: left !important;
+    margin: 0;
   }
 }
 @media (max-width: 990px) {
@@ -8048,7 +8185,7 @@ footer .separator {
   }
   .request-quote {
     font-size: 13px;
-    width: 176px;
+    width: 140px;
     margin-left: 0;
   }
   .copy-link {
@@ -8312,7 +8449,7 @@ footer .separator {
   }
   .park-country .pt-left {
     width: 100%;
-    text-align: center;
+    text-align: left;
     border-bottom: 1px solid #e3e2e1;
     margin-bottom: 30px;
     margin-top: 5px;

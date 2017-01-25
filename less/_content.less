@@ -2932,12 +2932,16 @@
 // ###################################
 @font_gotham_medium: "GothamPro_medium";
 @f-600:@font_gotham_medium;
+@green-dark: #73ae3a;
 
 .new-banner {
     &.with-head-info {
         position: relative;
-        margin-top: 48px;
+        margin-top: 60px;
 
+        &:nth-of-type(2) {
+            margin-top: 40px;
+        }
         .head {
             position: absolute;
             box-sizing: border-box;
@@ -3031,7 +3035,7 @@
     }
     .sidebar {
         width: 340/1140*100%;
-        padding-left: 20px;
+        
         box-sizing: border-box;
     }
     .safari-info {
@@ -4375,480 +4379,653 @@
         }
     }
     // #######################################################################
-    // Mobile for old html
+    // Country page
     // #######################################################################
-
-    .mobile-styles {
-        @media (max-width:990px) {
-            .wrap {
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-            .content {
-                width: 100%;
-            }
-            .sidebar {
-                width: 100%;
-                padding-top: 20px;
-            }
-            .search-box {
-                .sidebar {
-                    padding-top: 0;
-                }
-            }
-            .width {
-                width: 100%;
-            }
-            .sll-first ul li {
-                width: 100%;
-            }
-            .search-result-list .sll-box {
-                display: block;
-
-                .ssl-image {
-                    max-width: 200px;
-                }
-            }
-            .operators-category h2 {
-                position: relative;
-                line-height: 1.3;
+    .ob-reviews .c-green{
+        color: @green-dark;
+    }
+    .country-content {
+        &.bg-stone {
+            background: url(../images/v2/ts.png) repeat;
+        }
+    }
+    .tour-tab {
+        .tabs {
+            li {
+                width: 20%;
             }
         }
-        // / @media (max-width:990px)
-        @media (min-width:581px) and (max-width:900px) {
-            .tp-result, .tp-banner, .new-banner {
-                .tp-price {
-                    width: 100%;
+        .safari-info {
+            .main-img {
+                &.float-right {
+                    margin-right: 0;
+                    margin-left: 10px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    // /.country-tab
 
-                    .clear {
-                        display: none;
+    .park-title {
+        .pt-left {
+            width: 60%;
+        }
+        .sidebar {
+            width: 352px;
+        }
+    }
+    .popup-country {
+        top: auto;
+        bottom: 100%;
+    }
+    .mt-5 {
+        margin-top: 5px !important;
+    }
+    .float-right {
+        float: right !important;
+    }
+    .operators-category li span.fz-14 {
+        font-size: 14px;
+    }
+    .request-quote {
+        font-weight: 700;
+    }
+    .list-of-photos {
+        margin-left: -15px;
+        margin-right: -15px;
+        font-size: 0;
+
+        .wrap-item {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 10px 15px;
+
+            .item {
+                width: 100%;
+            }
+            .wrap-img {
+                display: block;
+                width: 100%;
+                border: 7px solid white;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+                -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+                img {
+                    min-width: 100%;
+                    height: auto;
+                    display: block;
+                }
+            }
+            .taken-by {
+                font-size: 13px;
+                padding: 5px 0 0 20px;
+
+                a {
+                    font-family: @f-600;
+                    color: @green-dark;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .add-new-styles .tp-spanning .sidebar{
+        width: 180px; 
+    }      
+     @media (min-width:990px) {
+                .add-new-styles{
+                    .sidebar{
+                        padding-left: 20px;
                     }
-                    .price {
-                        text-align: left;
-                        float: left;
-                        width: auto;
-                        margin-right: 10px;
-                        height: auto;
+                }
+            } // / @media (min-width:990px)
+    @media (max-width:767px) {
+        .col-t-12 {
+            width: 100% !important;
+        }
+        .list-of-photos {
+            .wrap-item {
+                width: 100%;
+            }
+        }
+        .add-new-styles .tp-spanning .sidebar{
+            width: 100%;
+            padding-left: 0;
+        }
+        .park-title{
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .add-new-styles .wrap-main-title{
+            max-width: 480px;
+            background: #fdfcfb;
+        }
+        body{
+            background: url(../images/v2/ts.png) repeat;
+        }
+    }
+    // /@media (max-width:767px) {
+        @media (max-width:480px) {
+            .vaccinations-box {
+                padding-top: 0;
+                line-height: 1.1;
 
-                        > * {
-                            display: inline-block;
-                            vertical-align: bottom;
+                table {
+                    tr:first-of-type {
+                        td {
+                            color: #222;
                         }
                     }
-                    .link-tour {
-                        float: left;
-                        margin-right: 10px;
-                    }
-                    .ob-ic {
-                        width: auto;
-                        margin-right: 10px;
-                    }
-                    .get-quote {
-                        width: auto;
-                        padding-left: 10px;
-                        padding-right: 10px;
-                        float: right;
-                    }
-                    .ob-icons {
-                        width: auto;
-                        margin-right: 20px;
+                    td {
+                        line-height: 1;
+                        font-size: 12px;
 
                         a {
-                            padding-right: 10px;
-                            margin-right: 10px;
+                            font-size: 12px;
                         }
                     }
                 }
             }
-            .new-banner .tp-price {
-                width: 100%;
-            }
-            .tp-quote {
-                text-align: left;
-                display: inline-block;
-                width: 50%;
-                float: right;
-                margin-left: 8px;
+            .safari-info {
+                padding-left: 10px;
+                padding-right: 10px;
 
-                .get-quote {
-                    float: left;
-                    width: auto;
-                    margin: 0 10px 0 0;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                }
-                .add-to-fav {
-                    float: left;
-                    width: auto;
+                h2 {
+                    clear: both;
                 }
             }
-            .pi-sidebar-box .row span {
-                text-align: center;
+            .tour-tab .safari-info {
+                .main-img.float-right {
+                    float: left !important;
+                    margin: 0;
+                }
             }
         }
-        // / @media (min-width:581px) and (max-width:900px) {
-            @media (min-width:768px)and(max-width:990px) {
-                .wrap {
-                    max-width: 720px;
-                }
-                .sidebar .tours {
-                    width: 48%;
-                    max-width: initial;
-                    float: left;
+        // /@media (max-width:480px)
+        // #######################################################################
+        // Mobile for old html
+        // #######################################################################
 
-                    &:nth-of-type(2n) {
-                        float: right;
-                    }
-                    .tours-image {
-                        width: 100%;
-                    }
+        .mobile-styles {
+
+            @media (max-width:990px) {
+                .wrap {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+                .content {
+                    width: 100%;
+                }
+                .sidebar {
+                    width: 100%;
+                    padding-top: 20px;
                 }
                 .search-box {
                     .sidebar {
-                        width: 40%;
                         padding-top: 0;
                     }
-                    .sb-item {
-                        width: 57.5%;
-                    }
                 }
-            }
-            // / @media (min-width:768px)and(max-width:990px)
-            @media (max-width:767px) {
-                .park-title .ob-icons {
-                    // float: right;
-                    margin-left: 0;
-                }
-                .wrap > .pt-left {
-                    margin: 0 !important;
+                .width {
                     width: 100%;
                 }
-                .pt-left h1 {
-                    text-align: left;
-                    color: #3c3b3b;
+                .sll-first ul li {
+                    width: 100%;
                 }
-                .park-title {
-                    .sidebar {
+                .search-result-list .sll-box {
+                    display: block;
+
+                    .ssl-image {
+                        max-width: 200px;
+                    }
+                }
+                .operators-category h2 {
+                    position: relative;
+                    line-height: 1.3;
+                }
+            }
+            // / @media (max-width:990px)
+            @media (min-width:581px) and (max-width:900px) {
+                .tp-result, .tp-banner, .new-banner {
+                    .tp-price {
                         width: 100%;
 
-                        .pt-left {
-                            margin: 0 0 10px 0 !important;
-                            float: left !important;
+                        .clear {
+                            display: none;
+                        }
+                        .price {
+                            text-align: left;
+                            float: left;
+                            width: auto;
+                            margin-right: 10px;
+                            height: auto;
 
-                            .review-link {
-                                margin-top: 0 !important;
-                                height: 36px;
+                            > * {
+                                display: inline-block;
+                                vertical-align: bottom;
+                            }
+                        }
+                        .link-tour {
+                            float: left;
+                            margin-right: 10px;
+                        }
+                        .ob-ic {
+                            width: auto;
+                            margin-right: 10px;
+                        }
+                        .get-quote {
+                            width: auto;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            float: right;
+                        }
+                        .ob-icons {
+                            width: auto;
+                            margin-right: 20px;
+
+                            a {
+                                padding-right: 10px;
                                 margin-right: 10px;
                             }
                         }
                     }
-                    &.pt-national-park {
+                }
+                .new-banner .tp-price {
+                    width: 100%;
+                }
+                .tp-quote {
+                    text-align: left;
+                    display: inline-block;
+                    width: 50%;
+                    float: right;
+                    margin-left: 8px;
+
+                    .get-quote {
+                        float: left;
+                        width: auto;
+                        margin: 0 10px 0 0;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    .add-to-fav {
+                        float: left;
+                        width: auto;
+                    }
+                }
+                .pi-sidebar-box .row span {
+                    text-align: center;
+                }
+            }
+            // / @media (min-width:581px) and (max-width:900px) {
+                @media (min-width:768px)and(max-width:990px) {
+                    .wrap {
+                        max-width: 720px;
+                    }
+                    .sidebar .tours {
+                        width: 48%;
+                        max-width: initial;
+                        float: left;
+
+                        &:nth-of-type(2n) {
+                            float: right;
+                        }
+                        .tours-image {
+                            width: 100%;
+                        }
+                    }
+                    .search-box {
                         .sidebar {
+                            width: 40%;
+                            padding-top: 0;
+                        }
+                        .sb-item {
+                            width: 57.5%;
+                        }
+                    }
+                }
+                // / @media (min-width:768px)and(max-width:990px)
+                @media (max-width:767px) {
+                    .park-title .ob-icons {
+                        // float: right;
+                        margin-left: 0;
+                    }
+                    .wrap > .pt-left {
+                        margin: 0 !important;
+                        width: 100%;
+                    }
+                    .pt-left h1 {
+                        text-align: left;
+                        color: #3c3b3b;
+                    }
+                    .park-title {
+                        .sidebar {
+                            width: 100%;
+
+                            .pt-left {
+                                margin: 0 0 10px 0 !important;
+                                float: left !important;
+
+                                .review-link {
+                                    margin-top: 0 !important;
+                                    height: 36px;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                        &.pt-national-park {
+                            .sidebar {
+                                margin: 0;
+                            }
+                        }
+                    }
+                    .spanning .park-title .pt-height {
+                        text-align: left;
+                    }
+                    .pt-left .review-link {
+                        margin-bottom: 0;
+                    }
+                    .request-quote {
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                    }
+                    .tour-tab .tabs li {
+                        text-align: center;
+                        font-size: 0;
+
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                    .search-box {
+                        .wrap {
+                            padding-right: 0;
+                        }
+                    }
+                    .sb-item {
+                        width: 100%;
+                    }
+                    .result-list {
+                        .sll-box {
+                            display: block;
+
+                            .ob-rating, h2 {
+                                float: none;
+                                width: 100%;
+                                display: block;
+                            }
+                        }
+                    }
+                    .operators-category li a {
+                        // padding-left: 10px;
+                    }
+                }
+                // /  @media (max-width:767px)
+                @media (min-width:581px)and(max-width:767px) {
+                    .pd-text {
+                        float: left;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                    }
+                    .wrap {
+                        max-width: 550px;
+                    }
+                    .sidebar .tours {
+                        width: 48%;
+                        max-width: initial;
+                        float: left;
+
+                        &:nth-of-type(2n) {
+                            float: right;
+                        }
+                        .tours-image {
+                            width: 100%;
+                        }
+                    }
+                    .operators-category {
+                        margin-left: 0;
+
+                        &:before {
+                            display: none;
+                        }
+                    }
+                    .search-result-list .sll-box {
+                        .ssl-image {
+                            margin-right: 15px;
+                            margin-bottom: 10px;
+                        }
+                        .ssl-description {
                             margin: 0;
                         }
                     }
-                }
-                .spanning .park-title .pt-height {
-                    text-align: left;
-                }
-                .pt-left .review-link {
-                    margin-bottom: 0;
-                }
-                .request-quote {
-                    margin-right: 10px;
-                    margin-bottom: 10px;
-                }
-                .tour-tab .tabs li {
-                    text-align: center;
-                    font-size: 0;
-
-                    span {
-                        font-size: 12px;
-                    }
-                }
-                .search-box {
-                    .wrap {
-                        padding-right: 0;
-                    }
-                }
-                .sb-item {
-                    width: 100%;
-                }
-                .result-list {
-                    .sll-box {
-                        display: block;
-
-                        .ob-rating, h2 {
-                            float: none;
+                    .safari-info {
+                        .column {
                             width: 100%;
-                            display: block;
+                        }
+                    }
+                    .request-quote {
+                        // float: right;
+                    }
+                    .sll-countries .row {
+                        a, li {
+                            line-height: 1.2;
+                            padding-bottom: 8px;
+                        }
+                        .ob-rating {
+                            padding-top: 0;
+
+                            .stars {
+                                border-right: none;
+                                margin-bottom: 4px;
+                                margin-right: 0;
+                            }
                         }
                     }
                 }
-                .operators-category li a {
-                    // padding-left: 10px;
-                }
-            }
-            // /  @media (max-width:767px)
-            @media (min-width:581px)and(max-width:767px) {
-                .pd-text {
-                    float: left;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                }
-                .wrap {
-                    max-width: 550px;
-                }
-                .sidebar .tours {
-                    width: 48%;
-                    max-width: initial;
-                    float: left;
-
-                    &:nth-of-type(2n) {
-                        float: right;
+                // / @media (min-width:581px)and(max-width:767px)
+                @media (max-width:640px) {
+                    .new-banner .tp-price .price {
+                        float: left;
                     }
-                    .tours-image {
-                        width: 100%;
-                    }
-                }
-                .operators-category {
-                    margin-left: 0;
-
-                    &:before {
-                        display: none;
-                    }
-                }
-                .search-result-list .sll-box {
-                    .ssl-image {
-                        margin-right: 15px;
-                        margin-bottom: 10px;
-                    }
-                    .ssl-description {
-                        margin: 0;
-                    }
-                }
-                .safari-info {
-                    .column {
-                        width: 100%;
-                    }
-                }
-                .request-quote {
-                    // float: right;
-                }
-                .sll-countries .row {
-                    a, li {
-                        line-height: 1.2;
-                        padding-bottom: 8px;
-                    }
-                    .ob-rating {
-                        padding-top: 0;
-
-                        .stars {
-                            border-right: none;
-                            margin-bottom: 4px;
-                            margin-right: 0;
+                    .new-banner .tp-price .price {
+                        h4, span {
+                            text-align: left;
                         }
                     }
-                }
-            }
-            // / @media (min-width:581px)and(max-width:767px)
-            @media (max-width:640px) {
-                .new-banner .tp-price .price {
-                    float: left;
-                }
-                .new-banner .tp-price .price {
-                    h4, span {
-                        text-align: left;
+                    .tp-quote {
+                        float: left;
                     }
                 }
-                .tp-quote {
-                    float: left;
+                // /@media (max-width:640px)
+                @media (max-width:600px) {
+                    .ob-description {
+                    }
+                    .search-box .sidebar {
+                        margin-top: 0;
+                    }
+                    .sll-box h2 {
+                        float: left;
+                        margin: 0 0 10px 0;
+                    }
                 }
-            }
-            // /@media (max-width:640px)
-            @media (max-width:600px) {
-                .ob-description {
-                }
-                .search-box .sidebar {
-                    margin-top: 0;
-                }
-                .sll-box h2 {
-                    float: left;
-                    margin: 0 0 10px 0;
-                }
-            }
-            // / @media (max-width:600px)
+                // / @media (max-width:600px)
 
-            @media (max-width:580px) {
-                .wrap {
-                    // max-width: 550px;
-                }
-                .sidebar .tours {
-                    width: 100%;
-                    float: left;
-                    max-width: 320px;
-
-                    .tours-image {
+                @media (max-width:580px) {
+                    .wrap {
+                        // max-width: 550px;
+                    }
+                    .sidebar .tours {
                         width: 100%;
+                        float: left;
+                        max-width: 320px;
+
+                        .tours-image {
+                            width: 100%;
+                        }
                     }
-                }
-                .operators-category {
-                    margin-left: 0;
+                    .operators-category {
+                        margin-left: 0;
 
-                    &:before {
-                        display: none;
+                        &:before {
+                            display: none;
+                        }
                     }
-                }
-                .search-result-list .sll-box {
-                    padding-bottom: 0;
+                    .search-result-list .sll-box {
+                        padding-bottom: 0;
 
-                    .ssl-image {
-                        margin-right: 15px;
-                        margin-bottom: 10px;
-                    }
-                    .ssl-description {
-                        margin: 0;
-                        padding-left: 0;
-                        padding-right: 0;
+                        .ssl-image {
+                            margin-right: 15px;
+                            margin-bottom: 10px;
+                        }
+                        .ssl-description {
+                            margin: 0;
+                            padding-left: 0;
+                            padding-right: 0;
 
-                        .search-c {
-                            .column {
-                                width: 100%;
+                            .search-c {
+                                .column {
+                                    width: 100%;
 
-                                &:last-child {
-                                    padding-left: 15px;
+                                    &:last-child {
+                                        padding-left: 15px;
+                                    }
                                 }
                             }
                         }
                     }
-                }
-                .sll-box h2 {
-                    display: block;
-                    width: 100%;
-
-                    span {
-                        float: none;
-                        margin-top: 5px;
+                    .sll-box h2 {
                         display: block;
-                        margin-left: 0;
-                    }
-                }
-                .ob-image {
-                    text-align: left;
-                }
-                .ob-score {
-                    margin: 0;
-                    padding: 10px 10px 0;
-                }
-                .ob-description {
-                    padding-left: 10px;
-                    padding-right: 10px;
-                }
-                .ob-bottom {
-                    padding-left: 10px;
-                    padding-right: 10px;
-                }
-                .sc-content {
-                    padding-bottom: 0px;
-                }
-                .mobile-styles .pi-sidebar-box .row span {
-                    text-align: left;
-                }
-                .safari-info {
-                    padding-left: 10px;
-                    padding-right: 10px;
-                }
-                .operators-category {
-                    padding-left: 10px;
-                    padding-right: 10px;
-                }
-                .result-number h2, .result-number h3 {
-                    font-size: 20px;
-                }
-                .sll-box h2 {
-                    font-size: 24px;
-                }
-                .sll-countries .row {
-                    a, li {
-                        line-height: 1.2;
-                        padding-bottom: 2px;
-                    }
-                    .ob-rating {
-                        float: left;
-                        margin-bottom: 6px;
-                    }
-                    .column {
                         width: 100%;
 
-                        &:nth-of-type(1) {
-                            li {
+                        span {
+                            float: none;
+                            margin-top: 5px;
+                            display: block;
+                            margin-left: 0;
+                        }
+                    }
+                    .ob-image {
+                        text-align: left;
+                    }
+                    .ob-score {
+                        margin: 0;
+                        padding: 10px 10px 0;
+                    }
+                    .ob-description {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    .ob-bottom {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    .sc-content {
+                        padding-bottom: 0px;
+                    }
+                    .mobile-styles .pi-sidebar-box .row span {
+                        text-align: left;
+                    }
+                    .safari-info {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    .operators-category {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    .result-number h2, .result-number h3 {
+                        font-size: 20px;
+                    }
+                    .sll-box h2 {
+                        font-size: 24px;
+                    }
+                    .sll-countries .row {
+                        a, li {
+                            line-height: 1.2;
+                            padding-bottom: 2px;
+                        }
+                        .ob-rating {
+                            float: left;
+                            margin-bottom: 6px;
+                        }
+                        .column {
+                            width: 100%;
+
+                            &:nth-of-type(1) {
+                                li {
+                                    font-weight: 700;
+                                }
+                            }
+                            &:nth-of-type(3) {
+                                padding-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+                // / (max-width:580px)
+                @media (min-width:421px) and (max-width:580px) {
+                    table.best-loactions {
+                        td {
+                            padding: 8px 15px;
+                            line-height: 1.3;
+                        }
+                    }
+                }
+                // @media (min-width:421px) and (max-width:580px)
+                @media (max-width:480px) {
+                    .si-sidebar li {
+                        margin-bottom: 12px;
+
+                        >* {
+                            width: 100%;
+                        }
+                        em {
+                            float: left;
+                            padding-left: 26px;
+                        }
+                    }
+                    .vaccinations-box td, .vaccinations-box a {
+                        display: block;
+                    }
+                }
+                // @media (max-width:480px) 
+                @media (max-width:420px) {
+                    table.best-loactions {
+                        tr {
+                            display: block;
+
+                            &:first-of-type {
+                                td:first-of-type {
+                                    display: none;
+                                }
+                            }
+                        }
+                        td {
+                            display: block;
+                            width: auto;
+                            padding: 8px 15px;
+                            line-height: 1.3;
+                            font-weight: 400;
+
+                            &:first-of-type {
+                                font-size: 12px;
                                 font-weight: 700;
+                                padding-bottom: 0;
+                            }
+                            &:nth-of-type(2) {
+                                border-top: none;
                             }
                         }
-                        &:nth-of-type(3) {
-                            padding-bottom: 15px;
-                        }
                     }
-                }
-            }
-            // / (max-width:580px)
-            @media (min-width:421px) and (max-width:580px) {
-                table.best-loactions {
-                    td {
-                        padding: 8px 15px;
-                        line-height: 1.3;
-                    }
-                }
-            }
-            // @media (min-width:421px) and (max-width:580px)
-            @media (max-width:480px) {
-                .si-sidebar li {
-                    margin-bottom: 12px;
-
-                    >* {
+                    .park-tab .tabs li {
                         width: 100%;
                     }
-                    em {
-                        float: left;
-                        padding-left: 26px;
-                    }
                 }
-                .vaccinations-box td, .vaccinations-box a {
-                    display: block;
-                }
-            } // @media (max-width:480px) 
-            @media (max-width:420px) {
-                table.best-loactions {
-                    tr {
-                        display: block;
-
-                        &:first-of-type {
-                            td:first-of-type {
-                                display: none;
-                            }
-                        }
-                    }
-                    td {
-                        display: block;
-                        width: auto;
-                        padding: 8px 15px;
-                        line-height: 1.3;
-                        font-weight: 400;
-
-                        &:first-of-type {
-                            font-size: 12px;
-                            font-weight: 700;
-                            padding-bottom: 0;
-                        }
-                        &:nth-of-type(2) {
-                            border-top: none;
-                        }
-                    }
-                }
-                .park-tab .tabs li{
-                    width: 100%;
-                }
+                // @media (max-width: 420px)
             }
-            // @media (max-width: 420px)
-        }
-        // /.mobile-styles
+            // /.mobile-styles
