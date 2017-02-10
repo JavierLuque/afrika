@@ -358,7 +358,6 @@ $(document).ready(function(){
                 // alert(image.width + 'x' + image.height);
                 
                 initial_height_ = image.height;
-                console.log(initial_height_);
                 height_ = resizeBlock(initial_height_) - 10;
                 block.css("height", height_);
             });

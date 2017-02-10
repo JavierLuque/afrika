@@ -2928,6 +2928,53 @@
     display: none;
 }
 // ###################################
+// Page articles
+// ###################################
+          .pagination{
+            float: left;
+            padding-left: 65px;
+                li{
+                    display: inline-block;
+                    vertical-align: middle;
+                    &.disabled{
+                        a{
+                            color: #7c8082;
+                        }
+                    }
+                    a{
+                        color: #000;
+                        font-size: 13px;
+                        padding-right: 4px;
+                        font-weight: 600;
+                    }
+                    
+                }
+            }
+            .recent-see-more{
+                overflow: hidden;
+                .displaying{
+                    float: right;
+                }
+            }
+
+        @media (max-width:767px) {
+            .recent-see-more.with-pagination{
+                padding-bottom: 0;
+                .pagination{
+                    padding-left: 0;
+                    padding-right: 20px;
+                    li{
+                    padding-bottom: 10px;
+
+                    }
+                }
+                .displaying{
+                    padding-bottom: 10px;
+                    float: left;
+                }
+            }
+        }
+// ###################################
 // Page reviews
 // ###################################
 @font_gotham_medium: "GothamPro_medium";
@@ -5028,3 +5075,4 @@
                 // @media (max-width: 420px)
             }
             // /.mobile-styles
+
