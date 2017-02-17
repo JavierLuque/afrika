@@ -4100,6 +4100,51 @@ footer .separator {
     float: left;
   }
 }
+.styled-list li {
+  line-height: 1.3;
+  font-size: 14px;
+  font-weight: 600;
+  color: #7c8082;
+  margin-bottom: 6px;
+}
+.styled-list li:before {
+  content: "• ";
+  color: #73ae3a;
+  display: inline-block;
+  margin-right: 7px;
+}
+.highlights {
+  background: #ffffff;
+  margin-left: 20px;
+  padding: 20px 25px;
+  border: 1px solid #e9e3e1;
+}
+.highlights h2 {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #3a3c3d;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+.add-new-styles .all-rating,
+.add-new-styles .highlights {
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .add-new-styles .pd-text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.add-new-styles .pd-text .pdt-right {
+  float: right;
+}
+.add-new-styles .pd-text p {
+  margin-bottom: 10px;
+}
+.add-new-styles .adjust-old-padding {
+  padding: 40px 0px 0;
+}
 @media (max-width: 640px) {
   .filter-item ul.tab-content {
     display: block;
