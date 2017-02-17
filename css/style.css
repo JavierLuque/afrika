@@ -4100,6 +4100,17 @@ footer .separator {
     float: left;
   }
 }
+@media (max-width: 640px) {
+  .filter-item ul.tab-content {
+    display: block;
+  }
+}
+.filter-item ul.tab-content li {
+  margin-top: 10px;
+}
+.filter-item ul.tab-content li a img {
+  margin-top: 0;
+}
 .new-banner.with-head-info {
   position: relative;
   margin-top: 60px;

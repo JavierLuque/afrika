@@ -2980,7 +2980,18 @@
 @font_gotham_medium: "GothamPro_medium";
 @f-600:@font_gotham_medium;
 @green-dark: #73ae3a;
-
+.filter-item{
+    ul.tab-content {
+        @media (max-width:640px){
+            display: block;
+        }
+        li{
+    margin-top: 10px; a{
+        img{
+            margin-top: 0;
+        }
+    }}}
+}
 .new-banner {
     &.with-head-info {
         position: relative;
