@@ -374,6 +374,14 @@ $(document).ready(function(){
     })();
 
     //------------------------------------------------------------------------//
+    // Img popup 
+    $('a.popup').magnificPopup({
+        type:'image', 
+        gallery:{
+          enabled:true
+        }
+    });
+    //------------------------------------------------------------------------//
 
     //Popup country
     // function deselect(e) {
