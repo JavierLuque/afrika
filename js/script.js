@@ -375,12 +375,15 @@ $(document).ready(function(){
 
     //------------------------------------------------------------------------//
     // Img popup 
-    $('a.popup').magnificPopup({
-        type:'image', 
-        gallery:{
-          enabled:true
-        }
-    });
+    if($('a.popup').length){
+
+        $('a.popup').magnificPopup({
+            type:'image', 
+            gallery:{
+              enabled:true
+            }
+        });
+    }
     //------------------------------------------------------------------------//
 
     //Popup country

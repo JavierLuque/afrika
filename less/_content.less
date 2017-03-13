@@ -2928,6 +2928,56 @@
     display: none;
 }
 // ###################################
+// Page about_us
+// ###################################
+body{
+    min-height: 100vh;
+    height: auto;
+}
+.mw-780{
+    
+    max-width: 780px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.page-about-us{
+    background-color: #f9f8f7;
+    .main-content{
+        background-color: #fff;
+color: #7c8082;
+    border: 1px solid #e9e3e1;
+    padding: 25px;
+    margin-bottom: 50px;
+    font-size: 13px;
+    h2{
+        font-size: 25px;
+        color: #000;
+        margin: 20px 0;
+    }
+    }
+    .park-title{
+        background: url(../images/v2/ts.png) repeat;
+        padding-bottom: 20px;
+
+    }
+    @media (max-width:767px){
+        background-image: none;
+    .park-title{
+        background-image: none;
+    }
+    .wrap-main-title h1{
+        font-size: 26px;
+    }
+        .main-content{
+            padding: 15px 5px;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+// ###################################
 // Page articles
 // ###################################
 .pagination {
@@ -3306,6 +3356,9 @@ h2{
         }
     }
 }
+.safari-info-footer{
+
+}
 @media (max-width:1200px) and (min-width:901px) {
     .gallery-photo .column.col-25 {
         width: 33%;
@@ -3396,6 +3449,66 @@ h2{
 // ###################################
 // Page  article_inside
 // ###################################
+.add-new-styles .wrap{
+
+.col-70{
+    width: 70%;
+
+}
+.col-30{
+    width: 30%;
+}
+@media(min-width:991px)and(max-width:1200px) {
+    .col-m-60{
+        width: 60%;
+    }
+    .col-m-40{
+        width: 40%;
+    }
+}
+
+@media(max-width:990px) {
+    .col-s-100{
+        width: 100%;
+    }
+}
+
+}
+.page-article-inside{
+    .park-title{
+            background: url(../images/v2/ts.png) repeat;
+    }
+    .comments{
+        padding-top: 30px;
+        background-color: #fff;
+        .pi-box{
+            h2{
+                position: relative;
+                span.said-time{
+                    position: absolute;
+                    z-index: 100;
+                    right: 0;
+                    bottom: 4px;
+                    @media(max-width:767px) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .article-inside-content{
+        background-color: #f8f7f6;
+        padding-top: 30px;
+    }
+
+
+            @media(max-width:767px) {
+               .park-title{
+                border-bottom: none;
+               } 
+            }
+
+}
 .add-new-styles {
     .search-box .breadcrumbs {
         a {
@@ -3415,6 +3528,7 @@ h2{
         }
     }
     .safari-info .img-wide {
+        border: 1px solid #e3e4e5;
         display: block;
         width: 100%;
         position: relative;
@@ -3504,6 +3618,28 @@ h2{
         }
     }
     .safari-info-footer {
+        .credits{
+            padding: 25px 30px 20px;
+            border-top: 1px solid #ebebeb;
+            border-bottom: 1px solid #ebebeb;
+            margin: 15px -30px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            h5{
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            p{
+               font-size: 13px;
+                color: #7c8082;
+            }
+            @media (max-width: 480px){
+                padding: 10px;
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+        }
         .social-links-imgs {
             width: auto;
 
@@ -3601,6 +3737,50 @@ h2{
             >span {
                 line-height: 28px;
                 }}
+.block-comments{
+    margin-bottom: 30px;
+    .wrap-img{
+        width: 200px;
+    height: 140px;
+    -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    float: left;
+    img{
+        display: block;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    }
+    .wrap-text-area{
+        line-height: 1.3;
+        margin-left: 220px;
+        textarea{
+            box-sizing: border-box;
+            width: 100%;
+            min-height: 138px;
+            border-color: #d6d7d6;
+            padding: 15px;
+        }
+        small{
+            color: #7c8082;
+            line-height: 1;
+
+        }
+    }
+
+    @media(max-width:767px) {
+        .wrap-img{
+            width: 90px;
+            height: auto;
+
+        
+    }
+     .wrap-text-area{
+            margin-left: 110px;
+        }
+}
+}
 // ###################################
 // Page reviews
 // ###################################
@@ -4337,10 +4517,13 @@ h2{
     }
     .line {
         display: block;
-        visibility: 100%;
+        width: 100%;
         height: 1px;
         border-bottom: 1px solid #616262;
         margin-bottom: 20px;
+        &.gray{
+            border-bottom-color: #e9e8e8;
+        }
     }
     .recent-see-more {
         margin-bottom: 20px;

@@ -4061,6 +4061,53 @@ footer .separator {
 .clone-sidebar {
   display: none;
 }
+body {
+  min-height: 100vh;
+  height: auto;
+}
+.mw-780 {
+  max-width: 780px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.page-about-us {
+  background-color: #f9f8f7;
+}
+.page-about-us .main-content {
+  background-color: #fff;
+  color: #7c8082;
+  border: 1px solid #e9e3e1;
+  padding: 25px;
+  margin-bottom: 50px;
+  font-size: 13px;
+}
+.page-about-us .main-content h2 {
+  font-size: 25px;
+  color: #000;
+  margin: 20px 0;
+}
+.page-about-us .park-title {
+  background: url(../images/v2/ts.png) repeat;
+  padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .page-about-us {
+    background-image: none;
+  }
+  .page-about-us .park-title {
+    background-image: none;
+  }
+  .page-about-us .wrap-main-title h1 {
+    font-size: 26px;
+  }
+  .page-about-us .main-content {
+    padding: 15px 5px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .pagination {
   float: left;
   padding-left: 65px;
@@ -4453,6 +4500,55 @@ footer .separator {
 .add-new-styles .adjust-old-padding {
   padding: 40px 0px 0;
 }
+.add-new-styles .wrap .col-70 {
+  width: 70%;
+}
+.add-new-styles .wrap .col-30 {
+  width: 30%;
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+  .add-new-styles .wrap .col-m-60 {
+    width: 60%;
+  }
+  .add-new-styles .wrap .col-m-40 {
+    width: 40%;
+  }
+}
+@media (max-width: 990px) {
+  .add-new-styles .wrap .col-s-100 {
+    width: 100%;
+  }
+}
+.page-article-inside .park-title {
+  background: url(../images/v2/ts.png) repeat;
+}
+.page-article-inside .comments {
+  padding-top: 30px;
+  background-color: #fff;
+}
+.page-article-inside .comments .pi-box h2 {
+  position: relative;
+}
+.page-article-inside .comments .pi-box h2 span.said-time {
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  bottom: 4px;
+}
+@media (max-width: 767px) {
+  .page-article-inside .comments .pi-box h2 span.said-time {
+    font-size: 12px;
+  }
+}
+.page-article-inside .article-inside-content {
+  background-color: #f8f7f6;
+  padding-top: 30px;
+}
+@media (max-width: 767px) {
+  .page-article-inside .park-title {
+    border-bottom: none;
+  }
+}
 .add-new-styles .search-box .breadcrumbs a {
   color: #73ae3a;
 }
@@ -4468,6 +4564,7 @@ footer .separator {
   }
 }
 .add-new-styles .safari-info .img-wide {
+  border: 1px solid #e3e4e5;
   display: block;
   width: 100%;
   position: relative;
@@ -4547,6 +4644,30 @@ footer .separator {
 }
 .add-new-styles .safari-info-footer .flex-descktop .social-links-imgs {
   width: 100%;
+}
+.add-new-styles .safari-info-footer .credits {
+  padding: 25px 30px 20px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  margin: 15px -30px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.add-new-styles .safari-info-footer .credits h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.add-new-styles .safari-info-footer .credits p {
+  font-size: 13px;
+  color: #7c8082;
+}
+@media (max-width: 480px) {
+  .add-new-styles .safari-info-footer .credits {
+    padding: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
 }
 .add-new-styles .safari-info-footer .social-links-imgs {
   width: auto;
@@ -4631,6 +4752,46 @@ footer .separator {
 }
 .social-links-imgs > span {
   line-height: 28px;
+}
+.block-comments {
+  margin-bottom: 30px;
+}
+.block-comments .wrap-img {
+  width: 200px;
+  height: 140px;
+  -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  float: left;
+}
+.block-comments .wrap-img img {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+}
+.block-comments .wrap-text-area {
+  line-height: 1.3;
+  margin-left: 220px;
+}
+.block-comments .wrap-text-area textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 138px;
+  border-color: #d6d7d6;
+  padding: 15px;
+}
+.block-comments .wrap-text-area small {
+  color: #7c8082;
+  line-height: 1;
+}
+@media (max-width: 767px) {
+  .block-comments .wrap-img {
+    width: 90px;
+    height: auto;
+  }
+  .block-comments .wrap-text-area {
+    margin-left: 110px;
+  }
 }
 @media (max-width: 640px) {
   .filter-item ul.tab-content {
@@ -5287,10 +5448,13 @@ footer .separator {
 }
 .add-new-styles .line {
   display: block;
-  visibility: 100%;
+  width: 100%;
   height: 1px;
   border-bottom: 1px solid #616262;
   margin-bottom: 20px;
+}
+.add-new-styles .line.gray {
+  border-bottom-color: #e9e8e8;
 }
 .add-new-styles .recent-see-more {
   margin-bottom: 20px;
