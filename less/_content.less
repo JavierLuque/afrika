@@ -138,6 +138,12 @@
     span {
         color: #3a3c3d;
     }
+    .visited {
+        span{
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+    }
     h2, h3 {
         font-size: 24px;
         line-height: 1.2;
@@ -3788,6 +3794,49 @@ h2{
 @f-600:@font_gotham_medium;
 @green-dark: #73ae3a;
 
+.request-quote.model-aside{
+
+}
+.sidebar.list-buttons{
+    .btn{
+
+    height: 36px;
+    line-height: 36px;
+    display: block;
+    margin-left: 20px;
+    float: right;
+    padding: 0 15px;
+    width: auto;
+    font-size: 13px;
+    &:last-of-type{
+        margin-left: 0;
+    }
+    @media (max-width: 500px){
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+    }
+    }
+
+}
+@media (max-width: 1000px){
+
+    .add-new-styles .park-title{
+
+         .sidebar,.pt-left {
+        width: 100%;
+    }
+   
+}
+}
+@media (max-width: 500px){
+
+}
 .filter-item {
     ul.tab-content {
         @media (max-width:640px) {
@@ -4102,17 +4151,17 @@ h2{
             &:after {
                 content: "";
                 width: 3px;
-                height: 7px;
+                height: 8px;
                 border-right: 2px solid #fff;
                 border-bottom: 2px solid #fff;
                 background: transparent;
                 position: absolute;
                 z-index: 200;
-                top: 0px;
+                top: -2px;
                 bottom: 0;
                 margin: auto;
                 left: 4px;
-                transform: rotate(37deg);
+                transform: rotate(32deg);
             }
         }
         input[type='checkbox'] {
@@ -4350,9 +4399,11 @@ h2{
                     float: left;
                 }
                 .tp-description {
-                    width: 100%;
+                    width: 60%;
                     box-sizing: border-box;
                     float: left;
+                    padding-left: 15px;
+                    padding-right: 10px;
                 }
                 .tp-price {
                     border: none;
@@ -4387,6 +4438,23 @@ h2{
         }
     }
     .result-number {
+        &.rating-on-top-right{
+            .sll-box h2{
+                position: relative;
+                .ob-rating{
+                    position: absolute;
+                    z-index: 1000;
+                    bottom: 10px;
+                    right: 0;
+                    .stars{
+                        width: auto;
+                    }
+                    span{
+                        margin-left: 3px;
+                    }
+                }
+            }
+        }
         .sll-box h2 {
             overflow: hidden;
             padding-right: 100px;
@@ -4409,7 +4477,20 @@ h2{
                     margin-left: 0;
                 }
                 > span:nth-of-type(n+2) {
-                    border-left: 1px solid #7f7f7f;
+                    position: relative;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        z-index: 200;
+                        top: 0;
+                        bottom: 0;
+                        left: 0; right: auto;
+                        margin: auto;
+                        width: 0;
+                        height: 1em;
+                        border-left:1px solid #9e9e9d;
+                        border-right:1px solid #bebdbb;
+                    }
                     padding-left: 6px;
                     margin-left: 6px;
                 }
@@ -4418,6 +4499,19 @@ h2{
         .ob-rating .stars {
             border-right: none;
             margin-right: 0;
+        }
+        .number-of-stars{
+            position: relative;
+            &:before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+
+                border-left: 1px solid #f8f7f4;
+                border-right: 1px solid #e4e4e3;
+            }
         }
         .ssl-image {
             border: 0;
@@ -4466,7 +4560,11 @@ h2{
             strong {
                 color: #3c3b3b;
             }
+          
             .ico {
+                &:hover{
+                    background: #6aa433;
+                }
                 margin-left: 10px;
                 width: 37px;
                 height: 37px;
@@ -4478,6 +4576,7 @@ h2{
                 background: -webkit-linear-gradient(top, rgba(200, 234, 163, 1) 0%, rgba(184, 213, 153, 1) 100%); /* Chrome10-25,Safari5.1-6 */
                 background: linear-gradient(to bottom, rgba(200, 234, 163, 1) 0%, rgba(184, 213, 153, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
                 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c8eaa3', endColorstr='#b8d599', GradientType=0);
+
 
                 /* IE6-9 */
                 i {
@@ -4620,8 +4719,12 @@ h2{
                     padding-bottom: 0;
 
                     .view-info {
-                        margin-top: 10px;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
                     }
+                        .ob-rating{
+                            margin-bottom: 0;
+                        }
                 }
                 .left-side {
                     margin-bottom: 15px;
@@ -5253,6 +5356,40 @@ h2{
     // #######################################################################
     // Country page
     // #######################################################################
+    .wrap-tp-result{
+            -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        .head{
+                position: relative;
+            box-sizing: border-box;
+            z-index: 1000;
+            background-color: #fff;
+            width: 100%;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 12px 150px 11px 0;
+            .category {
+                padding-left: 20px;
+                color: #3a3c3d;
+                line-height: 1.2;
+                font-family: "GothamPro_medium";
+            }
+            .ob-rating {
+                position: absolute;
+                top: 13px;
+                right: 20px;
+                .stars{
+                    margin-top: 2px
+                }
+            }
+        }
+        .tp-result{
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+    }
     .ob-reviews .c-green {
         color: @green-dark;
     }
