@@ -143,7 +143,8 @@ $(document).ready(function(){
       slide: function( event, ui ) {
         $( "#date-from" ).val( + ui.values[ 0 ] + " day" );
         $( "#date-to" ).val( + ui.values[ 1 ] + " day" );
-
+      },
+      stop: function( event, ui ) {
         if ( $('#filter_ml').val() != ui.values[0] ) {
             $( "#filter_ml" ).val(ui.values[ 0 ]).trigger('change');
         }
@@ -163,12 +164,14 @@ $(document).ready(function(){
     $( "#slider-price" ).slider({
       range: true,
       min: 0,
-      max: 1000,
-      values: [ 100, 500 ],
+      max: 20000,
+      values: [ 0, 20000 ],
       slide: function( event, ui ) {
 
         $( "#price-from" ).val( + ui.values[ 0 ]);
         $( "#price-to" ).val( + ui.values[ 1 ]);
+      },
+      stop: function( event, ui ) {
 
         if ( $('#filter_mp').val() != ui.values[0] ) {
             $( "#filter_mp" ).val(ui.values[ 0 ]).trigger('change');
