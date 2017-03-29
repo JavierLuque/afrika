@@ -4597,6 +4597,12 @@ body {
   font-weight: bold;
   margin-bottom: 15px;
 }
+.block-bordered h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #3a3c3d;
+  line-height: 1.3;
+}
 @media (max-width: 480px) {
   .block-bordered {
     padding-left: 10px;
@@ -4769,6 +4775,9 @@ body {
 }
 .add-new-styles .wrap .col-30 {
   width: 30%;
+}
+.add-new-styles .wrap .col-33 {
+  width: 33.33%!important;
 }
 .add-new-styles .wrap .col-20 {
   width: 20%;
@@ -5499,6 +5508,9 @@ h2.title-big {
 }
 .mt-20 {
   margin-top: 20px !important;
+}
+.mb-20 {
+  margin-bottom: 20px !important;
 }
 .add-new-styles {
   font-family: "GothamPro";
