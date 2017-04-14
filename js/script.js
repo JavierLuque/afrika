@@ -30,10 +30,21 @@ $(document).ready(function(){
     //------------------------------------------------------------------------//
 
     //slider
-    $('.slider-item,.tp-box').slick({
+    $(".slider-item,.tp-box").not( ".new-model" ).slick({
         arrows: false,
         dots: true,
         autoplay: true
+    });
+    //slider 2
+    $('.tp-box.new-model').slick({
+        nextArrow: '<i class="slider-left-arrow"></i>',
+        prevArrow: '<i class="slider-right-arrow"></i>',
+        arrows: true,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 400,
+        lazyLoad: 'ondemand',
     });
 
     //------------------------------------------------------------------------//
