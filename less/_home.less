@@ -667,7 +667,7 @@
     margin: 0 auto 30px;
     &:hover {
         .tours-hover {
-            top: 0;
+            transform: scale(1,1);
         }
         .tours-visible {
             bottom: -999px;
@@ -702,10 +702,13 @@
     background: rgba(58,60,61,.96);
     color: #c1cace;
     position: absolute;
-    top: -288px;
-    left: 0;
-    right: 0;
-    height: 288px;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: auto;
+    width: auto;
+    transform: scale(0,0);
     .transition(.3s);
     .sizing();
     padding: 10px 18px;
@@ -1016,7 +1019,7 @@
         font-weight: 600;
         width: 70px;
         position: absolute;
-        bottom: 0;
+        bottom: 0; 
         left: 0;
     }
     img {
@@ -1050,6 +1053,17 @@
         border: 1px solid rgba(124, 128, 130, 0.3);
         margin: 0 0 20px;
     }
+    @media(min-width: 800px) and(max-width:1050px){
+        width: 43%;
+        box-sizing: border-box;
+        padding-left: 20px;
+    }
+}
+.main .talking-subscribe .tab{
+   @media(min-width: 800px) and(max-width:1050px){
+        width: 57%;
+        box-sizing: border-box;
+    }   
 }
 .send-subscribe {
     font-size: 14px;

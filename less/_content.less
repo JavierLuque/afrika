@@ -2897,7 +2897,6 @@
     .tours-hover {
         background: rgba(58, 60, 61, .75);
         display: block;
-        height: 100%;
         padding: 10px 0;
 
         h2 {
@@ -2937,7 +2936,7 @@
         a {
             color: @w;
             border-color: @w;
-            margin-left: 10px;
+            margin-left: 6px;
         }
         a:first-child {
             margin-right: 0;
@@ -3195,51 +3194,54 @@ color: #7c8082;
     }
 }
 .gallery-photo {
-    &.items-with-hover{
+    &.items-with-hover {
+        .column .tours:hover {
+            .tours-visible {
+                top: 110%;
+                transition: top .15s ease;
+            }
+        }
+    }
+    .column .tours {
+        display: block;
+        width: 100%;
+        height: 264px;
+        border: none;
+        -moz-box-shadow: 0px 0px 11px 5px rgba(0, 0, 0, 0.12);
+        -webkit-box-shadow: 0px 0px 11px 5px rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 0px 11px 5px rgba(0, 0, 0, 0.12);
+        max-width: 360px;
 
-    .column .tours:hover {
-        .tours-visible {
-            top: 110%;
-            transition: top .15s ease;
+        &:hover .tours-visible {
+            bottom: 0;
+            color: rgba(255, 255, 255, 0.8);
         }
-    }
-    }
-.column .tours {
-    display: block;
-    width: 100%;
-    height: 264px;
-    border: 7px solid #fff;
-    -moz-box-shadow: 0px 0px 11px 5px rgba(0, 0, 0, 0.12);
-    -webkit-box-shadow: 0px 0px 11px 5px rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 0px 11px 5px rgba(0, 0, 0, 0.12);
-    max-width: 360px;
-&:hover .tours-visible {
-    bottom: 0;
-    color: rgba(255,255,255,0.8);
-}
-    .tours-image {
-        min-width: 100%;
-        min-height: 100%;
-        display: inline-block;
-    }
-    .tours-hover {
-        background: rgba(249, 201, 80, 0.60);
-        text-align: center;
+        .tours-image {
+            min-width: 100%;
+            min-height: 100%;
+            display: inline-block;
+        }
+        .tours-hover {
+            background: rgba(249, 201, 80, 0.60);
+            text-align: center;
 
-        >a {
-            height: 100%;
-            display: block;
-            position: relative;
-            z-index: 10;
+            >a {
+                height: 100%;
+                display: block;
+                position: relative;
+                z-index: 10;
+            }
+            .join-us {
+                z-index: 200;
+            }
+            p {
+                line-height: 1.5;
+            }
         }
-        .join-us {
-            z-index: 200;
-        }
-        p {
-            line-height: 1.5;
+        .icon-tato{
+            font-size: 20px;
         }
     }
-}
 }
 .pi-subtitle {
     font-size: 14px;
@@ -4452,6 +4454,28 @@ font-weight: 600;
     }
 }
 
+// ###################################
+// Page home
+// ###################################
+.info-banner{
+    background-color: #f7f4ee;
+    padding-bottom: 60px;
+}
+  .text-banner{
+    border: 5px solid #fff;
+    background-color: #286108;
+    color: #FFF;
+    font-size: 21px;
+    padding: 20px;
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    
+    .author{
+        font-weight: 700;
+        text-align: right;
+        margin-top: 10px;
+    }
+  }
 // ###################################
 // Page tour-operator_reviews
 // ###################################
@@ -6077,6 +6101,9 @@ font-weight: 600;
     // #######################################################################
     // safari_photo_gallery_inside page
     // #######################################################################
+    .bg-white{
+        background-color: #fff;
+    }
     .sidebar .tours {
         &.model-2 {
             margin-left: 0;
