@@ -3988,6 +3988,9 @@ footer .separator {
 .gallery-photo .row {
   margin: 0 -10px;
 }
+.gallery-photo.margin-less .column .tours {
+  margin-bottom: 10px;
+}
 .gallery-photo .column {
   padding: 10px;
 }
@@ -3998,6 +4001,12 @@ footer .separator {
   text-align: center;
   font-size: 20px;
   text-transform: uppercase;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.gallery-photo .column .tours:hover .tours-visible {
+  transition: all 0.3s ease;
+  opacity: 0;
 }
 .gallery-photo .pi-title {
   font-size: 24px;
