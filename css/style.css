@@ -10812,7 +10812,7 @@ table.model-4 tr td:nth-of-type(3) {
   }
   .sll-box img {
     max-width: 100%;
-    width: 100%;
+  /*  width: 100%; */
     -ms-flex-order: -1;
     order: -1;
   }
