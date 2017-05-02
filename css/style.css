@@ -5637,6 +5637,9 @@ table.model-4 tr td:nth-of-type(3) {
   float: left;
   top: 6px;
 }
+.mr-10 {
+  margin-right: 10px;
+}
 .mt-20 {
   margin-top: 20px !important;
 }
@@ -6860,6 +6863,106 @@ table.model-4 tr td:nth-of-type(3) {
     width: 100%;
     margin-bottom: 0 !important;
   }
+}
+.popup-box.popup-form-type-1 {
+  z-index: 2000;
+}
+.popup-box.popup-form-type-1 .popup {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 480px;
+  padding: 0;
+}
+.popup-box.popup-form-type-1 .popup .popup-content {
+  padding: 0 15px 20px;
+}
+.popup-box.popup-form-type-1 .popup-table-cell {
+  padding: 10px;
+}
+.popup-box.popup-form-type-1 h2 {
+  background-color: #ffce52;
+  font-size: 16px;
+  text-align: left;
+  padding: 8px 15px;
+  color: #3a3c3d;
+  margin: 0;
+}
+.popup-box.popup-form-type-1 h4 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3a3c3d;
+}
+.popup-box.popup-form-type-1 form .input-group {
+  margin-bottom: 8px;
+  clear: both;
+  float: left;
+  width: 100%;
+}
+.popup-box.popup-form-type-1 form .input-group label {
+  display: inline-block;
+  width: 100%;
+  color: #7c8082;
+  font-size: 14px;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.popup-box.popup-form-type-1 form .input-group input {
+  height: 28px;
+  border: 1px solid #e9e3e1;
+  border-radius: 2px;
+  margin-bottom: 0;
+  width: 100%;
+}
+.popup-box.popup-form-type-1 .input-group-footer {
+  float: left;
+}
+.popup-box.popup-form-type-1 .input-group-footer .m-btn-submit {
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #73ae3a;
+  color: #fff;
+  border: 1px solid #73ae3a;
+  border-bottom-color: #629431;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 2px;
+  padding: 0 10px;
+  min-width: 160px;
+  font-size: 13px;
+}
+.popup-box.popup-form-type-1 .input-group-footer .m-btn-submit .i-check {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 6px;
+  width: 14px;
+  height: 11px;
+  background-image: url(../images/v2/i-check-white.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.popup-box.popup-form-type-1 .input-group-footer .m-btn-cancel {
+  margin-top: 10px;
+  display: inline-block;
+  background-color: transparent;
+  color: #3a3c3d;
+  border: 1px solid #d7d9d9;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 2px;
+  padding: 0 10px;
+  min-width: 160px;
+  font-size: 13px;
+}
+.popup-box.popup-form-type-1 .input-group-footer .m-btn-cancel .icon-close {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 6px;
+  width: 14px;
+  height: 11px;
+  font-size: 11px;
 }
 .page-national-park-reviews .park-title h2 {
   color: #7c8082;
@@ -10812,7 +10915,7 @@ table.model-4 tr td:nth-of-type(3) {
   }
   .sll-box img {
     max-width: 100%;
-  /*  width: 100%; */
+    width: 100%;
     -ms-flex-order: -1;
     order: -1;
   }
