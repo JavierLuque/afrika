@@ -6893,6 +6893,18 @@ table.model-4 tr td:nth-of-type(3) {
     right: 0;
   }
 }
+.page-national-park-reviews .result-number.rating-on-top-right .sll-box h2 {
+  padding-right: 0 !important;
+}
+.page-national-park-reviews .result-number.rating-on-top-right .sll-box h2 .view-info {
+  display: block;
+  width: 100%;
+  padding-right: 80px;
+  box-sizing: border-box;
+}
+.page-national-park-reviews .result-number.rating-on-top-right .sll-box h2 .view-info > span:before {
+  display: none;
+}
 .wrap-request-quote-1 {
   float: right;
   display: inline-block;
