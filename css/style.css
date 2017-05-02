@@ -642,7 +642,7 @@ header nav {
 }
 header nav li {
   line-height: 60px;
-  margin-left: 50px;
+  margin-left: 22px;
   float: left;
 }
 header nav li:first-child {
@@ -4756,6 +4756,9 @@ body {
 .review-like .ico:hover {
   background: #6aa433;
 }
+.review-like .ico:hover + .number {
+  color: #73ae3a;
+}
 .review-like .ico i {
   font-size: 28px;
   color: #fff;
@@ -6856,6 +6859,38 @@ table.model-4 tr td:nth-of-type(3) {
   .operators-category .col-3 {
     width: 100%;
     margin-bottom: 0 !important;
+  }
+}
+.page-national-park-reviews .park-title h2 {
+  color: #7c8082;
+  font-weight: 600;
+}
+.page-national-park-reviews .park-title h2 + p {
+  color: #7c8082;
+}
+.page-national-park-reviews .park-title .sidebar .request-quote {
+  margin-left: 20px;
+  float: right;
+}
+.wrap-request-quote-1 {
+  float: right;
+  display: inline-block;
+}
+@media (max-width: 990px) {
+  .wrap-request-quote-1 {
+    display: block;
+    clear: both;
+    float: none;
+    margin-top: 10px;
+  }
+  .wrap-request-quote-1:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
   }
 }
 .bg-white {
@@ -9723,10 +9758,6 @@ table.model-4 tr td:nth-of-type(3) {
   position: relative;
   margin: 0 auto 30px;
 }
-.tours:hover .tours-hover {
-  -ms-transform: scale(1, 1);
-  transform: scale(1, 1);
-}
 .tours:hover .tours-visible {
   bottom: -999px;
 }
@@ -9760,16 +9791,11 @@ table.model-4 tr td:nth-of-type(3) {
   font-size: 12px;
   line-height: 1.5;
 }
-.tours-hover {
-  background: rgba(58, 60, 61, 0.96);
-  color: #c1cace;
-  position: absolute;
+.gallery-photo .tours-hover {
   top: 10px;
   left: 10px;
   right: 10px;
   bottom: 10px;
-  height: auto;
-  width: auto;
   -ms-transform: scale(0, 0);
   transform: scale(0, 0);
   -moz-transition: 0.3s;
@@ -9777,6 +9803,18 @@ table.model-4 tr td:nth-of-type(3) {
   -o-transition: 0.3s;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  height: auto;
+  width: auto;
+}
+.gallery-photo .tours:hover .tours-hover {
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.tours-hover {
+  width: 100%;
+  background: rgba(58, 60, 61, 0.96);
+  color: #c1cace;
+  position: absolute;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

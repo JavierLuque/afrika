@@ -3739,6 +3739,9 @@ h2{
             .ico {
                 &:hover{
                     background: #6aa433;
+                    +.number{
+                        color: #73ae3a;
+                    }
                 }
                 margin-left: 10px;
                 width: 37px;
@@ -6112,6 +6115,47 @@ font-weight: 600;
                 margin-bottom: 0 !important;
             }
         }
+    }
+    // #######################################################################
+    // Page page-national-park-reviews
+    // #######################################################################
+    .page-national-park-reviews {
+        .park-title {
+            h2 {
+                color: #7c8082;
+                font-weight: 600;
+
+                +p {
+                    color: #7c8082;
+                }
+            }
+            .sidebar {
+                .request-quote {
+                    margin-left: 20px;
+                    float: right;
+                }
+            }
+        }
+
+    }
+    .wrap-request-quote-1{
+        float: right;
+        display: inline-block;
+         @media (max-width:990px) {
+           display: block; 
+           clear: both;
+           float: none;
+           margin-top: 10px;
+           &:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+         }
     }
     // #######################################################################
     // safari_photo_gallery_inside page

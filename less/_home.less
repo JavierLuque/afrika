@@ -666,9 +666,7 @@
     position: relative;
     margin: 0 auto 30px;
     &:hover {
-        .tours-hover {
-            transform: scale(1,1);
-        }
+        
         .tours-visible {
             bottom: -999px;
         }
@@ -698,18 +696,30 @@
         line-height: 18/12;
     }
 }
-.tours-hover {
-    background: rgba(58,60,61,.96);
-    color: #c1cace;
-    position: absolute;
+.gallery-photo{
+  .tours-hover {
     top: 10px;
     left: 10px;
     right: 10px;
-    bottom: 10px;
-    height: auto;
-    width: auto;
+    bottom: 10px;    
     transform: scale(0,0);
     .transition(.3s);
+    
+    height: auto;
+    width: auto;
+  } 
+  .tours:hover{
+    .tours-hover{
+
+        transform: scale(1,1);
+    }
+  }
+}
+.tours-hover {
+    width: 100%;
+    background: rgba(58,60,61,.96);
+    color: #c1cace;
+    position: absolute;
     .sizing();
     padding: 10px 18px;
     h2 {
