@@ -6864,6 +6864,277 @@ table.model-4 tr td:nth-of-type(3) {
     margin-bottom: 0 !important;
   }
 }
+.need-more {
+  color: #ff0000 !important;
+}
+.c-red {
+  color: #ff0000;
+}
+.form-model-2 .note {
+  font-size: 14px;
+}
+.form-model-2 .group-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3a3c3d;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.form-model-2 .group-title .f-400 {
+  font-weight: 400;
+}
+.form-model-2 .group-title .c-red {
+  color: #ff0000;
+}
+.form-model-2 .wrap-input-radio {
+  display: inline-block;
+  vertical-align: top;
+}
+.form-model-2 .wrap-input {
+  margin-bottom: 8px;
+  clear: both;
+  width: 100%;
+}
+.form-model-2 .wrap-input label {
+  display: inline-block;
+  width: 100%;
+  color: #7c8082;
+  font-size: 14px;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.form-model-2 .wrap-input input {
+  height: 28px;
+}
+.form-model-2 .wrap-input textarea,
+.form-model-2 .wrap-input input {
+  border: 1px solid #e9e3e1;
+  border-radius: 2px;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.form-model-2 .radio-model-2 {
+  padding: 8px 20px 8px 0;
+  display: inline-block;
+  vertical-align: top;
+}
+.form-model-2 .radio-model-2 span {
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 15px;
+  display: inline-block;
+}
+.form-model-2 .radio-model-2 span:before {
+  content: '';
+  position: absolute;
+  z-index: 100;
+  top: 0px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #7f7f7f;
+  border-radius: 4px;
+}
+.form-model-2 .radio-model-2 span:after {
+  content: '';
+  position: absolute;
+  z-index: 100;
+  top: -2px;
+  left: 1px;
+  width: 12px;
+  height: 2px;
+  border: 3px solid #7f7f7f;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  -ms-transform: rotate(-50deg) scale(0, 0);
+  transform: rotate(-50deg) scale(0, 0);
+  transition: all .3s ease;
+}
+.form-model-2 .radio-model-2 input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  left: -9000px;
+}
+.form-model-2 .radio-model-2 input:checked + span {
+  color: #75af3c;
+  font-weight: 600;
+}
+.form-model-2 .radio-model-2 input:checked + span:before {
+  border-color: #75af3c;
+  border-radius: 2px;
+}
+.form-model-2 .radio-model-2 input:checked + span:after {
+  border-bottom-color: #75af3c;
+  border-left-color: #75af3c;
+  -ms-transform: rotate(-50deg) scale(1, 1);
+  transform: rotate(-50deg) scale(1, 1);
+  transition: all .3s ease;
+}
+.form-model-2 .wrap-input-file {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.form-model-2 .wrap-input-file span {
+  display: inline-block;
+  vertical-align: text-bottom;
+  font-size: 16px;
+  font-weight: 600;
+  height: 36px;
+  line-height: 36px;
+  padding-right: 5px;
+  min-width: 75px;
+  color: #3a3c3d;
+}
+.form-model-2 .wrap-input-file label {
+  overflow: hidden;
+  display: inline-block;
+  width: 168px;
+  height: 34px;
+  border: 1px solid #d6d7d7;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #fff;
+  position: relative;
+  text-align: center;
+  line-height: 38px;
+  font-weight: 700;
+  font-size: 13px;
+  color: #3a3c3d;
+}
+.form-model-2 .wrap-input-file label input {
+  opacity: 0;
+  position: absolute;
+  z-index: 100;
+  left: -9000px;
+}
+.form-model-2 .ss-select .selectric {
+  height: 28px;
+}
+.form-model-2 .ss-select.f-width {
+  width: 100%;
+}
+.form-model-2 .ss-select.f-width .selectric {
+  width: 100%;
+}
+.form-model-2 .ss-select.f-width .selectric-wrapper {
+  width: 100%;
+}
+.form-model-2 .ss-select.f-width .selectric-items {
+  width: 100% !important;
+}
+.form-model-2 .ss-select .selectric .label {
+  line-height: 30px;
+  color: #7c8082;
+  font-weight: 400;
+}
+.form-model-2 .ss-select .selectric .button {
+  height: 28px;
+}
+.form-model-2 .ss-select .selectric .button:after {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-position: -362px 2px;
+}
+.form-model-2 .ss-select .selectric .label {
+  text-transform: none;
+}
+.form-model-2 .input-group-footer .m-btn-submit {
+  margin-top: 15px;
+  display: inline-block;
+  background-color: #73ae3a;
+  color: #fff;
+  border: 1px solid #73ae3a;
+  border-bottom-color: #629431;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 2px;
+  padding: 0 10px;
+  min-width: 160px;
+  font-size: 13px;
+}
+.form-model-2 .input-group-footer .m-btn-submit .i-check {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 6px;
+  width: 14px;
+  height: 11px;
+  background-image: url(../images/v2/i-check-white.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.form-model-2 .input-group-footer .m-btn-cancel {
+  margin-top: 15px;
+  display: inline-block;
+  background-color: transparent;
+  color: #3a3c3d;
+  border: 1px solid #d7d9d9;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 2px;
+  padding: 0 10px;
+  min-width: 160px;
+  font-size: 13px;
+}
+.form-model-2 .input-group-footer .m-btn-cancel .icon-close {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 6px;
+  width: 14px;
+  height: 11px;
+  font-size: 11px;
+}
+.form-model-2 .table-rate tr td:first-of-type {
+  padding-right: 10px;
+}
+.form-model-2 .check-list-1 .wrap-input-radio {
+  width: 24%;
+  box-sizing: border-box;
+  padding-right: 5px;
+}
+@media (min-width: 601px) and (max-width: 990px) {
+  .form-model-2 .check-list-1 .wrap-input-radio {
+    width: 32%;
+  }
+}
+@media (max-width: 600px) {
+  .form-model-2 .check-list-1 .wrap-input-radio {
+    width: 49%;
+  }
+}
+.rate-me {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.rate-me label {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/v2/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -74px -24px;
+  cursor: pointer;
+}
+.rate-me label.active {
+  background-position: -74px -38px;
+}
+.rate-me label input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  left: -9000px;
+}
 .popup-box.popup-form-type-1 {
   z-index: 2000;
 }

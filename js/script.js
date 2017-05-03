@@ -400,6 +400,45 @@ $(document).ready(function(){
     }
     //------------------------------------------------------------------------//
 
+    //count-characters
+    $(function() {
+
+        if( $('.count-characters').length ){
+          var dest = $( $('.count-characters').attr('data-destination') );
+          var val = 0 ;
+          $('.count-characters').keyup(function(){
+            val = $(this).val().length;
+            dest.text(val + ' of characters used');
+            if( val > 150 && dest.hasClass('need-more') ){
+              dest.removeClass('need-more');
+            } else if(val < 150 && !dest.hasClass('need-more')){
+              dest.addClass('need-more');
+            }
+          });
+        }
+
+    });
+    //------------------------------------------------------------------------//
+
+    //rate-me
+    function changeRate(elm){
+              $(elm).parent('label').nextAll().removeClass('active');
+              $(elm).parent('label').addClass('active').prevAll().addClass('active');
+    }
+    $(function() {
+
+        if( $('.rate-me').length ){
+            
+           $('.rate-me input').change(function() {
+              changeRate(this);
+           });
+          
+        }
+
+    });
+  
+    //------------------------------------------------------------------------//
+
     //Popup country
     // function deselect(e) {
     //   $('.popup-country').slideFadeToggle(function() {
