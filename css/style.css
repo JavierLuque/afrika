@@ -7135,6 +7135,13 @@ table.model-4 tr td:nth-of-type(3) {
   z-index: -1;
   left: -9000px;
 }
+.index-bottom-title {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  color: #3a3c3d;
+  margin: 0 0 25px;
+}
 .popup-box.popup-form-type-1 {
   z-index: 2000;
 }
