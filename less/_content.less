@@ -7091,12 +7091,85 @@ display: none;
                     margin-bottom: 0;
                 }
             }
-            @media (max-width:480px) {
-                .park-title.model-main-logo .wrap-main-logo {
-                    width: 150px;
-                    float: none;
-                    margin-right: 0;
+            @media (min-width:481px) {
+                .see-more.hide-on-desktop {
+                    display: none;
+                }
+            }
+            @media (max-width: 768px) and (min-width: 641px){
+                .spanning .page-image {
+                    -ms-flex-order: 0;
+                    order: 0;
+                }
+            }
+            @media (max-width:640px) {
+                .form-model-2 .wrap-input textarea, .form-model-2 .wrap-input textarea{
+                    min-height: 200px !important;
+                }
+                .see-more{
+                    max-width: 100%;
+                }
+                .form-model-2 .input-group-footer{
+
+                    .m-btn-submit{
+                        min-width: 137px;
+                    }
+                    .m-btn-cancel{
+                        min-width: 137px;
+                    }
+                }
+                .park-title{
+                    max-width: 100%;
+                    width: 100%;
+                }
+                .country-content .wrap {
+                    padding: 0;
+                }
+                .block-bordered {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+                h2.title-2 {
+                    line-height: 1.2;
+                }
+                .ss-select {
+                    width: 47%;
+                    box-sizing: border-box;
+                    margin-right: 4px;
+                }
+                .search-form {
+                    display: none;
+                }
+                .g-top-form .aside-block .btn {
                     margin-bottom: 10px;
+                }
+                .wrap-main-title {
+                    &.wrap {
+                        background: #fcfbfa;
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                    .left-side.padd-for-main-logo {
+                        padding-bottom: 10px;
+
+                        h1 {
+                            font-size: 36px;
+                        }
+                    }
+                }
+                .park-title.model-main-logo {
+                    background-color: #fcfbfa;
+                    padding-top: 10px;
+
+                    .wrap-main-logo {
+                        width: 90px;
+                        height: 90px;
+                        margin-right: 15px;
+                        margin-bottom: 10px;
+                    }
+                    h2 {
+                        margin-bottom: 7px;
+                    }
                 }
             }
             .lastest-post-article {
@@ -7134,10 +7207,10 @@ display: none;
                     }
                 }
             }
-        }
-        // /.page-member
+            }
+            // /.page-member
 
-        .wrap-table-model-3 {
+            .wrap-table-model-3 {
             padding: 4px 25px;
 
             .table {
@@ -7971,3 +8044,39 @@ display: none;
                 // @media (max-width: 420px)
             }
             // /.mobile-styles
+            .new-footer {
+                @media(max-width:640px) {
+                    .hide-on-mobile {
+                        display: none;
+                    }
+
+                    .logo-copy{
+                        margin-bottom: 25px;
+                    }
+                    .footer-box {
+                        ul {
+                            border: none;
+                            max-width: 320px;
+                            display: block;
+                            margin: auto;
+                            overflow: hidden;
+                            padding-bottom: 15px;
+
+                            li {
+                                width: 50%;
+                                box-sizing: border-box;
+                                margin-bottom: 10px;
+                                float: left;
+                                padding: 0;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+                .line {
+                }
+                .join-us {
+                    margin-bottom: 0;
+                    border-bottom: none;
+                }
+            }
