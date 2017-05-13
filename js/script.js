@@ -269,6 +269,7 @@ $(document).ready(function(){
     });
     $('.open-popup').on('click',function(){
         if (('.popup-box').length) {
+            $('.popup-box').fadeOut();
             $(""+$(this).attr('href')+"").fadeIn();
             $('body').addClass('body-hidden');
         }
@@ -403,16 +404,18 @@ $(document).ready(function(){
     //count-characters
     $(function() {
 
-        if( $('.count-characters').length ){
-          var dest = $( $('.count-characters').attr('data-destination') );
+        if( $('#review_copy_count').length ){
+          var dest_p = $( '#review_copy_em' );
+          var dest = $( '#review_copy_count' );
+          var min_n = 150;
           var val = 0 ;
           $('.count-characters').keyup(function(){
             val = $(this).val().length;
-            dest.text(val + ' of characters used');
-            if( val > 150 && dest.hasClass('need-more') ){
-              dest.removeClass('need-more');
-            } else if(val < 150 && !dest.hasClass('need-more')){
-              dest.addClass('need-more');
+            dest.text(val);
+            if( val < min_n && dest_p.hasClass('enough') ){
+              dest_p.removeClass('enough');
+            } else if(val > min_n && !dest_p.hasClass('enough')){
+              dest_p.addClass('enough');
             }
           });
         }
@@ -432,6 +435,37 @@ $(document).ready(function(){
            $('.rate-me input').change(function() {
               changeRate(this);
            });
+          
+        }
+
+    });
+    //------------------------------------------------------------------------//
+
+    //rate-me 2
+    function changeRate(elm){
+              $(elm).parents('.radio').find('span.active').removeClass('active');
+              $(elm).parent('span').addClass('active').prevAll().addClass('active');
+    }
+    $(function() {
+
+        if( $('.form_container_stars').length ){
+
+          $('.form_container_stars .radio input').each(function( index ) {
+
+            if( $(this).is(':checked') ){
+                changeRate(this);
+            }
+            
+          });
+
+           $('.form_container_stars label').click(function(e){
+
+            $(this).prev().prop("checked", true);
+            changeRate(this);
+            
+           });
+
+           
           
         }
 
