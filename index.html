@@ -43,15 +43,15 @@
                 <div class="logo"><a href="index.html"></a></div>
                 <nav>
                     <ul>
-                        <li><a href="operators.html">Operators</a></li>
+                        <li><a href="operators.html">Tour<br>Operators</a></li>
+                        <li><a href="tour-packages.html">Tour<br> Packages</a></li>
                         <li><a href="#">Places</a></li>
-                        <li><a href="tour-packages.html">Tour Packages</a></li>
                         <li><a href="#">Photos</a></li>
                     </ul>
                 </nav>
                 <div class="header-rights-links">
                     <div class="help-join">
-                        <a href="#" class="help-link"><span></span>Help</a>
+                        <a href="#suggest" class="open-popup" style='text-transform: none;'>Suggest a park or company</a>
                         <a href="#">Join us!</a>
                     </div><!-- /.help-join -->
                     <a href="#" class="open-menu"></a>
@@ -742,33 +742,10 @@
         <div class="popup-table">
             <div class="popup-table-cell">
                 <div class="popup">
-                    <h2>Sign in</h2>
                     <div class="popup-content cf">
-                        <h4>Sign in using your facebook account</h4>
-                        <a href="#"><img src="upload/temporar-facebook.png" alt=""></a>
-                        <!-- <div class="fb-login-button" data-width="220" data-height="60" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div> -->
-                        <h4>Or sign in below</h4>
-                        <form action="#" class="cf">
-                            <div class="input-group">
-                                <label for="">Email:</label>
-                                <input type="text" class="input-text" placeholder="">
-                            </div>
-                            <div class="input-group">
-                                <label for="">Password:</label>
-                                <input type="password" class="input-text" placeholder="">
-                            </div>
-                            <div class="input-group-footer">
-                                <button type="submit" class="m-btn-submit mr-10"><i class="i-check"></i>Sign In</button>
-                            </div>
-                        </form>
-                        <span class="form-line cf mt-20 mb-20"></span>
-
-                        <p>
-                            <a href="#forgotten" class="open-popup">I've forgotten my password</a>
-                        </p>
-                        <p>
-                            <a href="#register" class="open-popup">Register to become a member</a>
-                        </p>
+                        <iframe id="iframe-login" src="http://localhost:7880/pop-up-login.html" class="iframe-form form-login">
+                          <p>Your browser does not support iframes.</p>
+                        </iframe>
                     </div> <!-- /.popup-content -->
                 </div><!-- /.popup -->
             </div><!-- /.popup-table-cell -->
@@ -778,23 +755,10 @@
         <div class="popup-table">
             <div class="popup-table-cell">
                 <div class="popup">
-                    <h2>Sign in</h2>
                     <div class="popup-content cf">
-                        <h4>Reset your password</h4>
-                        <form action="#" class="cf">
-                            <div class="input-group">
-                                <label for="">Email:</label>
-                                <input type="text" class="input-text" placeholder="">
-                            </div>
-                            <div class="input-group ">
-                                <!-- block for recaptcha -->
-                                <img src="upload/temporar-recaptcha.jpg" alt="">
-                            </div>
-                            <div class="input-group-footer">
-                                <button type="submit" class="m-btn-submit mr-10"><i class="i-check"></i>Reset password</button>
-                                <button type="reset" class="m-btn-cancel close-popup"><i class="icon-close close"></i>Cancel</button>
-                            </div>
-                        </form>
+                        <iframe src="http://localhost:7880/pop-up-forgotten.html" class="iframe-form form-forgotten">
+                          <p>Your browser does not support iframes.</p>
+                        </iframe>
                     </div> <!-- /.popup-content -->
                 </div><!-- /.popup -->
             </div><!-- /.popup-table-cell -->
@@ -804,46 +768,10 @@
         <div class="popup-table">
             <div class="popup-table-cell">
                 <div class="popup">
-                    <h2>Register</h2>
                     <div class="popup-content cf">
-                        <h4>You can register via facebook</h4>
-                        <a href="#"><img src="upload/temporar-facebook.png" alt=""></a>
-                        <!-- <div class="fb-login-button" data-width="220" data-height="60" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div> -->
-                        <h4>Or fill in our registration form below:</h4>
-                        <form action="#" class="cf">
-                            <div class="input-group">
-                                <label for="">First name:</label>
-                                <input type="text" class="input-text" placeholder="">
-                            </div>
-                            <div class="input-group">
-                                <label for="">Last name:</label>
-                                <input type="text" class="input-text" placeholder="">
-                            </div>
-                            <div class="input-group">
-                                <label for="">Screen name:</label>
-                                <input type="text" class="input-text" placeholder="">
-                            </div>
-                            <div class="input-group">
-                                <label for="">Your email:</label>
-                                <input type="email" class="input-text" placeholder="">
-                            </div>
-                            <div class="input-group">
-                                <label for="">Confirm your email:</label>
-                                <input type="text" class="input-text" placeholder="">
-                            </div>
-                            <div class="input-group">
-                                <label for="">Password:</label>
-                                <input type="password" class="input-text" placeholder="">
-                            </div>
-                            <div class="input-group-footer">
-                                <button type="submit" class="m-btn-submit mr-10"><i class="i-check"></i>Register</button>
-                                <button type="reset" class="m-btn-cancel close-popup"><i class="icon-close close"></i>Cancel</button>
-                            </div>
-                        </form>
-                        <span class="form-line cf" style="margin-top: 25px;margin-bottom: 15px;"></span>
-                        <p>
-                            Want to add your company? <a href="#suggest" class="open-popup"> Click here</a>
-                        </p>
+                        <iframe src="http://localhost:7880/pop-up-register.html" class="iframe-form form-register">
+                          <p>Your browser does not support iframes.</p>
+                        </iframe>                       
                     </div> <!-- /.popup-content -->
                 </div><!-- /.popup -->
             </div><!-- /.popup-table-cell -->
@@ -853,36 +781,10 @@
         <div class="popup-table">
             <div class="popup-table-cell">
                 <div class="popup">
-                    <h2>Suggest a park or tour operator</h2>
                     <div class="popup-content cf">
-                        <h4>Are we missing any information?</h4>
-                        <h4>Registration form below:</h4>
-                        <form action="#" class="cf">
-                            <div class="input-group">
-                                <label for="">What are we missing? <span class="c-red">*</span></label>
-                                <input type="text" class="input-text" placeholder="Tour operator">
-                            </div>
-                            <div class="input-group">
-                                <label for="">Please provide your email address and make it mandatory  <span class="c-red">*</span></label>
-                                <input type="email" class="input-text" placeholder="">
-                            </div>
-                            <div class="input-group">
-                                <label for="">Please enter your email where we can contact you if we have any questions </label>
-                                <input type="email" class="input-text" placeholder="">
-                            </div>
-                            <div class="input-group">
-                                <label for="">Please tell us about any relevant website that pertains to this park or tour operator  <span class="c-red">*</span></label>
-                                <input type="text" class="input-text" placeholder="">
-                            </div>
-                            <div class="input-group">
-                                <label for="">Please enter a description of the park or tour operator   <span class="c-red">*</span></label>
-                                <textarea name="" id="" rows="6"></textarea>
-                            </div>
-                            <div class="input-group-footer">
-                                <button type="submit" class="m-btn-submit mr-10"><i class="i-check"></i>Register</button>
-                                <button type="reset" class="m-btn-cancel close-popup"><i class="icon-close close"></i>Cancel</button>
-                            </div>
-                        </form>
+                        <iframe src="http://localhost:7880/pop-up-suggest.html" class="iframe-form form-suggest">
+                          <p>Your browser does not support iframes.</p>
+                        </iframe> 
                     </div> <!-- /.popup-content -->
                 </div><!-- /.popup -->
             </div><!-- /.popup-table-cell -->

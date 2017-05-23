@@ -267,6 +267,7 @@ $(document).ready(function(){
             e.preventDefault();
         }
     });
+
     $('.open-popup').on('click',function(){
         if (('.popup-box').length) {
             $('.popup-box').fadeOut();
@@ -275,6 +276,40 @@ $(document).ready(function(){
         }
         return false;
     });
+    
+    // $('.change-popup').on('click',function(){
+    //     if (('.popup-box').length) {
+    //         console.log('changes ');
+    //         $('.popup-box').fadeOut();
+    //         $(""+$(this).attr('href')+"").fadeIn();
+    //         $('body').addClass('body-hidden');
+    //     } else{
+    //       console.log('there is not popup');
+    //     }
+    //     return false;
+    // });
+
+    $('.iframe-form').load(function(){
+
+            var iframe = $(this).contents();
+
+            iframe.find(".change-popup").click(function(){
+            
+              $('.popup-box').fadeOut();
+              $(""+$(this).attr('href')+"").fadeIn();
+              $('body').addClass('body-hidden');
+
+            });
+
+            iframe.find(".close-popup").click(function(){
+            
+              $('.popup-box').fadeOut();
+              $('body').addClass('body-hidden');
+
+            });
+    });
+
+
     $('.close-popup').on('click', function() {
         $('.popup-box').fadeOut();
             $('body').removeClass('body-hidden');
