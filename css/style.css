@@ -413,6 +413,127 @@ a {
 .icon-next:before {
   content: "\e932";
 }
+@font-face {
+  font-family: 'icomoon-safari-2';
+  src: url('../fonts/icomoon-safari-2.eot?1vimff');
+  src: url('../fonts/icomoon-safari-2.eot?1vimff#iefix') format('embedded-opentype'), url('../fonts/icomoon-safari-2.ttf?1vimff') format('truetype'), url('../fonts/icomoon-safari-2.woff?1vimff') format('woff'), url('../fonts/icomoon-safari-2.svg?1vimff#icomoon-safari-2') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="i-"],
+[class*=" i-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon-safari-2' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.i-african-countries:before {
+  content: "\e940";
+  color: #8baf4d;
+}
+.i-all-types:before {
+  content: "\e941";
+  color: #8baf4d;
+}
+.i-articles:before {
+  content: "\e942";
+  color: #8baf4d;
+}
+.i-big-five-safaris:before {
+  content: "\e943";
+  color: #8baf4d;
+}
+.i-birding-safaris:before {
+  content: "\e944";
+  color: #8baf4d;
+}
+.i-bloger:before {
+  content: "\e945";
+  color: #8baf4d;
+}
+.i-camping-safaris:before {
+  content: "\e946";
+  color: #8baf4d;
+}
+.i-countries:before {
+  content: "\e947";
+  color: #8baf4d;
+}
+.i-cultural-safaris:before {
+  content: "\e948";
+  color: #86ac46;
+}
+.i-driver:before {
+  content: "\e949";
+  color: #8baf4d;
+}
+.i-kudu:before {
+  content: "\e94a";
+  color: #86ac46;
+}
+.i-lodge-staff:before {
+  content: "\e94b";
+  color: #86ac46;
+}
+.i-non-profit:before {
+  content: "\e94c";
+  color: #8baf4d;
+}
+.i-photos-1:before {
+  content: "\e94d";
+  color: #8baf4d;
+}
+.i-reviews-more-than-0:before {
+  content: "\e94e";
+  color: #f2cd5c;
+}
+.i-reviews-more-than-50:before {
+  content: "\e94f";
+  color: #f2cd5c;
+}
+.i-reviews-more-than-100:before {
+  content: "\e950";
+  color: #f2cd5c;
+}
+.i-romantic-safaris:before {
+  content: "\e951";
+  color: #8baf4d;
+}
+.i-safari-driver:before {
+  content: "\e952";
+  color: #86ac46;
+}
+.i-safari-enthusiast:before {
+  content: "\e953";
+  color: #8baf4d;
+}
+.i-safari-guru:before {
+  content: "\e954";
+  color: #86ac46;
+}
+.i-safari-tour-operator:before {
+  content: "\e955";
+  color: #86ac46;
+}
+.i-top-contributor:before {
+  content: "\e956";
+  color: #8baf4d;
+}
+.i-travel-agency:before {
+  content: "\e917";
+  color: #8baf4d;
+}
+.i-travel-writer:before {
+  content: "\e958";
+  color: #86ac46;
+}
 html {
   height: 100%;
   background: #ffffff;
@@ -946,7 +1067,7 @@ header nav {
   margin: 18px 0 0;
   float: left;
 }
-header nav li {
+header nav > ul > li {
   line-height: 1.2;
   display: -webkit-inline-flex;
   display: -moz-inline-flex;
@@ -960,14 +1081,18 @@ header nav li {
   text-align: center;
   margin-left: 22px;
   float: left;
+  position: relative;
 }
-header nav li:first-child {
+header nav > ul > li:first-child {
   margin-left: 0;
 }
-header nav a {
+header nav > ul > li a {
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
+}
+header nav > ul > li a:hover {
+  color: #73ae3a;
 }
 header nav .current a {
   color: #8bd048;
@@ -8023,6 +8148,204 @@ table.model-4 tr td:nth-of-type(3) {
   width: 14px;
   height: 11px;
   font-size: 11px;
+}
+.hide {
+  display: none;
+}
+.member-logged-in {
+  float: left;
+}
+.member-logged-in .member-contain {
+  position: relative;
+  padding-right: 70px;
+}
+.member-logged-in .member-contain .name {
+  font-size: 13px;
+  color: #fff;
+}
+.member-logged-in .member-contain .btn-dropdown {
+  font-size: 13px;
+  color: #73ae3a;
+  padding-right: 15px;
+  position: relative;
+  display: inline-block;
+}
+.member-logged-in .member-contain .btn-dropdown:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  z-index: 100;
+  width: 6px;
+  height: 4px;
+  background-image: url(../images/v2/drobdown-arrow-down-green.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  margin: auto;
+}
+.member-logged-in .member-contain > img {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+}
+.btn-dropdown {
+  cursor: pointer;
+}
+.wrap-dropdown {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: 100%;
+  right: 0;
+  left: auto;
+  bottom: auto;
+  background-color: transparent;
+  padding-top: 15px;
+}
+.wrap-dropdown .dropdown-body {
+  background-color: #fff;
+  position: relative;
+  -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+.wrap-dropdown .dropdown-body:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #fff;
+  position: absolute;
+  z-index: 1001;
+  bottom: 100%;
+  right: 15px;
+  left: auto;
+  top: auto;
+}
+.wrap-dropdown .dropdown-body ul {
+  padding: 0;
+  list-style-type: none;
+}
+.wrap-dropdown .dropdown-body ul li {
+  display: block;
+  border-bottom: 1px solid #ebe7e1;
+}
+.wrap-dropdown .dropdown-body ul li a {
+  padding: 7px 15px;
+  color: #7c8082;
+  font-size: 13px;
+  display: block;
+  text-align: left;
+  box-sizing: border-box;
+}
+.wrap-dropdown .dropdown-body ul li a:hover {
+  color: #73ae3a;
+  font-weight: 600;
+}
+.wrap-dropdown .dropdown-body ul.country-list li a {
+  white-space: nowrap;
+}
+.wrap-dropdown .dropdown-body ul.country-list li a img {
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 10px;
+}
+.wrap-dropdown.model-2 {
+  right: auto;
+  left: 0;
+}
+.wrap-dropdown.model-2 .dropdown-body {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.wrap-dropdown.model-2 .dropdown-body:before {
+  right: auto;
+  left: 15px;
+}
+.wrap-dropdown.model-2 .dropdown-body ul.country-list {
+  min-width: 160px;
+  display: inline-block;
+}
+.wrap-dropdown.model-2 .dropdown-body ul.country-list li a {
+  position: relative;
+}
+.wrap-dropdown.model-2 .dropdown-body ul.country-list li a:after {
+  content: '';
+  opacity: 0;
+  position: absolute;
+  z-index: 199;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+  width: 4px;
+  height: 7px;
+  background-image: url(../images/v2/drobdown-arrow-right-green.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transitions: all .3s ease;
+}
+.wrap-dropdown.model-2 .dropdown-body ul.country-list li a.active:after,
+.wrap-dropdown.model-2 .dropdown-body ul.country-list li a:hover:after {
+  opacity: 1;
+  right: 15px;
+  transitions: all .3s ease;
+}
+.wrap-dropdown.model-2 .wrap-description {
+  border-left: 1px solid #ebe7e1;
+  text-align: left;
+}
+.wrap-dropdown.model-2 .wrap-description > div {
+  display: none;
+}
+.wrap-dropdown.model-2 .wrap-description > div .content {
+  min-width: 250px;
+  padding: 25px;
+  max-height: 0;
+  overflow: hidden;
+}
+.wrap-dropdown.model-2 .wrap-description > div.block-active .content {
+  max-height: initial;
+}
+.wrap-dropdown.model-2 .wrap-description h3 {
+  color: #73ae3a;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.wrap-dropdown.model-2 .wrap-description h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3a3c3d;
+  margin-bottom: 12px;
+}
+.wrap-dropdown.model-2 .wrap-description p {
+  font-size: 13px;
+  color: #7c8082;
+  margin-bottom: 7px;
+}
+.wrap-dropdown.model-2 .wrap-description ul li {
+  border-bottom: none;
+}
+.wrap-dropdown.model-2 .wrap-description ul li a {
+  padding-left: 0;
 }
 .page-national-park-reviews .park-title h2 {
   color: #7c8082;

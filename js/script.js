@@ -497,6 +497,57 @@ $(document).ready(function(){
     });
   
     //------------------------------------------------------------------------//
+    // Dropdown (menu)
+
+       $('.btn-dropdown').on('click',function(){
+        var target = $(this).attr('data-target');
+        $(target).fadeToggle();
+      })
+
+       $('.wrap-dropdown .country-list li > a').on('click',function(){
+          var target = $(this).attr('data-target');
+              if( target == '' || target == undefined ) {
+                // console.log('no target');
+                $(this).parents('.wrap-dropdown').removeClass('opened-aside');
+                $(this).parents('.wrap-dropdown').find('.block-active').removeClass('block-active').fadeOut();
+                
+              }
+        if ( !$(this).hasClass('active') ) {
+              // console.log('she is not active');
+
+            
+          $(this).parents('.country-list').find('.active').removeClass('active');
+          $(this).addClass('active');
+          
+
+          if ( $(this).parents('.wrap-dropdown').hasClass('opened-aside') ) {
+              // console.log('there is aside');
+
+            $(this).parents('.wrap-dropdown').find('.block-active').removeClass('block-active').fadeOut( 500, function() {
+              $(target).addClass('block-active').fadeIn();
+             
+            });
+            
+          } else {
+            // console.log('activate first time');
+
+            $(target).addClass('block-active').fadeIn(500, function() {
+              $(this).parents('.wrap-dropdown').addClass('opened-aside');
+            });
+            
+          
+          }
+        } else{
+          // console.log('closing');
+          $(this).removeClass('active');
+            $(this).parents('.wrap-dropdown').removeClass('opened-aside');
+            $(this).parents('.wrap-dropdown').find('.block-active').removeClass('block-active').fadeOut();
+        }
+      })
+
+
+    
+    //------------------------------------------------------------------------//
 
     //Popup country
     // function deselect(e) {
