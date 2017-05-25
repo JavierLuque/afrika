@@ -8799,3 +8799,33 @@ display: none;
                     border-bottom: none;
                 }
             }
+
+.safari-info, .box {
+    p {
+        margin-bottom: 15px;
+    }
+    img {
+        margin-bottom: 10px;
+    }
+    ul {
+        li {
+
+            position: relative;
+            padding-left: 20px;
+
+            &:before {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                z-index: 100;
+                left: 0;
+                top: 0;
+                margin: 0.57em 10px 3px 0px;
+                background-color: #73ae3a;
+                width: 6px;
+                height: 6px;
+                border-radius: 3px;
+            }
+        }
+    }
+}
