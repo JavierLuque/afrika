@@ -378,14 +378,17 @@ $(document).ready(function(){
 
         h = Math.max(min_h, init_height);
         h = Math.min(h, max_h);
-        // if( h > max_h ) { h = max_h }
+        if( $('.page-image').hasClass('full-height') ) {
+          h = max_h;
+        }
         return h;
       }
-      var block = $('#page-image');
+      var block = $('.page-image');
       var image_url = block.css('background-image'),
       image="";
       // Remove url() or in case of Chrome url("")
       if(block.length !=0 ){
+
         image_url = image_url.match(/^url\("?(.+?)"?\)$/);
 
         if (image_url[1]) {
@@ -498,52 +501,74 @@ $(document).ready(function(){
   
     //------------------------------------------------------------------------//
     // Dropdown (menu)
+      $(function(){  
+         $('.btn-dropdown').on('click',function(){
 
-       $('.btn-dropdown').on('click',function(){
-        var target = $(this).attr('data-target');
-        $(target).fadeToggle();
-      })
-
-       $('.wrap-dropdown .country-list li > a').on('click',function(){
           var target = $(this).attr('data-target');
-              if( target == '' || target == undefined ) {
-                // console.log('no target');
-                $(this).parents('.wrap-dropdown').removeClass('opened-aside');
-                $(this).parents('.wrap-dropdown').find('.block-active').removeClass('block-active').fadeOut();
-                
-              }
-        if ( !$(this).hasClass('active') ) {
-              // console.log('she is not active');
 
+          $('.wrap-dropdown.opened').removeClass('opened').fadeOut();
+          $(target).addClass('opened').fadeIn();
+
+        });
+
+
+         $('.wrap-dropdown .country-list li > a').on('click',function(){
+            var target = $(this).attr('data-target');
+                if( target == '' || target == undefined ) {
+                  // console.log('no target');
+                  $(this).parents('.wrap-dropdown').removeClass('opened-aside');
+                  $(this).parents('.wrap-dropdown').find('.block-active').removeClass('block-active').fadeOut();
+                  
+                }
+          if ( !$(this).hasClass('active') ) {
+                // console.log('she is not active');
+
+              
+            $(this).parents('.country-list').find('.active').removeClass('active');
+            $(this).addClass('active');
             
-          $(this).parents('.country-list').find('.active').removeClass('active');
-          $(this).addClass('active');
-          
 
-          if ( $(this).parents('.wrap-dropdown').hasClass('opened-aside') ) {
-              // console.log('there is aside');
+            if ( $(this).parents('.wrap-dropdown').hasClass('opened-aside') ) {
+                // console.log('there is aside');
 
-            $(this).parents('.wrap-dropdown').find('.block-active').removeClass('block-active').fadeOut( 500, function() {
-              $(target).addClass('block-active').fadeIn();
-             
-            });
+              $(this).parents('.wrap-dropdown').find('.block-active').removeClass('block-active').fadeOut( 500, function() {
+                $(target).addClass('block-active').fadeIn();
+               
+              });
+              
+            } else {
+              // console.log('activate first time');
+
+              $(target).addClass('block-active').fadeIn(500, function() {
+                $(this).parents('.wrap-dropdown').addClass('opened-aside');
+              });
+              
             
-          } else {
-            // console.log('activate first time');
-
-            $(target).addClass('block-active').fadeIn(500, function() {
-              $(this).parents('.wrap-dropdown').addClass('opened-aside');
-            });
-            
-          
+            }
+          } else{
+            // console.log('closing');
+            $(this).removeClass('active');
+              $(this).parents('.wrap-dropdown').removeClass('opened-aside');
+              $(this).parents('.wrap-dropdown').find('.block-active').removeClass('block-active').fadeOut();
           }
-        } else{
-          // console.log('closing');
-          $(this).removeClass('active');
-            $(this).parents('.wrap-dropdown').removeClass('opened-aside');
-            $(this).parents('.wrap-dropdown').find('.block-active').removeClass('block-active').fadeOut();
-        }
-      })
+        })
+        
+          var $win = $(window); // or $box parent container
+          var $box = $(".wrap-dropdown,.btn-dropdown");
+          
+           $win.on("click", function(event){  
+             
+            if ( 
+              $box.has(event.target).length == 0 //checks if descendants of $box was clicked
+              &&
+              !$box.is(event.target) //checks if the $box itself was clicked
+            ){
+              $('.wrap-dropdown.opened').removeClass('opened').fadeOut();
+
+            }
+          });
+  
+        });
 
 
     
