@@ -8200,6 +8200,9 @@ table.model-4 tr td:nth-of-type(3) {
 .btn-dropdown {
   cursor: pointer;
 }
+.btn-menu-dropdown.opened .wrap-dropdown {
+  display: block;
+}
 .wrap-dropdown {
   display: none;
   position: absolute;
@@ -8322,6 +8325,9 @@ table.model-4 tr td:nth-of-type(3) {
 }
 .wrap-dropdown.model-2 .wrap-description > div.block-active .content {
   max-height: initial;
+}
+.wrap-dropdown.model-2 .wrap-description a {
+  color: #3a3c3d;
 }
 .wrap-dropdown.model-2 .wrap-description h3 {
   color: #73ae3a;

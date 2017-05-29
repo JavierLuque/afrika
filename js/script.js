@@ -502,14 +502,23 @@ $(document).ready(function(){
     //------------------------------------------------------------------------//
     // Dropdown (menu)
       $(function(){  
-         $('.btn-dropdown').on('click',function(){
+         $('.btn-menu-dropdown').hover(function(){
 
-          var target = $(this).attr('data-target');
+           $(this).addClass('opened');
+           console.log('jj');
 
-          $('.wrap-dropdown.opened').removeClass('opened').fadeOut();
-          $(target).addClass('opened').fadeIn();
+          // $('.wrap-dropdown.opened').removeClass('opened').fadeOut();
+          // $(target).addClass('opened').fadeIn();
 
-        });
+        },function(){
+
+           $(this).removeClass('opened');
+           console.log('mnn');
+
+          // $('.wrap-dropdown.opened').removeClass('opened').fadeOut();
+          // $(target).addClass('opened').fadeIn();
+
+        } );
 
 
          $('.wrap-dropdown .country-list li > a').on('click',function(){
