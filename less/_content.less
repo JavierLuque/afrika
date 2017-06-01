@@ -1820,6 +1820,7 @@
 }
 .table-wrapper {
     overflow-x: auto;
+    clear: both;
 }
 .search-box {
     .breadcrumbs {
@@ -3853,6 +3854,35 @@ h2{
 
 }
 .page-article-inside{
+   .safari-info, .box {
+    p {
+        margin-bottom: 15px;
+    }
+    img {
+        margin-bottom: 10px;
+    }
+    ul {
+        li {
+
+            position: relative;
+            padding-left: 20px;
+
+            &:before {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                z-index: 100;
+                left: 0;
+                top: 0;
+                margin: 0.57em 10px 3px 0px;
+                background-color: #73ae3a;
+                width: 6px;
+                height: 6px;
+                border-radius: 3px;
+            }
+        }
+    }
+}
     .park-title{
             background: url(../images/v2/ts.png) repeat;
     }
@@ -3914,7 +3944,7 @@ h2{
     }
     img.img-wide + p.img-caption {
         display: block;
-        height: 34px;
+        height: 24px;
         margin-top: -40px;
         margin-bottom: 10px;
         line-height: 1.2;
@@ -4740,6 +4770,15 @@ font-weight: 600;
     }
     .mt-20 {
         margin-top: 20px !important;
+    }
+    .mb-0i {
+        margin-bottom: 0!important;
+    }
+    .mb-15 {
+        margin-bottom: 15px;
+    }
+    .mb-15i {
+        margin-bottom: 15px !important;
     }
     .mb-20 {
         margin-bottom: 20px !important;
@@ -8809,32 +8848,40 @@ display: none;
                 }
             }
 
-.safari-info, .box {
-    p {
-        margin-bottom: 15px;
-    }
-    img {
-        margin-bottom: 10px;
-    }
-    ul {
-        li {
 
-            position: relative;
-            padding-left: 20px;
-
-            &:before {
-                content: "";
-                display: inline-block;
-                position: absolute;
-                z-index: 100;
-                left: 0;
-                top: 0;
-                margin: 0.57em 10px 3px 0px;
-                background-color: #73ae3a;
-                width: 6px;
-                height: 6px;
-                border-radius: 3px;
+.safari-info table{
+    tr{
+        td{
+            border-bottom: 1px solid #e5e5e5;
+            padding: 10px 0;
+            &:nth-of-child(2){
+                font-weight: 600;
+                padding: 10px 0 10px 10px;
             }
         }
     }
+}
+.safari-info{
+    ul{
+        display: inline-block;
+        li{
+            width: 100%;
+        }
+    }
+    h2{
+        font-weight: 700;
+        color: #3c3b3b;
+    }
+}
+.see-more-model-text{
+    font-size: 16px;
+    font-weight: 700;
+
+}
+.pi-sidebar-box.imgs-margin-bottom img{
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.slogan-video{
+    background-size: cover!important;
 }
