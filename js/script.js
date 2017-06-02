@@ -505,7 +505,7 @@ $(document).ready(function(){
          $('.btn-menu-dropdown').hover(function(){
 
            $(this).addClass('opened');
-           console.log('jj');
+           // console.log('jj');
 
           // $('.wrap-dropdown.opened').removeClass('opened').fadeOut();
           // $(target).addClass('opened').fadeIn();
