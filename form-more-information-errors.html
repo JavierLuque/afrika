@@ -45,21 +45,23 @@
                                         <input name="full_name" type="text" value="Marin Istrati" class="input" id="full_name"/>
                                         <span class="error_message error_constraint_required">This field is required</span>
                                     </div>
-                                    <div class="constraint_required constraint_email">
+                                    <div class="constraint_required constraint_email error error_constraint_required">
                                         <label for="email">Enter an email where you can be contacted</label>
                                         <input name="email" type="text" value="marinistrati1989@gmail.com" class="input" id="email"/>
+                                        <span class="error_message error_constraint_required">This field is required</span>
                                     </div>
                                 </div>
                                 <div class="form_split_column">
-                                    <div class="constraint_required">
+                                    <div class="constraint_required error error_constraint_required">
                                         <label for="safari_type">What kind of safari are you interested in?</label>
                                         <select name="safari_type" class="input" id="safari_type">
                                             <option value="">-- Please select --</option>
                                             <option value="A custom, tailor-made, private safari">A custom, tailor-made, private safari</option>
                                             <option value="A set-date, set-itinerary, group safari">A set-date, set-itinerary, group safari</option>
                                         </select>
+                                        <span class="error_message error_constraint_required">This field is required</span>
                                     </div>
-                                    <div class="constraint_required">
+                                    <div class="constraint_required error error_constraint_required">
                                         <label for="trip_date">Estimated date of arrival?</label>
                                         <span class="input elements" id="trip_date">
                                             <select name="trip_date_day">
@@ -126,10 +128,11 @@
                                                 <option value="2027">2027</option>
                                             </select>
                                         </span>
+                                        <span class="error_message error_constraint_required">This field is required</span>
                                     </div>
                                 </div>
                                 <div class="form_split_column">
-                                    <div class="constraint_required">
+                                    <div class="constraint_required error error_constraint_required">
                                         <label for="party_size">How many people in your party?</label>
                                         <select name="party_size" id="party_size">
                                             <option value="">-- Please select --</option>
@@ -145,9 +148,10 @@
                                             <option value="10">10</option>
                                             <option value="11 - 15">11 - 15</option>
                                             <option value="15+">15+</option>
-                                        </select>
+                                        </select>                                        
+                                        <span class="error_message error_constraint_required">This field is required</span>
                                     </div>
-                                    <div class="constraint_required">
+                                    <div class="constraint_required error error_constraint_required">
                                         <label>How long do you want to visit for (<em>days</em>)?</label>
                                         <select name="days" title="How long do you want to visit for?">
                                             <option value="">-- Please select --</option>
@@ -187,9 +191,10 @@
                                 </div>
                                 <div class="clear">
                                 </div>
-                                <div class="constraint_required">
+                                <div class="constraint_required error error_constraint_required">
                                     <label for="regarding_text">What's this request regarding</label>
                                     <input name="regarding_text" type="text" value="Wildebeest Migration, Big Five" class="input" id="regarding_text"/>
+                                    <span class="error_message error_constraint_required">This field is required</span>
                                 </div>
                                 <fieldset>
                                     <legend for="countryindexes">Where do you want to visit?</legend>
@@ -203,12 +208,14 @@
                                 <div>
                                     <label for="additional_information">Additional information (<em>Are there any parks you want to see or do you have special requirements?</em>)</label>
                                     <textarea name="additional_information" class="shorttextarea" id="additional_information" title="Enter any additional information"></textarea>
+                                    <span class="error_message error_constraint_required">This field is required</span>
                                 </div>
                                 <div class="clear" id="hp_address">
                                     <div>
                                         <label for="address">Please enter your address</label>
                                         <input name="address" type="text" class="input" id="address"/>
                                     </div>
+                                    <span class="error_message error_constraint_required">This field is required</span>
                                 </div>
                             </div>
                             <div class="form_button_container">

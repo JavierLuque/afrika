@@ -341,80 +341,80 @@ $(document).ready(function(){
       });
     }
     //------------------------------------------------------------------------//
-    (function () {
-      //Page-image variable height
-      var width_ = 1920;
-      var height_ = 400;
-      var initial_height_ = 400;
+    // (function () {
+    //   //Page-image variable height
+    //   var width_ = 1920;
+    //   var height_ = 400;
+    //   var initial_height_ = 400;
 
-      function resizeBlock(init_height){
+    //   function resizeBlock(init_height){
 
-        var d_w = $(document).width();
-        var d_h = $(window).height();
-        var coef = 1;
-        var min_h = 200;
-        var max_h = d_h - $('header').height() - $('.spanning .search-box').height();
-        var h = 400;
+    //     var d_w = $(document).width();
+    //     var d_h = $(window).height();
+    //     var coef = 1;
+    //     var min_h = 200;
+    //     var max_h = d_h - $('header').height() - $('.spanning .search-box').height();
+    //     var h = 400;
 
-        if( d_w > 1400 ){
-           coef =  1;
-           min_h = 400;
-        } else if( d_w > 990 && d_w < 1401 ) {
-          coef =  0.9;
-           min_h = 400;
-        } else if( d_w > 767 && d_w < 991 ) {
-          coef =  0.8;
-          min_h = 300;
-        } else if( d_w > 520 && d_w < 768 ) {
-          coef =  0.7;
-          max_h = 300;
-        } else if( d_w > 420 && d_w < 521 ) {
-          coef =  0.6;
-          max_h = 280;
-        } else{
-          coef =  0.5;
-          max_h = 250;
-        }
+    //     if( d_w > 1400 ){
+    //        coef =  1;
+    //        min_h = 400;
+    //     } else if( d_w > 990 && d_w < 1401 ) {
+    //       coef =  0.9;
+    //        min_h = 400;
+    //     } else if( d_w > 767 && d_w < 991 ) {
+    //       coef =  0.8;
+    //       min_h = 300;
+    //     } else if( d_w > 520 && d_w < 768 ) {
+    //       coef =  0.7;
+    //       max_h = 300;
+    //     } else if( d_w > 420 && d_w < 521 ) {
+    //       coef =  0.6;
+    //       max_h = 280;
+    //     } else{
+    //       coef =  0.5;
+    //       max_h = 250;
+    //     }
 
-        h = Math.max(min_h, init_height);
-        h = Math.min(h, max_h);
-        if( $('.page-image').hasClass('full-height') ) {
-          h = max_h;
-        }
-        return h;
-      }
-      var block = $('.page-image');
-      var image_url = block.css('background-image'),
-      image="";
-      // Remove url() or in case of Chrome url("")
-      if(block.length !=0 ){
+    //     h = Math.max(min_h, init_height);
+    //     h = Math.min(h, max_h);
+    //     if( $('.page-image').hasClass('full-height') ) {
+    //       h = max_h;
+    //     }
+    //     return h;
+    //   }
+    //   var block = $('.page-image');
+    //   var image_url = block.css('background-image'),
+    //   image="";
+    //   // Remove url() or in case of Chrome url("")
+    //   if(block.length !=0 ){
 
-        image_url = image_url.match(/^url\("?(.+?)"?\)$/);
+    //     image_url = image_url.match(/^url\("?(.+?)"?\)$/);
 
-        if (image_url[1]) {
-            image_url = image_url[1];
-            image = new Image();
+    //     if (image_url[1]) {
+    //         image_url = image_url[1];
+    //         image = new Image();
 
 
-            // just in case it is not already loaded
-            $(image).load(function () {
-                // alert(image.width + 'x' + image.height);
+    //         // just in case it is not already loaded
+    //         $(image).load(function () {
+    //             // alert(image.width + 'x' + image.height);
                 
-                initial_height_ = image.height;
-                height_ = resizeBlock(initial_height_) - 10;
-                block.css("height", height_);
-            });
+    //             initial_height_ = image.height;
+    //             height_ = resizeBlock(initial_height_) - 10;
+    //             block.css("height", height_);
+    //         });
 
-            $(window).resize(function() {
-              height_ = resizeBlock(initial_height_) - 10;
-              block.css("height", height_);
-              // console.log($(document).width());
-            });
-            image.src = image_url;
-        }
-      }
+    //         $(window).resize(function() {
+    //           height_ = resizeBlock(initial_height_) - 10;
+    //           block.css("height", height_);
+    //           // console.log($(document).width());
+    //         });
+    //         image.src = image_url;
+    //     }
+    //   }
 
-    })();
+    // })();
 
     //------------------------------------------------------------------------//
     // Img popup 

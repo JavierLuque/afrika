@@ -672,10 +672,12 @@ html {
 .form-model-4 .form_container .form_split_column .constraint_required {
   padding-left: 10px;
   padding-right: 10px;
-  float: left;
-  width: 50%;
+  float: none;
+  width: 49.5%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
 }
 @media (max-width: 990px) {
   .form-model-4 .form_container .form_split_column .constraint_required {
@@ -4562,6 +4564,9 @@ body {
 }
 .mw-780 {
   max-width: 780px;
+}
+.mw-800 {
+  max-width: 800px;
 }
 .mt-30 {
   margin-top: 30px;
@@ -9954,6 +9959,10 @@ table.model-4 tr td:nth-of-type(3) {
 .member-contain .dropdown-body a {
   white-space: nowrap;
 }
+span.error_message.error_constraint_required {
+  display: block;
+  padding: 7px 0;
+}
 .sidebar {
   width: 29.8245614%;
   position: relative;
@@ -12073,6 +12082,16 @@ table.model-4 tr td:nth-of-type(3) {
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 2501px) {
+  .home-page .slogan-video {
+    height: 1000px;
+  }
+}
+@media (min-width: 1921px) and (max-width: 2500px) {
+  .home-page .slogan-video {
+    height: 920px;
+  }
 }
 @media (min-width: 800px) and (max-width: 1200px) {
   .lastest-post .col-3 {
