@@ -864,6 +864,12 @@ html {
 .iframe-form.form-register {
   min-height: 660px;
 }
+.iframe-form.form-register-message {
+  min-height: 360px;
+}
+.iframe-form.form-fogotten-message {
+  min-height: 240px;
+}
 .iframe-form.form-suggest {
   min-height: 465px;
 }
@@ -6164,6 +6170,9 @@ table.model-4 tr td:nth-of-type(3) {
 }
 .mr-10 {
   margin-right: 10px;
+}
+.mt-10 {
+  margin-top: 10px;
 }
 .mt-20 {
   margin-top: 20px !important;
