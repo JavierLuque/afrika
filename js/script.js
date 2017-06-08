@@ -521,7 +521,7 @@ $(document).ready(function(){
         } );
 
 
-         $('.wrap-dropdown .country-list li > a').on('click',function(){
+         $('.wrap-dropdown .country-list li > a').hover(function(){
             var target = $(this).attr('data-target');
                 if( target == '' || target == undefined ) {
                   // console.log('no target');
