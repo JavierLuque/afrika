@@ -3652,7 +3652,7 @@ footer .separator {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.75)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
   background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.75)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.75)));
   background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
   background-repeat: repeat-x;
 }
@@ -4070,7 +4070,7 @@ footer .separator {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.35)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
   background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.35)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.35)));
   background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
   background-repeat: repeat-x;
 }
@@ -4167,7 +4167,7 @@ footer .separator {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.55)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
   background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.55)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.55)));
   background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
   background-repeat: repeat-x;
 }
@@ -4521,7 +4521,7 @@ footer .separator {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(58, 60, 61, 0.6)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(58, 60, 61, 0.6));
   background-image: -o-linear-gradient(top, transparent, rgba(58, 60, 61, 0.6));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(58, 60, 61, 0.6)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(58, 60, 61, 0.6)));
   background-image: linear-gradient(top, transparent, rgba(58, 60, 61, 0.6));
   background-repeat: repeat-x;
 }
@@ -7075,7 +7075,7 @@ table.model-4 tr td:nth-of-type(3) {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.75)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
   background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.75)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.75)));
   background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
   background-repeat: repeat-x;
 }
@@ -8490,6 +8490,9 @@ table.model-4 tr td:nth-of-type(3) {
   max-height: 0;
   overflow: hidden;
 }
+.wrap-dropdown.model-2 .wrap-description > div.block-active {
+  display: block;
+}
 .wrap-dropdown.model-2 .wrap-description > div.block-active .content {
   max-height: initial;
 }
@@ -8930,7 +8933,7 @@ table.model-4 tr td:nth-of-type(3) {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.35)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
   background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.35)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.35)));
   background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
   background-repeat: repeat-x;
 }
@@ -9971,6 +9974,9 @@ table.model-4 tr td:nth-of-type(3) {
 span.error_message.error_constraint_required {
   display: block;
   padding: 7px 0;
+}
+.i-kudu {
+  font-size: 20px!important;
 }
 .sidebar {
   width: 29.8245614%;
@@ -13003,7 +13009,7 @@ span.error_message.error_constraint_required {
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.55)));
     background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
     background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
-    background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.55)));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.55)));
     background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
     background-repeat: repeat-x;
   }
