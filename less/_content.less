@@ -7317,6 +7317,79 @@ font-weight: 600;
     }
 
     // #######################################################################
+    // Page page-national-park-about
+    // #######################################################################
+    .page-national-park-about{
+        .park-title{
+            h2{
+                font-size: 16px;;
+                color: #7c8082;
+                font-weight: 600;
+                + p{
+                    font-size: 13px;;
+                    color: #7c8082;
+                }
+            }
+        }
+        .safari-info{
+            .title-2{
+                font-size: 16px;
+            }
+            p{
+                margin-bottom: 10px;
+            }
+            table{
+                @media(min-width: 991px){
+                    td{
+                        &:first-of-type{
+                            min-width: 150px;
+                        }
+                    }
+                }
+            }
+            ul{
+
+                    li {
+                        float: none;
+                        width: 100%;
+                        position: relative;
+                        padding-left: 20px;
+
+                        &:before {
+                            content: "";
+                            display: inline-block;
+                            position: absolute;
+                            z-index: 100;
+                            left: 0;
+                            top: 1px;
+                            margin: 0.57em 10px 3px 0px;
+                            background-color: #73ae3a;
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 3px;
+                        }
+                    }
+            }
+        }
+        .pi-sidebar-box{
+            .row{
+                margin-left: -10px;
+                margin-right: -10px;
+                .column{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+        .list-result-review{
+            .result-list{
+                .wrap-tp-result{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    // #######################################################################
     // Page page-national-park-reviews
     // #######################################################################
     .page-national-park-reviews {

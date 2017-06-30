@@ -8527,6 +8527,56 @@ table.model-4 tr td:nth-of-type(3) {
 .wrap-dropdown.model-2 .wrap-description ul li a {
   padding-left: 0;
 }
+.page-national-park-about .park-title h2 {
+  font-size: 16px;
+  color: #7c8082;
+  font-weight: 600;
+}
+.page-national-park-about .park-title h2 + p {
+  font-size: 13px;
+  color: #7c8082;
+}
+.page-national-park-about .safari-info .title-2 {
+  font-size: 16px;
+}
+.page-national-park-about .safari-info p {
+  margin-bottom: 10px;
+}
+@media (min-width: 991px) {
+  .page-national-park-about .safari-info table td:first-of-type {
+    min-width: 150px;
+  }
+}
+.page-national-park-about .safari-info ul li {
+  float: none;
+  width: 100%;
+  position: relative;
+  padding-left: 20px;
+}
+.page-national-park-about .safari-info ul li:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 1px;
+  margin: 0.57em 10px 3px 0px;
+  background-color: #73ae3a;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+}
+.page-national-park-about .pi-sidebar-box .row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.page-national-park-about .pi-sidebar-box .row .column {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.page-national-park-about .list-result-review .result-list .wrap-tp-result {
+  margin-bottom: 20px;
+}
 .page-national-park-reviews .park-title h2 {
   color: #7c8082;
   font-weight: 600;
