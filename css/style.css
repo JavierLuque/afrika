@@ -6747,13 +6747,13 @@ table.model-4 tr td:nth-of-type(3) {
   color: #7c8082;
   font-size: 14px;
 }
-.add-new-styles .result-number .user-info p [class*="icon-"] {
+.add-new-styles .result-number .user-info p [class*="i-"] {
   color: #73ae3a;
   margin-right: 6px;
-  font-size: 20px;
+  font-size: 15px;
   display: inline-block;
   vertical-align: middle;
-  width: 34px;
+  width: 24px;
 }
 .add-new-styles .result-number .review-like {
   position: absolute;
