@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'africa';
+  src:
+    url('fonts/africa.ttf?2qfxz1') format('truetype'),
+    url('fonts/africa.woff?2qfxz1') format('woff'),
+    url('fonts/africa.svg?2qfxz1#africa') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="i-"], [class*=" i-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'africa' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-Summary_icon:before {
+  content: "\e900";
+}
+.i-Day-planner_icon:before {
+  content: "\e901";
+  color: #7c8082;
+}
+.i-Sample-Lodges_icon:before {
+  content: "\e902";
+  color: #7c8082;
+}
+.i-travel-agency:before {
+  content: "\e917";
+}
+.i-african-countries:before {
+  content: "\e940";
+}
+.i-all-types:before {
+  content: "\e941";
+}
+.i-articles:before {
+  content: "\e942";
+}
+.i-big-five-safaris:before {
+  content: "\e943";
+}
+.i-birding-safaris:before {
+  content: "\e944";
+}
+.i-bloger:before {
+  content: "\e945";
+}
+.i-camping-safaris:before {
+  content: "\e946";
+}
+.i-countries:before {
+  content: "\e947";
+}
+.i-cultural-safaris:before {
+  content: "\e948";
+}
+.i-driver:before {
+  content: "\e949";
+}
+.i-kudu:before {
+  content: "\e94a";
+}
+.i-lodge-staff:before {
+  content: "\e94b";
+}
+.i-non-profit:before {
+  content: "\e94c";
+}
+.i-photos-1:before {
+  content: "\e94d";
+}
+.i-reviews-more-than-0:before {
+  content: "\e94e";
+}
+.i-reviews-more-than-50:before {
+  content: "\e94f";
+}
+.i-reviews-more-than-100:before {
+  content: "\e950";
+}
+.i-romantic-safaris:before {
+  content: "\e951";
+}
+.i-safari-driver:before {
+  content: "\e952";
+}
+.i-safari-enthusiast:before {
+  content: "\e953";
+}
+.i-safari-guru:before {
+  content: "\e954";
+}
+.i-safari-tour-operator:before {
+  content: "\e955";
+}
+.i-top-contributor:before {
+  content: "\e956";
+}
+.i-travel-writer:before {
+  content: "\e958";
+}
