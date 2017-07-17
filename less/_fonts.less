@@ -1,24 +1,4 @@
-@font-face {
-  font-family: "GothamPro";
-  src: url("../fonts/GothamProRegular.eot");
-  src: url("../fonts/GothamProRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/GothamProRegular.woff") format("woff"), url("../fonts/GothamProRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "GothamPro";
-  src: url("../fonts/GothamProBold.eot");
-  src: url("../fonts/GothamProBold.eot?#iefix")format("embedded-opentype"), url("../fonts/GothamProBold.woff") format("woff"), url("../fonts/GothamProBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 700;
-}
-@font-face {
-  font-family: "GothamPro";
-  src: url("../fonts/GothamProMedium.eot");
-  src: url("../fonts/GothamProMedium.eot?#iefix")format("embedded-opentype"), url("../fonts/GothamProMedium.woff") format("woff"), url("../fonts/GothamProMedium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 600;
-}
+
 @font-face {
   font-family: 'icomoon';
   src: url('../fonts/icomoon.eot?lsh4z5');
@@ -26,15 +6,14 @@
   font-weight: normal;
   font-style: normal;
 }
-// ################################
-// For medium weight
-@font-face {
-  font-family: "GothamPro_medium";
-  src: url("../fonts/GothamProMedium.eot");
-  src: url("../fonts/GothamProMedium.eot?#iefix")format("embedded-opentype"), url("../fonts/GothamProMedium.woff") format("woff"), url("../fonts/GothamProMedium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 600;
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+body{
+  font-family: 'Open Sans', sans-serif;
 }
+
 // ################################
 [class^="icon-"], [class*=" icon-"] {
 
@@ -203,20 +182,21 @@
   content: "\e932";
 }
 
+
+
 @font-face {
-  font-family: 'icomoon-safari-2';
-  src:  url('../fonts/icomoon-safari-2.eot?1vimff');
-  src:  url('../fonts/icomoon-safari-2.eot?1vimff#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon-safari-2.ttf?1vimff') format('truetype'),
-    url('../fonts/icomoon-safari-2.woff?1vimff') format('woff'),
-    url('../fonts/icomoon-safari-2.svg?1vimff#icomoon-safari-2') format('svg');
+  font-family: 'africa';
+  src:
+    url('../fonts/africa/fonts/africa.ttf?2qfxz1') format('truetype'),
+    url('../fonts/africa/fonts/africa.woff?2qfxz1') format('woff'),
+    url('../fonts/africa/fonts/africa.svg?2qfxz1#africa') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="i-"], [class*=" i-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon-safari-2' !important;
+  font-family: 'africa' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -229,103 +209,89 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.i-african-countries:before {
-  content: "\e940";
-  color: #8baf4d;
+.i-Summary_icon:before {
+  content: "\e900";
 }
-.i-all-types:before {
-  content: "\e941";
-  color: #8baf4d;
+.i-Day-planner_icon:before {
+  content: "\e901";
+  color: #7c8082;
 }
-.i-articles:before {
-  content: "\e942";
-  color: #8baf4d;
-}
-.i-big-five-safaris:before {
-  content: "\e943";
-  color: #8baf4d;
-}
-.i-birding-safaris:before {
-  content: "\e944";
-  color: #8baf4d;
-}
-.i-bloger:before {
-  content: "\e945";
-  color: #8baf4d;
-}
-.i-camping-safaris:before {
-  content: "\e946";
-  color: #8baf4d;
-}
-.i-countries:before {
-  content: "\e947";
-  color: #8baf4d;
-}
-.i-cultural-safaris:before {
-  content: "\e948";
-  color: #86ac46;
-}
-.i-driver:before {
-  content: "\e949";
-  color: #8baf4d;
-}
-.i-kudu:before {
-  content: "\e94a";
-  color: #86ac46;
-}
-.i-lodge-staff:before {
-  content: "\e94b";
-  color: #86ac46;
-}
-.i-non-profit:before {
-  content: "\e94c";
-  color: #8baf4d;
-}
-.i-photos-1:before {
-  content: "\e94d";
-  color: #8baf4d;
-}
-.i-reviews-more-than-0:before {
-  content: "\e94e";
-  color: #f2cd5c;
-}
-.i-reviews-more-than-50:before {
-  content: "\e94f";
-  color: #f2cd5c;
-}
-.i-reviews-more-than-100:before {
-  content: "\e950";
-  color: #f2cd5c;
-}
-.i-romantic-safaris:before {
-  content: "\e951";
-  color: #8baf4d;
-}
-.i-safari-driver:before {
-  content: "\e952";
-  color: #86ac46;
-}
-.i-safari-enthusiast:before {
-  content: "\e953";
-  color: #8baf4d;
-}
-.i-safari-guru:before {
-  content: "\e954";
-  color: #86ac46;
-}
-.i-safari-tour-operator:before {
-  content: "\e955";
-  color: #86ac46;
-}
-.i-top-contributor:before {
-  content: "\e956";
-  color: #8baf4d;
+.i-Sample-Lodges_icon:before {
+  content: "\e902";
+  color: #7c8082;
 }
 .i-travel-agency:before {
   content: "\e917";
-  color: #8baf4d;
+}
+.i-african-countries:before {
+  content: "\e940";
+}
+.i-all-types:before {
+  content: "\e941";
+}
+.i-articles:before {
+  content: "\e942";
+}
+.i-big-five-safaris:before {
+  content: "\e943";
+}
+.i-birding-safaris:before {
+  content: "\e944";
+}
+.i-bloger:before {
+  content: "\e945";
+}
+.i-camping-safaris:before {
+  content: "\e946";
+}
+.i-countries:before {
+  content: "\e947";
+}
+.i-cultural-safaris:before {
+  content: "\e948";
+}
+.i-driver:before {
+  content: "\e949";
+}
+.i-kudu:before {
+  content: "\e94a";
+}
+.i-lodge-staff:before {
+  content: "\e94b";
+}
+.i-non-profit:before {
+  content: "\e94c";
+}
+.i-photos-1:before {
+  content: "\e94d";
+}
+.i-reviews-more-than-0:before {
+  content: "\e94e";
+}
+.i-reviews-more-than-50:before {
+  content: "\e94f";
+}
+.i-reviews-more-than-100:before {
+  content: "\e950";
+}
+.i-romantic-safaris:before {
+  content: "\e951";
+}
+.i-safari-driver:before {
+  content: "\e952";
+}
+.i-safari-enthusiast:before {
+  content: "\e953";
+}
+.i-safari-guru:before {
+  content: "\e954";
+}
+.i-safari-tour-operator:before {
+  content: "\e955";
+}
+.i-top-contributor:before {
+  content: "\e956";
 }
 .i-travel-writer:before {
   content: "\e958";
-  color: #86ac46;
 }
