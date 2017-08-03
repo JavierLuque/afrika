@@ -679,6 +679,66 @@ $(document).ready(function(){
 
     $(function() {
 
+        function set_add_comment() {
+            $('#add_comment').click(function(e) {
+                e.preventDefault();
+                var comment_url = $(this).attr('comment-url');
+                var comment = $('#comment_content').val();
+
+                //$.post('/articles/' + article +'/comment', { comment : comment }, function(response) {
+                $.post(comment_url, { comment : comment }, function(response) {
+                    window.location = window.location;
+                });
+
+                return false;
+            });
+        }
+
+        function process_kudu_response(response, uid) {
+            var count = parseInt($('#kudu_count_' + uid).text());
+            if (response == 'Thank you for giving a kudu.') {
+                count++;
+            }
+
+            $('#kudu_count_' + uid).text(count);
+            if (count == 1) {
+                $('#kudu_text_' + uid).html('Person gave this<br>review kudus.');
+            } else {
+                $('#kudu_text_' + uid).html('People gave this<br>review kudus.');
+            }
+
+            if (response == 'You will need to sign in.') {
+                $('#kudu_message_' + uid).html(
+                    'You will need to ' +
+                    '<a class="kudu_login" title="Sign in" href="/login">Sign in</a>');
+
+                $('.kudu_login').click(function(e) {
+                    e.preventDefault();
+                    window.parent.location.href='/login';
+                    return false;
+                });
+            } else {
+                $('#kudu_message_' + uid).html(response);
+            }
+        }
+
+        function set_give_kudu() {
+            $('.give_kudu').click(function(e) {
+                e.preventDefault();
+                var url = $(this).attr('href') + '?do=1';
+                var uid = $(this).attr('uid');
+
+                $.get(url, function(res) {
+                    process_kudu_response(res, uid);
+                });
+                return false;
+
+            });
+        }
+        set_give_kudu();
+        set_add_comment();
+
+
         var initialSlide = 0;
         function load_slides(target_, url) {
 
@@ -713,8 +773,8 @@ $(document).ready(function(){
                     return false;
                 });
 
-                //set_give_kudu();
-                //set_add_comment();
+                set_give_kudu();
+                set_add_comment();
 
             });
         }
