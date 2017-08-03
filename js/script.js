@@ -679,7 +679,9 @@ $(document).ready(function(){
 
     $(function() {
 
+        var initialSlide = 0;
         function load_slides(target_, url) {
+
             $.get(url, function(res) {
                 $(target_).html(res);
 
@@ -692,12 +694,14 @@ $(document).ready(function(){
                     autoplaySpeed: 4000,
                     speed: 400,
                     lazyLoad: 'ondemand',
+                    initialSlide: initialSlide,
                 });
 
                 $('.tp-box.new-model').on('afterChange', function(event, slick, currentSlide, nextSlide){
                       var load_next = $('#slide_photo_' + currentSlide).attr('url');
-                      console.log(currentSlide + ' ' + load_next);
+                      console.log('afterChange currentSlide: ' + currentSlide + ' loadnext: ' + load_next);
 
+                      initialSlide = currentSlide;
                       load_slides(target_, load_next);
                 });
 
@@ -731,10 +735,11 @@ $(document).ready(function(){
       $('.co').on('click', function() {
 
         var target_ = $(this).attr('data-target');
-        console.log(target_);
+        //console.log('target popup: ', target_);
 
         var url = $(this).attr('href');
-        console.log('url: ', url);
+        initialSlide = $(this).attr('initialSlide');
+        console.log('slides url: ', url);
         if (url.length) {
             load_slides(target_, url);
         }
