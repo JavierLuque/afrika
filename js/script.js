@@ -668,6 +668,118 @@ $(document).ready(function(){
     
     }
   })();
+  //################################################
+  //--TABS/FILTER SEARCH
+  //################################################
+
+  (function () {
+
+    var filter_list = $(".operators-category li");
+    
+    if (filter_list.length != 0) {
+
+      filter_list.on('click', function(){
+        if( !$(this).hasClass('active') ){
+          $(".operators-category li.active").removeClass('active');
+          $(this).addClass('active');
+        }
+      });    
+    }
+
+  })();
+  //################################################
+  //################################################
+  //--TOP-FIXED-CONTAINER
+  //################################################
+
+  (function () {
+
+    var fixed_container = $(".top-fixed-container");
+    
+    if (fixed_container.length != 0) {
+    var header_container = $("header");
+      window.onscroll = function() {
+        if ( window.pageYOffset > 92 || document.documentElement.scrollTop > 92 ) {
+
+          if( !fixed_container.hasClass('fixed') ) {
+            fixed_container.addClass('fixed');
+            header_container.addClass('add-padd');
+          console.log('add');
+          }
+        } else if( fixed_container.hasClass('fixed') ) {
+            fixed_container.removeClass('fixed')
+
+            header_container.removeClass('add-padd');
+          }
+        // var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        // console.log(scrolled + 'px');
+      }
+
+       
+    }
+
+  })();
+  //################################################
+  //################################################
+  //--ACORDEON-LIST
+  //################################################
+
+  (function () {
+
+    var acordeon = $(".acordeon");
+    
+    if (acordeon.legth != 0) {
+      var acordeon_items_headers = $(".acordeon-list .item .item-header");
+      acordeon_items_headers.on('click', function (){
+          var item = $(this).parents('.item');
+      console.log('intrat');    
+          item.toggleClass('openned');
+      });
+       
+    }
+
+  })();
+  //################################################
+
+    //count-characters
+    (function( $ ){
+
+        $.fn.countChars = function( options ) {  
+
+          var settings = $.extend( {
+            'location'         : 'top',
+            'background-color' : 'blue'
+          }, options);
+          return this.each(function() {
+              var main = {};
+              main.elm = $(this);
+              main.textarea = main.elm.find('textarea');
+              main.elm_n_max = main.elm.find('.n_max');
+              main.elm_n_chars = main.elm.find('.n_chars');
+
+              main.max_chars = main.elm.attr('data-n_max');
+              
+              var tlength = main.textarea.val().length;
+              main.elm_n_chars.text(tlength);
+
+              main.textarea.on('keyup', function(){
+
+              tlength = main.textarea.val().length;
+
+                main.textarea.val(main.textarea.val().substring(0, main.max_chars));
+                tlength = main.textarea.val().length;
+                main.elm_n_chars.text(tlength);
+
+              });            
+
+          });
+
+        };
+      })( jQuery );
+
+      $('.count-chars').countChars();
+
+    //------------------------------------------------------------------------//
 
     //Popup country
     // function deselect(e) {
