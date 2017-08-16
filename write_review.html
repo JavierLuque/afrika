@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico">
-    <title>Member PAge</title>
+    <title>Write a review</title>
     <meta name="description" content="description">
     <meta name="keywords" content="keywords">
     <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
@@ -21,6 +21,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new.css">
 <!--[if lt IE 9]>
 <script src="js/html5.js"></script>
 <script src="js/respond.js"></script>
@@ -580,18 +581,17 @@
                                     </span>
                                 </fieldset>
                             </div>
-                            <div class="clear">
-                            </div>
+                            <div class="clear"></div>
                             <div class="form_container">
                                 <div class="form-group">
                                     <label for="pearls_of_wisdom" class="group-title">Share a safari highlight in 1-2 sentences? (<em>example: 'Etosha in October was teeming with antelope.'</em>)</label>
                                     <input name="pearls_of_wisdom" type="text" class="input" id="pearls_of_wisdom" title="Share some pearls of wisdom"/>
                                 </div>
                             </div>
-                            <div class="form_container_disclaimer">
+                            <div class="form_container_disclaimer checked">
                                 <div class="constraint_required">
+                                    <label for="disclaimer">I certify that this review and these photos are a direct result of my own safari experience. <span>Your African Safari (YAS) has a zero-tolerance policy on fake reviews and non-original photos.</span></label>
                                     <input name="disclaimer" type="checkbox" value="1" checked="1" id="disclaimer"/>
-                                    <label for="disclaimer">I certify that this review and these photos are a direct result of my own safari experience. <em>Your African Safari (YAS) has a zero-tolerance policy on fake reviews and non-original photos.</em></label>
                                 </div>
                                 <div class="clear">
                                 </div>
@@ -602,24 +602,24 @@
                                     <label for="upload_photos_checkbox" class="group-title">Would you like to upload some photos? (<em>limit 5</em>)</label>
                                 </div>
                                 <div id="photo_container">
-                                    <div>
-                                        <label for="photo1">Photo 1</label>
+                                    <div class="wrap-input">
+                                        <label for="photo1">Photo 1 <span>Choose File</span></label>
                                         <input name="upload_photos" type="file" class="input" id="photo1"/>
                                     </div>
-                                    <div>
-                                        <label for="photo2">Photo 2</label>
+                                    <div class="wrap-input">
+                                        <label for="photo2">Photo 2 <span>Choose File</span></label>
                                         <input name="upload_photos" type="file" class="input" id="photo2"/>
                                     </div>
-                                    <div>
-                                        <label for="photo3">Photo 3</label>
+                                    <div class="wrap-input">
+                                        <label for="photo3">Photo 3 <span>Choose File</span></label>
                                         <input name="upload_photos" type="file" class="input" id="photo3"/>
                                     </div>
-                                    <div>
-                                        <label for="photo4">Photo 4</label>
+                                    <div class="wrap-input">
+                                        <label for="photo4">Photo 4 <span>Choose File</span></label>
                                         <input name="upload_photos" type="file" class="input" id="photo4"/>
                                     </div>
-                                    <div>
-                                        <label for="photo5">Photo 5</label>
+                                    <div class="wrap-input">
+                                        <label for="photo5">Photo 5 <span>Choose File</span></label>
                                         <input name="upload_photos" type="file" class="input" id="photo5"/>
                                     </div>
                                 </div>

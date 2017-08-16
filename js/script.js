@@ -778,6 +778,43 @@ $(document).ready(function(){
       })( jQuery );
 
       $('.count-chars').countChars();
+  //################################################
+
+    //disclaimer 
+    (function(){
+          var disclaimer = $('#disclaimer');
+          if(disclaimer.length != 0){
+            disclaimer.on('change', function(){
+              var parent = $(this).parents('.form_container_disclaimer');
+              parent.toggleClass('checked');
+              console.log('change');
+            });
+          }
+
+      })();
+
+
+    //------------------------------------------------------------------------//
+  //################################################
+
+    //photo container
+    (function(){
+          var photo_container = $('#photo_container');
+          if(photo_container.length != 0){
+            $('#photo_container input').on('change', function(e){
+              var parent = $(this).parents('.wrap-input');
+              var label = parent.find('label');
+
+              parent.toggleClass('checked');
+              var fileName = e.target.value.split( '\\' ).pop();
+
+              label.html(fileName + '<span>Change image</span>');
+              console.log(fileName);
+            });
+          }
+
+      })();
+
 
     //------------------------------------------------------------------------//
 
