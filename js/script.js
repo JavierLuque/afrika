@@ -732,7 +732,25 @@ $(document).ready(function(){
       var acordeon_items_headers = $(".acordeon-list .item .item-header");
       acordeon_items_headers.on('click', function (){
           var item = $(this).parents('.item');
-      console.log('intrat');    
+          item.toggleClass('openned');
+      });
+       
+    }
+
+  })();
+  //################################################
+  //################################################
+  //--ACORDEON-2
+  //################################################
+
+  (function () {
+
+    var acordeon = $("m-acordeon");
+    
+    if (acordeon.legth != 0) {
+      var acordeon_items_headers = $(".m-acordeon .a-row-header h4");
+      acordeon_items_headers.on('click', function (){
+          var item = $(this).parents('.a-row-header');
           item.toggleClass('openned');
       });
        

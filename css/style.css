@@ -7906,12 +7906,10 @@ table.model-4 tr td:nth-of-type(3) {
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: 600;
-  color: #000;
 }
-.form-model-3 .form_container_disclaimer span {
+.form-model-3 .form_container_disclaimer em {
   font-size: 14px;
   font-weight: 400;
-  color: #7f7f7f;
 }
 .form-model-3 .form_container_disclaimer label {
   cursor: pointer;
@@ -7921,7 +7919,6 @@ table.model-4 tr td:nth-of-type(3) {
   line-height: 15px;
   display: inline-block;
   margin-right: 15px;
-  color: #75af3c;
 }
 .form-model-3 .form_container_disclaimer label:before {
   content: '';
@@ -7958,33 +7955,15 @@ table.model-4 tr td:nth-of-type(3) {
   z-index: -1;
   left: -9000px;
 }
-.form-model-3 .form_container_disclaimer input:checked ~ label {
-  color: #7f7f7f;
+.form-model-3 .form_container_disclaimer input:checked + label {
+  color: #75af3c;
   font-weight: 600;
 }
-.form-model-3 .form_container_disclaimer input:checked ~ label:before {
+.form-model-3 .form_container_disclaimer input:checked + label:before {
   border-color: #75af3c;
   border-radius: 2px;
 }
-.form-model-3 .form_container_disclaimer input:checked ~ label:after {
-  border-bottom-color: #75af3c;
-  border-left-color: #75af3c;
-  -webkit-transform: rotate(-50deg) scale(1, 1);
-  -ms-transform: rotate(-50deg) scale(1, 1);
-  transform: rotate(-50deg) scale(1, 1);
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
-}
-.form-model-3 .form_container_disclaimer.checked label {
-  color: #7f7f7f;
-  font-weight: 600;
-}
-.form-model-3 .form_container_disclaimer.checked label:before {
-  border-color: #75af3c;
-  border-radius: 2px;
-}
-.form-model-3 .form_container_disclaimer.checked label:after {
+.form-model-3 .form_container_disclaimer input:checked + label:after {
   border-bottom-color: #75af3c;
   border-left-color: #75af3c;
   -webkit-transform: rotate(-50deg) scale(1, 1);
@@ -8080,16 +8059,14 @@ table.model-4 tr td:nth-of-type(3) {
   display: inline-block;
   line-height: 38px;
   margin-bottom: 10px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
 }
-.form-model-3 #photo_container label span {
+.form-model-3 #photo_container label:before {
+  content: 'Choose File';
   position: absolute;
   display: inline-block;
   z-index: 100;
   top: 0px;
-  right: 20px;
+  right: 10px;
   left: auto;
   width: 168px;
   height: 34px;
@@ -11234,23 +11211,6 @@ h2.title-3 {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-}
-.form-model-3 .form_container_stars .radio span.active label {
-  background-image: url(../images/v2/star-active.png);
-  background-position: center center;
-}
-.form-model-3 .form_container_stars .radio span label {
-  background-image: url(../images/v2/star.png);
-  background-position: center 4px;
-  width: 18px;
-  height: 23px;
-}
-.form-model-3 .form_container_stars fieldset > legend {
-  font-size: 16px;
-  width: 270px;
-}
-.form-model-3 .form_container_stars fieldset {
-  margin-bottom: 4px;
 }
 .sidebar {
   width: 29.8245614%;
