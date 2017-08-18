@@ -817,8 +817,17 @@ $(document).ready(function(){
 
     //photo container
     (function(){
+
           var photo_container = $('#photo_container');
+
           if(photo_container.length != 0){
+            var showPhotos = $('#upload_photos_checkbox');
+
+            showPhotos.on('change', function(){
+              photo_container[0].classList.toggle('openned');
+              console.log('changes');
+            });
+
             $('#photo_container input').on('change', function(e){
               var parent = $(this).parents('.wrap-input');
               var label = parent.find('label');
