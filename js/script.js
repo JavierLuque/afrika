@@ -745,13 +745,58 @@ $(document).ready(function(){
 
   (function () {
 
-    var acordeon = $("m-acordeon");
+    var acordeon = $(".m-acordeon");
     
     if (acordeon.legth != 0) {
-      var acordeon_items_headers = $(".m-acordeon .a-row-header h4");
+      var acordeon_items_headers = $(".m-acordeon .a-row-header");
       acordeon_items_headers.on('click', function (){
-          var item = $(this).parents('.a-row-header');
-          item.toggleClass('openned');
+          var item = $(this).toggleClass('openned');
+      });
+       
+    }
+
+  })();
+  //################################################
+  //--m-box-collapsed
+  //################################################
+
+  (function () {
+
+    var toogle_box_collapsed = $(".toggle-expand-block");
+    
+    if (toogle_box_collapsed != 0) {
+      toogle_box_collapsed.on('click', function (){
+          var target = $(this).attr('data-target');
+          $(target).toggleClass('openned');
+      });
+       
+    }
+
+  })();
+  //################################################
+  //--check/uncheck all inputs
+  //################################################
+
+  (function () {
+
+    var check_all = $(".check-all");
+    var uncheck_all = $(".uncheck-all");
+    
+    if (check_all != 0) {
+      
+      check_all.on('click', function (){
+          var target = $(this).attr('data-target');
+          $(target + " input[type='checkbox']").prop('checked', true);
+      });
+       
+    }
+    
+    if (uncheck_all != 0) {
+
+      uncheck_all.on('click', function (){
+        console.log('click');
+          var target = $(this).attr('data-target');
+          $(target + " input[type='checkbox']").prop('checked', false);
       });
        
     }
