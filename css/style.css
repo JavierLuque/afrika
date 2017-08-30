@@ -3633,7 +3633,7 @@ footer .separator {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.75)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
   background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.75)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.75)));
   background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
   background-repeat: repeat-x;
 }
@@ -4051,7 +4051,7 @@ footer .separator {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.35)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
   background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.35)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.35)));
   background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
   background-repeat: repeat-x;
 }
@@ -4148,7 +4148,7 @@ footer .separator {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.55)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
   background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.55)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.55)));
   background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
   background-repeat: repeat-x;
 }
@@ -4502,7 +4502,7 @@ footer .separator {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(58, 60, 61, 0.6)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(58, 60, 61, 0.6));
   background-image: -o-linear-gradient(top, transparent, rgba(58, 60, 61, 0.6));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(58, 60, 61, 0.6)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(58, 60, 61, 0.6)));
   background-image: linear-gradient(top, transparent, rgba(58, 60, 61, 0.6));
   background-repeat: repeat-x;
 }
@@ -4557,6 +4557,9 @@ body {
 }
 .mt-30 {
   margin-top: 30px;
+}
+.mt-30i {
+  margin-top: 30px!important;
 }
 .ml-5 {
   margin-left: 5px;
@@ -6166,6 +6169,15 @@ table.model-4 tr td:nth-of-type(3) {
   float: left;
   top: 6px;
 }
+.mt-0i {
+  margin-top: 0px!important;
+}
+.mt-5 {
+  margin-top: 10px;
+}
+.mt-5i {
+  margin-top: 5px!important;
+}
 .mr-10 {
   margin-right: 10px;
 }
@@ -7077,7 +7089,7 @@ table.model-4 tr td:nth-of-type(3) {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.75)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
   background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.75)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.75)));
   background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
   background-repeat: repeat-x;
 }
@@ -8215,7 +8227,6 @@ table.model-4 tr td:nth-of-type(3) {
 }
 .form-model-3 #photo_container.input-model-2 label {
   padding-right: 0;
-  padding-left: 200px;
 }
 .form-model-3 #photo_container.input-model-2 label:before {
   right: initial;
@@ -9016,7 +9027,7 @@ table.model-4 tr td:nth-of-type(3) {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.35)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
   background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.35)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.35)));
   background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
   background-repeat: repeat-x;
 }
@@ -10603,93 +10614,6 @@ span.error_message.error_constraint_required {
 }
 .i-kudu {
   font-size: 20px!important;
-}
-.page--search-2 .operators-category li {
-  font-weight: 700;
-}
-.page--search-2 .operators-category li a {
-  font-weight: 700;
-}
-.page--search-2 .list-result article .article-header {
-  border-bottom: 1px solid #e2e1dd;
-  padding: 4px 0;
-}
-.page--search-2 .list-result article .article-header [class*='icon-'] {
-  color: #7f7f7f;
-}
-.page--search-2 .list-result article .article-header .category {
-  color: #7f7f7f;
-  font-weight: 600;
-  margin-left: 10px;
-  font-size: 16px;
-}
-.page--search-2 .list-result article .name {
-  font-size: 16px;
-  margin: 0;
-  display: inline-block;
-  vertical-align: middle;
-  font-weight: 700;
-}
-.page--search-2 .list-result article .article-body {
-  padding: 25px 0;
-}
-.page--search-2 .list-result article .wrap-flex {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: top;
-  -ms-flex-align: top;
-  align-items: top;
-}
-.page--search-2 .list-result article .wrap-flex .article-img {
-  min-width: 200px;
-  max-width: 200px;
-  display: block;
-}
-.page--search-2 .list-result article .wrap-flex .right-side {
-  width: 100%;
-  padding-left: 15px;
-}
-.page--search-2 .list-result article .wrap-flex .right-side h4 {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1;
-}
-.page--search-2 .list-result article .wrap-flex .right-side .by {
-  color: #73ae3a;
-}
-.page--search-2 .list-result article .wrap-flex .right-side .text {
-  padding-top: 5px;
-  font-size: 13px;
-  color: #7c8082;
-  line-height: 1.4;
-}
-.page--search-2 .list-result article .wrap-flex .right-side .read {
-  font-weight: 700;
-}
-@media (min-width: 481px) and (max-width: 767px) {
-  .page--search-2 .list-result article .wrap-flex .article-img {
-    min-width: 100px;
-    max-width: 120px;
-    width: 120px;
-  }
-}
-@media (max-width: 480px) {
-  .page--search-2 .list-result article .wrap-flex {
-    display: block;
-  }
-  .page--search-2 .list-result article .wrap-flex .article-img {
-    width: 100%;
-  }
-  .page--search-2 .list-result article .wrap-flex .right-side {
-    padding-left: 0;
-    padding-top: 15px;
-  }
 }
 .count-chars label .info {
   font-size: 14px;
@@ -14056,7 +13980,7 @@ h2.title-3 {
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.55)));
     background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
     background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
-    background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.55)));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.55)));
     background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
     background-repeat: repeat-x;
   }
