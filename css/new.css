@@ -1,3 +1,10 @@
+.page--dashboard .page-title2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #575757;
+  text-align: left;
+  margin: 20px 0 15px;
+}
 .page--dashboard .main {
   padding-top: 0;
 }

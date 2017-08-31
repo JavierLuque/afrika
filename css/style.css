@@ -7308,6 +7308,29 @@ table.model-4 tr td:nth-of-type(3) {
   background-position: center center;
   background-size: cover;
 }
+.banner.model-wide.type-2 {
+  min-height: 185px;
+}
+.banner.model-wide.type-2:after {
+  width: 350px;
+}
+.banner.model-wide.type-2 .info-right {
+  width: 350px;
+}
+.banner.model-wide.type-2 .info-right .banner-title {
+  margin-top: 10px;
+}
+.banner.model-wide.type-2 .info-right h6 {
+  font-size: 16px;
+}
+.banner.model-wide.type-2 .info-right .get-quote {
+  font-weight: 700;
+}
+.banner.model-wide.type-2 .top-left-badge {
+  font-size: 24px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
 .banner.model-wide:after {
   content: "";
   position: absolute;
@@ -7407,6 +7430,9 @@ table.model-4 tr td:nth-of-type(3) {
   }
   .banner.model-wide .info-right .banner-price span:nth-of-type(2) {
     font-size: 24px;
+  }
+  .banner.model-wide.type-2 .info-right h6 {
+    font-size: 14px;
   }
 }
 .banner.model-wide.info-bg-white:after {
@@ -9548,6 +9574,12 @@ table.model-4 tr td:nth-of-type(3) {
 .header-content .title-box .right-side .social-links-imgs {
   float: none;
   margin-top: 10px;
+}
+.header-content .title-box .tour-title.model-2 {
+  margin: 35px 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
 }
 @media (max-width: 767px) {
   .header-content .title-box {
