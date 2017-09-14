@@ -1332,7 +1332,11 @@ h2.title-4 {
   color: #3a3c3d;
   font-weight: 600;
 }
+.card.type-6 .card-header h2 i {
+  margin-right: 2px;
+}
 .card.type-6 .card-header h2 .category {
+  padding-left: 6px;
   font-weight: 400;
   font-size: 14px;
   color: #7f7f7f;
