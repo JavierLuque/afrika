@@ -1556,6 +1556,18 @@ article.model-1 .wrap-flex .right-side .read {
 .page--search-2 .operators-category li a {
   font-weight: 700;
 }
+@media (max-width: 767px) {
+  .page--search-2 .g-top-form .aside-block .btn {
+    width: 100%;
+    min-width: 200px;
+  }
+  .page--search-2 .search-box .wrap {
+    padding-right: 15px;
+  }
+  .page--search-2 .card.type-6 .card-body .wrap-img {
+    max-width: 100%;
+  }
+}
 .page--search-2 .operators-box .ob-image {
   border: 1px solid #fff;
 }
