@@ -128,6 +128,28 @@
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+.page--dashboard .acordeon-list .item .item-header .badge {
+  text-transform: none;
+  font-size: 14px;
+  margin-left: 15px;
+}
+.page--dashboard .acordeon-list .item .item-header .badge .number {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  line-height: 29px;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 50%;
+}
+.page--dashboard .acordeon-list .item .item-header .badge.c-green {
+  color: #73ae3a;
+}
+.page--dashboard .acordeon-list .item .item-header .badge.c-green .number {
+  color: #fff;
+  background-color: #73ae3a;
+}
 .page--dashboard .acordeon-list .item .item-body {
   padding: 0;
   margin: 0;
