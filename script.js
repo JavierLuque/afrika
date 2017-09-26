@@ -15,7 +15,7 @@ $(document).ready(function(){
     //------------------------------------------------------------------------//
 
     //drop down menu
-    $('.open-menu').on('click',function(){
+    $('.toggle-aside-menu').on('click',function(){
       $('body').toggleClass('menu-open');
       $('.mobile-menu').toggleClass('active');
     })
@@ -732,8 +732,88 @@ $(document).ready(function(){
       var acordeon_items_headers = $(".acordeon-list .item .item-header");
       acordeon_items_headers.on('click', function (){
           var item = $(this).parents('.item');
-      console.log('intrat');    
           item.toggleClass('openned');
+      });
+       
+    }
+
+  })();
+  //################################################
+  //################################################
+  //--ACORDEON-2
+  //################################################
+
+  (function () {
+
+    var acordeon = $(".m-acordeon");
+    
+    if (acordeon.legth != 0) {
+      var acordeon_items_headers = $(".m-acordeon .a-row-header");
+      acordeon_items_headers.on('click', function (){
+          var item = $(this).toggleClass('openned');
+      });
+       
+    }
+
+  })();
+  //################################################
+  //-- side-nav-ACORDEON
+  //################################################
+
+  (function () {
+
+    var acordeon = $(".m-items-list");
+    
+    if (acordeon.legth != 0) {
+      var acordeon_items_headers = $(".m-items-list > .item > .item-header");
+      acordeon_items_headers.on('click', function (){
+          var item = $(this).toggleClass('open');
+      });
+       
+    }
+
+  })();
+  //################################################
+  //--m-box-collapsed
+  //################################################
+
+  (function () {
+
+    var toogle_box_collapsed = $(".toggle-expand-block");
+    
+    if (toogle_box_collapsed != 0) {
+      toogle_box_collapsed.on('click', function (){
+          var target = $(this).attr('data-target');
+          $(target).toggleClass('openned');
+      });
+       
+    }
+
+  })();
+  //################################################
+  //--check/uncheck all inputs
+  //################################################
+
+  (function () {
+
+    var check_all = $(".check-all");
+    var uncheck_all = $(".uncheck-all");
+    
+    if (check_all != 0) {
+      
+      check_all.on('click', function (){
+          var target = $(this).attr('data-target');
+          $(target + " input[type='checkbox']").prop('checked', true);
+      });
+       
+    }
+    
+    if (uncheck_all != 0) {
+
+      uncheck_all.on('click', function (){
+        console.log('click');
+          var target = $(this).attr('data-target');
+          $(target + " input[type='checkbox']").prop('checked', false);
       });
        
     }
@@ -778,6 +858,52 @@ $(document).ready(function(){
       })( jQuery );
 
       $('.count-chars').countChars();
+  //################################################
+
+    //disclaimer 
+    (function(){
+          var disclaimer = $('#disclaimer');
+          if(disclaimer.length != 0){
+            disclaimer.on('change', function(){
+              var parent = $(this).parents('.form_container_disclaimer');
+              parent.toggleClass('checked');
+              console.log('change');
+            });
+          }
+
+      })();
+
+
+    //------------------------------------------------------------------------//
+  //################################################
+
+    //photo container
+    (function(){
+
+          var photo_container = $('#photo_container');
+
+          if(photo_container.length != 0){
+            var showPhotos = $('#upload_photos_checkbox');
+
+            showPhotos.on('change', function(){
+              photo_container[0].classList.toggle('openned');
+              console.log('changes');
+            });
+
+            $('#photo_container input').on('change', function(e){
+              var parent = $(this).parents('.wrap-input');
+              var label = parent.find('label');
+
+              parent.toggleClass('checked');
+              var fileName = e.target.value.split( '\\' ).pop();
+
+              label.html(fileName + '<span>Change image</span>');
+              console.log(fileName);
+            });
+          }
+
+      })();
+
 
     //------------------------------------------------------------------------//
 
