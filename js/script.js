@@ -261,6 +261,11 @@ $(document).ready(function(){
     $('.open-popup').on('click',function(){
         if (('.popup-box').length) {
             $('.popup-box').fadeOut();
+
+            var currency_code = $(this).attr('currency_code');
+            if( currency_code ) {
+                $('#iframe-currency').attr('src', '/tooltips/currency/' + currency_code);
+            }
             $(""+$(this).attr('href')+"").fadeIn();
             $('body').addClass('body-hidden');
         }
