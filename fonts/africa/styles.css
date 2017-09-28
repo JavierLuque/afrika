@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "safari";
+  src:url("fonts/safari.eot");
+  src:url("fonts/safari.eot?#iefix") format("embedded-opentype"),
+    url("fonts/safari.woff") format("woff"),
+    url("fonts/safari.ttf") format("truetype"),
+    url("fonts/safari.svg#safari") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "safari" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="ico-"]:before,
+[class*=" ico-"]:before {
+  font-family: "safari" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-safari-african-countries:before {
+  content: "\61";
+}
+.ico-safari-all-types:before {
+  content: "\62";
+}
+.ico-safari-arrow-left:before {
+  content: "\63";
+}
+.ico-safari-arrow-left-2:before {
+  content: "\64";
+}
+.ico-safari-arrow-right:before {
+  content: "\65";
+}
+.ico-safari-article:before {
+  content: "\66";
+}
+.ico-safari-articles:before {
+  content: "\67";
+}
+.ico-safari-auto:before {
+  content: "\68";
+}
+.ico-safari-big-five-safaris:before {
+  content: "\69";
+}
+.ico-safari-birding:before {
+  content: "\6a";
+}
+.ico-safari-earth:before {
+  content: "\6b";
+}
+.ico-safari-birding-safaris:before {
+  content: "\6c";
+}
+.ico-safari-bloger:before {
+  content: "\6d";
+}
+.ico-safari-boating:before {
+  content: "\6e";
+}
+.ico-safari-email:before {
+  content: "\6f";
+}
+.ico-safari-edit:before {
+  content: "\70";
+}
+.ico-safari-day-planner-icon:before {
+  content: "\71";
+}
+.ico-safari-currency:before {
+  content: "\72";
+}
+.ico-safari-cultural-safaris:before {
+  content: "\73";
+}
+.ico-safari-crop:before {
+  content: "\74";
+}
+.ico-safari-countries:before {
+  content: "\75";
+}
+.ico-safari-close:before {
+  content: "\76";
+}
+.ico-safari-clear:before {
+  content: "\77";
+}
+.ico-safari-books:before {
+  content: "\78";
+}
+.ico-safari-camping-safaris:before {
+  content: "\79";
+}
+.ico-safari-copy:before {
+  content: "\7a";
+}
+.ico-safari-facebook:before {
+  content: "\41";
+}
+.ico-safari-file-user:before {
+  content: "\42";
+}
+.ico-safari-flag:before {
+  content: "\43";
+}
+.ico-safari-flights:before {
+  content: "\44";
+}
+.ico-safari-form:before {
+  content: "\45";
+}
+.ico-safari-google-plus:before {
+  content: "\46";
+}
+.ico-safari-group:before {
+  content: "\47";
+}
+.ico-safari-guru:before {
+  content: "\48";
+}
+.ico-safari-in:before {
+  content: "\49";
+}
+.ico-safari-here:before {
+  content: "\4a";
+}
+.ico-safari-kudu:before {
+  content: "\4b";
+}
+.ico-safari-leon:before {
+  content: "\4c";
+}
+.ico-safari-like:before {
+  content: "\4d";
+}
+.ico-safari-plane:before {
+  content: "\4e";
+}
+.ico-safari-pie:before {
+  content: "\4f";
+}
+.ico-safari-photos-1:before {
+  content: "\50";
+}
+.ico-safari-park-reviews:before {
+  content: "\51";
+}
+.ico-safari-packages:before {
+  content: "\52";
+}
+.ico-safari-operators-reviews:before {
+  content: "\53";
+}
+.ico-safari-operators:before {
+  content: "\54";
+}
+.ico-safari-non-profit:before {
+  content: "\55";
+}
+.ico-safari-night-auto:before {
+  content: "\56";
+}
+.ico-safari-next:before {
+  content: "\57";
+}
+.ico-safari-messages:before {
+  content: "\58";
+}
+.ico-safari-lodge-staff:before {
+  content: "\59";
+}
+.ico-safari-likeactive:before {
+  content: "\5a";
+}
+.ico-safari-previews:before {
+  content: "\30";
+}
+.ico-safari-reviews-more-than-0:before {
+  content: "\31";
+}
+.ico-safari-reviews-more-than-50:before {
+  content: "\32";
+}
+.ico-safari-reviews-more-than-100:before {
+  content: "\33";
+}
+.ico-safari-romantic-safaris:before {
+  content: "\34";
+}
+.ico-safari-rotate:before {
+  content: "\35";
+}
+.ico-safari-safari-driver:before {
+  content: "\36";
+}
+.ico-safari-safari-enthusiast:before {
+  content: "\37";
+}
+.ico-safari-safari-tour-operator:before {
+  content: "\38";
+}
+.ico-safari-sample-lodges:before {
+  content: "\39";
+}
+.ico-safari-shortlist:before {
+  content: "\21";
+}
+.ico-safari-summary-icon:before {
+  content: "\22";
+}
+.ico-safari-tag:before {
+  content: "\23";
+}
+.ico-safari-youtube:before {
+  content: "\24";
+}
+.ico-safari-write:before {
+  content: "\25";
+}
+.ico-safari-untitled:before {
+  content: "\26";
+}
+.ico-safari-twitter:before {
+  content: "\27";
+}
+.ico-safari-tree:before {
+  content: "\28";
+}
+.ico-safari-travel-writer:before {
+  content: "\29";
+}
+.ico-safari-travel-agency:before {
+  content: "\2a";
+}
+.ico-safari-tour-packages:before {
+  content: "\2b";
+}
+.ico-safari-tour-auto:before {
+  content: "\2c";
+}
+.ico-safari-top-contributor:before {
+  content: "\2d";
+}
+.ico-safari-tailored:before {
+  content: "\2e";
+}

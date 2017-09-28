@@ -15,7 +15,7 @@ $(document).ready(function(){
     //------------------------------------------------------------------------//
 
     //drop down menu
-    $('.open-menu').on('click',function(){
+    $('.toggle-aside-menu').on('click',function(){
       $('body').toggleClass('menu-open');
       $('.mobile-menu').toggleClass('active');
     })
@@ -751,6 +751,23 @@ $(document).ready(function(){
       var acordeon_items_headers = $(".m-acordeon .a-row-header");
       acordeon_items_headers.on('click', function (){
           var item = $(this).toggleClass('openned');
+      });
+       
+    }
+
+  })();
+  //################################################
+  //-- side-nav-ACORDEON
+  //################################################
+
+  (function () {
+
+    var acordeon = $(".m-items-list");
+    
+    if (acordeon.legth != 0) {
+      var acordeon_items_headers = $(".m-items-list > .item > .item-header");
+      acordeon_items_headers.on('click', function (){
+          var item = $(this).toggleClass('open');
       });
        
     }
