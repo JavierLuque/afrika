@@ -3894,7 +3894,7 @@ footer .separator {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.75)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
   background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.75)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.75)));
   background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
   background-repeat: repeat-x;
 }
@@ -4312,7 +4312,7 @@ footer .separator {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.35)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
   background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.35)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.35)));
   background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
   background-repeat: repeat-x;
 }
@@ -4409,7 +4409,7 @@ footer .separator {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.55)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
   background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.55)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.55)));
   background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
   background-repeat: repeat-x;
 }
@@ -4763,7 +4763,7 @@ footer .separator {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(58, 60, 61, 0.6)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(58, 60, 61, 0.6));
   background-image: -o-linear-gradient(top, transparent, rgba(58, 60, 61, 0.6));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(58, 60, 61, 0.6)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(58, 60, 61, 0.6)));
   background-image: linear-gradient(top, transparent, rgba(58, 60, 61, 0.6));
   background-repeat: repeat-x;
 }
@@ -7350,7 +7350,7 @@ table.model-4 tr td:nth-of-type(3) {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.75)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
   background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.75)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.75)));
   background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.75));
   background-repeat: repeat-x;
 }
@@ -9314,7 +9314,7 @@ table.model-4 tr td:nth-of-type(3) {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.35)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
   background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.35)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.35)));
   background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.35));
   background-repeat: repeat-x;
 }
@@ -11267,8 +11267,10 @@ h2.title-3 {
   width: 100%;
 }
 .new-card.model-1 .new-card-header .flex-box .right-side {
-  min-width: 175px;
-  max-width: 175px;
+  min-width: 200px;
+  max-width: 200px;
+  text-align: right;
+  white-space: nowrap;
 }
 .new-card.model-1 .new-card-header .card-title {
   font-size: 16px;
@@ -11292,9 +11294,15 @@ h2.title-3 {
 .new-card.model-1 .new-card-header .ob-rating .stars {
   height: 14px;
   padding: 1px 0;
+  float: none;
+  display: inline-block;
+  vertical-align: top;
 }
 .new-card.model-1 .new-card-header .ob-rating p {
   margin-top: 0;
+  float: none;
+  vertical-align: top;
+  display: inline-block;
 }
 .new-card.model-1 .new-card-body .flex-box {
   display: -webkit-flex;
@@ -16769,7 +16777,7 @@ body.menu-open {
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(rgba(0, 0, 0, 0.55)));
     background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
     background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
-    background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(transparent), to(rgba(0, 0, 0, 0.55)));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.55)));
     background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.55));
     background-repeat: repeat-x;
   }
