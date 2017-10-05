@@ -452,16 +452,16 @@ $(document).ready(function(){
     //------------------------------------------------------------------------//
 
     //rate-me
-    function changeRate(elm){
+    function changeRate1(elm){
               $(elm).parent('label').nextAll().removeClass('active');
               $(elm).parent('label').addClass('active').prevAll().addClass('active');
     }
     $(function() {
 
-        if( $('.rate-me').length ){
+        if( $('.rate-me').length != 0 ){
             
            $('.rate-me input').change(function() {
-              changeRate(this);
+              changeRate1(this);
            });
           
         }
@@ -785,6 +785,30 @@ $(document).ready(function(){
       toogle_box_collapsed.on('click', function (){
           var target = $(this).attr('data-target');
           $(target).toggleClass('openned');
+      });
+       
+    }
+
+  })();
+  //################################################
+  //--filter arrow
+  //################################################
+
+  (function () {
+
+    var filter_arrow = $(".filter-t-row");
+    
+    if (filter_arrow != 0) {
+      filter_arrow.on('click', function (){
+          // var target = $(this).attr('data-target');
+          var elm = $(this);
+          if(!elm.hasClass('active')){
+            elm.addClass('active');
+            return false;
+          } else{
+            elm.toggleClass('up');
+          }
+          // $(target).toggleClass('openned');
       });
        
     }
