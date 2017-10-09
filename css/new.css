@@ -12,6 +12,13 @@
   max-height: 180px;
   max-width: 100%;
 }
+.card.type-6 .card-header h2 a {
+  color: #3c3c3d;
+  font-weight: 700;
+}
+.card.type-6 .card-header h2 a:hover {
+  color: #73ae3a;
+}
 .tours.model-2 .tours-hover {
   top: 100%;
   bottom: auto;
