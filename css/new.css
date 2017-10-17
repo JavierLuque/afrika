@@ -216,7 +216,7 @@
   display: block;
   width: 100%;
   max-width: 545px;
-  max-height: 200px;
+  height: 200px;
   overflow: hidden;
   border: 5px solid #fff;
   margin: 5px;
@@ -236,6 +236,11 @@
   color: #fff;
   font-size: 18px;
   font-weight: 700;
+}
+@media (max-width: 1180px) {
+  .mh-articles-list li .mh-article {
+    height: auto;
+  }
 }
 @media (max-width: 480px) {
   .mh-articles-list li .mh-article h3 {
@@ -264,6 +269,30 @@
 .talking-subscribe .tabs li.active {
   color: #73ae3a;
   opacity: 0.8;
+}
+.operators-category li span.i-safari-tour-operator {
+  font-size: 12px;
+}
+.card.type-6 .card-body .card-description .links-list li a i {
+  min-width: 20px;
+  display: inline-block;
+  vertical-align: unset;
+}
+.card.type-6 .card-body .card-description .links-list li a i.i-safari-tour-operator {
+  font-size: 13px;
+}
+.new-card.model-1 .new-card-body .text-content .bottom-info .info-list li i {
+  min-width: 20px;
+  display: inline-block;
+  vertical-align: unset;
+}
+.new-card.model-1 .new-card-body .text-content .bottom-info .info-list li i.i-safari-tour-operator {
+  font-size: 13px;
+}
+@media (max-width: 520px) {
+  .new-card.model-1 .new-card-header .flex-box .right-side {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=new.css.map */
