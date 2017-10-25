@@ -29,9 +29,18 @@
 </head>
 <body class="no-js mobile-styles add-new-styles page--search-2">
     <div class="main">
+        <div class="m-mobile-header-search" id="m-mobile-header-search">
+            <div class="wrap-content">
+                <form action="">
+                    <input type="text" placeholder="Search Your African Safari">
+                    <i class="ico-safari-close toggle-search-bar" data-target="#m-mobile-header-search"></i>
+                </form>
+            </div>
+        </div>
         <header>
             <div class="wrap nav-saf-op">
                 <div class="logo"><a href="index.html"></a></div>
+                <a href="index.html" class="mobile-logo"><img src="images/v2/small-logo-white.png" alt=""></a>
                 <nav>
                     <ul>
                     <li>
@@ -49,12 +58,15 @@
                         <a href="#">Join us!</a>
                     </div><!-- /.help-join -->
                     <a href="#" class="open-menu"></a>
+                    <span class="search-btn toggle-search-bar" data-target="#m-mobile-header-search">
+                        <i class="ico-safari-search"></i>
+                    </span>
                     <a href="#login" class="login-link open-popup">Log in</a>
                 </div><!-- /.header-rights-links -->
             </div><!-- /.wrap -->
         </header>
         <div class="spanning">
-            <div class="search-box">
+            <div class="search-box mobile-hide">
                 <div class="wrap">
                     <div class="g-top-form">
                         <form action="search.html" class="search-form">
@@ -103,9 +115,7 @@
                                     <h2><a href="#">Madagascar </a><span class="category"><i class="icon-country"></i> Country</span></h2>                                    
                                 </div>
                                 <div class="card-body">
-                                    <div class="wrap-img">                                        
-                                        <img src="upload/circ.png" class="ssl-image" alt="">
-                                    </div>
+                                    <div class="wrap-img" style="background-image: url('upload/circ.png')"></div>
                                     <div class="card-description">
                                         <div class="text">
                                             <p>Madagascar is located off the southeastern shore of the African continent in the Indian Ocean. It is the fourth largest island in the world, after Greenland, New Guinea and Borneo. Madagascar has two distinct seasons. Its rainy and  ... </p>
@@ -162,16 +172,10 @@
                                     <div class="flex-box">
                                         <div class="wrap-img">
                                             <img src="upload/2.jpg" alt="image">
-                                            <div class="bottom-info mobile-show">
-                                                <ul class="info-list">
-                                                    <li><i class="icon-photo"></i>10 photo</li>
-                                                    <li><i class="icon-packages"></i>23 tour packages</li>
-                                                </ul>
-                                            </div><!-- /.bottom-info -->
                                         </div>
                                         <div class="text-content">
                                             <div class="inner-text">
-                                                <div class="wrap-score">
+                                                <div class="wrap-score mobile-hide">
                                                     <div class="number">
                                                         Yascore
                                                         <span>39</span>
@@ -182,12 +186,19 @@
                                                 Madagascar Evasion Tours, a professional agency build up custom-circuits for Madagascar Evasion Tour throughout Madagascar with its 8 years experiences in planning a la custom-trip and a great mastery of all the destinations to Madagascar. Contact directly our official’s custom-circuit designers and organize your stays to Madagascar as your convenience.</p>
                                                 <a href="#" class="link">Read more</a>
                                             </div>
-                                            <div class="bottom-info mobile-hide">
+                                            <div class="bottom-info">
                                                 <ul class="info-list">
                                                     <li><i class="icon-photo"></i>10 photo</li>
                                                     <li><i class="icon-packages"></i>23 tour packages</li>
                                                 </ul>
                                             </div><!-- /.bottom-info -->
+                                            <div class="wrap-score desktop-hide">
+                                                <div class="number">
+                                                    Yascore
+                                                    <span>39</span>
+                                                </div>
+                                                <p>Since: Aug 2013</p>
+                                            </div>
                                         </div><!-- /.text-content -->
                                     </div><!-- /.flex-box -->
                                 </div><!-- /.new-card-body -->
@@ -220,12 +231,6 @@
                                     <div class="flex-box">
                                         <div class="wrap-img">
                                             <img src="upload/img-banner-1.jpg" alt="image">
-                                            <div class="bottom-info mobile-show">
-                                                <ul class="info-list">
-                                                    <li><i class="icon-photo"></i>2 photo</li>
-                                                    <li><i class="icon-packages"></i>45 tour packages</li>
-                                                </ul>
-                                            </div><!-- /.bottom-info -->
                                         </div>
                                         <div class="text-content">
                                             <div class="inner-text">
@@ -234,7 +239,7 @@
                                                 <p class="mt-5"><a href="#" class="link">Read more</a></p>
                                                 <p class="mt-5">Written on Jul 24, 2016 by <a href="#" class="link">Fran</a></p>
                                             </div>
-                                            <div class="bottom-info mobile-hide">
+                                            <div class="bottom-info">
                                                 <ul class="info-list">
                                                     <li><i class="icon-photo"></i>2 photo</li>
                                                     <li><i class="icon-packages"></i>45 tour packages</li>
@@ -271,13 +276,7 @@
                                 <div class="new-card-body">
                                     <div class="flex-box">
                                         <div class="wrap-img">
-                                            <img src="upload/img-banner-2.jpg" alt="image">
-                                            <div class="right-info mobile-show">
-                                                <p>From</p>
-                                                <div class="new-card-price">€2724</div>
-                                                <p>per person</p>
-                                                <a href="#" class="get-quote overflow-hidden">Get quote</a>
-                                            </div><!-- /.bottom-info -->
+                                            <img src="upload/img-banner-2.jpg" alt="image">       
                                         </div>
                                         <div class="text-content">
                                             <div class="inner-text">
@@ -287,7 +286,7 @@
                                                     <li><a href="#"><img src="fonts/flags/16/Madagascar.png" alt="img"> Madagascar</a></li>
                                                     <li><a href="#"><img src="fonts/flags/16/Tanzania.png" alt="img"> Tanzania</a></li>
                                                 </ul>
-                                                <p>Parks visited include:</p>
+                                                <p style="font-size: 14px; margin-bottom: 4px; display: block;">Parks visited include:</p>
                                                 <ul class="list-of-places">
                                                     <li><a href="#">Lake Manyara National Park</a></li>
                                                     <li><a href="#">Serengeti National Park</a></li>
@@ -295,11 +294,12 @@
                                                     <li><a href="#">Tarangire National Park</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="right-info mobile-hide">
+                                            <a href="#" class="get-quote overflow-hidden desktop-hide">Get quote</a>
+                                            <div class="right-info">
                                                 <p>From</p>
                                                 <div class="new-card-price">€2724</div>
                                                 <p>per person</p>
-                                                <a href="#" class="get-quote overflow-hidden">Get quote</a>
+                                                <a href="#" class="get-quote overflow-hidden mobile-hide">Get quote</a>
                                             </div><!-- /.bottom-info -->
                                         </div><!-- /.text-content -->
                                     </div><!-- /.flex-box -->
@@ -502,7 +502,7 @@
     </div><!-- /.main -->
     <footer>
         <div class="wrap">
-            <div class="row clearfix">
+            <div class="row clearfix mobile-hide">
                 <div class="column col-25">
                     <div class="footer-title">Sitemap</div>
                     <ul>
@@ -514,7 +514,8 @@
                         <li><a href="#">Photos</a></li>
                         <li><a href="#">RSS</a></li>
                     </ul>
-                </div><!-- /.column -->
+                </div>
+                <!-- /.column -->
                 <div class="column col-25 col-ul">
                     <div class="footer-title">Countries</div>
                     <ul>
@@ -535,7 +536,8 @@
                         <li><a href="#">Uganda</a></li>
                         <li><a href="#">Zimbabwe</a></li>
                     </ul>
-                </div><!-- /.column -->
+                </div>
+                <!-- /.column -->
                 <div class="column col-25">
                     <div class="footer-title">Parks and game reserves</div>
                     <ul>
@@ -547,7 +549,8 @@
                         <li><a href="#">Hwange National Park</a></li>
                         <li><a href="#">Hluhluwe Umfolozi Game Reserve</a></li>
                     </ul>
-                </div><!-- /.column -->
+                </div>
+                <!-- /.column -->
                 <div class="column col-25">
                     <div class="footer-title">Recent articles</div>
                     <ul>
@@ -559,26 +562,20 @@
                         <li><a href="#">Uganda's domestic flights</a></li>
                         <li><a href="#">Is BA abandoning East Africa?</a></li>
                     </ul>
-                </div><!-- /.column -->
-            </div><!-- /.row -->
-            <div class="separator"></div>
+                </div>
+                <!-- /.column -->
+            </div>
+            <!-- /.row -->
+            <div class="separator mobile-hide"></div>
             <div class="logo-copy">
                 <div class="footer-logo">
                     <a href="index.html"></a>
-                </div><!-- /.footer-logo -->
+                </div>
+                <!-- /.footer-logo -->
                 <div class="copy">© 2015 Your African Safari Ltd, All rights reserved.</div>
-            </div><!-- /.logo-copy -->
-            <div class="footer-box">
-                <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Terms of use</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
-                <p>Contact us at <a href="mailto:yas@yourafricansafari.com">yas@yourafricansafari.com</a></p>
-                <p>Tel: <span>1.307.392.4399</span></p>
-            </div><!-- /.footer-box -->
-            <div class="join-us">
+            </div>
+            <!-- /.logo-copy -->
+            <div class="join-us desktop-hide">
                 <span>Join Us On</span>
                 <div class="join-us-social">
                     <a href="#"><em class="icon-facebook"></em></a>
@@ -586,9 +583,36 @@
                     <a href="#"><em class="icon-google-plus"></em></a>
                     <a href="#"><em class="icon-youtube"></em></a>
                     <a href="#"><em class="icon-in"></em></a>
-                </div><!-- /.join-us-social -->
-            </div><!-- /.join-us -->
-        </div><!-- /.wrap -->
+                </div>
+                <!-- /.join-us-social -->
+            </div>
+            <div class="footer-box">
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+
+                <div class="separator desktop-hide"></div>
+                <p>Contact us at <a href="mailto:yas@yourafricansafari.com">yas@yourafricansafari.com</a></p>
+                <p>Tel: <span>1.307.392.4399</span></p>
+            </div>
+            <!-- /.footer-box -->
+            <div class="join-us mobile-hide">
+                <span>Join Us On</span>
+                <div class="join-us-social">
+                    <a href="#"><em class="icon-facebook"></em></a>
+                    <a href="#"><em class="icon-twitter"></em></a>
+                    <a href="#"><em class="icon-google-plus"></em></a>
+                    <a href="#"><em class="icon-youtube"></em></a>
+                    <a href="#"><em class="icon-in"></em></a>
+                </div>
+                <!-- /.join-us-social -->
+            </div>
+            <!-- /.join-us -->
+        </div>
+        <!-- /.wrap -->
     </footer>
     <div class="mobile-menu">
         <ul>

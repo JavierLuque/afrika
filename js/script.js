@@ -791,6 +791,23 @@ $(document).ready(function(){
 
   })();
   //################################################
+  //--open-search-bar
+  //################################################
+
+  (function () {
+
+    var toggle_search_bar = $(".toggle-search-bar");
+    
+    if (toggle_search_bar != 0) {
+    toggle_search_bar.on('click', function (){
+          var target = $(this).attr('data-target');
+          $(target).toggleClass('opened');
+      });
+       
+    }
+
+  })();
+  //################################################
   //--filter arrow
   //################################################
 

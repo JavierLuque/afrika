@@ -21,6 +21,7 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="format-detection" content="address=no">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/new.css">
         <!--[if lt IE 9]>
         <script src="js/html5.js"></script>
         <script src="js/respond.js"></script>
@@ -31,6 +32,7 @@
             <header>
                 <div class="wrap nav-saf-op">
                     <div class="logo"><a href="index.html"></a></div>
+                    <a href="index.html" class="mobile-logo"><img src="images/v2/small-logo-white.png" alt=""></a>
                     <nav>
                         <ul>
                             <li>
@@ -50,6 +52,9 @@
                         </div>
                         <!-- /.help-join -->
                         <a href="#" class="open-menu"></a>
+                        <span class="search-btn">
+                            <i class="ico-safari-search"></i>
+                        </span>
                         <a href="#login" class="login-link open-popup">Log in</a>
                     </div>
                     <!-- /.header-rights-links -->
@@ -57,7 +62,7 @@
                 <!-- /.wrap -->
             </header>
             <div class="spanning ">
-                <div class="search-box">
+                <div class="search-box mobile-hide">
                     <div class="wrap">
                         <div class="breadcrumbs">
                             <a href="index.html" class="active">Home</a>
@@ -83,31 +88,17 @@
                         </div>
                     </div>
                     <!-- /.wrap -->
-                </div>
-                <!-- /.search-box -->
+                </div><!-- /.search-box -->
+
                 <div class="tour-packages-content">
                     <!-- <div class="clone-sidebar"></div> -->
-                    <div class="wrap">
 
-                        <aside class="sidebar app-sidebar">
-                            <div class="">
-
-                               <!--  <ul class="tabs-mobile">
-                                    <li class="tab-link " data-tab="tab-1">Package type</li>
-                                    <li class="tab-link" data-tab="tab-2">Tours that visit these  countries</li>
-                                    <li class="tab-link" data-tab="tab-3">Length of safari tour</li>
-                                    <li class="tab-link" data-tab="tab-4">Tour package Type</li>
-                                    <li class="tab-link" data-tab="tab-5">Tour operators that speak</li>
-                                    <li class="tab-link" data-tab="tab-6">Price per person</li>
-                                    <li class="tab-link" data-tab="tab-7">Activities you can do</li>
-                                    <li class="tab-link" data-tab="tab-8">Animals you can find</li>
-                                </ul> -->
-                                <!--/.tabs-mobile-->
-
+                        <aside class="sidebar app-sidebar mobile-box-filters">
+                            <div class="wrap">
                                 <div class="filter clearfix">
 
                                     <div class="filter-item clearfix">
-                                        <h2><a href="#" class="active">Tour operators that operate in</a></h2>
+                                        <h2><a href="#" class="active">Tour operators that operate in <i class="ico-safari-arrow-left-2"></i></a></h2>
                                         <a href="#" class="clear-filter">Clear</a>
                                         <ul id="tab-5" class="tab-content curent">
                                             <li><a href="#"><img src="fonts/flags/16/Democratic-Republic-of-the-Congo.png"  alt="img">DR Congo (3)</a></li>
@@ -129,7 +120,7 @@
                                     <!-- /.filter-item -->
 
                                     <div class="filter-item clearfix">
-                                        <h2><a href="#">Operators that visit these parks</a></h2>
+                                        <h2><a href="#">Operators that visit these parks <i class="ico-safari-arrow-left-2"></i></a></h2>
                                         <a href="#" class="clear-filter">Clear</a>
                                         <ul id="tab-1" class="tab-content" style="display: none;">
                                             <li><a href="#">Gorongosa National Park</a></li>
@@ -141,7 +132,7 @@
                                     <!-- /.filter-item -->
 
                                     <div class="filter-item clearfix">
-                                        <h2><a href="#">Tour operators that</a></h2>
+                                        <h2><a href="#">Tour operators that <i class="ico-safari-arrow-left-2"></i></a></h2>
                                         <a href="#" class="clear-filter">Clear</a>
                                         <ul id="tab-1" class="tab-content" style="display: none;">
                                             <li><a href="#">Only operate in one country(0)</a></li>
@@ -155,7 +146,7 @@
                                     <!-- /.filter-item -->
 
                                     <div class="filter-item clearfix">
-                                        <h2><a href="#">Tour operators that speak</a></h2>
+                                        <h2><a href="#">Tour operators that speak <i class="ico-safari-arrow-left-2"></i></a></h2>
                                         <a href="#" class="clear-filter">Clear</a>
                                         <ul id="tab-5" class="tab-content" style="display: none;">
                                             <li><a href="#" class="active"><img src="fonts/flags/16/United-Kingdom.png"  alt="img">English</a></li>
@@ -173,7 +164,7 @@
                                     <!-- /.filter-item -->
 
                                     <div class="filter-item clearfix">
-                                        <h2><a href="#">Tour operators that specialize in</a></h2>
+                                        <h2><a href="#">Tour operators that specialize in <i class="ico-safari-arrow-left-2"></i></a></h2>
                                         <a href="#" class="clear-filter">Clear</a>
                                         <ul id="tab-1" class="tab-content" style="display: none;">
                                             <li><a href="#">Luxury safaris (7)</a></li>
@@ -184,7 +175,7 @@
                                     <!-- /.filter-item -->
 
                                     <div class="filter-item clearfix">
-                                        <h2><a href="#">Tour operators that are based in</a></h2>
+                                        <h2><a href="#">Tour operators that are based in <i class="ico-safari-arrow-left-2"></i></a></h2>
                                         <a href="#" class="clear-filter">Clear</a>
                                         <ul id="tab-5" class="tab-content" style="display: none;">
                                             <li><a href="#" class="active"><img src="fonts/flags/16/Australia.png"  alt="img">Australia (3)</a></li>
@@ -219,17 +210,138 @@
                                     <!-- /.filter-item -->
                                     
                                 </div>
-                                <!-- /.filter -->
+                                <!-- /.filter --> 
+                            </div>                        
 
-                            </div>
-                            <!--/.mobile-sidebar-->                            
+                        </aside>
+                        <!-- /.sidebar -->
+
+                    <div class="wrap">
+                        <aside class="sidebar app-sidebar desktop-box-filters">
+
+                                <div class="filter clearfix">
+
+                                    <div class="filter-item clearfix">
+                                        <h2><a href="#" class="active">Tour operators that operate in </a></h2>
+                                        <a href="#" class="clear-filter">Clear</a>
+                                        <ul id="tab-5" class="tab-content curent">
+                                            <li><a href="#"><img src="fonts/flags/16/Democratic-Republic-of-the-Congo.png"  alt="img">DR Congo (3)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Madagascar.png"  alt="img">Madagascar (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Mozambique.png"  alt="img">Mozambique (4)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Rwanda.png"  alt="img">Rwanda (10)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Tanzania.png"  alt="img">Tanzania (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Zambia.png"  alt="img"> Zambia (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Botswana.png"  alt="img">Botswana (9)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Gabon.png"  alt="img">Gabon (1)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Kenya.png"  alt="img">Kenya (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Malawi.png"  alt="img">Malawi (5)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Namibia.png"  alt="img">Namibia (9)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/South-Africa.png"  alt="img">South Africa (3)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Uganda.png"  alt="img">Uganda (7)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Zimbabwe.png"  alt="img">Zimbabwe (3)</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.filter-item -->
+
+                                    <div class="filter-item clearfix">
+                                        <h2><a href="#">Operators that visit these parks </a></h2>
+                                        <a href="#" class="clear-filter">Clear</a>
+                                        <ul id="tab-1" class="tab-content" style="display: none;">
+                                            <li><a href="#">Gorongosa National Park</a></li>
+                                            <li><a href="#">Great Limpopo Transfrontier Park</a></li>
+                                            <li><a href="#">Limpopo National Park</a></li>
+                                            <li><a href="#">Quirimbas National Park</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.filter-item -->
+
+                                    <div class="filter-item clearfix">
+                                        <h2><a href="#">Tour operators that </a></h2>
+                                        <a href="#" class="clear-filter">Clear</a>
+                                        <ul id="tab-1" class="tab-content" style="display: none;">
+                                            <li><a href="#">Only operate in one country(0)</a></li>
+                                            <li><a href="#">Offer tailored safaris (17)</a></li>
+                                            <li><a href="#">Offer group safaris (34)</a></li>
+                                            <li><a href="#">Book attractions (30)</a></li>
+                                            <li><a href="#">Book international flights (320)</a></li>
+                                            <li><a href="#">Have tour packages listed (9)</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.filter-item -->
+
+                                    <div class="filter-item clearfix">
+                                        <h2><a href="#">Tour operators that speak </a></h2>
+                                        <a href="#" class="clear-filter">Clear</a>
+                                        <ul id="tab-5" class="tab-content" style="display: none;">
+                                            <li><a href="#" class="active"><img src="fonts/flags/16/United-Kingdom.png"  alt="img">English</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Germany.png"  alt="img">Deutch</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/France.png"  alt="img">French (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Italy.png"  alt="img">Italian (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/China.png"  alt="img">Mandarin (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Portugal.png"  alt="img">Portuguese (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Spain.png"  alt="img">Spanish (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Japan.png"  alt="img">Japanese (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Poland.png"  alt="img">Polish (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Russia.png"  alt="img">Russian (0)</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.filter-item -->
+
+                                    <div class="filter-item clearfix">
+                                        <h2><a href="#">Tour operators that specialize in </a></h2>
+                                        <a href="#" class="clear-filter">Clear</a>
+                                        <ul id="tab-1" class="tab-content" style="display: none;">
+                                            <li><a href="#">Luxury safaris (7)</a></li>
+                                            <li><a href="#">High-end safaris(2)</a></li>
+                                            <li><a href="#">Mid-level safaris(11)</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.filter-item -->
+
+                                    <div class="filter-item clearfix">
+                                        <h2><a href="#">Tour operators that are based in </a></h2>
+                                        <a href="#" class="clear-filter">Clear</a>
+                                        <ul id="tab-5" class="tab-content" style="display: none;">
+                                            <li><a href="#" class="active"><img src="fonts/flags/16/Australia.png"  alt="img">Australia (3)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/United-Kingdom.png"  alt="img">United Kingdom (2)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Cameroon.png"  alt="img">Cameroon (2)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Democratic-Republic-of-the-Congo.png"  alt="img">DR Congo (3)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Madagascar.png"  alt="img">Madagascar (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Mozambique.png"  alt="img">Mozambique (4)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Netherlands.png"  alt="img">Netherlands (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Rwanda.png"  alt="img">Rwanda (10)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Tanzania.png"  alt="img">Tanzania (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Germany.png"  alt="img">Germany</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/France.png"  alt="img">France(5)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Italy.png"  alt="img">Italy (1)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Zambia.png"  alt="img">Zambia (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Botswana.png"  alt="img">Botswana (9)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Canada.png"  alt="img">Canada (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Denmark.png"  alt="img">Denmark (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Gabon.png"  alt="img">Gabon (1)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/India.png"  alt="img">India (4)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Kenya.png"  alt="img">Kenya (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Malawi.png"  alt="img">Malawi (5)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Namibia.png"  alt="img">Namibia (9)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/New-Zealand.png"  alt="img">New Zealand (6)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/South-Africa.png"  alt="img">South Africa (3)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Swaziland.png"  alt="img">Switzerland (1)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Uganda.png"  alt="img">Uganda (7)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/United-States.png"  alt="img">United States (0)</a></li>
+                                            <li><a href="#"><img src="fonts/flags/16/Zimbabwe.png"  alt="img">Zimbabwe (3)</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- /.filter-item -->
+                                    
+                                </div>
+                                <!-- /.filter -->                          
 
                         </aside>
                         <!-- /.sidebar -->
 
                         <div class="content packages-content">
                         
-                            <div class="banner model-wide" style="background-image: url('upload/tigr-2.jpg');">
+                            <div class="banner model-wide mobile-hide" style="background-image: url('upload/tigr-2.jpg');">
                                 <div class="top-left-badge">
                                     Calves, Foals &amp; Sandy Toes
                                     <ul class="description">
@@ -262,14 +374,14 @@
                         <div class="result-list">
                             <div class="sll-box border new-arangament-style">
                                 <div class="clearfix"></div>
-                                <h2 class="border-none to-left">1 - 30 of 2345 <span>Safari tour operator</span></h2>
+                                <h2 class="border-none to-left mobile-hide-i">1 - 30 of 2345 <span>Safari tour operator</span></h2>
                                 <div class="mobile-visible clearfix"></div>
-                                <a href="#" class="request-quote right auto-width">Link to search</a>
+                                <a href="#" class="request-quote right auto-width mobile-hide">Link to search</a>
                                 <div class="ob-rating pt-mar">
                                     <span class="sort-b">Sort By:</span>
-                                    <div class="ss-select auto-width">
+                                    <div class="ss-select">
                                         <select>
-                                            <option value="">Yascore text ters 1</option>
+                                            <option dsabled>Sort By</option>
                                             <option value="">Yascore text and more letters 2</option>
                                             <option value="">Yascore text and more letters 3</option>
                                             <option value="">Yascore text and more letters 4</option>
@@ -278,7 +390,8 @@
                                 </div>                                
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="operators-box clearfix">
+
+                            <div class="operators-box model-2 clearfix">
                                 <div class="ob-image">
                                     <a href="#"><img src="upload/4.jpg" alt=""></a>
                                 </div><!-- /.ob-image -->
@@ -291,6 +404,7 @@
                                 </div><!-- /.ob-score -->
                                 <div class="ob-description">
                                     <h2><a href="#">Kenya Walking Survivors Safaris</a></h2>
+                                    <div class="category"><i class="i-safari-tour-operator"></i> Safari tour operator</div>
                                     <div class="ob-rating">
                                         <div class="stars four-star">
                                             <span class="bg-star"></span>
@@ -300,6 +414,9 @@
                                         </div><!-- /.stars -->
                                         <p><span>346</span> reviews</p>
                                     </div><!-- /.rating -->
+                                    <div class="mobile-ob-image">
+                                        <a href="#"><img src="upload/4.jpg" alt=""></a>
+                                    </div><!-- /.ob-image -->
                                     <div class="ob-reviews">
                                         <h3>Recent reviews:</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, esmod tempor incididunt magna aliqua. <a href="#">Read More</a></p>
@@ -321,7 +438,8 @@
                                     </div><!-- /.languages -->
                                 </div><!-- /.ob-bottom -->
                             </div><!-- /.operators-box -->
-                            <div class="operators-box clearfix">
+
+                            <div class="operators-box model-2 clearfix">
                                 <div class="ob-image">
                                     <a href="#"><img src="upload/5.jpg" alt=""></a>
                                 </div><!-- /.ob-image -->
@@ -334,15 +452,19 @@
                                 </div><!-- /.ob-score -->
                                 <div class="ob-description">
                                     <h2><a href="#">Kenya Walking Survivors Safaris</a></h2>
+                                    <div class="category"><i class="i-safari-tour-operator"></i> Safari tour operator</div>
                                     <div class="ob-rating">
                                         <div class="stars four-star">
                                             <span class="bg-star"></span>
                                             <span class="bg-star"></span>
-                                            <span class="bg-star-three"></span>
+                                            <span class="bg-star-two"></span>
                                             <span></span>
                                         </div><!-- /.stars -->
                                         <p><span>346</span> reviews</p>
                                     </div><!-- /.rating -->
+                                    <div class="mobile-ob-image">
+                                        <a href="#"><img src="upload/5.jpg" alt=""></a>
+                                    </div><!-- /.ob-image -->
                                     <div class="ob-reviews">
                                         <h3>Recent reviews:</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, esmod tempor incididunt magna aliqua. <a href="#">Read More</a></p>
@@ -364,7 +486,8 @@
                                     </div><!-- /.languages -->
                                 </div><!-- /.ob-bottom -->
                             </div><!-- /.operators-box -->
-                            <div class="operators-box clearfix">
+
+                            <div class="operators-box model-2 clearfix">
                                 <div class="ob-image">
                                     <a href="#"><img src="upload/6.jpg" alt=""></a>
                                 </div><!-- /.ob-image -->
@@ -377,15 +500,19 @@
                                 </div><!-- /.ob-score -->
                                 <div class="ob-description">
                                     <h2><a href="#">Kenya Walking Survivors Safaris</a></h2>
+                                    <div class="category"><i class="i-safari-tour-operator"></i> Safari tour operator</div>
                                     <div class="ob-rating">
                                         <div class="stars four-star">
                                             <span class="bg-star"></span>
                                             <span class="bg-star"></span>
-                                            <span class="bg-star-for"></span>
+                                            <span class="bg-star-two"></span>
                                             <span></span>
                                         </div><!-- /.stars -->
                                         <p><span>346</span> reviews</p>
                                     </div><!-- /.rating -->
+                                    <div class="mobile-ob-image">
+                                        <a href="#"><img src="upload/6.jpg" alt=""></a>
+                                    </div><!-- /.ob-image -->
                                     <div class="ob-reviews">
                                         <h3>Recent reviews:</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, esmod tempor incididunt magna aliqua. <a href="#">Read More</a></p>
@@ -407,7 +534,8 @@
                                     </div><!-- /.languages -->
                                 </div><!-- /.ob-bottom -->
                             </div><!-- /.operators-box -->
-                            <div class="operators-box clearfix">
+
+                            <div class="operators-box model-2 clearfix">
                                 <div class="ob-image">
                                     <a href="#"><img src="upload/1.jpg" alt=""></a>
                                 </div><!-- /.ob-image -->
@@ -420,15 +548,19 @@
                                 </div><!-- /.ob-score -->
                                 <div class="ob-description">
                                     <h2><a href="#">Kenya Walking Survivors Safaris</a></h2>
+                                    <div class="category"><i class="i-safari-tour-operator"></i> Safari tour operator</div>
                                     <div class="ob-rating">
                                         <div class="stars four-star">
                                             <span class="bg-star"></span>
                                             <span class="bg-star"></span>
-                                            <span></span>
+                                            <span class="bg-star-two"></span>
                                             <span></span>
                                         </div><!-- /.stars -->
                                         <p><span>346</span> reviews</p>
                                     </div><!-- /.rating -->
+                                    <div class="mobile-ob-image">
+                                        <a href="#"><img src="upload/1.jpg" alt=""></a>
+                                    </div><!-- /.ob-image -->
                                     <div class="ob-reviews">
                                         <h3>Recent reviews:</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, esmod tempor incididunt magna aliqua. <a href="#">Read More</a></p>
@@ -450,49 +582,8 @@
                                     </div><!-- /.languages -->
                                 </div><!-- /.ob-bottom -->
                             </div><!-- /.operators-box -->
-                            <div class="operators-box clearfix">
-                                <div class="ob-image">
-                                    <a href="#"><img src="upload/2.jpg" alt=""></a>
-                                </div><!-- /.ob-image -->
-                                <div class="ob-score">
-                                    <div class="score-border">
-                                        YaScore
-                                        <span>39</span>
-                                    </div><!-- /.score-border -->
-                                    <p>Since:<br>Aug 2013</p>
-                                </div><!-- /.ob-score -->
-                                <div class="ob-description">
-                                    <h2><a href="#">Kenya Walking Survivors Safaris</a></h2>
-                                    <div class="ob-rating">
-                                        <div class="stars four-star">
-                                            <span class="bg-star"></span>
-                                            <span class="bg-star"></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div><!-- /.stars -->
-                                        <p><span>346</span> reviews</p>
-                                    </div><!-- /.rating -->
-                                    <div class="ob-reviews">
-                                        <h3>Recent reviews:</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, esmod tempor incididunt magna aliqua. <a href="#">Read More</a></p>
-                                    </div><!-- /.ob-reviews -->
-                                </div><!-- /.ob-description -->
-                                <div class="ob-bottom clearfix">
-                                    <div class="ob-icons">
-                                        <p><span class="icon-photo"></span>10 photo</p>
-                                        <p><span class="icon-packages"></span>23 tour packages</p>
-                                        <a href="#"><span class="icon-shortlist"></span>Shortlist</a>
-                                    </div><!-- /.ob-icons -->
-                                    <div class="languages">
-                                        <img src="images/v2/lang-5.jpg" alt="">
-                                        <img src="images/v2/lang-1.jpg" alt="">
-                                        <img src="images/v2/lang-2.jpg" alt="">
-                                        <img src="images/v2/lang-3.jpg" alt="">
-                                        <img src="images/v2/lang-4.jpg" alt="">  
-                                        <img src="images/v2/lang-6.jpg" alt="">
-                                    </div><!-- /.languages -->
-                                </div><!-- /.ob-bottom -->
-                            </div><!-- /.operators-box -->
+
+
                         </div><!-- /.result-list -->
             
              
@@ -508,7 +599,7 @@
         <!-- /.main -->
         <footer>
             <div class="wrap">
-                <div class="row clearfix">
+                <div class="row clearfix mobile-hide">
                     <div class="column col-25">
                         <div class="footer-title">Sitemap</div>
                         <ul>
@@ -572,7 +663,7 @@
                     <!-- /.column -->
                 </div>
                 <!-- /.row -->
-                <div class="separator"></div>
+                <div class="separator mobile-hide"></div>
                 <div class="logo-copy">
                     <div class="footer-logo">
                         <a href="index.html"></a>
@@ -581,6 +672,17 @@
                     <div class="copy">© 2015 Your African Safari Ltd, All rights reserved.</div>
                 </div>
                 <!-- /.logo-copy -->
+                <div class="join-us desktop-hide">
+                    <span>Join Us On</span>
+                    <div class="join-us-social">
+                        <a href="#"><em class="icon-facebook"></em></a>
+                        <a href="#"><em class="icon-twitter"></em></a>
+                        <a href="#"><em class="icon-google-plus"></em></a>
+                        <a href="#"><em class="icon-youtube"></em></a>
+                        <a href="#"><em class="icon-in"></em></a>
+                    </div>
+                    <!-- /.join-us-social -->
+                </div>
                 <div class="footer-box">
                     <ul>
                         <li><a href="#">About us</a></li>
@@ -588,11 +690,13 @@
                         <li><a href="#">Privacy policy</a></li>
                         <li><a href="#">Careers</a></li>
                     </ul>
+
+                    <div class="separator desktop-hide"></div>
                     <p>Contact us at <a href="mailto:yas@yourafricansafari.com">yas@yourafricansafari.com</a></p>
                     <p>Tel: <span>1.307.392.4399</span></p>
                 </div>
                 <!-- /.footer-box -->
-                <div class="join-us">
+                <div class="join-us mobile-hide">
                     <span>Join Us On</span>
                     <div class="join-us-social">
                         <a href="#"><em class="icon-facebook"></em></a>

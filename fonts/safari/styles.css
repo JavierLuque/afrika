@@ -266,3 +266,6 @@
 .ico-safari-tailored:before {
   content: "\2e";
 }
+.ico-safari-search:before {
+  content: "\2f";
+}
