@@ -979,9 +979,24 @@
   }
 }
 .slogan .link-to {
-  display: inline;
+  display: inline-block;
   font-size: 14px;
   color: #fff;
+  padding: 0 4px;
+}
+.slogan .link-to:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .add-new-styles h2.title {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=new.css.map */
