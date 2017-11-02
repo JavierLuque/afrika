@@ -478,10 +478,8 @@
   color: #3a3c3d;
 }
 .underline-dotted {
-  border-width: 0;
-  border-style: dotted;
-  border-color: #fff;
-  border-bottom-width: 2px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
 }
 .talking-subscribe .tabs li {
   color: #73ae3a;
