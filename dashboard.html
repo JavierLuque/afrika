@@ -106,6 +106,9 @@
         </div>
       </div><!-- /.header-content -->
       <div class="body-content">
+      	<div class="m-msg info"><span class="wrap-ico">✔</span>Advertise with us! Sponsor a country or tour operator page. Click here for more information.</div>
+      	<div class="m-msg info attention"><span class="wrap-ico">!</span>Advertise with us! Sponsor a country or tour operator page. Click here for more information.</div>
+      	<div class="m-msg info m-error"><span class="wrap-ico">&times;</span>Advertise with us! Sponsor a country or tour operator page. Click here for more information.</div>
       	<div class="acordeon-list">
 
       		<div class="item">
@@ -589,7 +592,7 @@
       			</div><!-- ./item-body -->
       		</div><!-- /.item -->
 
-      		<div class="item">
+      		<div class="item openned">
       			<div class="item-header">Tour Package</div>
       			<div class="item-body">
       				<div class="wrap-content">
@@ -611,10 +614,309 @@
                 		</ul>
                 	</div>
                 	<div class="wrap-btns">
-                		<a href="#" class="m-btn bg-green btn-add mr-10"><i class="add"></i> Add tour package</a>
+                		<a href="#" class="m-btn bg-green btn-add mr-10 toggle-expand-block" data-target="#add_tour_package"><i class="add"></i> Add tour package</a>
                 		<a href="#" class="m-btn bg-white btn-cancel"><i class="icon-close"></i> Cancel</a>
                 	</div>
                 </div>
+				<div id="add_tour_package" class="m-box-collapsed openned">
+
+					<div class="m-content">
+						<h2 class="title-2">Add tour package</h2>
+
+			                <form action="" enctype="multipart/form-data" id="user_park_review_form" method="post" class="form-model-3">
+			                	<div class="form_container mt-20">
+
+			                		<div class="form_split_column form-group row">
+			                          <div class="form-group wrap-input constraint_required col-50 col-s-100">
+			                            <label class="group-title">What type of safari package is this? <span class="c-red">*</span></label>
+			                            <div autocomplete="off" class="input elements" id="visit_date" title="When did you visit this park?">
+			                                <select name="headquarters" class="f-width styled-select">
+			                                    <option value="1">A costum, tailor-mode, private safari</option>
+			                                    <option value="1">Option 2</option>
+			                                    <option value="1">Option 3</option>
+			                                    <option value="1">Option 4</option>
+			                                    <option value="1">Option 5</option>
+			                                </select>
+			                              </div>
+			                          </div>
+			                          <div class="form-group wrap-input constraint_required col-50 col-s-100">
+			                            <label class="group-title">What is the activity level of the safari?  <span class="c-red">*</span></label>
+			                            <div autocomplete="off" class="input elements" id="visit_date" title="When did you visit this park?">
+			                                <select name="headquarters" class="f-width styled-select">
+			                                    <option value="1">Extreme - Techical climbing (Kilimanjaro, </option>
+			                                    <option value="1">Option 2</option>
+			                                    <option value="1">Option 3</option>
+			                                    <option value="1">Option 4</option>
+			                                    <option value="1">Option 5</option>
+			                                </select>
+			                              </div>
+			                          </div> 
+
+			                      </div>
+			                      <div class="form_split_column form-group">
+			                          <fieldset class="col col-s-100 constraint_required">
+			                              <legend class="group-title">What are the primary highlights of this safari itinerary? </legend>
+			                              <span class="radio input-name-3">
+			                                  <span>
+			                                      <input name="highlights" type="checkbox" value="0" id="highlights_1"/>
+			                                      <label for="highlights_1">Birding</label>
+			                                  </span>
+			                                  <span>
+			                                      <input name="highlights" type="checkbox" value="1" id="highlights_2" checked/>
+			                                      <label for="highlights_2">Boating</label>
+			                                  </span>
+			                                  <span>
+			                                      <input name="highlights" type="checkbox" value="2" id="highlights_3"/>
+			                                      <label for="highlights_3">Camping</label>
+			                                  </span>
+			                                  <span>
+			                                      <input name="highlights" type="checkbox" value="2" id="highlights_4" checked/>
+			                                      <label for="highlights_4">Cultural</label>
+			                                  </span>
+			                                  <span>
+			                                      <input name="highlights" type="checkbox" value="2" id="highlights_5"/>
+			                                      <label for="highlights_5">Night drive</label>
+			                                  </span>
+			                                  <span>
+			                                      <input name="highlights" type="checkbox" value="2" id="highlights_6"/>
+			                                      <label for="highlights_6">Romantic</label>
+			                                  </span>
+			                                  <span>
+			                                      <input name="highlights" type="checkbox" value="2" id="highlights_7" checked/>
+			                                      <label for="highlights_7">Self-Drive</label>
+			                                  </span>
+			                              </span>
+			                          </fieldset>
+			                      </div>
+			                      <div class="form_split_column form-group">
+			                        <fieldset class="col col-s-100 constraint_required">
+			                            <legend class="group-title">Which countries will the itinerary visit? <span class="c-red">*</span></legend>
+			                            <span class="radio input-name-3">
+			                                <span>
+			                                    <input name="country" type="checkbox" value="0" id="country_1"/>
+			                                    <label for="country_1">Tanzania</label>
+			                                </span>
+
+			                            </span>
+			                        </fieldset>
+			                        <fieldset class=" col constraint_required form-group">
+			                          <legend for="parks" class="group-title">Which parks will the itinerary visit?</legend>
+			                          <span class="checkbox two-columns" id="parks">
+			                            <span>
+			                                <input name="park" type="checkbox" value="3" id="park_1" checked/>
+			                                <label for="park_1">Arusha National Park</label>
+			                            </span>
+			                            <span>
+			                                <input name="park" type="checkbox" value="4" id="park_2"/>
+			                                <label for="park_2">Gombe Stream National Park</label>
+			                            </span>
+			                            <span>
+			                                <input name="park" type="checkbox" value="7" id="park_3" checked/>
+			                                <label for="park_3">Katavi National Park</label>
+			                            </span>
+			                            <span>
+			                                <input name="park" type="checkbox" value="10" id="park_4"/>
+			                                <label for="park_4">Kilimanjaro National Park</label>
+			                            </span>
+			                            <span>
+			                                <input name="park" type="checkbox" value="28" id="park_5" checked/>
+			                                <label for="park_5">Lake Manyara National Park</label>
+			                            </span>
+			                            <span>
+			                                <input name="park" type="checkbox" value="11" id="park_6"/>
+			                                <label for="park_6">Mahale Mountains National Park</label>
+			                            </span>
+			                            <span>
+			                                <input name="park" type="checkbox" value="12" id="park_7" checked/>
+			                                <label for="park_7">Mikumi National Park</label>
+			                            </span>
+			                            <span>
+			                                <input name="park" type="checkbox" value="1" id="park_8"/>
+			                                <label for="park_8">Ngorongoro Crater Conservation Area</label>
+			                            </span>
+			                            <span>
+			                                <input name="park" type="checkbox" value="17" id="park_9" checked/>
+			                                <label for="park_9">Ruaha National Park</label>
+			                            </span>
+			                            <span>
+			                                <input name="park" type="checkbox" value="18" id="park_10"/>
+			                                <label for="park_10">Saadani National Park</label>
+			                            </span>
+			                            <span>
+			                                <input name="park" type="checkbox" value="19" id="park_11"/>
+			                                <label for="park_11">Selous Game Reserve</label>
+			                            </span>
+			                            <span>
+			                                <input name="park" type="checkbox" value="27" id="park_12"/>
+			                                <label for="park_12">Serengeti National Park</label>
+			                            </span>
+			                            <span>
+			                                <input name="park" type="checkbox" value="28" id="park_13"/>
+			                                <label for="park_13">Tarangire National Park</label>
+			                            </span>
+			                          </span>
+			                        </fieldset>
+			                      </div>
+			                      <div class="clear"></div>
+
+			                      <h4 class="subtitle">Title</h4>
+			                      <p>Example: Tanzania is home to the big five animals: buffalo, elephant, lion, leopard and rhino.</p>
+			                      <div class="form-group wrap-input constraint_required count-chars" data-n_max=1000>
+			                      	<label class="group-title mt-0i" for="textarea-1"><span class="info">(<span class="n_chars">0</span> of <span class="n_max">1000</span> characters used)</span> <span class="c-red">*</span>.</label>
+			                      	<textarea name="textarea-1" class="textarea" id="textarea-1" rows="4" ></textarea>
+			                      </div>
+			                      <div class="cf"></div>
+			                      <h4 class="subtitle mt-20">Short title</h4>
+			                      <p>Example: Big five safari</p>
+			                      <div class="form-group wrap-input constraint_required count-chars" data-n_max=150>
+			                      	<label class="group-title mt-0i" for="textarea-2"><span class="info">(<span class="n_chars">0</span> of <span class="n_max">150</span> characters used)</span> <span class="c-red">*</span>.</label>
+			                      	<textarea name="textarea-2" class="textarea" id="textarea-2" rows="4" ></textarea>
+			                      </div>
+			                      <div class="cf"></div>
+			                      <h4 class="subtitle mt-20">Header text</h4>
+			                      <p>(This will appear at the top of the page (above your itinerary fact sheet). Use this to grab our members attention). <span class="c-red">*</span></p>
+			                      <div class="form-group wrap-input constraint_required count-chars" data-n_max=150>
+			                      	<label class="group-title mt-0i" for="textarea-3"><span class="info">(<span class="n_chars">0</span> of <span class="n_max">150</span> characters used)</span> <span class="c-red">*</span>.</label>
+			                      	<textarea name="textarea-3" class="textarea" id="textarea-3" rows="4" ></textarea>
+			                      </div>
+			                      <div class="cf"></div>
+			                      <h4 class="subtitle mt-20">Summary of the itinerary</h4>
+			                      <p>(Enter 1 or 2 paragraphs about your itinerary). <span class="c-red">*</span></p>
+			                      <div class="form-group wrap-input constraint_required count-chars" data-n_max=150>
+			                      	<label class="group-title mt-0i" for="textarea-4"><span class="info">(<span class="n_chars">0</span> of <span class="n_max">150</span> characters used)</span> <span class="c-red">*</span>.</label>
+			                      	<textarea name="textarea-4" class="textarea" id="textarea-4" rows="4" ></textarea>
+			                      </div>
+			                      <div class="cf"></div>
+			                      <h4 class="subtitle mt-20">Day by day itinerary description</h4>
+			                      <p>(Please note: Any formatting outside the YAS guidelines will be removed. For example: colored text or links will be automatically removed.) <span class="c-red">*</span></p>
+			                      <div class="form-group wrap-input constraint_required" style="padding-top: 10px;">
+			                      	<!--  <label class="group-title mt-0i" for="textarea-5"><span class="info">(<span class="n_chars">0</span> of <span class="n_max">150</span> characters used)</span> <span class="c-red">*</span>.</label> -->
+			                      	<textarea name="textarea-5" class="tinymce_textarea" id="textarea-5" rows="8"></textarea>
+			                      </div>
+
+			                      <div class="clear"></div>
+			                <div class="form_split_column form-group row">
+	                          <div class="form-group wrap-input constraint_required col">
+	                            <label class="group-title">Please enter a price range for your itinerary.</label>
+	                            <p class="mb-10">(Note: if only one price is entered, only one price will be displayed).</p>
+	                            <div class="cf"></div>
+	                            <div class="flex-container">
+		                            <span autocomplete="off" class="input elements">
+	                                <select name="headquarters" class="f-width styled-select">
+	                                    <option>Price:</option>
+	                                    <option value="1">USD</option>
+	                                    <option value="1">EURO</option>
+	                                    <option value="1">Yen</option>
+	                                    <option value="1">Option 5</option>
+	                                </select>
+	                              </span>
+	                              <span>
+	                              	<input type="text" placeholder="Min Price">
+	                              </span>
+	                              <span>
+	                              	<input type="text" placeholder="Max Price">
+	                              </span>
+	                            	<span autocomplete="off" class="input elements">
+	                                <select name="headquarters" class="f-width styled-select">
+	                                    <option>Length of safari </option>
+	                                    <option value="1">Short</option>
+	                                    <option value="1">Medium</option>
+	                                    <option value="1">Option 4</option>
+	                                    <option value="1">Option 5</option>
+	                                </select>
+	                              </span>
+	                            </div>				                           		
+	                          </div>
+	                      </div><!-- /.form-group -->
+
+                        <fieldset class=" constraint_required form-group">
+                          <legend for="parks" class="group-title">Best time to visit &nbsp;&nbsp;<span class="c-green check-all" data-target="#check-list-1">Check All</span> &nbsp;&nbsp;<span class="c-green uncheck-all" data-target="#check-list-1">Uncheck All</span> </legend>
+                          <span class="checkbox four-columns" id="check-list-1">
+                            <span>
+                                <input name="month" type="checkbox" value="1" id="month_1" checked/>
+                                <label for="month_1">January</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="2" id="month_2"/>
+                                <label for="month_2">February</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="3" id="month_3"/>
+                                <label for="month_3">March</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="4" id="month_4"/>
+                                <label for="month_4">April</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="5" id="month_5"/>
+                                <label for="month_5">May</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="6" id="month_6" checked/>
+                                <label for="month_6">June</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="7" id="month_7" checked/>
+                                <label for="month_7">July</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="8" id="month_8"/>
+                                <label for="month_8">August</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="9" id="month_9"/>
+                                <label for="month_9">September</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="10" id="month_10"/>
+                                <label for="month_10">October</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="11" id="month_11"/>
+                                <label for="month_11">November</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="12" id="month_12"/>
+                                <label for="month_12">December</label>
+                            </span>
+
+                          </span>
+                        </fieldset>
+<fieldset class="constraint_required form-group">
+                          <legend class="group-title">Fill this area to tell our members more about this itinerary</legend>
+                          <span class="radio">
+                              <span>
+                                  <input name="itinerary" type="radio" value="Yes" id="itinerary_1"/>
+                                  <label for="itinerary_1">Yes</label>
+                              </span>
+                              <span>
+                                  <input name="itinerary" type="radio" value="No" id="gritinerary" checked/>
+                                  <label for="itinerary_2">No</label>
+                              </span>
+                          </span>
+                      </fieldset>
+                      <h4 class="subtitle mt-15">Sample lodges.</h4>
+                      <p>(List the top lodges/resorts/hotels you use. Seperate each bullet with the 'enter' key).</p>
+												<div class="form-group wrap-input constraint_required count-chars" data-n_max=1000>
+	                          <textarea name="review_copy" class="textarea" rows="7"></textarea>
+	                      </div>
+
+	                      <div class="clear"></div>
+			                      <div class="form_button_container mt-15">
+			                          <div>
+			                              <input name="submit" type="submit" value="Submit" class="submit" title="Make these changes"/>
+			                          </div>
+			                          <a class="cancel" href="#"> Cancel </a>
+			                      </div>
+
+			                	</div><!-- /.form-container -->
+			                </form>
+
+					</div><!-- /.m-content -->
+
+				</div><!-- /#add_tour_package -->
+
                 <div class="card type-3">
                 	<div class="card-body">
                 		<div class="flex">
@@ -672,372 +974,372 @@
                 	</div>
                 </div>
 								
-								<div id="edit-tour-packages" class="m-box-collapsed openned">
-									<div class="m-content">
-										<h2 class="title-2">Edit tour package</h2>
-										<p>When creating your itinerary, please add a short title, this will help convert more traffic to your page. These short titles will appear on the right side of the tour operator page and will allow our members to easily find your itineraries.</p>      					
-										<div class="m-acordeon acordeon-1 mt-10">
-											<div class="a-row">
-												<div class="a-row-header openned">
-													<h3>Type and country</h3>
-												</div><!-- /.a-row-header -->
-												<div class="a-row-body">
-													<div class="m-body-content">
-						                <form action="" enctype="multipart/form-data" id="user_park_review_form" method="post" class="form-model-3">
-						                  <div class="form_container">
-					                      <div class="form_split_column form-group row">
-					                          <div class="form-group wrap-input constraint_required col-50 col-s-100">
-					                            <label class="group-title">What type of safari package is this? <span class="c-red">*</span></label>
-					                            <span autocomplete="off" class="input elements" id="visit_date" title="When did you visit this park?">
-					                                <select name="headquarters" class="f-width styled-select">
-					                                    <option value="1">A costum, tailor-mode, private safari</option>
-					                                    <option value="1">Option 2</option>
-					                                    <option value="1">Option 3</option>
-					                                    <option value="1">Option 4</option>
-					                                    <option value="1">Option 5</option>
-					                                </select>
-					                              </span>
-					                          </div>
-					                          <div class="form-group wrap-input constraint_required col-50 col-s-100">
-					                            <label class="group-title">What is the activity level of the safari?  <span class="c-red">*</span></label>
-					                            <span autocomplete="off" class="input elements" id="visit_date" title="When did you visit this park?">
-					                                <select name="headquarters" class="f-width styled-select">
-					                                    <option value="1">Extreme - Techical climbing (Kilimanjaro, </option>
-					                                    <option value="1">Option 2</option>
-					                                    <option value="1">Option 3</option>
-					                                    <option value="1">Option 4</option>
-					                                    <option value="1">Option 5</option>
-					                                </select>
-					                              </span>
-					                          </div> 
+				<div id="edit-tour-packages" class="m-box-collapsed openned">
+					<div class="m-content">
+						<h2 class="title-2">Edit tour package</h2>
+						<p>When creating your itinerary, please add a short title, this will help convert more traffic to your page. These short titles will appear on the right side of the tour operator page and will allow our members to easily find your itineraries.</p>      					
+						<div class="m-acordeon acordeon-1 mt-10">
+							<div class="a-row">
+								<div class="a-row-header openned">
+									<h3>Type and country</h3>
+								</div><!-- /.a-row-header -->
+								<div class="a-row-body">
+									<div class="m-body-content">
+		                <form action="" enctype="multipart/form-data" id="user_park_review_form" method="post" class="form-model-3">
+		                  <div class="form_container">
+	                      <div class="form_split_column form-group row">
+	                          <div class="form-group wrap-input constraint_required col-50 col-s-100">
+	                            <label class="group-title">What type of safari package is this? <span class="c-red">*</span></label>
+	                            <span autocomplete="off" class="input elements" id="visit_date" title="When did you visit this park?">
+	                                <select name="headquarters" class="f-width styled-select">
+	                                    <option value="1">A costum, tailor-mode, private safari</option>
+	                                    <option value="1">Option 2</option>
+	                                    <option value="1">Option 3</option>
+	                                    <option value="1">Option 4</option>
+	                                    <option value="1">Option 5</option>
+	                                </select>
+	                              </span>
+	                          </div>
+	                          <div class="form-group wrap-input constraint_required col-50 col-s-100">
+	                            <label class="group-title">What is the activity level of the safari?  <span class="c-red">*</span></label>
+	                            <span autocomplete="off" class="input elements" id="visit_date" title="When did you visit this park?">
+	                                <select name="headquarters" class="f-width styled-select">
+	                                    <option value="1">Extreme - Techical climbing (Kilimanjaro, </option>
+	                                    <option value="1">Option 2</option>
+	                                    <option value="1">Option 3</option>
+	                                    <option value="1">Option 4</option>
+	                                    <option value="1">Option 5</option>
+	                                </select>
+	                              </span>
+	                          </div> 
 
-					                      </div>
-					                      <div class="form_split_column form-group">
-					                          <fieldset class="col col-s-100 constraint_required">
-					                              <legend class="group-title">What are the primary highlights of this safari itinerary? </legend>
-					                              <span class="radio input-name-3">
-					                                  <span>
-					                                      <input name="highlights" type="checkbox" value="0" id="highlights_1"/>
-					                                      <label for="highlights_1">Birding</label>
-					                                  </span>
-					                                  <span>
-					                                      <input name="highlights" type="checkbox" value="1" id="highlights_2" checked/>
-					                                      <label for="highlights_2">Boating</label>
-					                                  </span>
-					                                  <span>
-					                                      <input name="highlights" type="checkbox" value="2" id="highlights_3"/>
-					                                      <label for="highlights_3">Camping</label>
-					                                  </span>
-					                                  <span>
-					                                      <input name="highlights" type="checkbox" value="2" id="highlights_4" checked/>
-					                                      <label for="highlights_4">Cultural</label>
-					                                  </span>
-					                                  <span>
-					                                      <input name="highlights" type="checkbox" value="2" id="highlights_5"/>
-					                                      <label for="highlights_5">Night drive</label>
-					                                  </span>
-					                                  <span>
-					                                      <input name="highlights" type="checkbox" value="2" id="highlights_6"/>
-					                                      <label for="highlights_6">Romantic</label>
-					                                  </span>
-					                                  <span>
-					                                      <input name="highlights" type="checkbox" value="2" id="highlights_7" checked/>
-					                                      <label for="highlights_7">Self-Drive</label>
-					                                  </span>
-					                              </span>
-					                          </fieldset>
-					                      </div>
-					                      <div class="form_split_column form-group">
-					                        <fieldset class="col col-s-100 constraint_required">
-					                            <legend class="group-title">Which countries will the itinerary visit? <span class="c-red">*</span></legend>
-					                            <span class="radio input-name-3">
-					                                <span>
-					                                    <input name="country" type="checkbox" value="0" id="country_1"/>
-					                                    <label for="country_1">Tanzania</label>
-					                                </span>
+	                      </div>
+	                      <div class="form_split_column form-group">
+	                          <fieldset class="col col-s-100 constraint_required">
+	                              <legend class="group-title">What are the primary highlights of this safari itinerary? </legend>
+	                              <span class="radio input-name-3">
+	                                  <span>
+	                                      <input name="highlights" type="checkbox" value="0" id="highlights_1"/>
+	                                      <label for="highlights_1">Birding</label>
+	                                  </span>
+	                                  <span>
+	                                      <input name="highlights" type="checkbox" value="1" id="highlights_2" checked/>
+	                                      <label for="highlights_2">Boating</label>
+	                                  </span>
+	                                  <span>
+	                                      <input name="highlights" type="checkbox" value="2" id="highlights_3"/>
+	                                      <label for="highlights_3">Camping</label>
+	                                  </span>
+	                                  <span>
+	                                      <input name="highlights" type="checkbox" value="2" id="highlights_4" checked/>
+	                                      <label for="highlights_4">Cultural</label>
+	                                  </span>
+	                                  <span>
+	                                      <input name="highlights" type="checkbox" value="2" id="highlights_5"/>
+	                                      <label for="highlights_5">Night drive</label>
+	                                  </span>
+	                                  <span>
+	                                      <input name="highlights" type="checkbox" value="2" id="highlights_6"/>
+	                                      <label for="highlights_6">Romantic</label>
+	                                  </span>
+	                                  <span>
+	                                      <input name="highlights" type="checkbox" value="2" id="highlights_7" checked/>
+	                                      <label for="highlights_7">Self-Drive</label>
+	                                  </span>
+	                              </span>
+	                          </fieldset>
+	                      </div>
+	                      <div class="form_split_column form-group">
+	                        <fieldset class="col col-s-100 constraint_required">
+	                            <legend class="group-title">Which countries will the itinerary visit? <span class="c-red">*</span></legend>
+	                            <span class="radio input-name-3">
+	                                <span>
+	                                    <input name="country" type="checkbox" value="0" id="country_1"/>
+	                                    <label for="country_1">Tanzania</label>
+	                                </span>
 
-					                            </span>
-					                        </fieldset>
-					                        <fieldset class=" col constraint_required form-group">
-					                          <legend for="parks" class="group-title">Which parks will the itinerary visit?</legend>
-					                          <span class="checkbox two-columns" id="parks">
-					                            <span>
-					                                <input name="park" type="checkbox" value="3" id="park_1" checked/>
-					                                <label for="park_1">Arusha National Park</label>
-					                            </span>
-					                            <span>
-					                                <input name="park" type="checkbox" value="4" id="park_2"/>
-					                                <label for="park_2">Gombe Stream National Park</label>
-					                            </span>
-					                            <span>
-					                                <input name="park" type="checkbox" value="7" id="park_3" checked/>
-					                                <label for="park_3">Katavi National Park</label>
-					                            </span>
-					                            <span>
-					                                <input name="park" type="checkbox" value="10" id="park_4"/>
-					                                <label for="park_4">Kilimanjaro National Park</label>
-					                            </span>
-					                            <span>
-					                                <input name="park" type="checkbox" value="28" id="park_5" checked/>
-					                                <label for="park_5">Lake Manyara National Park</label>
-					                            </span>
-					                            <span>
-					                                <input name="park" type="checkbox" value="11" id="park_6"/>
-					                                <label for="park_6">Mahale Mountains National Park</label>
-					                            </span>
-					                            <span>
-					                                <input name="park" type="checkbox" value="12" id="park_7" checked/>
-					                                <label for="park_7">Mikumi National Park</label>
-					                            </span>
-					                            <span>
-					                                <input name="park" type="checkbox" value="1" id="park_8"/>
-					                                <label for="park_8">Ngorongoro Crater Conservation Area</label>
-					                            </span>
-					                            <span>
-					                                <input name="park" type="checkbox" value="17" id="park_9" checked/>
-					                                <label for="park_9">Ruaha National Park</label>
-					                            </span>
-					                            <span>
-					                                <input name="park" type="checkbox" value="18" id="park_10"/>
-					                                <label for="park_10">Saadani National Park</label>
-					                            </span>
-					                            <span>
-					                                <input name="park" type="checkbox" value="19" id="park_11"/>
-					                                <label for="park_11">Selous Game Reserve</label>
-					                            </span>
-					                            <span>
-					                                <input name="park" type="checkbox" value="27" id="park_12"/>
-					                                <label for="park_12">Serengeti National Park</label>
-					                            </span>
-					                            <span>
-					                                <input name="park" type="checkbox" value="28" id="park_13"/>
-					                                <label for="park_13">Tarangire National Park</label>
-					                            </span>
-					                          </span>
-					                        </fieldset>
-					                      </div>
-					                      <div class="clear"></div>
+	                            </span>
+	                        </fieldset>
+	                        <fieldset class=" col constraint_required form-group">
+	                          <legend for="parks" class="group-title">Which parks will the itinerary visit?</legend>
+	                          <span class="checkbox two-columns" id="parks">
+	                            <span>
+	                                <input name="park" type="checkbox" value="3" id="park_1" checked/>
+	                                <label for="park_1">Arusha National Park</label>
+	                            </span>
+	                            <span>
+	                                <input name="park" type="checkbox" value="4" id="park_2"/>
+	                                <label for="park_2">Gombe Stream National Park</label>
+	                            </span>
+	                            <span>
+	                                <input name="park" type="checkbox" value="7" id="park_3" checked/>
+	                                <label for="park_3">Katavi National Park</label>
+	                            </span>
+	                            <span>
+	                                <input name="park" type="checkbox" value="10" id="park_4"/>
+	                                <label for="park_4">Kilimanjaro National Park</label>
+	                            </span>
+	                            <span>
+	                                <input name="park" type="checkbox" value="28" id="park_5" checked/>
+	                                <label for="park_5">Lake Manyara National Park</label>
+	                            </span>
+	                            <span>
+	                                <input name="park" type="checkbox" value="11" id="park_6"/>
+	                                <label for="park_6">Mahale Mountains National Park</label>
+	                            </span>
+	                            <span>
+	                                <input name="park" type="checkbox" value="12" id="park_7" checked/>
+	                                <label for="park_7">Mikumi National Park</label>
+	                            </span>
+	                            <span>
+	                                <input name="park" type="checkbox" value="1" id="park_8"/>
+	                                <label for="park_8">Ngorongoro Crater Conservation Area</label>
+	                            </span>
+	                            <span>
+	                                <input name="park" type="checkbox" value="17" id="park_9" checked/>
+	                                <label for="park_9">Ruaha National Park</label>
+	                            </span>
+	                            <span>
+	                                <input name="park" type="checkbox" value="18" id="park_10"/>
+	                                <label for="park_10">Saadani National Park</label>
+	                            </span>
+	                            <span>
+	                                <input name="park" type="checkbox" value="19" id="park_11"/>
+	                                <label for="park_11">Selous Game Reserve</label>
+	                            </span>
+	                            <span>
+	                                <input name="park" type="checkbox" value="27" id="park_12"/>
+	                                <label for="park_12">Serengeti National Park</label>
+	                            </span>
+	                            <span>
+	                                <input name="park" type="checkbox" value="28" id="park_13"/>
+	                                <label for="park_13">Tarangire National Park</label>
+	                            </span>
+	                          </span>
+	                        </fieldset>
+	                      </div>
+	                      <div class="clear"></div>
 
-					                      <div class="form_button_container mt-15 mb-15">
-					                          <div>
-					                              <input name="submit" type="submit" value="Submit" class="submit" title="Make these changes"/>
-					                          </div>
-					                          <a class="cancel" href="#"> Cancel </a>
-					                      </div>
-						                  </div>
-						                </form>
-													</div><!-- /.m-body-content -->
-												</div><!-- /.a-row-body -->
-											</div><!-- /.a-row -->
-											<div class="a-row">
-												<div class="a-row-header openned">
-													<h3>Description</h3>
-												</div><!-- /.a-row-header -->
-												<div class="a-row-body">
-													<div class="m-body-content">
-						                <form action="" enctype="multipart/form-data" method="post" class="form-model-3">
-						                  <div class="form_container">
-							                  <h4 class="subtitle">Title</h4>
-							                  <p>Example: Tanzania is home to the big five animals: buffalo, elephant, lion, leopard and rhino.</p>
-																<div class="form-group wrap-input constraint_required count-chars" data-n_max=1000>
-					                          <label class="group-title mt-0i" for="textarea-1"><span class="info">(<span class="n_chars">0</span> of <span class="n_max">1000</span> characters used)</span> <span class="c-red">*</span>.</label>
-					                          <textarea name="textarea-1" class="textarea" id="textarea-1" rows="4" ></textarea>
-					                      </div>
-					                      <div class="cf"></div>
-							                  <h4 class="subtitle mt-20">Short title</h4>
-							                  <p>Example: Big five safari</p>
-																<div class="form-group wrap-input constraint_required count-chars" data-n_max=150>
-					                          <label class="group-title mt-0i" for="textarea-2"><span class="info">(<span class="n_chars">0</span> of <span class="n_max">150</span> characters used)</span> <span class="c-red">*</span>.</label>
-					                          <textarea name="textarea-2" class="textarea" id="textarea-2" rows="4" ></textarea>
-					                      </div>
-					                      <div class="cf"></div>
-							                  <h4 class="subtitle mt-20">Header text</h4>
-							                  <p>(This will appear at the top of the page (above your itinerary fact sheet). Use this to grab our members attention). <span class="c-red">*</span></p>
-																<div class="form-group wrap-input constraint_required count-chars" data-n_max=150>
-					                          <label class="group-title mt-0i" for="textarea-3"><span class="info">(<span class="n_chars">0</span> of <span class="n_max">150</span> characters used)</span> <span class="c-red">*</span>.</label>
-					                          <textarea name="textarea-3" class="textarea" id="textarea-3" rows="4" ></textarea>
-					                      </div>
-					                      <div class="cf"></div>
-							                  <h4 class="subtitle mt-20">Summary of the itinerary</h4>
-							                  <p>(Enter 1 or 2 paragraphs about your itinerary). <span class="c-red">*</span></p>
-																<div class="form-group wrap-input constraint_required count-chars" data-n_max=150>
-					                          <label class="group-title mt-0i" for="textarea-4"><span class="info">(<span class="n_chars">0</span> of <span class="n_max">150</span> characters used)</span> <span class="c-red">*</span>.</label>
-					                          <textarea name="textarea-4" class="textarea" id="textarea-4" rows="4" ></textarea>
-					                      </div>
-					                      <div class="cf"></div>
-							                  <h4 class="subtitle mt-20">Day by day itinerary description</h4>
-							                  <p>(Please note: Any formatting outside the YAS guidelines will be removed. For example: colored text or links will be automatically removed.) <span class="c-red">*</span></p>
-																<div class="form-group wrap-input constraint_required" style="padding-top: 10px;">
-					                         <!--  <label class="group-title mt-0i" for="textarea-5"><span class="info">(<span class="n_chars">0</span> of <span class="n_max">150</span> characters used)</span> <span class="c-red">*</span>.</label> -->
-					                          <textarea name="textarea-5" class="tinymce_textarea" id="textarea-5" rows="8"></textarea>
-					                      </div>
+	                      <div class="form_button_container mt-15 mb-15">
+	                          <div>
+	                              <input name="submit" type="submit" value="Submit" class="submit" title="Make these changes"/>
+	                          </div>
+	                          <a class="cancel" href="#"> Cancel </a>
+	                      </div>
+		                  </div>
+		                </form>
+									</div><!-- /.m-body-content -->
+								</div><!-- /.a-row-body -->
+							</div><!-- /.a-row -->
+							<div class="a-row">
+								<div class="a-row-header openned">
+									<h3>Description</h3>
+								</div><!-- /.a-row-header -->
+								<div class="a-row-body">
+									<div class="m-body-content">
+		                <form action="" enctype="multipart/form-data" method="post" class="form-model-3">
+		                  <div class="form_container">
+			                  <h4 class="subtitle">Title</h4>
+			                  <p>Example: Tanzania is home to the big five animals: buffalo, elephant, lion, leopard and rhino.</p>
+												<div class="form-group wrap-input constraint_required count-chars" data-n_max=1000>
+	                          <label class="group-title mt-0i" for="textarea-1"><span class="info">(<span class="n_chars">0</span> of <span class="n_max">1000</span> characters used)</span> <span class="c-red">*</span>.</label>
+	                          <textarea name="textarea-1" class="textarea" id="textarea-1" rows="4" ></textarea>
+	                      </div>
+	                      <div class="cf"></div>
+			                  <h4 class="subtitle mt-20">Short title</h4>
+			                  <p>Example: Big five safari</p>
+												<div class="form-group wrap-input constraint_required count-chars" data-n_max=150>
+	                          <label class="group-title mt-0i" for="textarea-2"><span class="info">(<span class="n_chars">0</span> of <span class="n_max">150</span> characters used)</span> <span class="c-red">*</span>.</label>
+	                          <textarea name="textarea-2" class="textarea" id="textarea-2" rows="4" ></textarea>
+	                      </div>
+	                      <div class="cf"></div>
+			                  <h4 class="subtitle mt-20">Header text</h4>
+			                  <p>(This will appear at the top of the page (above your itinerary fact sheet). Use this to grab our members attention). <span class="c-red">*</span></p>
+												<div class="form-group wrap-input constraint_required count-chars" data-n_max=150>
+	                          <label class="group-title mt-0i" for="textarea-3"><span class="info">(<span class="n_chars">0</span> of <span class="n_max">150</span> characters used)</span> <span class="c-red">*</span>.</label>
+	                          <textarea name="textarea-3" class="textarea" id="textarea-3" rows="4" ></textarea>
+	                      </div>
+	                      <div class="cf"></div>
+			                  <h4 class="subtitle mt-20">Summary of the itinerary</h4>
+			                  <p>(Enter 1 or 2 paragraphs about your itinerary). <span class="c-red">*</span></p>
+												<div class="form-group wrap-input constraint_required count-chars" data-n_max=150>
+	                          <label class="group-title mt-0i" for="textarea-4"><span class="info">(<span class="n_chars">0</span> of <span class="n_max">150</span> characters used)</span> <span class="c-red">*</span>.</label>
+	                          <textarea name="textarea-4" class="textarea" id="textarea-4" rows="4" ></textarea>
+	                      </div>
+	                      <div class="cf"></div>
+			                  <h4 class="subtitle mt-20">Day by day itinerary description</h4>
+			                  <p>(Please note: Any formatting outside the YAS guidelines will be removed. For example: colored text or links will be automatically removed.) <span class="c-red">*</span></p>
+												<div class="form-group wrap-input constraint_required" style="padding-top: 10px;">
+	                         <!--  <label class="group-title mt-0i" for="textarea-5"><span class="info">(<span class="n_chars">0</span> of <span class="n_max">150</span> characters used)</span> <span class="c-red">*</span>.</label> -->
+	                          <textarea name="textarea-5" class="tinymce_textarea" id="textarea-5" rows="8"></textarea>
+	                      </div>
 
-					                      <div class="clear"></div>
-					                      <div class="form_button_container mt-15 mb-15">
-					                          <div>
-					                              <input name="submit" type="submit" value="Submit" class="submit" title="Make these changes"/>
-					                          </div>
-					                          <a class="cancel" href="#"> Cancel </a>
-					                      </div>
-						                  </div>
-						                </form>
-													</div><!-- /.m-body-content -->
-												</div><!-- /.a-row-body -->
-											</div><!-- /.a-row -->
-											<div class="a-row">
-												<div class="a-row-header openned">
-													<h3>Price and time</h3>
-												</div><!-- /.a-row-header -->
-												<div class="a-row-body">
-													<div class="m-body-content">
-						                <form action="" enctype="multipart/form-data" method="post" class="form-model-3">
-						                  <div class="form_container">
+	                      <div class="clear"></div>
+	                      <div class="form_button_container mt-15 mb-15">
+	                          <div>
+	                              <input name="submit" type="submit" value="Submit" class="submit" title="Make these changes"/>
+	                          </div>
+	                          <a class="cancel" href="#"> Cancel </a>
+	                      </div>
+		                  </div>
+		                </form>
+									</div><!-- /.m-body-content -->
+								</div><!-- /.a-row-body -->
+							</div><!-- /.a-row -->
+							<div class="a-row">
+								<div class="a-row-header openned">
+									<h3>Price and time</h3>
+								</div><!-- /.a-row-header -->
+								<div class="a-row-body">
+									<div class="m-body-content">
+		                <form action="" enctype="multipart/form-data" method="post" class="form-model-3">
+		                  <div class="form_container">
 
-					                      <div class="form_split_column form-group row">
-					                          <div class="form-group wrap-input constraint_required col">
-					                            <label class="group-title">Please enter a price range for your itinerary.</label>
-					                            <p class="mb-10">(Note: if only one price is entered, only one price will be displayed).</p>
-					                            <div class="cf"></div>
-					                            <div class="flex-container">
-						                            <span autocomplete="off" class="input elements">
-					                                <select name="headquarters" class="f-width styled-select">
-					                                    <option>Price:</option>
-					                                    <option value="1">USD</option>
-					                                    <option value="1">EURO</option>
-					                                    <option value="1">Yen</option>
-					                                    <option value="1">Option 5</option>
-					                                </select>
-					                              </span>
-					                              <span>
-					                              	<input type="text" placeholder="Min Price">
-					                              </span>
-					                              <span>
-					                              	<input type="text" placeholder="Max Price">
-					                              </span>
-					                            	<span autocomplete="off" class="input elements">
-					                                <select name="headquarters" class="f-width styled-select">
-					                                    <option>Length of safari </option>
-					                                    <option value="1">Short</option>
-					                                    <option value="1">Medium</option>
-					                                    <option value="1">Option 4</option>
-					                                    <option value="1">Option 5</option>
-					                                </select>
-					                              </span>
-					                            </div>				                           		
-					                          </div>
-					                      </div><!-- /.form-group -->
+	                      <div class="form_split_column form-group row">
+	                          <div class="form-group wrap-input constraint_required col">
+	                            <label class="group-title">Please enter a price range for your itinerary.</label>
+	                            <p class="mb-10">(Note: if only one price is entered, only one price will be displayed).</p>
+	                            <div class="cf"></div>
+	                            <div class="flex-container">
+		                            <span autocomplete="off" class="input elements">
+	                                <select name="headquarters" class="f-width styled-select">
+	                                    <option>Price:</option>
+	                                    <option value="1">USD</option>
+	                                    <option value="1">EURO</option>
+	                                    <option value="1">Yen</option>
+	                                    <option value="1">Option 5</option>
+	                                </select>
+	                              </span>
+	                              <span>
+	                              	<input type="text" placeholder="Min Price">
+	                              </span>
+	                              <span>
+	                              	<input type="text" placeholder="Max Price">
+	                              </span>
+	                            	<span autocomplete="off" class="input elements">
+	                                <select name="headquarters" class="f-width styled-select">
+	                                    <option>Length of safari </option>
+	                                    <option value="1">Short</option>
+	                                    <option value="1">Medium</option>
+	                                    <option value="1">Option 4</option>
+	                                    <option value="1">Option 5</option>
+	                                </select>
+	                              </span>
+	                            </div>				                           		
+	                          </div>
+	                      </div><!-- /.form-group -->
 
-				                        <fieldset class=" constraint_required form-group">
-				                          <legend for="parks" class="group-title">Best time to visit &nbsp;&nbsp;<span class="c-green check-all" data-target="#check-list-1">Check All</span> &nbsp;&nbsp;<span class="c-green uncheck-all" data-target="#check-list-1">Uncheck All</span> </legend>
-				                          <span class="checkbox four-columns" id="check-list-1">
-				                            <span>
-				                                <input name="month" type="checkbox" value="1" id="month_1" checked/>
-				                                <label for="month_1">January</label>
-				                            </span>
-				                            <span>
-				                                <input name="month" type="checkbox" value="2" id="month_2"/>
-				                                <label for="month_2">February</label>
-				                            </span>
-				                            <span>
-				                                <input name="month" type="checkbox" value="3" id="month_3"/>
-				                                <label for="month_3">March</label>
-				                            </span>
-				                            <span>
-				                                <input name="month" type="checkbox" value="4" id="month_4"/>
-				                                <label for="month_4">April</label>
-				                            </span>
-				                            <span>
-				                                <input name="month" type="checkbox" value="5" id="month_5"/>
-				                                <label for="month_5">May</label>
-				                            </span>
-				                            <span>
-				                                <input name="month" type="checkbox" value="6" id="month_6" checked/>
-				                                <label for="month_6">June</label>
-				                            </span>
-				                            <span>
-				                                <input name="month" type="checkbox" value="7" id="month_7" checked/>
-				                                <label for="month_7">July</label>
-				                            </span>
-				                            <span>
-				                                <input name="month" type="checkbox" value="8" id="month_8"/>
-				                                <label for="month_8">August</label>
-				                            </span>
-				                            <span>
-				                                <input name="month" type="checkbox" value="9" id="month_9"/>
-				                                <label for="month_9">September</label>
-				                            </span>
-				                            <span>
-				                                <input name="month" type="checkbox" value="10" id="month_10"/>
-				                                <label for="month_10">October</label>
-				                            </span>
-				                            <span>
-				                                <input name="month" type="checkbox" value="11" id="month_11"/>
-				                                <label for="month_11">November</label>
-				                            </span>
-				                            <span>
-				                                <input name="month" type="checkbox" value="12" id="month_12"/>
-				                                <label for="month_12">December</label>
-				                            </span>
+                        <fieldset class=" constraint_required form-group">
+                          <legend for="parks" class="group-title">Best time to visit &nbsp;&nbsp;<span class="c-green check-all" data-target="#check-list-1">Check All</span> &nbsp;&nbsp;<span class="c-green uncheck-all" data-target="#check-list-1">Uncheck All</span> </legend>
+                          <span class="checkbox four-columns" id="check-list-1">
+                            <span>
+                                <input name="month" type="checkbox" value="1" id="month_1" checked/>
+                                <label for="month_1">January</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="2" id="month_2"/>
+                                <label for="month_2">February</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="3" id="month_3"/>
+                                <label for="month_3">March</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="4" id="month_4"/>
+                                <label for="month_4">April</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="5" id="month_5"/>
+                                <label for="month_5">May</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="6" id="month_6" checked/>
+                                <label for="month_6">June</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="7" id="month_7" checked/>
+                                <label for="month_7">July</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="8" id="month_8"/>
+                                <label for="month_8">August</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="9" id="month_9"/>
+                                <label for="month_9">September</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="10" id="month_10"/>
+                                <label for="month_10">October</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="11" id="month_11"/>
+                                <label for="month_11">November</label>
+                            </span>
+                            <span>
+                                <input name="month" type="checkbox" value="12" id="month_12"/>
+                                <label for="month_12">December</label>
+                            </span>
 
-				                          </span>
-				                        </fieldset>
+                          </span>
+                        </fieldset>
 
-					                      <div class="clear"></div>
-					                      <div class="form_button_container mt-15 mb-15">
-					                          <div>
-					                              <input name="submit" type="submit" value="Submit" class="submit" />
-					                          </div>
-					                          <a class="cancel" href="#"> Cancel </a>
-					                      </div>
-						                  </div>
-						                </form>
-													</div><!-- /.m-body-content -->
-												</div><!-- /.a-row-body -->
-											</div><!-- /.a-row -->
-											<div class="a-row">
-												<div class="a-row-header openned">
-													<h3>Comments</h3>
-												</div><!-- /.a-row-header -->
-												<div class="a-row-body">
-													<div class="m-body-content">
-						                <form action="" enctype="multipart/form-data" method="post" class="form-model-3">
-						                  <div class="form_container">
+	                      <div class="clear"></div>
+	                      <div class="form_button_container mt-15 mb-15">
+	                          <div>
+	                              <input name="submit" type="submit" value="Submit" class="submit" />
+	                          </div>
+	                          <a class="cancel" href="#"> Cancel </a>
+	                      </div>
+		                  </div>
+		                </form>
+									</div><!-- /.m-body-content -->
+								</div><!-- /.a-row-body -->
+							</div><!-- /.a-row -->
+							<div class="a-row">
+								<div class="a-row-header openned">
+									<h3>Comments</h3>
+								</div><!-- /.a-row-header -->
+								<div class="a-row-body">
+									<div class="m-body-content">
+		                <form action="" enctype="multipart/form-data" method="post" class="form-model-3">
+		                  <div class="form_container">
 
-			                          <fieldset class="constraint_required form-group">
-			                              <legend class="group-title">Fill this area to tell our members more about this itinerary</legend>
-			                              <span class="radio">
-			                                  <span>
-			                                      <input name="itinerary" type="radio" value="Yes" id="itinerary_1"/>
-			                                      <label for="itinerary_1">Yes</label>
-			                                  </span>
-			                                  <span>
-			                                      <input name="itinerary" type="radio" value="No" id="gritinerary" checked/>
-			                                      <label for="itinerary_2">No</label>
-			                                  </span>
-			                              </span>
-			                          </fieldset>
-			                          <h4 class="subtitle mt-15">Sample lodges.</h4>
-			                          <p>(List the top lodges/resorts/hotels you use. Seperate each bullet with the 'enter' key).</p>
-																<div class="form-group wrap-input constraint_required count-chars" data-n_max=1000>
-					                          <textarea name="review_copy" class="textarea" rows="7"></textarea>
-					                      </div>
+                      <fieldset class="constraint_required form-group">
+                          <legend class="group-title">Fill this area to tell our members more about this itinerary</legend>
+                          <span class="radio">
+                              <span>
+                                  <input name="itinerary" type="radio" value="Yes" id="itinerary_1"/>
+                                  <label for="itinerary_1">Yes</label>
+                              </span>
+                              <span>
+                                  <input name="itinerary" type="radio" value="No" id="gritinerary" checked/>
+                                  <label for="itinerary_2">No</label>
+                              </span>
+                          </span>
+                      </fieldset>
+                      <h4 class="subtitle mt-15">Sample lodges.</h4>
+                      <p>(List the top lodges/resorts/hotels you use. Seperate each bullet with the 'enter' key).</p>
+												<div class="form-group wrap-input constraint_required count-chars" data-n_max=1000>
+	                          <textarea name="review_copy" class="textarea" rows="7"></textarea>
+	                      </div>
 
-					                      <div class="clear"></div>
-					                      <div class="form_button_container mt-15">
-					                          <div>
-					                              <input name="submit" type="submit" value="Submit" class="submit" title="Make these changes"/>
-					                          </div>
-					                          <a class="cancel" href="#"> Cancel </a>
-					                      </div>
-						                  </div>
-						                </form>
-													</div><!-- /.m-body-content -->
-												</div><!-- /.a-row-body -->
-											</div><!-- /.a-row -->
+	                      <div class="clear"></div>
+	                      <div class="form_button_container mt-15">
+	                          <div>
+	                              <input name="submit" type="submit" value="Submit" class="submit" title="Make these changes"/>
+	                          </div>
+	                          <a class="cancel" href="#"> Cancel </a>
+	                      </div>
+		                  </div>
+		                </form>
+									</div><!-- /.m-body-content -->
+								</div><!-- /.a-row-body -->
+							</div><!-- /.a-row -->
 
-										</div><!-- /.acordeon-1 -->
-									</div><!-- /.m-content --> 
-								</div><!-- /.m-box-collapsed -->
+						</div><!-- /.acordeon-1 -->
+					</div><!-- /.m-content --> 
+				</div><!-- /.m-box-collapsed -->
 								
                        
       				</div><!-- /.wrap-content -->
