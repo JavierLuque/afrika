@@ -1180,6 +1180,9 @@
   .add-new-styles h2.title {
     font-size: 18px;
   }
+  .page-safari-photo-gallery h2.title {
+    font-size: 12px;
+  }
 }
 .mobile-menu .user-container .user-container-header .title .dropdown-link {
   z-index: unset;
