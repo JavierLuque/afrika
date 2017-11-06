@@ -919,6 +919,7 @@
     width: 24px;
     height: 11px;
     border-width: 3px;
+    cursor: pointer;
   }
   header .header-rights-links .open-menu:before {
     top: 4px;
@@ -1194,6 +1195,16 @@
 .member-logged-in .member-contain .name {
   line-height: 1.4;
   float: left;
+}
+.mobile-menu .user-container .user-container-header {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.menu-big-title {
+  color: #000;
+  font-weight: 700;
+  margin: 10px 0 0px 0;
+  padding: 0 15px;
 }
 .m-page-title {
   margin-bottom: 5px!important;
