@@ -1167,6 +1167,9 @@
     margin-bottom: 5px;
   }
 }
+.social-links-imgs .ad-text {
+  font-weight: 700;
+}
 .m-page-title {
   font-size: 18px;
   font-weight: 700;
@@ -1195,6 +1198,9 @@
 .member-logged-in .member-contain .name {
   line-height: 1.4;
   float: left;
+}
+.park-title .sidebar {
+  width: 440px;
 }
 .mobile-menu .user-container .user-container-header {
   border-bottom: 0;
