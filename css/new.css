@@ -76,6 +76,30 @@
   max-width: 100%;
   max-height: 180px;
 }
+.new-card .more-reviews {
+  margin-top: 5px;
+}
+.new-card .more-reviews h5 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #000;
+}
+.new-card .more-reviews ul {
+  margin-bottom: 5px;
+}
+.new-card .more-reviews ul li {
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+.new-card .more-reviews ul li .review-member {
+  color: #3a3c3d;
+}
+.new-card .more-reviews ul li .review-title {
+  color: #73ae3a;
+}
+.new-card .more-reviews ul li .review-date {
+  color: #aaa;
+}
 .card.type-6 .card-header h2 a {
   font-weight: 700;
   color: #3c3c3d;
@@ -345,6 +369,12 @@
   .member-logged-in.desktop-only {
     display: inline-block;
   }
+}
+.mobile-menu .m-items-list.sub-list .item:first-of-type .item-header {
+  padding-top: 0;
+}
+.mobile-menu .m-items-list.main-list .item .item-header.open h4 {
+  padding-bottom: 15px;
 }
 .filter-t-row {
   cursor: pointer;
@@ -918,8 +948,8 @@
   header .header-rights-links .open-menu {
     width: 24px;
     height: 11px;
-    border-width: 3px;
     cursor: pointer;
+    border-width: 3px;
   }
   header .header-rights-links .open-menu:before {
     top: 4px;
@@ -1202,15 +1232,78 @@
 .park-title .sidebar {
   width: 440px;
 }
+.add-new-styles .result-number .user-info p i {
+  font-size: 20px;
+  display: inline-block;
+  width: 34px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.m-join-us {
+  float: right;
+  width: 240px;
+}
+.m-join-us .title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffce52;
+  display: block;
+  clear: both;
+  margin: 0 0 15px;
+}
+@media (max-width: 1000px) {
+  .m-join-us {
+    float: none;
+    width: auto;
+    margin-bottom: 25px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid #666665;
+  }
+}
+.join-us-social a {
+  font-size: 16px;
+  line-height: 28px;
+  float: left;
+  width: 28;
+  width: 28px;
+  height: auto;
+  height: 28px;
+  margin-left: 22px;
+  -webkit-transition: .15s;
+  -moz-transition: .15s;
+  -ms-transition: .15s;
+  -o-transition: .15s;
+  transition: .15s;
+  text-align: center;
+  color: #d9d9d9;
+  border: 1px solid #f2f2f2;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.join-us-social a:first-child {
+  margin-left: 0;
+}
+.join-us-social a em {
+  display: inline-block;
+  vertical-align: middle;
+}
+@media (max-width: 1000px) {
+  .join-us-social a {
+    display: inline-block;
+    float: none;
+  }
+}
 .mobile-menu .user-container .user-container-header {
-  border-bottom: 0;
   padding-bottom: 0;
+  border-bottom: 0;
 }
 .menu-big-title {
-  color: #000;
   font-weight: 700;
-  margin: 10px 0 0px 0;
+  margin: 10px 0 0 0;
   padding: 0 15px;
+  color: #000;
 }
 .m-page-title {
   margin-bottom: 5px!important;
@@ -1277,6 +1370,88 @@
   font-size: 15px;
   font-weight: 700;
   color: #3a3c3d;
+}
+.review-2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 20px 10px;
+}
+.review-2:before {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  left: 20px;
+  height: 1px;
+  content: '';
+  background: #deddd8;
+}
+.review-2:first-of-type:before {
+  display: none;
+}
+.review-2:hover {
+  background: #fff;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+.review-2:hover:before {
+  display: none;
+}
+.review-2 .left-side {
+  width: 80px;
+  min-width: 80px;
+  max-width: 80px;
+}
+.review-2 .left-side a {
+  display: block;
+  float: none;
+  width: 80px;
+}
+.review-2 .left-side h4 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 5px;
+}
+.review-2 .middle-side {
+  width: 100%;
+  padding-left: 20px;
+}
+.review-2 .middle-side h2 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 5px;
+  color: #3a3c3d;
+}
+.review-2 .middle-side h2 a {
+  color: #3a3c3d;
+}
+.review-2 .middle-side p {
+  font-size: 12px;
+  line-height: 1.2;
+  margin: 0 0 3px;
+  color: #7c8082;
+}
+.review-2 .right-side {
+  width: 65px;
+  min-width: 65px;
+  max-width: 65px;
+}
+.review-2 .right-side .ob-score {
+  float: none;
+  width: 65px;
+  padding: 0;
+}
+.review-2 .right-side .ob-score .score-border {
+  height: 50px;
+  margin: 0 0 2px 0;
+}
+.review-2 .right-side .ob-score .score-border span {
+  font-size: 18px;
+  padding-top: 5px;
 }
 
 /*# sourceMappingURL=new.css.map */
