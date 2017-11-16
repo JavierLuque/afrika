@@ -791,6 +791,34 @@ $(document).ready(function(){
 
   })();
   //################################################
+  //--super-popup
+  //################################################
+
+  (function () {
+
+    var super_popup = $(".show-super-popup");
+    
+    if (super_popup.length != 0) {
+
+      super_popup.on('click', function (){
+          var target = $(this).attr('data-target');
+          $(target).addClass('opened');
+      });
+       
+    }
+
+    var c_super_popup = $(".close-super-popup");
+    
+    if (c_super_popup.length != 0) {
+      c_super_popup.on('click', function (){
+          var c_target = $(this).attr('data-target');
+          $(c_target).removeClass('opened');
+      });
+       
+    }
+
+  })();
+  //################################################
   //--open-search-bar
   //################################################
 

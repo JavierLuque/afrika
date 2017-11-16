@@ -626,8 +626,27 @@
                                 <div class="clear"></div>
                             </div>
                             <div class="form_button_container">
+                                <p>Temporar btn, trigger for loading img popup : <span style="margin-top: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    background-color: #73ae3a;
+    color: #fff;
+    border: 1px solid #73ae3a;
+    border-bottom-color: #629431;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 2px;
+    padding: 0 10px;
+    min-width: 160px;
+    cursor:pointer;
+    font-size: 13px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: url(../images/v2/i-check-white.png);
+    background-repeat: no-repeat;
+    background-position: 35px center;" class="show-super-popup" data-target="#super-popup-1" >submit</span> </p>
                                 <div>
-                                    <input name="submit" type="submit" value="Submit" class="submit" id="submit" title="Make these changes"/>
+                                    <input name="submit" type="submit" value="Submit" class="submit show-super-popup" data-target="#super-popup-1" id="submit" title="Make these changes" />
                                 </div>
                                 <a class="cancel" href="/profile/reviews" id="cancel_button">
                                     Cancel
@@ -750,6 +769,20 @@
             <a href="#">Join us!</a>
         </ul>
     </div><!-- /.mobile-menu -->
+    <div id="super-popup-1" class="super-popup">
+        <div class="popup-container box-model-1">
+            <div class="box-header">
+                <h3>Processing photos</h3>
+                <span class="close close-super-popup" data-target="#super-popup-1">&times;</span>
+            </div>
+            <div class="box-body">
+                <h4>Your photos are currently beging uploaded.</h4>
+                <p>Please do not close this window as some photos might not be processed yet.</p>
+                <p class="loading">Loading...</p>
+                <div class="loading-bar"><img src="images/v2/progresbar.webp" alt="load gif" /></div>
+            </div>            
+        </div><!-- /.popup-container -->
+    </div><!-- /.super-popup -->
 
     <script src="js/jquery.js"></script>
     <script src="js/library.js"></script>
