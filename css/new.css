@@ -1294,6 +1294,11 @@
     margin-bottom: 5px;
   }
 }
+.header-box-social-links > * {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 4px 2px 0;
+}
 .search-result-list .ob-rating p span {
   text-align: right;
 }
@@ -1606,6 +1611,14 @@
 .review-2 .right-side .ob-score .score-border span {
   font-size: 18px;
   padding-top: 5px;
+}
+@media (max-width: 540px) {
+  .review-2 {
+    display: block;
+  }
+  .review-2 .middle-side {
+    padding: 10px 0 10px;
+  }
 }
 .super-popup {
   position: fixed;
