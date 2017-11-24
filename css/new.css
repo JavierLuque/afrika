@@ -1583,9 +1583,9 @@
 }
 .review-2 .middle-side .subtitle {
   font-size: 12px;
-  font-weight: 700;
-  font-style: italic;
-  color: #286108;
+  font-weight: 500;
+  font-style: inherit;
+  color: #73ae3a;
 }
 .review-2 .middle-side .time-elapsed {
   font-size: 11px;
