@@ -14614,12 +14614,12 @@ body.menu-open {
   margin-bottom: 30px !important;
 }
 .slogan-video {
-  background: url(../images/v2/header.jpg) no-repeat center;
+  background: url(../upload/index3.jpg) no-repeat center;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  height: 700px;
+  height: 600px;
   overflow: hidden;
 }
 .home-page .search-box {

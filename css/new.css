@@ -294,6 +294,8 @@
   }
 }
 .m-sll-box.sll-box .review-like {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   position: relative;
   float: right;
   width: 100%;
@@ -308,6 +310,9 @@
   font-size: 16px;
   font-weight: 700;
   margin: 10px 0;
+}
+.m-sll-box.sll-box .replied p {
+  font-size: 16px;
 }
 @media (max-width: 767px) {
   .m-sll-box.sll-box .review-like {
@@ -326,6 +331,10 @@
   .m-sll-box.sll-box .short-decr .more-info {
     margin-bottom: 0;
   }
+}
+.popup-country.model-3 .main-description {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .tours.model-2 .tours-hover {
   top: 100%;
@@ -1441,6 +1450,26 @@
     float: none;
   }
 }
+.add-new-styles .result-number .user-info p {
+  font-size: 16px;
+}
+.sd-text p {
+  font-size: 16px;
+}
+@media (max-width: 479px) {
+  .add-new-styles .country-content .result-number .left-side .user-info {
+    padding-left: 10px;
+  }
+}
+.home-page header {
+  background: #3e3f3e;
+}
+.header-rights-links {
+  margin-top: 28px;
+}
+.wrap-dropdown .dropdown-body ul li a:hover {
+  font-weight: 400;
+}
 .mobile-menu .user-container .user-container-header {
   padding-bottom: 0;
   border-bottom: 0;
@@ -1583,9 +1612,9 @@
 }
 .review-2 .middle-side .subtitle {
   font-size: 12px;
-  font-weight: 500;
-  font-style: inherit;
-  color: #73ae3a;
+  font-weight: 700;
+  font-style: italic;
+  color: #286108;
 }
 .review-2 .middle-side .time-elapsed {
   font-size: 11px;
