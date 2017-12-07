@@ -312,7 +312,7 @@
   margin: 10px 0;
 }
 .m-sll-box.sll-box .replied p {
-  font-size: 16px;
+  font-size: 14px;
 }
 @media (max-width: 767px) {
   .m-sll-box.sll-box .review-like {
@@ -1451,10 +1451,10 @@
   }
 }
 .add-new-styles .result-number .user-info p {
-  font-size: 16px;
+  font-size: 14px;
 }
 .sd-text p {
-  font-size: 16px;
+  font-size: 14px;
 }
 @media (max-width: 479px) {
   .add-new-styles .country-content .result-number .left-side .user-info {
