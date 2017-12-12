@@ -313,6 +313,7 @@
 }
 .m-sll-box.sll-box .replied p {
   font-size: 14px;
+  font-weight: 400;
 }
 @media (max-width: 767px) {
   .m-sll-box.sll-box .review-like {
@@ -1455,6 +1456,7 @@
 }
 .sd-text p {
   font-size: 14px;
+  font-weight: 400;
 }
 @media (max-width: 479px) {
   .add-new-styles .country-content .result-number .left-side .user-info {
@@ -1469,6 +1471,9 @@
 }
 .wrap-dropdown .dropdown-body ul li a:hover {
   font-weight: 400;
+}
+.breadcrumbs a {
+  color: #f9f3ed;
 }
 .mobile-menu .user-container .user-container-header {
   padding-bottom: 0;
@@ -1751,6 +1756,56 @@
 .rating-big span.active {
   background-image: url('../images/v2/star-active.png');
   background-position: center 0;
+}
+.error-box {
+  position: relative;
+  padding: 20px 0 70px 50px;
+  width: 100%;
+  max-width: 700px;
+  margin: 80px auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.error-box .box-img {
+  position: absolute;
+  top: -40px;
+  left: -110px;
+  height: 380px;
+}
+.error-box .error-box-content {
+  padding: 30px 20px 30px 210px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  line-height: 1.4em;
+}
+.error-box .error-box-content .box-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #3a3c3d;
+  margin-bottom: 15px;
+}
+.error-box .error-box-content .box-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #3a3c3d;
+}
+.error-box .error-box-content p {
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #827e7d;
+}
+@media (max-width: 991px) {
+  .error-box {
+    padding: 20px;
+  }
+  .error-box .box-img {
+    display: none;
+  }
+  .error-box .error-box-content {
+    padding: 20px;
+  }
 }
 
 /*# sourceMappingURL=new.css.map */
