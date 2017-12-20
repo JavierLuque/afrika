@@ -950,12 +950,20 @@ $(document).ready(function(){
 
     //disclaimer 
     (function(){
+
           var disclaimer = $('#disclaimer');
+
+
           if(disclaimer.length != 0){
+
+          if( disclaimer.is(':checked') ) {
+            var parent = disclaimer.parents('.form_container_disclaimer');
+              parent.addClass('checked');
+          }
+            
             disclaimer.on('change', function(){
               var parent = $(this).parents('.form_container_disclaimer');
               parent.toggleClass('checked');
-              console.log('change');
             });
           }
 
