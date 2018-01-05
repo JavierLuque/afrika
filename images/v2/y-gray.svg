@@ -1,0 +1,18 @@
+<svg id="Youtube_color_copy" data-name="Youtube_color copy" xmlns="http://www.w3.org/2000/svg" width="31.44" height="31" viewBox="0 0 31.44 31">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #868a8c;
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        fill: #868a8c;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <ellipse class="cls-1" cx="15.72" cy="15.5" rx="15.22" ry="15"/>
+  <path class="cls-2" d="M1290.26,349h-10.52a3.935,3.935,0,0,0-3.74,4.109v5.782a3.935,3.935,0,0,0,3.74,4.109h10.52a3.935,3.935,0,0,0,3.74-4.109v-5.782A3.935,3.935,0,0,0,1290.26,349Zm-2.53,7.281-4.92,2.581a0.2,0.2,0,0,1-.28-0.2v-5.322a0.2,0.2,0,0,1,.29-0.194l4.92,2.742A0.228,0.228,0,0,1,1287.73,356.281Z" transform="translate(-1269.12 -340.5)"/>
+</svg>
