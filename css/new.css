@@ -363,6 +363,16 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+@media (max-width: 767px) {
+  .page--tour-page .tour-tab .tabs li {
+    width: 20%;
+    font-size: 0;
+  }
+  .page--tour-page .tour-tab .tabs li span {
+    margin: 0;
+    display: inline-block;
+  }
+}
 .tours.model-2 .tours-hover {
   top: 100%;
   bottom: auto;
@@ -1595,7 +1605,34 @@
   }
 }
 .home-page .search-box {
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.home-page .search-box .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.home-page .search-box .left-side {
+  width: 100%;
+}
+.home-page .search-box .right-side {
+  padding-left: 20px;
+  min-width: 180px;
+}
+@media (max-width: 767px) {
+  .home-page .search-box .wrap {
+    display: block;
+  }
+  .home-page .search-box .right-side {
+    padding-left: 0;
+    padding-top: 20px;
+  }
 }
 .header-rights-links {
   margin-top: 28px;
