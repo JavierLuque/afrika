@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'afrika';
   src:
-    url('fonts/afrika.ttf?rmlajy') format('truetype'),
-    url('fonts/afrika.woff?rmlajy') format('woff'),
-    url('fonts/afrika.svg?rmlajy#afrika') format('svg');
+    url('fonts/afrika.ttf?6qheom') format('truetype'),
+    url('fonts/afrika.woff?6qheom') format('woff'),
+    url('fonts/afrika.svg?6qheom#afrika') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,9 +23,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.i-Blog:before {
-  content: "\e912";
-}
 .i-Facebook:before {
   content: "\e900";
 }

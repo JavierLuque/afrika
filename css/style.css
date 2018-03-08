@@ -669,33 +669,63 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.i-safari-driver:before {
-  content: "\e908";
-  color: #7c8082;
+
+.i-Blog:before {
+  content: "\e912";
 }
-.i-Summary_icon:before {
+.i-Facebook:before {
   content: "\e900";
 }
-.i-Day-planner_icon:before {
+.i-Google:before {
   content: "\e901";
 }
-.i-Sample-Lodges_icon:before {
+.i-instagram:before {
   content: "\e902";
 }
-.i-tag:before {
+.i-Linkedin:before {
   content: "\e903";
 }
-.i-Arrow:before {
+.i-Pinterest:before {
   content: "\e904";
 }
-.i-edit:before {
+.i-Twitter:before {
   content: "\e905";
 }
-.i-crop:before {
+.i-Youtube:before {
   content: "\e906";
 }
-.i-rotate:before {
+.i-Summary_icon:before {
   content: "\e907";
+}
+.i-Day-planner_icon:before {
+  content: "\e908";
+}
+.i-Sample-Lodges_icon:before {
+  content: "\e909";
+}
+.i-tag:before {
+  content: "\e90a";
+}
+.i-Arrow:before {
+  content: "\e90b";
+}
+.i-edit:before {
+  content: "\e90c";
+}
+.i-crop:before {
+  content: "\e90d";
+}
+.i-rotate:before {
+  content: "\e90e";
+}
+.i-safari-driver:before {
+  content: "\e90f";
+}
+.i-external-link:before {
+  content: "\e910";
+}
+.i-external-link-2:before {
+  content: "\e911";
 }
 .i-travel-agency:before {
   content: "\e917";
@@ -14614,12 +14644,12 @@ body.menu-open {
   margin-bottom: 30px !important;
 }
 .slogan-video {
-  background: url(../upload/index3.1.jpg) no-repeat center;
+  background: url(../images/v2/header.jpg) no-repeat center;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  height: 600px;
+  height: 700px;
   overflow: hidden;
 }
 .home-page .search-box {
